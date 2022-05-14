@@ -28,5 +28,8 @@
     <main class="py-4 pr-5" >
       @yield('content')
     </main>
+    
+    {{-- Script para idiomas --}}
+    <script src="{{ asset('/js/idiomas-script.js') }}"></script>
   </body>
 </html>
