@@ -17,9 +17,9 @@ Route::get('/welcome', function () {
 
 Auth::routes(); 
 
-Route::get('/', 'IndexController@index')->name('index');
+Route::get('/', 'IndexController@home')->name('home');
 
-Route::get('/controle', 'HomeController@home')->name('home');
+Route::get('/controle', 'HomeController@home')->name('controle');
 
 Route::post('/topo1', 'HomeController@topo1')->name('topo1');
 
