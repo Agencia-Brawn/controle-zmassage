@@ -32,10 +32,14 @@ class HomeController extends Controller
         $facebook=Confing::get('facebook');
         $boleto=Confing::get('boleto');
         $logo1=Confing::get('logo1');
-        $logo2=Confing::get('logo2');
-        $logo3=Confing::get('logo3');
-        $logo4=Confing::get('logo4');
-        $logo5=Confing::get('logo5');
+        $menu2=Confing::get('menu2');
+        $menu3=Confing::get('menu3');
+        $menu4=Confing::get('menu4');
+        $menu5=Confing::get('menu5');
+        $menu6=Confing::get('menu6');
+        $menu7=Confing::get('menu7');
+        $menu8=Confing::get('menu8');
+        $menu9=Confing::get('menu9');
         $slide1=Confing::get('slide1');
         $slide2=Confing::get('slide2');
         $slide3=Confing::get('slide3');
@@ -50,11 +54,6 @@ class HomeController extends Controller
         $rodapeslide4=Confing::get('rodapeslide4');
         $rodapeslide5=Confing::get('rodapeslide5');
         $rodapeslide6=Confing::get('rodapeslide6');
-        $menu1=Confing::get('menu1');
-        $menu2=Confing::get('menu2');
-        $menu3=Confing::get('menu3');
-        $menu4=Confing::get('menu4');
-        $menu5=Confing::get('menu5');
         $associados1=Confing::get('associados1');
         $associados2=Confing::get('associados2');
         $associados3=Confing::get('associados3');
@@ -101,10 +100,14 @@ class HomeController extends Controller
         'facebook'=>$facebook,
         'boleto'=>$boleto,
         'logo1'=>$logo1,
-        'logo2'=>$logo2,
-        'logo3'=>$logo3,
-        'logo4'=>$logo4,
-        'logo5'=>$logo5,
+        'menu2'=>$menu2,
+        'menu3'=>$menu3,
+        'menu4'=>$menu4,
+        'menu5'=>$menu5,
+        'menu6'=>$menu6,
+        'menu7'=>$menu7,
+        'menu8'=>$menu8,
+        'menu9'=>$menu9,
         'slide1'=>$slide1,
         'slide2'=>$slide2,
         'slide3'=>$slide3,
@@ -119,11 +122,6 @@ class HomeController extends Controller
         'rodapeslide4'=>$rodapeslide4,
         'rodapeslide5'=>$rodapeslide5,
         'rodapeslide6'=>$rodapeslide6,
-        'menu1'=>$menu1,
-        'menu2'=>$menu2,
-        'menu3'=>$menu3,
-        'menu4'=>$menu4,
-        'menu5'=>$menu5,
         'associados1'=>$associados1,
         'associados2'=>$associados2,
         'associados3'=>$associados3,
@@ -222,10 +220,14 @@ class HomeController extends Controller
             Confing::atualizar('logo1',$path);
         }
 
-        Confing::atualizar('logo2',$request->logo2);
-        Confing::atualizar('logo3',$request->logo3);
-        Confing::atualizar('logo4',$request->logo4);    
-        Confing::atualizar('logo5',$request->logo5);
+        Confing::atualizar('menu2',$request->menu2);
+        Confing::atualizar('menu3',$request->menu3);
+        Confing::atualizar('menu4',$request->menu4);    
+        Confing::atualizar('menu5',$request->menu5);
+        Confing::atualizar('menu6',$request->menu6);
+        Confing::atualizar('menu7',$request->menu7);
+        Confing::atualizar('menu8',$request->menu8);
+        Confing::atualizar('menu9',$request->menu9);
 
 
         return redirect()->back()->with('status', "Formulário Enviado com sucesso");

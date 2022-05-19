@@ -2,37 +2,6 @@
 
 @section('content')
 
-    <!-- <nav class="col-xl-1 col-lg-2 sidenav navbar navbar-vertical menu-lateral  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
-        <div class="scroll-wrapper scrollbar-inner" style="position: relative;">
-
-        <div class="sidenav-header  align-items-center">
-                <a class="navbar-brand">
-                <img id="img-inicio-1" src="assets/img/logo-transparente.png" class="navbar-brand-img" alt="...">
-                </a>
-            </div>
-            <div class="navbar-inner">
-
-                <div class="collapse navbar-collapse" id="sidenav-collapse-main">
-
-                    <ul class="navbar-nav">
-                        
-                        <li class="nav-item dropdown" >
-                        <a class="nav-link active" href="/home">
-                        <i class='bx bxs-message-alt-edit'></i>
-                            <span class="nav-link-text"> Informações</span>
-                        </a>
-                        
-                        </li>
-
-                    </ul>     
-                    
-
-                </div>
-
-            </div>
-        </div>
-    </nav> -->
-
 
     <div class="col-xl-12 col-lg-12 col-md-12 container ml-5 pr-5" id="informacoes">
         <div class="row justify-content-center">
@@ -134,10 +103,10 @@
                                                     <input name="whatsapp" value="{{$whatsapp}}" type="text" class="form-control">
                                                 </div>
 
-                                                <div class="description col-md-6">
+                                                {{-- <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">E-mail</label>
                                                     <input name="email" value="{{$email}}" type="text" class="form-control">
-                                                </div>
+                                                </div> --}}
 
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Link do Instagram</label>
@@ -149,10 +118,10 @@
                                                     <input name="facebook" value="{{$facebook}}" type="text" class="form-control">
                                                 </div>
 
-                                                <div class="description col-md-6" style="margin-bottom: 30px;">
+                                                {{-- <div class="description col-md-6" style="margin-bottom: 30px;">
                                                     <label class="form-control-label" for="basic-url">Sistema Boleto</label>
                                                     <input name="boleto" value="{{$boleto}}" type="text" class="form-control" placeholder="2 Via Boleto">
-                                                </div>
+                                                </div> --}}
 
                                                 <button class="btn btn-icon btn-primary" style="margin: auto;" type="subimt">
                                                     <span class="btn-inner--text">Atualizar</span>
@@ -167,35 +136,55 @@
                                         <form action="{{route('logo')}}" enctype="multipart/form-data" method="post">
                                         @csrf
                                             <div class="row">
-                                                <div class="description col-md-6">
+                                                <div class="description col-md-12">
                                                     <label class="form-control-label" for="basic-url">Menu 1</label>
-                                                    <input name="logo2"  type="text" class="form-control" value="{{$logo2}}">
+                                                    <input name="menu2"  type="text" class="form-control" value="{{$menu2}}">
                                                 </div>
 
-                                                <div class="description col-md-6">
+                                                <div class="description col-md-12 mt-3">
                                                     <label class="form-control-label" for="basic-url">Menu 2</label>
-                                                    <input name="logo3"  type="text" class="form-control" value="{{$logo3}}">
+                                                    <input name="menu3"  type="text" class="form-control" value="{{$menu3}}">
                                                 </div>
 
-                                                <div class="description col-md-6">
+                                                <div class="description col-md-12 mt-3">
                                                     <label class="form-control-label" for="basic-url">Menu 3</label>
-                                                    <input name="logo4"  type="text" class="form-control" value="{{$logo4}}">
+                                                    <input name="menu4"  type="text" class="form-control" value="{{$menu4}}">
                                                 </div>
 
-                                                <div class="description col-md-6">
+                                                <div class="description col-md-12 mt-3">
                                                     <label class="form-control-label" for="basic-url">Menu 4</label>
-                                                    <input name="logo5"  type="text" class="form-control" value="{{$logo5}}">
+                                                    <input name="menu5"  type="text" class="form-control" value="{{$menu5}}">
                                                 </div>
 
-                                                <div class="description col-md-6" >
+                                                <div class="description col-md-12 mt-3">
+                                                    <label class="form-control-label" for="basic-url">Menu 5</label>
+                                                    <input name="menu6"  type="text" class="form-control" value="{{$menu6}}">
+                                                </div>
+
+                                                <div class="description col-md-12 mt-3">
+                                                    <label class="form-control-label" for="basic-url">Menu 6</label>
+                                                    <input name="menu7"  type="text" class="form-control" value="{{$menu7}}">
+                                                </div>
+
+                                                <div class="description col-md-12 mt-3">
+                                                    <label class="form-control-label" for="basic-url">Menu 7</label>
+                                                    <input name="menu8"  type="text" class="form-control" value="{{$menu8}}">
+                                                </div>
+
+                                                <div class="description col-md-12 mt-3">
+                                                    <label class="form-control-label" for="basic-url">Menu 8</label>
+                                                    <input name="menu9"  type="text" class="form-control" value="{{$menu9}}">
+                                                </div>
+
+                                                <div class="description col-md-12 mt-3" >
                                                     <label class="form-control-label" for="basic-url">Logo Menu</label>
                                                     <input name="logo1" type="file" class="form-control">
                                                 </div>
 
-                                                <div class="description col-md-6">
-                                                    <img style="width: 30%; margin-top: 15px; "  src="{{Storage::url($logo1)}}" alt="">
+                                                <div class="description col-md-12 mt-3">
+                                                    <img style="width: 30%; margin-top: 15px;" src="{{Storage::url($logo1)}}" alt="">
                                                     <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 210px <br> Altura: 140px">
-                                                        <i class='bx bxs-info-circle' ></i>
+                                                    <i class='bx bxs-info-circle'></i>
                                                     </button>
                                                 </div>
 
@@ -343,12 +332,12 @@
                                                     <input name="menu1" type="file" class="form-control" placeholder="Logo">
                                                 </div>
 
-                                                <div class="description col-md-6">
+                                                {{-- <div class="description col-md-6">
                                                     <img style="width: 40%; background: black; margin-top: 15px;"  src="{{Storage::url($menu1)}}" alt="">
                                                     <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 2000px <br> Altura: 1300px">
                                                         <i class='bx bxs-info-circle' ></i>
                                                     </button>
-                                                </div>
+                                                </div> --}}
 
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Titulo 1</label>

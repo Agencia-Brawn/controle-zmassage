@@ -11,33 +11,38 @@
       <a href="" class="mr-auto">
         <img src="assets/img/logo-sem-fundo.png" alt="" class="img-fluid">
       </a>
-      <h2 style="color: #fff; font-weight: bold;" class="w-50">So wie ein Auto einen guten Mechaniker braucht, so
-        braucht der Körper einen guten Masseur.</h2>
+      <h2 style="color: #fff; font-weight: bold;" class="w-50"> {{$telefone}} </h2>
 
       <nav id="navbar" class="navbar mx-auto">
         <ul>
-          <li><a class="nav-link active" href="">Home</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#agendamento">Agendamento</a></li>
-          <li><a class="nav-link" href="#services">Services</a></li>
-          <li><a class="nav-link" href="#sructure">Sructure</a></li>
-          <li><a class="nav-link" href="#portfolio">Depositions</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
-          <li><a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#idiomaModal"> <i
-                class="bi bi-translate fs-5 pe-2"></i> Language</a></li>
+          <li><a class="nav-link active" href="">{{$menu2}}</a></li>
+          <li><a class="nav-link" href="#about">{{$menu3}}</a></li>
+          <li><a class="nav-link" href="#agendamento">{{$menu4}}</a></li>
+          <li><a class="nav-link" href="#services">{{$menu5}}</a></li>
+          <li><a class="nav-link" href="#sructure">{{$menu6}}</a></li>
+          <li><a class="nav-link" href="#portfolio">{{$menu7}}</a></li>
+          <li><a class="nav-link" href="#contact">{{$menu8}}</a></li>
+          <li>
+            <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#idiomaModal"> 
+              {{$menu9}}  
+              <i class="bi bi-translate fs-5 pe-2"></i> 
+            </a>
+          </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
       <!-- .navbar -->
 
       <div class="social-links">
-        <!-- <a target="_blank" href="https://twitter.com/Zmassage1" class="twitter"><i class="bi bi-twitter"></i></a> -->
-        <a target="_blank" href="https://www.linkedin.com/in/ezequiel-pereira-cooke-b9a3341aa/" class="linkedin"><i
-            class="bi bi-linkedin"></i></a>
-        <a target="_blank" href="https://www.facebook.com/www.zmassage.at" class="linkedin"><i
-            class="bi bi-facebook"></i></a>
-        <a target="_blank" href="https://instagram.com/zmassage_vienna?igshid=YmMyMTA2M2Y=" class="linkedin"><i
-            class="bi bi-instagram"></i></a>
+        <a target="_blank" href="{{$whatsapp}}"  class="linkedin">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a target="_blank" href="{{$facebook}}" class="linkedin">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a target="_blank" href="{{$instagram}}" class="linkedin">
+          <i class="bi bi-instagram"></i>
+        </a>
       </div>
 
     </div>
