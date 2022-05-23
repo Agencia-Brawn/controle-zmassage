@@ -66,10 +66,12 @@
                                 </a>
                             </li>
 
-                            {{--
+
                             <li class="nav-item">
-                                <a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-9-tab" data-toggle="tab" href="#tabs-icons-text-9" role="tab" aria-controls="tabs-icons-text-9" aria-selected="false">Rodapé</a>
-                            </li> --}}
+                                <a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-9-tab" data-toggle="tab" href="#tabs-icons-text-9" role="tab" aria-controls="tabs-icons-text-9" aria-selected="false">
+                                    Modal Inicial
+                                </a>
+                            </li>
                         </ul>
                 </div>
 
@@ -919,7 +921,7 @@
                                         </form>
                                     </div>
 
-                                    <!-- PAINEL 9 -->
+                                    <!-- MODAL -->
                                     <div class="tab-pane fade" id="tabs-icons-text-9" role="tabpanel" aria-labelledby="tabs-icons-text-9-tab">
                                         <form action="{{route('footer')}}" enctype="multipart/form-data" method="post">
                                         @csrf
@@ -928,7 +930,7 @@
                                                 <p>Para desativar um link basta deixar o campo vazio</p>
                                             </div>
                                             <div class="row">
-                                                <div class="description col-md-6">
+                                                {{-- <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Link Facebook</label> 
                                                     {!!$footer1 == '' ? 
                                                         '<input class="ml-2 mr-3 form-check-input" type="radio" name="facebook" value="option1" disabled>
@@ -938,108 +940,52 @@
                                                          <label class="ml-4 form-control-label text-muted" for="basic-url">Ativado</label>'
                                                     !!}     
                                                     <input style="margin-bottom: 20px;" name="footer1" value="{{$footer1}}" type="text" class="form-control" >
+                                                </div> --}}
+
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Título</label>
+                                                    <input style="margin-bottom: 20px;" name="modal1" value="{{$modal1}}" type="text" class="form-control" >
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Botão Agendamento</label>
+                                                    <input style="margin-bottom: 20px;" name="modal2" value="{{$modal2}}" type="text" class="form-control" >
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Telefone</label>
+                                                    <input style="margin-bottom: 20px;" name="modal3" value="{{$modal3}}" type="text" class="form-control" >
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Link WhatsApp</label>
+                                                    <input style="margin-bottom: 20px;" name="modal4" value="{{$modal4}}" type="text" class="form-control" >
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Email</label>
+                                                    <input style="margin-bottom: 20px;" name="modal5" value="{{$modal5}}" type="text" class="form-control" >
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Link Mapa</label>
+                                                    <input style="margin-bottom: 20px;" name="modal6" value="{{$modal6}}" type="text" class="form-control" >
                                                 </div>
 
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Link Instagram</label>
-                                                    {!!$footer2 == '' ? 
-                                                            '<input class="ml-2 mr-3 form-check-input" type="radio" name="instagram" value="option1" disabled>
-                                                            <label class="ml-4 form-control-label text-muted" for="basic-url">Desativado</label>' 
-                                                        : 
-                                                            '<input class="ml-2 mr-3 form-check-input" type="radio" name="instagram" value="option1" checked >
-                                                            <label class="ml-4 form-control-label text-muted" for="basic-url">Ativado</label>'
-                                                    !!}  
-                                                    <input style="margin-bottom: 20px;" name="footer2" value="{{$footer2}}" type="text" class="form-control" >
+                                                    <input style="margin-bottom: 20px;" name="modal7" value="{{$modal7}}" type="text" class="form-control" >
                                                 </div>
 
                                                 <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Link Twitter</label>
-                                                    {!!$footer3 == '' ? 
-                                                            '<input class="ml-2 mr-3 form-check-input" type="radio" name="twitter" value="option1" disabled>
-                                                            <label class="ml-4 form-control-label text-muted" for="basic-url">Desativado</label>' 
-                                                        : 
-                                                            '<input class="ml-2 mr-3 form-check-input" type="radio" name="twitter" value="option1" checked >
-                                                            <label class="ml-4 form-control-label text-muted" for="basic-url">Ativado</label>'
-                                                    !!}  
-                                                    <input style="margin-bottom: 20px;" name="footer3" value="{{$footer3}}" type="text" class="form-control" >
+                                                    <label class="form-control-label" for="basic-url">Link Facebook</label>
+                                                    <input style="margin-bottom: 20px;" name="modal8" value="{{$modal8}}" type="text" class="form-control" >
                                                 </div>
 
                                                 <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Link Skype</label>
-                                                    {!!$footer4 == '' ? 
-                                                            '<input class="ml-2 mr-3 form-check-input" type="radio" name="skype" value="option1" disabled>
-                                                            <label class="ml-4 form-control-label text-muted" for="basic-url">Desativado</label>' 
-                                                        : 
-                                                            '<input class="ml-2 mr-3 form-check-input" type="radio" name="skype" value="option1" checked >
-                                                            <label class="ml-4 form-control-label text-muted" for="basic-url">Ativado</label>'
-                                                    !!}  
-                                                    <input style="margin-bottom: 20px;" name="footer4" value="{{$footer4}}" type="text" class="form-control" >
-                                                </div>
-
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Link LinkedIn</label>
-                                                    {!!$footer5 == '' ? 
-                                                            '<input class="ml-2 mr-3 form-check-input" type="radio" name="linkedin" value="option1" disabled>
-                                                            <label class="ml-4 form-control-label text-muted" for="basic-url">Desativado</label>' 
-                                                        : 
-                                                            '<input class="ml-2 mr-3 form-check-input" type="radio" name="linkedin" value="option1" checked >
-                                                            <label class="ml-4 form-control-label text-muted" for="basic-url">Ativado</label>'
-                                                    !!}  
-                                                    <input style="margin-bottom: 20px;" name="footer5" value="{{$footer5}}" type="text" class="form-control" >
-                                                </div>
-
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Link YouTube</label>
-                                                    {!!$footer6 == '' ? 
-                                                            '<input class="ml-2 mr-3 form-check-input" type="radio" name="youtube" value="option1" disabled>
-                                                            <label class="ml-4 form-control-label text-muted" for="basic-url">Desativado</label>' 
-                                                        : 
-                                                            '<input class="ml-2 mr-3 form-check-input" type="radio" name="youtube" value="option1" checked >
-                                                            <label class="ml-4 form-control-label text-muted" for="basic-url">Ativado</label>'
-                                                    !!}  
-                                                    <input style="margin-bottom: 20px;" name="footer6" value="{{$footer6}}" type="text" class="form-control" >
-                                                </div>
-
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Cnpj</label>
-                                                    <input style="margin-bottom: 20px;" name="footer7" value="{{$footer7}}" type="text" class="form-control" >
-                                                </div>
-
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Titulo 1</label>
-                                                    <input style="margin-bottom: 20px;" name="footer8" value="{{$footer8}}" type="text" class="form-control" >
-                                                </div>
-
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Titulo 2</label>
-                                                    <input style="margin-bottom: 20px;" name="footer9" value="{{$footer9}}" type="text" class="form-control">
-                                                </div>
-
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Titulo 3</label>
-                                                    <input style="margin-bottom: 20px;" name="footer10" value="{{$footer10}}" type="text" class="form-control">
-                                                </div>
-
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Titulo 4</label>
-                                                    <input style="margin-bottom: 20px;" name="footer11" value="{{$footer11}}" type="text" class="form-control">
-                                                </div>
-
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Titulo 5</label>
-                                                    <input style="margin-bottom: 20px;" name="footer12" value="{{$footer12}}" type="text" class="form-control">
-                                                </div>
-
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Logo do Rodapé</label>
-                                                    <input style=""  name="footer13" type="file" class="form-control">
-                                                </div>                                           
-
-                                                <div class="description col-md-6">
-                                                    <img style="background: black; width: 40%; margin-top: 15px;"  src="{{Storage::url($footer13)}}" alt="">
-                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 200px <br> Altura: 120px">
-                                                        <i class='bx bxs-info-circle' ></i>
-                                                    </button>
+                                                    <label class="form-control-label" for="basic-url">Instrução de Click</label>
+                                                    <input style="margin-bottom: 20px;" name="modal9" value="{{$modal9}}" type="text" class="form-control" >
                                                 </div>
                                             
                                                 <div class="description col-md-12" style="margin-top: 20px; text-align: center;">

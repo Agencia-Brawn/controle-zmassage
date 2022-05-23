@@ -455,35 +455,35 @@
               <img width="250px" src="assets/img/logo-circular.png" alt="" srcset="">
               <div class="row mt-3 d-flex justify-content-center">
                 <p style="width: 300px; color: #05c4f1; font-weight: bold;">
-                  "So wie ein Auto einen guten Mechaniker braucht, so braucht der Korper einen guten Masseur."
+                  {{$modal1}}
                 </p>
               </div>
               <div class="row d-flex justify-content-center">
                 <div style="width: 300px;">
                   <a target="__blank" href="https://zmassage.simplybook.it/v2/" class="btn d-flex btn-agendamento">
                     <i style="font-size: 32px;" class='bx bx-calendar'></i>
-                    Termin vereinbaren
+                    {{$modal2}}
                   </a>
                 </div>
               </div>
               <br>
               <div class="row" style="display: inline-flex;">
                 <div class="col-4">
-                  <a href="tel:+436781223238">
+                  <a href="tel:{{$modal3}}">
                     <div id="icons-modal" class="d-flex justify-content-center align-items-center">
                       <i style="font-size: 32px;" class='bx bxs-phone'></i>
                     </div>
                   </a>
                 </div>
                 <div class="col-4">
-                  <a target="__blank" href="https://api.whatsapp.com/send?phone=436781223238">
+                  <a target="__blank" href="{{$modal4}}">
                     <div id="icons-modal" class="d-flex justify-content-center align-items-center">
                       <i style="font-size: 36px;" class='bx bxl-whatsapp'></i>
                     </div>
                   </a>
                 </div>
                 <div class="col-4">
-                  <a href="mailto:contact@zmassage.at">
+                  <a href="mailto:{{$modal5}}">
                     <div id="icons-modal" class="d-flex justify-content-center align-items-center">
                       <i style="font-size: 32px;" class='bx bx-envelope'></i>
                     </div>
@@ -494,21 +494,21 @@
               <div class="row mt-3 mb-3" style="display: inline-flex;">
                 <div class="col-4">
                   <a target="__blank"
-                    href="https://goo.gl/maps/c9UyEDZFcWNic5CX8">
+                    href="{{$modal6}}">
                     <div id="icons-modal" class="d-flex justify-content-center align-items-center">
                       <i style="font-size: 32px;" class='bx bxs-map'></i>
                     </div>
                   </a>
                 </div>
                 <div class="col-4">
-                  <a target="__blank" href="https://instagram.com/zmassage_vienna?igshid=YmMyMTA2M2Y=">
+                  <a target="__blank" href="{{$modal7}}">
                     <div id="icons-modal" class="d-flex justify-content-center align-items-center">
                       <i style="font-size: 32px;" class='bx bxl-instagram'></i>
                     </div>
                   </a>
                 </div>
                 <div class="col-4">
-                  <a target="__blank" href="https://www.facebook.com/www.zmassage.at">
+                  <a target="__blank" href="{{$modal8}}">
                     <div id="icons-modal" class="d-flex justify-content-center align-items-center">
                       <i style="font-size: 32px;" class='bx bxl-facebook'></i>
                     </div>
@@ -517,7 +517,7 @@
               </div>
               <div class="row mt-3 d-flex justify-content-center">
                 <p>
-                  Tippen Sie auf die Symbole, um darauf zuzugreifen
+                  {{$modal9}}
                 </p>
               </div>
               <img class="mb-3" width="64px" src="assets/img/ferramenta-de-mao.png" alt="" srcset="">

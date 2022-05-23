@@ -119,19 +119,15 @@ class IndexController extends Controller
 
 
         
-        $footer1=Confing::get('footer1');
-        $footer2=Confing::get('footer2');
-        $footer3=Confing::get('footer3');
-        $footer4=Confing::get('footer4');
-        $footer5=Confing::get('footer5');
-        $footer6=Confing::get('footer6');
-        $footer7=Confing::get('footer7');
-        $footer8=Confing::get('footer8');
-        $footer9=Confing::get('footer9');
-        $footer10=Confing::get('footer10');
-        $footer11=Confing::get('footer11');
-        $footer12=Confing::get('footer12');
-        $footer13=Confing::get('footer13');
+        $modal1=Confing::get('modal1');
+        $modal2=Confing::get('modal2');
+        $modal3=Confing::get('modal3');
+        $modal4=Confing::get('modal4');
+        $modal5=Confing::get('modal5');
+        $modal6=Confing::get('modal6');
+        $modal7=Confing::get('modal7');
+        $modal8=Confing::get('modal8');
+        $modal9=Confing::get('modal9');
 
 
         return view("components.idiomas-site",[
@@ -239,19 +235,15 @@ class IndexController extends Controller
 
 
    
-            'footer1'=>$footer1,
-            'footer2'=>$footer2,
-            'footer3'=>$footer3,
-            'footer4'=>$footer4,
-            'footer5'=>$footer5,
-            'footer6'=>$footer6,
-            'footer7'=>$footer7,
-            'footer8'=>$footer8,
-            'footer9'=>$footer9,
-            'footer10'=>$footer10,
-            'footer11'=>$footer11,
-            'footer12'=>$footer12,
-            'footer13'=>$footer13
+            'modal1'=>$modal1,
+            'modal2'=>$modal2,
+            'modal3'=>$modal3,
+            'modal4'=>$modal4,
+            'modal5'=>$modal5,
+            'modal6'=>$modal6,
+            'modal7'=>$modal7,
+            'modal8'=>$modal8,
+            'modal9'=>$modal9,
         ]);
 
         
@@ -364,19 +356,16 @@ class IndexController extends Controller
 
 
 
-        $footer1=Confing::get('footer1');
-        $footer2=Confing::get('footer2');
-        $footer3=Confing::get('footer3');
-        $footer4=Confing::get('footer4');
-        $footer5=Confing::get('footer5');
-        $footer6=Confing::get('footer6');
-        $footer7=Confing::get('footer7');
-        $footer8=Confing::get('footer8');
-        $footer9=Confing::get('footer9');
-        $footer10=Confing::get('footer10');
-        $footer11=Confing::get('footer11');
-        $footer12=Confing::get('footer12');
-        $footer13=Confing::get('footer13');
+        $modal1=Confing::get('modal1');
+        $modal2=Confing::get('modal2');
+        $modal3=Confing::get('modal3');
+        $modal4=Confing::get('modal4');
+        $modal5=Confing::get('modal5');
+        $modal6=Confing::get('modal6');
+        $modal7=Confing::get('modal7');
+        $modal8=Confing::get('modal8');
+        $modal9=Confing::get('modal9');
+
 
 
         return view("site.home.index",[
@@ -483,19 +472,15 @@ class IndexController extends Controller
             'agendamentobotao'=>$agendamentobotao,
 
 
-            'footer1'=>$footer1,
-            'footer2'=>$footer2,
-            'footer3'=>$footer3,
-            'footer4'=>$footer4,
-            'footer5'=>$footer5,
-            'footer6'=>$footer6,
-            'footer7'=>$footer7,
-            'footer8'=>$footer8,
-            'footer9'=>$footer9,
-            'footer10'=>$footer10,
-            'footer11'=>$footer11,
-            'footer12'=>$footer12,
-            'footer13'=>$footer13
+            'modal1'=>$modal1,
+            'modal2'=>$modal2,
+            'modal3'=>$modal3,
+            'modal4'=>$modal4,
+            'modal5'=>$modal5,
+            'modal6'=>$modal6,
+            'modal7'=>$modal7,
+            'modal8'=>$modal8,
+            'modal9'=>$modal9,
         ]);
 
         
