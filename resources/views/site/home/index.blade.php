@@ -364,8 +364,8 @@
     <div class="container">
 
       <div class="section-title">
-        <h2>Contact</h2>
-        <p>Contact Me</p>
+        <h2>{{$contatoTituloPagina}}</h2>
+        <p>{{$contatoTituloPagina2}}</p>
       </div>
 
       <div class="row mt-2">
@@ -373,16 +373,24 @@
         <div class="col-md-6 d-flex align-items-stretch">
           <div class="info-box">
             <i class="bx bx-map"></i>
-            <h3>Address</h3>
-            <p> <a style="color: #fff;" target="__blank" href="https://goo.gl/maps/rLJGjkhmnTUZ2RjM9"> Rollingergasse 6/2/R01, 1120 Wien </a></p>
+            <h3>{{$contatoTituloEndereco}}</h3>
+            <p> 
+              <a style="color: #fff;" target="__blank" href="https://goo.gl/maps/rLJGjkhmnTUZ2RjM9"> 
+              {{$contatoSubtTituloEndereco}}
+              </a>
+            </p>
           </div>
         </div>
 
         <div class="col-md-6 d-flex align-items-stretch">
           <div class="info-box">
             <i class="bx bx-phone"></i>
-            <h3>Phone</h3>
-            <p> <a style="color: #fff;" href="tel:+436781223238"> +43 678 1223238 </a></p>
+            <h3>{{$contatoTituloTelefone}}</h3>
+            <p> 
+              <a style="color: #fff;" href="tel:{{$contatoTelefone}}"> 
+                {{$contatoTelefone}}
+              </a>
+            </p>
           </div>
         </div>
 
@@ -397,11 +405,11 @@
             <h3>Social Profiles</h3>
             <div class="social-links">
               <!-- <a target="_blank" href="https://twitter.com/Zmassage1" class="twitter"><i class="bi bi-twitter"></i></a> -->
-              <a target="_blank" href="https://www.linkedin.com/in/ezequiel-pereira-cooke-b9a3341aa/"
+              <a target="_blank" href="{{$contatoLinkLinkedin}}"
                 class="linkedin"><i class="bi bi-linkedin"></i></a>
-              <a target="_blank" href="https://www.facebook.com/www.zmassage.at" class="linkedin"><i
+              <a target="_blank" href="{{$contatoLinkFacebook}}" class="linkedin"><i
                   class="bi bi-facebook"></i></a>
-              <a target="_blank" href="https://instagram.com/zmassage_vienna?igshid=YmMyMTA2M2Y=" class="linkedin"><i
+              <a target="_blank" href="{{$contatoLinkInstagram}}" class="linkedin"><i
                   class="bi bi-instagram"></i></a>
             </div>
           </div>
@@ -410,8 +418,8 @@
         <div class="col-md-6 mt-4 d-flex align-items-stretch">
           <div class="info-box">
             <i class="bx bx-envelope"></i>
-            <h3>Email</h3>
-            <a style="color: #fff;" href="mailto:contact@zmassage.at">contact@zmassage.at</a>
+            <h3>{{$contatoTituloemail}}</h3>
+            <a style="color: #fff;" href="mailto:{{$contatoemail}}">{{$contatoemail}}</a>
           </div>
         </div>
         <!-- <div class="col-md-6 mt-4 d-flex align-items-stretch">
@@ -429,8 +437,9 @@
   <!-- CREDITS -->
   <div class="credits me-2" style="color: rgb(29, 29, 29);"> Designed by <b> <a
         href="https://instagram.com/matapimkt?igshid=YmMyMTA2M2Y=" target="_blank" style="color: black;">@matapimkt</a>
-    </b> </div>
-
+    </b> 
+  </div>
+  
   <!-- MODAL DE INICIALIZAÇÃO -->
   <div class="modal fade" id="cartao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -551,26 +560,5 @@
       </div>
     </div>
   </div>
-
-  <!-- MODAL AGENDAMENTO -->
-  <!-- <div class="modal fade" id="modalAgendamento" tabindex="-1" aria-labelledby="modalAgendamentoLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalAgendamentoLabel"> EINEN TERMIN MACHEN </h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-        </div>
-        <div class="modal-footer">
-          <div class="mx-auto">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
 
 @endsection

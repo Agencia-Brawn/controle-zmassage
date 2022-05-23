@@ -39,7 +39,7 @@ class IndexController extends Controller
 
         $tituloPagina=Confing::get('tituloPagina');
         $tituloPrincipal=Confing::get('tituloPrincipal');
-        
+
         $servico1titulo=Confing::get('servico1titulo');
         $servico2titulo=Confing::get('servico2titulo');
         $servico3titulo=Confing::get('servico3titulo');
@@ -88,6 +88,20 @@ class IndexController extends Controller
         $servico10preco2=Confing::get('servico10preco2');
         $servico11preco2=Confing::get('servico11preco2');
 
+
+
+        $contatoTituloPagina=Confing::get('contatoTituloPagina');
+        $contatoTituloPagina2=Confing::get('contatoTituloPagina2');
+        $contatoTituloemail=Confing::get('contatoTituloemail');
+        $contatoemail=Confing::get('contatoemail');
+        $contatoTituloEndereco=Confing::get('contatoTituloEndereco');
+        $contatoSubtTituloEndereco=Confing::get('contatoSubtTituloEndereco');
+        $contatoTituloTelefone=Confing::get('contatoTituloTelefone');
+        $contatoTelefone=Confing::get('contatoTelefone');
+        $contatoLinkTelefone=Confing::get('contatoLinkTelefone');
+        $contatoLinkLinkedin=Confing::get('contatoLinkLinkedin');
+        $contatoLinkFacebook=Confing::get('contatoLinkFacebook');
+        $contatoLinkInstagram=Confing::get('contatoLinkInstagram');
 
 
         $associados1=Confing::get('associados1');
@@ -206,6 +220,23 @@ class IndexController extends Controller
             'servico11preco2'=>$servico11preco2,
 
 
+            'contatoTituloPagina'=>$contatoTituloPagina,
+            'contatoTituloPagina2'=>$contatoTituloPagina2,
+
+            'contatoTituloemail'=>$contatoTituloemail,
+            'contatoemail'=>$contatoemail,
+
+            'contatoTituloEndereco'=>$contatoTituloEndereco,
+            'contatoSubtTituloEndereco'=>$contatoSubtTituloEndereco,
+            
+            'contatoTituloTelefone'=>$contatoTituloTelefone,
+            'contatoTelefone'=>$contatoTelefone,
+
+            'contatoLinkLinkedin'=>$contatoLinkLinkedin,
+            'contatoLinkFacebook'=>$contatoLinkFacebook,
+            'contatoLinkInstagram'=>$contatoLinkInstagram,
+
+            
             'associados1'=>$associados1,
             'associados2'=>$associados2,
             'associados3'=>$associados3,
@@ -326,6 +357,24 @@ class IndexController extends Controller
         $servico11preco2=Confing::get('servico11preco2');
 
 
+
+        $contatoTituloPagina=Confing::get('contatoTituloPagina');
+        $contatoTituloPagina2=Confing::get('contatoTituloPagina2');
+
+        $contatoTituloemail=Confing::get('contatoTituloemail');
+        $contatoemail=Confing::get('contatoemail');
+
+        $contatoTituloEndereco=Confing::get('contatoTituloEndereco');
+        $contatoSubtTituloEndereco=Confing::get('contatoSubtTituloEndereco');
+
+        $contatoTituloTelefone=Confing::get('contatoTituloTelefone');
+        $contatoTelefone=Confing::get('contatoTelefone');
+
+        $contatoLinkLinkedin=Confing::get('contatoLinkLinkedin');
+        $contatoLinkFacebook=Confing::get('contatoLinkFacebook');
+        $contatoLinkInstagram=Confing::get('contatoLinkInstagram');
+
+
         $associados1=Confing::get('associados1');
         $associados2=Confing::get('associados2');
         $associados3=Confing::get('associados3');
@@ -439,6 +488,25 @@ class IndexController extends Controller
             'servico9preco2'=>$servico9preco2,
             'servico10preco2'=>$servico10preco2,
             'servico11preco2'=>$servico11preco2,
+
+
+            'contatoTituloPagina'=>$contatoTituloPagina,
+            'contatoTituloPagina2'=>$contatoTituloPagina2,
+
+            'contatoTituloemail'=>$contatoTituloemail,
+            'contatoemail'=>$contatoemail,
+
+            'contatoTituloEndereco'=>$contatoTituloEndereco,
+            'contatoSubtTituloEndereco'=>$contatoSubtTituloEndereco,
+            
+            'contatoTituloTelefone'=>$contatoTituloTelefone,
+            'contatoTelefone'=>$contatoTelefone,
+
+            'contatoLinkLinkedin'=>$contatoLinkLinkedin,
+            'contatoLinkFacebook'=>$contatoLinkFacebook,
+            'contatoLinkInstagram'=>$contatoLinkInstagram,
+
+
 
             'associados1'=>$associados1,
             'associados2'=>$associados2,

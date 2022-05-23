@@ -23,7 +23,7 @@
                         <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link mb-sm-3 mb-md-0 mt-2 active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true">
-                                    Home
+                                    Home e Contato
                                 </a>
                             </li>
 
@@ -45,11 +45,13 @@
                                 </a>
                             </li>
 
-                            {{-- <li class="nav-item">
-                                <a  class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-5-tab" data-toggle="tab" href="#tabs-icons-text-5" role="tab" aria-controls="tabs-icons-text-5" aria-selected="false">Quem Somos</a>
+                            <li class="nav-item">
+                                <a  class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-5-tab" data-toggle="tab" href="#tabs-icons-text-5" role="tab" aria-controls="tabs-icons-text-5" aria-selected="false">
+                                    Contato
+                                </a>
                             </li>
 
-                            <li class="nav-item">
+                            {{-- <li class="nav-item">
                                 <a style="background-color: #1111;" class="nav-link  mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-6-tab" data-toggle="modal" data-target="#exampleModal" data-toggle="tab" href="#tabs-icons-text-6" role="tab" aria-controls="tabs-icons-text-6" aria-selected="false" >
                                     Áreas de Atuação
                                 </a>
@@ -89,7 +91,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- MODAL -->
+                <!-- FIM MODAL -->
                 
                     <div class="card shadow">
                             <div class="card-body">
@@ -101,7 +103,7 @@
                                             @csrf
                                             <div class="row">
                                                 <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Telefone</label>
+                                                    <label class="form-control-label" for="basic-url">Resumo Inicial</label>
                                                     <input name="telefone" value="{{$telefone}}" type="text" class="form-control">
                                                 </div>
 
@@ -270,7 +272,7 @@
                                                     </button>
                                                 </div> --}}
 
-                                                <div class="description col-12">
+                                                <div class="description mt-3 col-12">
                                                     <h2>Serviço 1</h2>
                                                 </div>
 
@@ -306,7 +308,7 @@
                                                     </button>
                                                 </div> --}}
 
-                                                <div class="description col-12">
+                                                <div class="description mt-3 col-12">
                                                     <h2>Serviço 2</h2>
                                                 </div>
 
@@ -342,7 +344,7 @@
                                                     </button>
                                                 </div> --}}
 
-                                                <div class="description col-12">
+                                                <div class="description mt-3 col-12">
                                                     <h2>Serviço 3</h2>
                                                 </div>
 
@@ -378,7 +380,7 @@
                                                     </button>
                                                 </div> --}}
 
-                                                <div class="description col-12">
+                                                <div class="description mt-3 col-12">
                                                     <h2>Serviço 4</h2>
                                                 </div>
 
@@ -414,7 +416,7 @@
                                                     </button>
                                                 </div> --}}
 
-                                                <div class="description col-12">
+                                                <div class="description mt-3 col-12">
                                                     <h2>Serviço 5</h2>
                                                 </div>
 
@@ -450,7 +452,7 @@
                                                     </button>
                                                 </div> --}}
 
-                                                <div class="description col-12">
+                                                <div class="description mt-3 col-12">
                                                     <h2>Serviço 6</h2>
                                                 </div>
 
@@ -485,7 +487,7 @@
                                                     </button>
                                                 </div> --}}
 
-                                                <div class="description col-12">
+                                                <div class="description mt-3 col-12">
                                                     <h2>Serviço 7</h2>
                                                 </div>
 
@@ -521,7 +523,7 @@
                                                     </button>
                                                 </div> --}}
 
-                                                <div class="description col-12">
+                                                <div class="description mt-3 col-12">
                                                     <h2>Serviço 8</h2>
                                                 </div>
 
@@ -558,7 +560,7 @@
                                                     </button>
                                                 </div> --}}
 
-                                                <div class="description col-12">
+                                                <div class="description mt-3 col-12">
                                                     <h2>Serviço 9</h2>
                                                 </div>
 
@@ -594,7 +596,7 @@
                                                     </button>
                                                 </div> --}}
 
-                                                <div class="description col-12">
+                                                <div class="description mt-3 col-12">
                                                     <h2>Serviço 10</h2>
                                                 </div>
 
@@ -630,7 +632,7 @@
                                                     </button>
                                                 </div> --}}
 
-                                                <div class="description col-12">
+                                                <div class="description mt-3 col-12">
                                                     <h2>Serviço 11</h2>
                                                 </div>
 
@@ -663,18 +665,18 @@
                                         </form>
                                     </div>
 
-                                    <!-- PAINEL 5 -->
+                                    <!-- CONTATO -->
                                     <div class="tab-pane fade" id="tabs-icons-text-5" role="tabpanel" aria-labelledby="tabs-icons-text-5-tab">
                                         <form action="{{route('menu')}}" enctype="multipart/form-data" method="post">
                                         @csrf
                                             <div class="row">
                                             
-                                                <div class="description col-md-6">
+                                                {{-- <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Imagem</label>
                                                     <input name="menu1" type="file" class="form-control" placeholder="Logo">
                                                 </div>
 
-                                                {{-- <div class="description col-md-6">
+                                                <div class="description col-md-6">
                                                     <img style="width: 40%; background: black; margin-top: 15px;"  src="{{Storage::url($menu1)}}" alt="">
                                                     <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 2000px <br> Altura: 1300px">
                                                         <i class='bx bxs-info-circle' ></i>
@@ -682,23 +684,58 @@
                                                 </div> --}}
 
                                                 <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Titulo 1</label>
-                                                    <input style="margin-bottom: 20px;" name="menu2" value="{{$menu2}}" type="text" class="form-control" >
+                                                    <label class="form-control-label" for="basic-url">Título Pequeno </label>
+                                                    <input style="margin-bottom: 20px;" name="contatoTituloPagina" value="{{$contatoTituloPagina}}" type="text" class="form-control" >
                                                 </div>
 
                                                 <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Titulo 2</label>
-                                                    <input style="margin-bottom: 20px;" name="menu3" value="{{$menu3}}" type="text" class="form-control" >
+                                                    <label class="form-control-label" for="basic-url">Título Principal </label>
+                                                    <input style="margin-bottom: 20px;" name="contatoTituloPagina2" value="{{$contatoTituloPagina2}}" type="text" class="form-control" >
                                                 </div>
 
                                                 <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Texto</label>
-                                                    <input style="margin-bottom: 20px;" name="menu4" value="{{$menu4}}" type="text" class="form-control" >
+                                                    <label class="form-control-label" for="basic-url">Título Email</label>
+                                                    <input style="margin-bottom: 20px;" name="contatoTituloemail" value="{{$contatoTituloemail}}" type="text" class="form-control" >
                                                 </div>
 
                                                 <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Botão</label>
-                                                    <input style="margin-bottom: 20px;" name="menu5" value="{{$menu5}}" type="text" class="form-control" >
+                                                    <label class="form-control-label" for="basic-url">Email</label>
+                                                    <input style="margin-bottom: 20px;" name="contatoemail" value="{{$contatoemail}}" type="text" class="form-control" >
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Título Endereço</label>
+                                                    <input style="margin-bottom: 20px;" name="contatoTituloEndereco" value="{{$contatoTituloEndereco}}" type="text" class="form-control" >
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">SubTítulo Endereço</label>
+                                                    <input style="margin-bottom: 20px;" name="contatoSubtTituloEndereco" value="{{$contatoSubtTituloEndereco}}" type="text" class="form-control" >
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Título Telefone</label>
+                                                    <input style="margin-bottom: 20px;" name="contatoTituloTelefone" value="{{$contatoTituloTelefone}}" type="text" class="form-control" >
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Telefone</label>
+                                                    <input style="margin-bottom: 20px;" name="contatoTelefone" value="{{$contatoTelefone}}" type="text" class="form-control" >
+                                                </div>          
+                                                
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Link LinkedIn</label>
+                                                    <input style="margin-bottom: 20px;" name="contatoLinkLinkedin" value="{{$contatoLinkLinkedin}}" type="text" class="form-control" >
+                                                </div>   
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Link Facebook</label>
+                                                    <input style="margin-bottom: 20px;" name="contatoLinkFacebook" value="{{$contatoLinkFacebook}}" type="text" class="form-control" >
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Link Instagram</label>
+                                                    <input style="margin-bottom: 20px;" name="contatoLinkInstagram" value="{{$contatoLinkInstagram}}" type="text" class="form-control" >
                                                 </div>
                     
                                                 <div class="description col-md-12" style="margin-top: 20px; text-align: center;">

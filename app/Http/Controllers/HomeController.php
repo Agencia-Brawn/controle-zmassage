@@ -102,6 +102,22 @@ class HomeController extends Controller
         $servico11preco2=Confing::get('servico11preco2');
 
 
+        $contatoTituloPagina=Confing::get('contatoTituloPagina');
+        $contatoTituloPagina2=Confing::get('contatoTituloPagina2');
+        
+        $contatoTituloemail=Confing::get('contatoTituloemail');
+        $contatoemail=Confing::get('contatoemail');
+        
+        $contatoTituloEndereco=Confing::get('contatoTituloEndereco');
+        $contatoSubtTituloEndereco=Confing::get('contatoSubtTituloEndereco');
+        
+        $contatoTituloTelefone=Confing::get('contatoTituloTelefone');
+        $contatoTelefone=Confing::get('contatoTelefone');
+
+        $contatoLinkLinkedin=Confing::get('contatoLinkLinkedin');
+        $contatoLinkFacebook=Confing::get('contatoLinkFacebook');
+        $contatoLinkInstagram=Confing::get('contatoLinkInstagram');
+
 
         $associados1=Confing::get('associados1');
         $associados2=Confing::get('associados2');
@@ -217,6 +233,23 @@ class HomeController extends Controller
         'servico9preco2'=>$servico9preco2,
         'servico10preco2'=>$servico10preco2,
         'servico11preco2'=>$servico11preco2,
+
+
+        'contatoTituloPagina'=>$contatoTituloPagina,
+        'contatoTituloPagina2'=>$contatoTituloPagina2,
+
+        'contatoTituloemail'=>$contatoTituloemail,
+        'contatoemail'=>$contatoemail,
+
+        'contatoTituloEndereco'=>$contatoTituloEndereco,
+        'contatoSubtTituloEndereco'=>$contatoSubtTituloEndereco,
+        
+        'contatoTituloTelefone'=>$contatoTituloTelefone,
+        'contatoTelefone'=>$contatoTelefone,
+
+        'contatoLinkLinkedin'=>$contatoLinkLinkedin,
+        'contatoLinkFacebook'=>$contatoLinkFacebook,
+        'contatoLinkInstagram'=>$contatoLinkInstagram,
 
 
 
@@ -407,8 +440,7 @@ class HomeController extends Controller
         Confing::atualizar('servico9preco2',$request->servico9preco2);
         Confing::atualizar('servico10preco2',$request->servico10preco2);
         Confing::atualizar('servico11preco2',$request->servico11preco2);
-
-        
+     
 
 
         return redirect()->back();
@@ -425,10 +457,21 @@ class HomeController extends Controller
             Confing::atualizar('menu1',$path);
         }
 
-        Confing::atualizar('menu2',$request->menu2);
-        Confing::atualizar('menu3',$request->menu3);
-        Confing::atualizar('menu4',$request->menu4);
-        Confing::atualizar('menu5',$request->menu5);
+        Confing::atualizar('contatoTituloPagina',$request->contatoTituloPagina);
+        Confing::atualizar('contatoTituloPagina2',$request->contatoTituloPagina2);
+
+        Confing::atualizar('contatoTituloemail',$request->contatoTituloemail);
+        Confing::atualizar('contatoemail',$request->contatoemail);
+
+        Confing::atualizar('contatoTituloEndereco',$request->contatoTituloEndereco);
+        Confing::atualizar('contatoSubtTituloEndereco',$request->contatoSubtTituloEndereco);
+
+        Confing::atualizar('contatoTituloTelefone',$request->contatoTituloTelefone);
+        Confing::atualizar('contatoTelefone',$request->contatoTelefone);
+
+        Confing::atualizar('contatoLinkLinkedin',$request->contatoLinkLinkedin);
+        Confing::atualizar('contatoLinkFacebook',$request->contatoLinkFacebook);
+        Confing::atualizar('contatoLinkInstagram',$request->contatoLinkInstagram); 
 
 
         return redirect()->back();
