@@ -22,19 +22,27 @@
                 <div class="nav-wrapper">
                         <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link mb-sm-3 mb-md-0 mt-2 active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true">Menu Topo</a>
+                                <a class="nav-link mb-sm-3 mb-md-0 mt-2 active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true">
+                                    Home
+                                </a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false">Menu</a>
+                                <a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false">
+                                    Menu
+                                </a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-3-tab" data-toggle="tab" href="#tabs-icons-text-3" role="tab" aria-controls="tabs-icons-text-3" aria-selected="false">Slide</a>
+                                <a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-3-tab" data-toggle="tab" href="#tabs-icons-text-3" role="tab" aria-controls="tabs-icons-text-3" aria-selected="false">
+                                    Sobre
+                                </a>
                             </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-4-tab" data-toggle="tab" href="#tabs-icons-text-4" role="tab" aria-controls="tabs-icons-text-4" aria-selected="false">Rodapé Slide</a>
+                            {{-- <li class="nav-item">
+                                <a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-4-tab" data-toggle="tab" href="#tabs-icons-text-4" role="tab" aria-controls="tabs-icons-text-4" aria-selected="false">
+                                    Rodapé Slide
+                                </a>
                             </li>
 
                             <li class="nav-item">
@@ -57,7 +65,7 @@
 
                             <li class="nav-item">
                                 <a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-9-tab" data-toggle="tab" href="#tabs-icons-text-9" role="tab" aria-controls="tabs-icons-text-9" aria-selected="false">Rodapé</a>
-                            </li>
+                            </li> --}}
                         </ul>
                 </div>
 
@@ -83,12 +91,11 @@
                 </div>
                 <!-- MODAL -->
                 
-                <!-- TABELA DE INFO -->
                     <div class="card shadow">
                             <div class="card-body">
                                 <div class="tab-content" id="myTabContent">
 
-                                    <!-- PAINEL 1 -->
+                                    <!-- HOME -->
                                     <div class="tab-pane fade active show" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
                                         <form action="{{route('topo1')}}" method="post">
                                             @csrf
@@ -131,7 +138,7 @@
                                         </form>
                                     </div>
 
-                                    <!-- PAINEL 2 -->
+                                    <!-- MENU -->
                                     <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
                                         <form action="{{route('logo')}}" enctype="multipart/form-data" method="post">
                                         @csrf
@@ -197,64 +204,36 @@
                                         </form>
                                     </div>
 
-                                    <!-- PAINEL 3 -->
+                                    <!-- SOBRE -->
                                     <div class="tab-pane fade" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
                                         <form action="{{route('slide')}}" enctype="multipart/form-data" method="post">
                                         @csrf
                                             <div class="row">
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Slide 1</label>
-                                                    <input name="slide1" type="file" class="form-control">
-                                                    <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($slide1)}}" alt="">
-                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 750px <br> Altura: 360px">
-                                                        <i class='bx bxs-info-circle' ></i>
-                                                    </button>
-                                                </div>
-
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Imagem Fundo</label>
-                                                    <input name="slide2" type="file" class="form-control">
-                                                    <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($slide2)}}" alt="">
-                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 1900px <br> Altura: 600px">
-                                                        <i class='bx bxs-info-circle' ></i>
-                                                    </button>
-                                                </div>
-
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Slide 3</label>
-                                                    <input name="slide3" type="file" class="form-control">
-                                                    <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($slide3)}}" alt="">
-                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 630px <br> Altura: 350px">
-                                                        <i class='bx bxs-info-circle' ></i>
-                                                    </button>
-                                                </div>
-
-                                                <div class="description col-md-6">
+                                                <div class="description col-md-12 mt-3">
                                                     <label class="form-control-label" for="basic-url">Titulo 1</label>
                                                     <input name="slide4"  type="text" class="form-control" value="{{$slide4}}">
                                                 </div>
 
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Titulo 2</label>
+                                                <div class="description col-md-12 mt-3">
+                                                    <label class="form-control-label" for="basic-url">Titulo da Página</label>
                                                     <input name="slide5"  type="text" class="form-control" value="{{$slide5}}">
                                                 </div>
 
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Titulo 3</label>
+                                                <div class="description col-md-12 mt-3">
+                                                    <label class="form-control-label" for="basic-url">Titulo do Texto</label>
                                                     <input name="slide6"  type="text" class="form-control" value="{{$slide6}}">
                                                 </div>
 
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Titulo 4</label>
+                                                <div class="description col-md-12 mt-3">
+                                                    <label class="form-control-label" for="basic-url">Texto</label>
                                                     <input name="slide7"  type="text" class="form-control" value="{{$slide7}}">
                                                 </div>
 
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Titulo 5</label>
-                                                    <input name="slide8"  type="text" class="form-control" value="{{$slide8}}">
+                                                <div class="description col-md-12 mt-3">
+                                                    <label class="form-control-label" for="basic-url">Imagem</label>
                                                 </div>
 
-                                                <div class="description col-md-12" style="margin-top: 20px; text-align: center;">
+                                                <div class="description col-md-12 mt-3" style="margin-top: 20px; text-align: center;">
                                                     <button class="btn btn-icon btn-primary" style="margin: auto;" type="submit">
                                                         <span class="btn-inner--text">Atualizar</span>
                                                     </button>
