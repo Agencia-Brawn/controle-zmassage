@@ -342,8 +342,8 @@
       <div class="testimonials container">
 
         <div class="section-title">
-          <h2>Depositions</h2>
-          <p>Customer Testimonials</p>
+          <h2>{{$depoimento1}}</h2>
+          <p>{{$depoimento2}}</p>
         </div>
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">

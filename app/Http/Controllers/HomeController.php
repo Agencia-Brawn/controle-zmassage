@@ -119,20 +119,10 @@ class HomeController extends Controller
         $contatoLinkInstagram=Confing::get('contatoLinkInstagram');
 
 
-        $associados1=Confing::get('associados1');
-        $associados2=Confing::get('associados2');
-        $associados3=Confing::get('associados3');
-        $associados4=Confing::get('associados4');
-        $associados5=Confing::get('associados5');
-        $associados6=Confing::get('associados6');
-        $associados7=Confing::get('associados7');
-        $associados8=Confing::get('associados8');
-        $associados9=Confing::get('associados9');
-        $associados10=Confing::get('associados10');
-        $associados11=Confing::get('associados11');
-        $associados12=Confing::get('associados12');
-        $associados13=Confing::get('associados13');
-        $associados14=Confing::get('associados14');
+        $depoimento1=Confing::get('depoimento1');
+        $depoimento2=Confing::get('depoimento2');
+
+
         $receita1=Confing::get('receita1');
         $receita2=Confing::get('receita2');
         $receita3=Confing::get('receita3');
@@ -253,20 +243,11 @@ class HomeController extends Controller
 
 
 
-        'associados1'=>$associados1,
-        'associados2'=>$associados2,
-        'associados3'=>$associados3,
-        'associados4'=>$associados4,
-        'associados5'=>$associados5,
-        'associados6'=>$associados6,
-        'associados7'=>$associados7,
-        'associados8'=>$associados8,
-        'associados9'=>$associados9,
-        'associados10'=>$associados10,
-        'associados11'=>$associados11,
-        'associados12'=>$associados12,
-        'associados13'=>$associados13,
-        'associados14'=>$associados14,
+
+        'depoimento1'=>$depoimento1,
+        'depoimento2'=>$depoimento2,
+
+
         'receita1'=>$receita1,
         'receita2'=>$receita2,
         'receita3'=>$receita3,
@@ -480,97 +461,9 @@ class HomeController extends Controller
 
     public function associados(Request $request)
     {
-        // dd($request);
-        if ($request->hasFile('associados1')) 
-        {
-            $extension = $request->associados1->extension();
-            $path = $request->associados1->storeAs('public/images', "associados1.$extension");
-            Confing::atualizar('associados1',$path);
-        }
 
-        if ($request->hasFile('associados2')) 
-        {
-            $extension = $request->associados2->extension();
-            $path = $request->associados2->storeAs('public/images', "associados2.$extension");
-            Confing::atualizar('associados2',$path);
-        }
-
-        if ($request->hasFile('associados3')) 
-        {
-            $extension = $request->associados3->extension();
-            $path = $request->associados3->storeAs('public/images', "associados3.$extension");
-            Confing::atualizar('associados3',$path);
-        }
-
-
-        if ($request->hasFile('associados4')) 
-        {
-            $extension = $request->associados4->extension();
-            $path = $request->associados4->storeAs('public/images', "associados4.$extension");
-            Confing::atualizar('associados4',$path);
-        }
-
-
-        if ($request->hasFile('associados5')) 
-        {
-            $extension = $request->associados5->extension();
-            $path = $request->associados5->storeAs('public/images', "associados5.$extension");
-            Confing::atualizar('associados5',$path);
-        }
-
-        if ($request->hasFile('associados6')) 
-        {
-            $extension = $request->associados6->extension();
-            $path = $request->associados6->storeAs('public/images', "associados6.$extension");
-            Confing::atualizar('associados6',$path);
-        }
-
-        if ($request->hasFile('associados7')) 
-        {
-            $extension = $request->associados7->extension();
-            $path = $request->associados7->storeAs('public/images', "associados7.$extension");
-            Confing::atualizar('associados7',$path);
-        }
-
-        if ($request->hasFile('associados8')) 
-        {
-            $extension = $request->associados8->extension();
-            $path = $request->associados8->storeAs('public/images', "associados8.$extension");
-            Confing::atualizar('associados8',$path);
-        }
-
-        if ($request->hasFile('associados9')) 
-        {
-            $extension = $request->associados9->extension();
-            $path = $request->associados9->storeAs('public/images', "associados9.$extension");
-            Confing::atualizar('associados9',$path);
-        }
-
-        if ($request->hasFile('associados10')) 
-        {
-            $extension = $request->associados10->extension();
-            $path = $request->associados10->storeAs('public/images', "associados10.$extension");
-            Confing::atualizar('associados10',$path);
-        }
-
-        if ($request->hasFile('associados11')) 
-        {
-            $extension = $request->associados11->extension();
-            $path = $request->associados11->storeAs('public/images', "associados11.$extension");
-            Confing::atualizar('associados11',$path);
-        }
-
-        if ($request->hasFile('associados12')) 
-        {
-            $extension = $request->associados12->extension();
-            $path = $request->associados12->storeAs('public/images', "associados10.$extension");
-            Confing::atualizar('associados12',$path);
-        }
-
-        Confing::atualizar('associados13',$request->associados13);
-        Confing::atualizar('associados14',$request->associados14);
-
-
+        Confing::atualizar('depoimento1',$request->depoimento1);
+        Confing::atualizar('depoimento2',$request->depoimento2);
 
         return redirect()->back();
 

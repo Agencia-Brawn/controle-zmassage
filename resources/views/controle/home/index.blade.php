@@ -23,7 +23,7 @@
                         <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link mb-sm-3 mb-md-0 mt-2 active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true">
-                                    Home e Contato
+                                    Home
                                 </a>
                             </li>
 
@@ -51,15 +51,15 @@
                                 </a>
                             </li>
 
-                            {{-- <li class="nav-item">
-                                <a style="background-color: #1111;" class="nav-link  mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-6-tab" data-toggle="modal" data-target="#exampleModal" data-toggle="tab" href="#tabs-icons-text-6" role="tab" aria-controls="tabs-icons-text-6" aria-selected="false" >
-                                    Áreas de Atuação
+                            
+
+                            <li class="nav-item">
+                                <a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-7-tab" data-toggle="tab" href="#tabs-icons-text-7" role="tab" aria-controls="tabs-icons-text-7" aria-selected="false">
+                                    Depoimentos
                                 </a>
                             </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-7-tab" data-toggle="tab" href="#tabs-icons-text-7" role="tab" aria-controls="tabs-icons-text-7" aria-selected="false">Associados</a>
-                            </li>
+                            {{--
 
                             <li class="nav-item">
                                 <a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-8-tab" data-toggle="tab" href="#tabs-icons-text-8" role="tab" aria-controls="tabs-icons-text-8" aria-selected="false">Receita</a>
@@ -747,163 +747,133 @@
                                         </form>
                                     </div>
 
-                                    <!-- PAINEL 6 -->
-                                    <!-- <div class="tab-pane fade" id="tabs-icons-text-6" role="tabpanel" aria-labelledby="tabs-icons-text-6-tab">
-                                        <div class="row">
-                                            <div class="description col-md-6">
-                                            <input type="text" class="form-control" placeholder="Default input">
-                                            </div>
-
-                                            <div class="description col-md-6">
-                                            <input type="text" class="form-control" placeholder="Default input">
-                                            </div>
-
-                                            <div class="description col-md-6" style="margin-top: 30px;">
-                                            <input type="text" class="form-control" placeholder="Default input">
-                                            </div>
-
-                                            <div class="description col-md-6" style="margin-top: 30px;">
-                                            <input type="text" class="form-control" placeholder="Default input">
-                                            </div>
-                                            
-                                            <div class="description col-md-6" style="margin-top: 30px;">
-                                            <input type="text" class="form-control" placeholder="Default input">
-                                            </div>
-
-                                            <div class="description col-md-6" style="margin-top: 30px; margin-bottom: 30px;">
-                                            <input type="text" class="form-control" placeholder="Default input">
-                                            </div>
-
-                                            <button class="btn btn-icon btn-primary" style="margin: auto;" type="button">
-                                                <span class="btn-inner--text">Atualizar</span>
-                                            </button>
-                                        </div>
-                                    </div> -->
-
-                                    <!-- PAINEL 7 -->
+                                    <!-- DEPOIMENTOS -->
                                     <div class="tab-pane fade" id="tabs-icons-text-7" role="tabpanel" aria-labelledby="tabs-icons-text-7-tab">
                                         <form action="{{route('associados')}}" enctype="multipart/form-data" method="post">
                                         @csrf
                                             <div class="row">
                                                 
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Título 1:</label>
-                                                    <input name="associados13" value="{{$associados13}}" type="text" class="form-control">
+                                                <div class="description col-md-12">
+                                                    <label class="form-control-label" for="basic-url">Título Pequeno</label>
+                                                    <input name="depoimento1" value="{{$depoimento1}}" type="text" class="form-control">
                                                 </div>
 
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Título 1.2:</label>
-                                                    <input name="associados14" value="{{$associados14}}" type="text" class="form-control">
+                                                <div class="description col-md-12">
+                                                    <label class="form-control-label" for="basic-url">Título Principal</label>
+                                                    <input name="depoimento2" value="{{$depoimento2}}" type="text" class="form-control">
                                                 </div>
 
 
-                                                <div class="description col-md-6">
+                                                {{-- 
+                                                
+                                                    <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Parceiro 1</label>
                                                     <input style="margin-top: 20px"  name="associados1" type="file" class="form-control">
                                                     <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados1)}}" alt="">
                                                     <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
                                                         <i class='bx bxs-info-circle' ></i>
                                                     </button>
-                                                </div>
+                                                    </div>
 
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Parceiro 2</label>
-                                                    <input style="margin-top: 20px"  name="associados2" type="file" class="form-control">
-                                                    <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados2)}}" alt="">
-                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
-                                                        <i class='bx bxs-info-circle' ></i>
-                                                    </button>
-                                                </div>
+                                                    <div class="description col-md-6">
+                                                        <label class="form-control-label" for="basic-url">Parceiro 2</label>
+                                                        <input style="margin-top: 20px"  name="associados2" type="file" class="form-control">
+                                                        <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados2)}}" alt="">
+                                                        <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
+                                                            <i class='bx bxs-info-circle' ></i>
+                                                        </button>
+                                                    </div>
 
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Parceiro 3</label>
-                                                    <input style="margin-top: 20px"  name="associados3" type="file" class="form-control">
-                                                    <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados3)}}" alt="">
-                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
-                                                        <i class='bx bxs-info-circle' ></i>
-                                                    </button>
-                                                </div>
+                                                    <div class="description col-md-6">
+                                                        <label class="form-control-label" for="basic-url">Parceiro 3</label>
+                                                        <input style="margin-top: 20px"  name="associados3" type="file" class="form-control">
+                                                        <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados3)}}" alt="">
+                                                        <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
+                                                            <i class='bx bxs-info-circle' ></i>
+                                                        </button>
+                                                    </div>
 
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Parceiro 4</label>
-                                                    <input style="margin-top: 20px"  name="associados4" type="file" class="form-control">
-                                                    <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados4)}}" alt="">
-                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
-                                                        <i class='bx bxs-info-circle' ></i>
-                                                    </button>
-                                                </div>
+                                                    <div class="description col-md-6">
+                                                        <label class="form-control-label" for="basic-url">Parceiro 4</label>
+                                                        <input style="margin-top: 20px"  name="associados4" type="file" class="form-control">
+                                                        <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados4)}}" alt="">
+                                                        <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
+                                                            <i class='bx bxs-info-circle' ></i>
+                                                        </button>
+                                                    </div>
 
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Parceiro 5</label>
-                                                    <input style="margin-top: 20px"  name="associados5" type="file" class="form-control">
-                                                    <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados5)}}" alt="">
-                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
-                                                        <i class='bx bxs-info-circle' ></i>
-                                                    </button>
-                                                </div>
+                                                    <div class="description col-md-6">
+                                                        <label class="form-control-label" for="basic-url">Parceiro 5</label>
+                                                        <input style="margin-top: 20px"  name="associados5" type="file" class="form-control">
+                                                        <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados5)}}" alt="">
+                                                        <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
+                                                            <i class='bx bxs-info-circle' ></i>
+                                                        </button>
+                                                    </div>
 
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Parceiro 6</label>
-                                                    <input style="margin-top: 20px"  name="associados6" type="file" class="form-control">
-                                                    <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados6)}}" alt="">
-                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
-                                                        <i class='bx bxs-info-circle' ></i>
-                                                    </button>
-                                                </div>
+                                                    <div class="description col-md-6">
+                                                        <label class="form-control-label" for="basic-url">Parceiro 6</label>
+                                                        <input style="margin-top: 20px"  name="associados6" type="file" class="form-control">
+                                                        <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados6)}}" alt="">
+                                                        <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
+                                                            <i class='bx bxs-info-circle' ></i>
+                                                        </button>
+                                                    </div>
 
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Parceiro 7</label>
-                                                    <input style="margin-top: 20px"  name="associados7" type="file" class="form-control">
-                                                    <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados7)}}" alt="">
-                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
-                                                        <i class='bx bxs-info-circle' ></i>
-                                                    </button>
-                                                </div>
+                                                    <div class="description col-md-6">
+                                                        <label class="form-control-label" for="basic-url">Parceiro 7</label>
+                                                        <input style="margin-top: 20px"  name="associados7" type="file" class="form-control">
+                                                        <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados7)}}" alt="">
+                                                        <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
+                                                            <i class='bx bxs-info-circle' ></i>
+                                                        </button>
+                                                    </div>
 
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Parceiro 8</label>
-                                                    <input style="margin-top: 20px"  name="associados8" type="file" class="form-control">
-                                                    <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados8)}}" alt="">
-                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
-                                                        <i class='bx bxs-info-circle' ></i>
-                                                    </button>
-                                                </div>
+                                                    <div class="description col-md-6">
+                                                        <label class="form-control-label" for="basic-url">Parceiro 8</label>
+                                                        <input style="margin-top: 20px"  name="associados8" type="file" class="form-control">
+                                                        <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados8)}}" alt="">
+                                                        <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
+                                                            <i class='bx bxs-info-circle' ></i>
+                                                        </button>
+                                                    </div>
 
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Parceiro 9</label>
-                                                    <input style="margin-top: 20px"  name="associados9" type="file" class="form-control">
-                                                    <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados9)}}" alt="">
-                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
-                                                        <i class='bx bxs-info-circle' ></i>
-                                                    </button>
-                                                </div>
+                                                    <div class="description col-md-6">
+                                                        <label class="form-control-label" for="basic-url">Parceiro 9</label>
+                                                        <input style="margin-top: 20px"  name="associados9" type="file" class="form-control">
+                                                        <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados9)}}" alt="">
+                                                        <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
+                                                            <i class='bx bxs-info-circle' ></i>
+                                                        </button>
+                                                    </div>
 
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Parceiro 10</label>
-                                                    <input style="margin-top: 20px"  name="associados10" type="file" class="form-control">
-                                                    <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados10)}}" alt="">
-                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
-                                                        <i class='bx bxs-info-circle' ></i>
-                                                    </button>
-                                                </div>
+                                                    <div class="description col-md-6">
+                                                        <label class="form-control-label" for="basic-url">Parceiro 10</label>
+                                                        <input style="margin-top: 20px"  name="associados10" type="file" class="form-control">
+                                                        <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados10)}}" alt="">
+                                                        <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
+                                                            <i class='bx bxs-info-circle' ></i>
+                                                        </button>
+                                                    </div>
 
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Parceiro 11</label>
-                                                    <input style="margin-top: 20px"  name="associados11" type="file" class="form-control">
-                                                    <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados11)}}" alt="">
-                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
-                                                        <i class='bx bxs-info-circle' ></i>
-                                                    </button>
-                                                </div>
+                                                    <div class="description col-md-6">
+                                                        <label class="form-control-label" for="basic-url">Parceiro 11</label>
+                                                        <input style="margin-top: 20px"  name="associados11" type="file" class="form-control">
+                                                        <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados11)}}" alt="">
+                                                        <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
+                                                            <i class='bx bxs-info-circle' ></i>
+                                                        </button>
+                                                    </div>
 
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Parceiro 12</label>
-                                                    <input style="margin-top: 20px"  name="associados12" type="file" class="form-control">
-                                                    <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados12)}}" alt="">
-                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
-                                                        <i class='bx bxs-info-circle' ></i>
-                                                    </button>
-                                                </div>
+                                                    <div class="description col-md-6">
+                                                        <label class="form-control-label" for="basic-url">Parceiro 12</label>
+                                                        <input style="margin-top: 20px"  name="associados12" type="file" class="form-control">
+                                                        <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados12)}}" alt="">
+                                                        <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
+                                                            <i class='bx bxs-info-circle' ></i>
+                                                        </button>
+                                                    </div> 
+                                                --}}
                                                 
 
                                                 <div class="description col-md-12" style="margin-top: 20px; text-align: center;">

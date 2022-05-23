@@ -104,20 +104,14 @@ class IndexController extends Controller
         $contatoLinkInstagram=Confing::get('contatoLinkInstagram');
 
 
-        $associados1=Confing::get('associados1');
-        $associados2=Confing::get('associados2');
-        $associados3=Confing::get('associados3');
-        $associados4=Confing::get('associados4');
-        $associados5=Confing::get('associados5');
-        $associados6=Confing::get('associados6');
-        $associados7=Confing::get('associados7');
-        $associados8=Confing::get('associados8');
-        $associados9=Confing::get('associados9');
-        $associados10=Confing::get('associados10');
-        $associados11=Confing::get('associados11');
-        $associados12=Confing::get('associados12');
-        $associados13=Confing::get('associados13');
-        $associados14=Confing::get('associados14');
+        $depoimento1=Confing::get('depoimento1');
+        $depoimento2=Confing::get('depoimento2');
+
+
+
+
+
+
         $receita1=Confing::get('receita1');
         $receita2=Confing::get('receita2');
         $receita3=Confing::get('receita3');
@@ -237,20 +231,11 @@ class IndexController extends Controller
             'contatoLinkInstagram'=>$contatoLinkInstagram,
 
             
-            'associados1'=>$associados1,
-            'associados2'=>$associados2,
-            'associados3'=>$associados3,
-            'associados4'=>$associados4,
-            'associados5'=>$associados5,
-            'associados6'=>$associados6,
-            'associados7'=>$associados7,
-            'associados8'=>$associados8,
-            'associados9'=>$associados9,
-            'associados10'=>$associados10,
-            'associados11'=>$associados11,
-            'associados12'=>$associados12,
-            'associados13'=>$associados13,
-            'associados14'=>$associados14,
+            'depoimento1'=>$depoimento1,
+            'depoimento2'=>$depoimento2,
+
+
+
             'receita1'=>$receita1,
             'receita2'=>$receita2,
             'receita3'=>$receita3,
@@ -375,20 +360,10 @@ class IndexController extends Controller
         $contatoLinkInstagram=Confing::get('contatoLinkInstagram');
 
 
-        $associados1=Confing::get('associados1');
-        $associados2=Confing::get('associados2');
-        $associados3=Confing::get('associados3');
-        $associados4=Confing::get('associados4');
-        $associados5=Confing::get('associados5');
-        $associados6=Confing::get('associados6');
-        $associados7=Confing::get('associados7');
-        $associados8=Confing::get('associados8');
-        $associados9=Confing::get('associados9');
-        $associados10=Confing::get('associados10');
-        $associados11=Confing::get('associados11');
-        $associados12=Confing::get('associados12');
-        $associados13=Confing::get('associados13');
-        $associados14=Confing::get('associados14');
+        $depoimento1=Confing::get('depoimento1');
+        $depoimento2=Confing::get('depoimento2');
+
+
         $receita1=Confing::get('receita1');
         $receita2=Confing::get('receita2');
         $receita3=Confing::get('receita3');
@@ -508,20 +483,10 @@ class IndexController extends Controller
 
 
 
-            'associados1'=>$associados1,
-            'associados2'=>$associados2,
-            'associados3'=>$associados3,
-            'associados4'=>$associados4,
-            'associados5'=>$associados5,
-            'associados6'=>$associados6,
-            'associados7'=>$associados7,
-            'associados8'=>$associados8,
-            'associados9'=>$associados9,
-            'associados10'=>$associados10,
-            'associados11'=>$associados11,
-            'associados12'=>$associados12,
-            'associados13'=>$associados13,
-            'associados14'=>$associados14,
+            'depoimento1'=>$depoimento1,
+            'depoimento2'=>$depoimento2,
+
+
             'receita1'=>$receita1,
             'receita2'=>$receita2,
             'receita3'=>$receita3,
