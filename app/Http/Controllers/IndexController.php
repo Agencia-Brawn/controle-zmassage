@@ -112,15 +112,13 @@ class IndexController extends Controller
 
 
 
-        $receita1=Confing::get('receita1');
-        $receita2=Confing::get('receita2');
-        $receita3=Confing::get('receita3');
-        $receita4=Confing::get('receita4');
-        $receita5=Confing::get('receita5');
-        $receita6=Confing::get('receita6');
-        $receita7=Confing::get('receita7');
-        $receita8=Confing::get('receita8');
-        $receita9=Confing::get('receita9');
+        $agendamento1=Confing::get('agendamento1');
+        $agendamento2=Confing::get('agendamento2');
+        $agendamentobotao=Confing::get('agendamentobotao');
+
+
+
+        
         $footer1=Confing::get('footer1');
         $footer2=Confing::get('footer2');
         $footer3=Confing::get('footer3');
@@ -234,17 +232,13 @@ class IndexController extends Controller
             'depoimento1'=>$depoimento1,
             'depoimento2'=>$depoimento2,
 
+            'agendamento1'=>$agendamento1,
+            'agendamento2'=>$agendamento2,
+            'agendamentobotao'=>$agendamentobotao,
 
 
-            'receita1'=>$receita1,
-            'receita2'=>$receita2,
-            'receita3'=>$receita3,
-            'receita4'=>$receita4,
-            'receita5'=>$receita5,
-            'receita6'=>$receita6,
-            'receita7'=>$receita7,
-            'receita8'=>$receita8,
-            'receita9'=>$receita9,
+
+   
             'footer1'=>$footer1,
             'footer2'=>$footer2,
             'footer3'=>$footer3,
@@ -364,15 +358,12 @@ class IndexController extends Controller
         $depoimento2=Confing::get('depoimento2');
 
 
-        $receita1=Confing::get('receita1');
-        $receita2=Confing::get('receita2');
-        $receita3=Confing::get('receita3');
-        $receita4=Confing::get('receita4');
-        $receita5=Confing::get('receita5');
-        $receita6=Confing::get('receita6');
-        $receita7=Confing::get('receita7');
-        $receita8=Confing::get('receita8');
-        $receita9=Confing::get('receita9');
+        $agendamento1=Confing::get('agendamento1');
+        $agendamento2=Confing::get('agendamento2');
+        $agendamentobotao=Confing::get('agendamentobotao');
+
+
+
         $footer1=Confing::get('footer1');
         $footer2=Confing::get('footer2');
         $footer3=Confing::get('footer3');
@@ -487,15 +478,11 @@ class IndexController extends Controller
             'depoimento2'=>$depoimento2,
 
 
-            'receita1'=>$receita1,
-            'receita2'=>$receita2,
-            'receita3'=>$receita3,
-            'receita4'=>$receita4,
-            'receita5'=>$receita5,
-            'receita6'=>$receita6,
-            'receita7'=>$receita7,
-            'receita8'=>$receita8,
-            'receita9'=>$receita9,
+            'agendamento1'=>$agendamento1,
+            'agendamento2'=>$agendamento2,
+            'agendamentobotao'=>$agendamentobotao,
+
+
             'footer1'=>$footer1,
             'footer2'=>$footer2,
             'footer3'=>$footer3,

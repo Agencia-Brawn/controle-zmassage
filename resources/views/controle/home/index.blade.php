@@ -59,12 +59,14 @@
                                 </a>
                             </li>
 
-                            {{--
-
+                            
                             <li class="nav-item">
-                                <a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-8-tab" data-toggle="tab" href="#tabs-icons-text-8" role="tab" aria-controls="tabs-icons-text-8" aria-selected="false">Receita</a>
+                                <a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-8-tab" data-toggle="tab" href="#tabs-icons-text-8" role="tab" aria-controls="tabs-icons-text-8" aria-selected="false">
+                                    Agendamento
+                                </a>
                             </li>
 
+                            {{--
                             <li class="nav-item">
                                 <a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-9-tab" data-toggle="tab" href="#tabs-icons-text-9" role="tab" aria-controls="tabs-icons-text-9" aria-selected="false">Rodapé</a>
                             </li> --}}
@@ -885,63 +887,28 @@
                                         </form>
                                     </div>
 
-                                    <!-- PAINEL 8 -->
+                                    <!-- AGENDAMENTO -->
                                     <div class="tab-pane fade" id="tabs-icons-text-8" role="tabpanel" aria-labelledby="tabs-icons-text-8-tab">
                                         <form action="{{route('receita')}}" enctype="multipart/form-data" method="post">
                                             <div class="row">
                                                 @csrf
 
                                                 <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Titulo 1</label>
-                                                    <input style="margin-bottom: 20px;" name="receita1" value="{{$receita1}}" type="text" class="form-control" >
+                                                    <label class="form-control-label" for="basic-url">Título Pequeno</label>
+                                                    <input style="margin-bottom: 20px;" name="agendamento1" value="{{$agendamento1}}" type="text" class="form-control" >
                                                 </div>
 
                                                 <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Titulo 1.2</label>
-                                                    <input style="margin-bottom: 20px;" name="receita2" value="{{$receita2}}" type="text" class="form-control" >
+                                                    <label class="form-control-label" for="basic-url">Título Principal</label>
+                                                    <input style="margin-bottom: 20px;" name="agendamento2" value="{{$agendamento2}}" type="text" class="form-control" >
                                                 </div>
 
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Titulo 2</label>
-                                                    <input style="margin-bottom: 20px;" name="receita3" value="{{$receita3}}" type="text" class="form-control" >
-                                                </div>
-
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Titulo 2.1</label>
-                                                    <input style="margin-bottom: 20px;" name="receita4" value="{{$receita4}}" type="text" class="form-control" >
-                                                </div>
-
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Texto</label>
-                                                    <input style="margin-bottom: 20px;" name="receita5" value="{{$receita5}}" type="text" class="form-control" >
-                                                </div>
-
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Titulo 3</label>
-                                                    <input style="margin-bottom: 20px;" name="receita6" value="{{$receita6}}" type="text" class="form-control" >
-                                                </div>
-
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Titulo 4</label>
-                                                    <input style="margin-bottom: 20px;" name="receita7" value="{{$receita7}}" type="text" class="form-control" >
-                                                </div>
 
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Botão</label>
-                                                    <input style="margin-bottom: 20px;" name="receita8" value="{{$receita8}}" type="text" class="form-control" >
+                                                    <input style="margin-bottom: 20px;" name="agendamentobotao" value="{{$agendamentobotao}}" type="text" class="form-control" >
                                                 </div>
 
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Imagem</label>
-                                                    <input style="margin-top: 20px"  name="receita9" type="file" class="form-control">
-                                                </div>
-
-                                                <div class="description col-md-6">
-                                                    <img style="width: 40%; margin-top: 15px;"  src="{{Storage::url($receita9)}}" alt="">
-                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 440px <br> Altura: 300px">
-                                                        <i class='bx bxs-info-circle' ></i>
-                                                    </button>
-                                                </div>
                                             
                                                 <div class="description col-md-12" style="margin-top: 20px; text-align: center;">
                                                     <button class="btn btn-icon btn-primary" style="margin: auto;" type="submit">

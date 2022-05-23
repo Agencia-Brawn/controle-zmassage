@@ -77,15 +77,15 @@
     <div class="about-me container">
 
       <div class="section-title">
-        <h2>Terminplanung</h2>
-        <p> Einen Termin machen </p>
+        <h2>{{$agendamento1}}</h2>
+        <p>{{$agendamento2}}</p>
       </div>
 
       <div class="row align-items-center">
         <div class="col-lg-12 pt-4 pt-lg-0 content" data-aos="fade-left">
           <div class="text-center">
             <a href="https://zmassage.simplybook.it/v2/" target="_blank">
-              <button class="btn p-2"> JETZT BERATUNG BUCHEN </button>
+              <button class="btn p-2"> {{$agendamentobotao}} </button>
             </a>
           </div>
         </div>

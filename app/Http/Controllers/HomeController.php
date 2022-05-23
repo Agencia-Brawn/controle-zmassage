@@ -123,15 +123,12 @@ class HomeController extends Controller
         $depoimento2=Confing::get('depoimento2');
 
 
-        $receita1=Confing::get('receita1');
-        $receita2=Confing::get('receita2');
-        $receita3=Confing::get('receita3');
-        $receita4=Confing::get('receita4');
-        $receita5=Confing::get('receita5');
-        $receita6=Confing::get('receita6');
-        $receita7=Confing::get('receita7');
-        $receita8=Confing::get('receita8');
-        $receita9=Confing::get('receita9');
+        $agendamento1=Confing::get('agendamento1');
+        $agendamento2=Confing::get('agendamento2');
+        $agendamentobotao=Confing::get('agendamentobotao');
+
+
+
         $footer1=Confing::get('footer1');
         $footer2=Confing::get('footer2');
         $footer3=Confing::get('footer3');
@@ -247,16 +244,11 @@ class HomeController extends Controller
         'depoimento1'=>$depoimento1,
         'depoimento2'=>$depoimento2,
 
+        'agendamento1'=>$agendamento1,
+        'agendamento2'=>$agendamento2,
+        'agendamentobotao'=>$agendamentobotao,
 
-        'receita1'=>$receita1,
-        'receita2'=>$receita2,
-        'receita3'=>$receita3,
-        'receita4'=>$receita4,
-        'receita5'=>$receita5,
-        'receita6'=>$receita6,
-        'receita7'=>$receita7,
-        'receita8'=>$receita8,
-        'receita9'=>$receita9,
+
         'footer1'=>$footer1,
         'footer2'=>$footer2,
         'footer3'=>$footer3,
@@ -473,21 +465,16 @@ class HomeController extends Controller
     {
         // dd($request);
 
-        Confing::atualizar('receita1',$request->receita1);        
-        Confing::atualizar('receita2',$request->receita2);
-        Confing::atualizar('receita3',$request->receita3);
-        Confing::atualizar('receita4',$request->receita4);
-        Confing::atualizar('receita5',$request->receita5);
-        Confing::atualizar('receita6',$request->receita6);
-        Confing::atualizar('receita7',$request->receita7);
-        Confing::atualizar('receita8',$request->receita8);
+        Confing::atualizar('agendamento1',$request->agendamento1);        
+        Confing::atualizar('agendamento2',$request->agendamento2);        
+        Confing::atualizar('agendamentobotao',$request->agendamentobotao);        
 
-        if ($request->hasFile('receita9')) 
-        {
-            $extension = $request->receita9->extension();
-            $path = $request->receita9->storeAs('public/images', "receita9.$extension");
-            Confing::atualizar('receita9',$path);
-        }
+        // if ($request->hasFile('receita9')) 
+        // {
+        //     $extension = $request->receita9->extension();
+        //     $path = $request->receita9->storeAs('public/images', "receita9.$extension");
+        //     Confing::atualizar('receita9',$path);
+        // }
 
         return redirect()->back();
 
