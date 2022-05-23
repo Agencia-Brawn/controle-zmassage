@@ -39,13 +39,13 @@
                                 </a>
                             </li>
 
-                            {{-- <li class="nav-item">
+                            <li class="nav-item">
                                 <a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-4-tab" data-toggle="tab" href="#tabs-icons-text-4" role="tab" aria-controls="tabs-icons-text-4" aria-selected="false">
-                                    Rodapé Slide
+                                    Serviços
                                 </a>
                             </li>
 
-                            <li class="nav-item">
+                            {{-- <li class="nav-item">
                                 <a  class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-5-tab" data-toggle="tab" href="#tabs-icons-text-5" role="tab" aria-controls="tabs-icons-text-5" aria-selected="false">Quem Somos</a>
                             </li>
 
@@ -243,59 +243,422 @@
                                         </form>
                                     </div>
 
-                                    <!-- PAINEL 4 -->
+                                    <!-- SERVIÇOS -->
                                     <div class="tab-pane fade" id="tabs-icons-text-4" role="tabpanel" aria-labelledby="tabs-icons-text-4-tab">
                                         <form action="{{route('rodapeslide')}}" enctype="multipart/form-data" method="post">
                                         @csrf
-                                            <div class="row">
-                                                <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Descrição 1</label>
-                                                    <input name="rodapeslide4" value="{{$rodapeslide4}}" type="text" class="form-control">
-                                                </div>
+                                        <div class="row">
+                                            <div class="description col-md-12">
+                                                <label class="form-control-label" for="basic-url">Título Pequeno</label>
+                                                <input name="tituloPagina" value="{{$tituloPagina}}" type="text" class="form-control">
+                                            </div>
 
-                                                <div class="description col-md-6">
+                                            <div class="description col-md-12">
+                                                <label class="form-control-label" for="basic-url">Título Principal</label>
+                                                <input name="tituloPrincipal"  type="text" class="form-control" value="{{$tituloPrincipal}}">
+                                            </div>
+                                        </div>
+
+                                            {{-- SERVIÇO 1 --}}
+                                            <div class="row">
+                                                {{-- <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Ícone 1</label>
                                                     <input name="rodapeslide1" type="file" class="form-control">
                                                     <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($rodapeslide1)}}" alt="">
                                                     <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
                                                         <i class='bx bxs-info-circle' ></i>
                                                     </button>
+                                                </div> --}}
+
+                                                <div class="description col-12">
+                                                    <h2>Serviço 1</h2>
                                                 </div>
 
                                                 <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Descrição 2</label>
-                                                    <input name="rodapeslide5"  type="text" class="form-control" value="{{$rodapeslide5}}">
+                                                    <label class="form-control-label" for="basic-url">Título </label>
+                                                    <input name="servico1titulo" value="{{$servico1titulo}}" type="text" class="form-control">
                                                 </div>
 
                                                 <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Ícone 2</label>
-                                                    <input name="rodapeslide2" type="file" class="form-control">
-                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($rodapeslide2)}}" alt="">
+                                                    <label class="form-control-label" for="basic-url">Descrição</label>
+                                                    <input name="servico1descricao"  type="text" class="form-control" value="{{$servico1descricao}}">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Preço 1</label>
+                                                    <input name="servico1preco"  type="text" class="form-control" value="{{$servico1preco}}">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Preço 2</label>
+                                                    <input name="servico1preco2"  type="text" class="form-control" value="{{$servico1preco2}}">
+                                                </div>
+                                            </div>
+
+                                            {{-- SERVIÇO 2 --}}
+                                            <div class="row">
+                                                {{-- <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Ícone 1</label>
+                                                    <input name="rodapeslide1" type="file" class="form-control">
+                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($rodapeslide1)}}" alt="">
                                                     <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
                                                         <i class='bx bxs-info-circle' ></i>
                                                     </button>
+                                                </div> --}}
+
+                                                <div class="description col-12">
+                                                    <h2>Serviço 2</h2>
                                                 </div>
 
                                                 <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Descrição 3</label>
-                                                    <input name="rodapeslide6"  type="text" class="form-control" value="{{$rodapeslide6}}">
+                                                    <label class="form-control-label" for="basic-url">Título </label>
+                                                    <input name="servico2titulo" value="{{$servico2titulo}}" type="text" class="form-control">
                                                 </div>
 
                                                 <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Ícone 3</label>
-                                                    <input name="rodapeslide3" type="file" class="form-control">
-                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($rodapeslide3)}}" alt="">
+                                                    <label class="form-control-label" for="basic-url">Descrição</label>
+                                                    <input name="servico2descricao"  type="text" class="form-control" value="{{$servico2descricao}}">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Preço</label>
+                                                    <input name="servico2preco"  type="text" class="form-control" value="{{$servico2preco}}">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Preço 2</label>
+                                                    <input name="servico2preco2"  type="text" class="form-control" value="{{$servico2preco2}}">
+                                                </div>
+                                            </div>
+
+                                            {{-- SERVIÇO 3 --}}
+                                            <div class="row">
+                                                {{-- <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Ícone 1</label>
+                                                    <input name="rodapeslide1" type="file" class="form-control">
+                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($rodapeslide1)}}" alt="">
                                                     <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
                                                         <i class='bx bxs-info-circle' ></i>
                                                     </button>
+                                                </div> --}}
+
+                                                <div class="description col-12">
+                                                    <h2>Serviço 3</h2>
                                                 </div>
-                                
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Título </label>
+                                                    <input name="servico3titulo" value="{{$servico3titulo}}" type="text" class="form-control">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Descrição</label>
+                                                    <input name="servico3descricao"  type="text" class="form-control" value="{{$servico3descricao}}">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Preço</label>
+                                                    <input name="servico4preco"  type="text" class="form-control" value="{{$servico4preco}}">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Preço 2</label>
+                                                    <input name="servico3preco2"  type="text" class="form-control" value="{{$servico3preco2}}">
+                                                </div>
+                                            </div>
+                                            
+                                            {{-- SERVIÇO 4 --}}
+                                            <div class="row">
+                                                {{-- <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Ícone 1</label>
+                                                    <input name="rodapeslide1" type="file" class="form-control">
+                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($rodapeslide1)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
+                                                </div> --}}
+
+                                                <div class="description col-12">
+                                                    <h2>Serviço 4</h2>
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Título </label>
+                                                    <input name="servico4titulo" value="{{$servico4titulo}}" type="text" class="form-control">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Descrição</label>
+                                                    <input name="servico4descricao"  type="text" class="form-control" value="{{$servico4descricao}}">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Preço</label>
+                                                    <input name="servico4preco"  type="text" class="form-control" value="{{$servico4preco}}">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Preço 2</label>
+                                                    <input name="servico4preco2"  type="text" class="form-control" value="{{$servico4preco2}}">
+                                                </div>
+                                            </div>
+
+                                            {{-- SERVIÇO 5 --}}
+                                            <div class="row">
+                                                {{-- <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Ícone 1</label>
+                                                    <input name="rodapeslide1" type="file" class="form-control">
+                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($rodapeslide1)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
+                                                </div> --}}
+
+                                                <div class="description col-12">
+                                                    <h2>Serviço 5</h2>
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Título </label>
+                                                    <input name="servico5titulo" value="{{$servico5titulo}}" type="text" class="form-control">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Descrição</label>
+                                                    <input name="servico5descricao"  type="text" class="form-control" value="{{$servico5descricao}}">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Preço</label>
+                                                    <input name="servico5preco"  type="text" class="form-control" value="{{$servico5preco}}">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Preço 2</label>
+                                                    <input name="servico5preco2"  type="text" class="form-control" value="{{$servico5preco2}}">
+                                                </div>
+                                            </div>
+
+                                            {{-- SERVIÇO 6 --}}
+                                            <div class="row">
+                                                {{-- <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Ícone 1</label>
+                                                    <input name="rodapeslide1" type="file" class="form-control">
+                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($rodapeslide1)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
+                                                </div> --}}
+
+                                                <div class="description col-12">
+                                                    <h2>Serviço 6</h2>
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Título </label>
+                                                    <input name="servico6titulo" value="{{$servico6titulo}}" type="text" class="form-control">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Descrição</label>
+                                                    <input name="servico6descricao"  type="text" class="form-control" value="{{$servico6descricao}}">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Preço</label>
+                                                    <input name="servico6preco"  type="text" class="form-control" value="{{$servico6preco}}">
+                                                </div>
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Preço 2</label>
+                                                    <input name="servico6preco2"  type="text" class="form-control" value="{{$servico6preco2}}">
+                                                </div>
+                                            </div>
+
+                                            {{-- SERVIÇO 7 --}}
+                                            <div class="row">
+                                                {{-- <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Ícone 1</label>
+                                                    <input name="rodapeslide1" type="file" class="form-control">
+                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($rodapeslide1)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
+                                                </div> --}}
+
+                                                <div class="description col-12">
+                                                    <h2>Serviço 7</h2>
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Título </label>
+                                                    <input name="servico7titulo" value="{{$servico7titulo}}" type="text" class="form-control">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Descrição</label>
+                                                    <input name="servico7descricao"  type="text" class="form-control" value="{{$servico7descricao}}">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Preço</label>
+                                                    <input name="servico7preco"  type="text" class="form-control" value="{{$servico7preco}}">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Preço 2</label>
+                                                    <input name="servico7preco2"  type="text" class="form-control" value="{{$servico7preco2}}">
+                                                </div>
+                                            </div>
+                                            
+                                            {{-- SERVIÇO 8 --}}
+                                            <div class="row">
+                                                {{-- <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Ícone 1</label>
+                                                    <input name="rodapeslide1" type="file" class="form-control">
+                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($rodapeslide1)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
+                                                </div> --}}
+
+                                                <div class="description col-12">
+                                                    <h2>Serviço 8</h2>
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Título </label>
+                                                    <input name="servico8titulo" value="{{$servico8titulo}}" type="text" class="form-control">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Descrição</label>
+                                                    <input name="servico8descricao"  type="text" class="form-control" value="{{$servico8descricao}}">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Preço</label>
+                                                    <input name="servico8preco"  type="text" class="form-control" value="{{$servico8preco}}">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Preço 2</label>
+                                                    <input name="servico8preco2"  type="text" class="form-control" value="{{$servico8preco2}}">
+                                                </div>
+
+                                            </div>
+
+                                            {{-- SERVIÇO 9 --}}
+                                            <div class="row">
+                                                {{-- <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Ícone 1</label>
+                                                    <input name="rodapeslide1" type="file" class="form-control">
+                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($rodapeslide1)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
+                                                </div> --}}
+
+                                                <div class="description col-12">
+                                                    <h2>Serviço 9</h2>
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Título </label>
+                                                    <input name="servico9titulo" value="{{$servico9titulo}}" type="text" class="form-control">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Descrição</label>
+                                                    <input name="servico9descricao"  type="text" class="form-control" value="{{$servico9descricao}}">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Preço</label>
+                                                    <input name="servico9preco"  type="text" class="form-control" value="{{$servico9preco}}">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Preço 2</label>
+                                                    <input name="servico9preco2"  type="text" class="form-control" value="{{$servico9preco2}}">
+                                                </div>
+                                            </div>
+
+                                            {{-- SERVIÇO 10 --}}
+                                            <div class="row">
+                                                {{-- <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Ícone 1</label>
+                                                    <input name="rodapeslide1" type="file" class="form-control">
+                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($rodapeslide1)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
+                                                </div> --}}
+
+                                                <div class="description col-12">
+                                                    <h2>Serviço 10</h2>
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Título </label>
+                                                    <input name="servico10titulo" value="{{$servico10titulo}}" type="text" class="form-control">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Descrição</label>
+                                                    <input name="servico10descricao"  type="text" class="form-control" value="{{$servico10descricao}}">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Preço</label>
+                                                    <input name="servico10preco"  type="text" class="form-control" value="{{$servico10preco}}">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Preço 2</label>
+                                                    <input name="servico10preco2"  type="text" class="form-control" value="{{$servico10preco2}}">
+                                                </div>
+                                            </div>
+
+                                            {{-- SERVIÇO 11 --}}
+                                            <div class="row">
+                                                {{-- <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Ícone 1</label>
+                                                    <input name="rodapeslide1" type="file" class="form-control">
+                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($rodapeslide1)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
+                                                </div> --}}
+
+                                                <div class="description col-12">
+                                                    <h2>Serviço 11</h2>
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Título </label>
+                                                    <input name="servico11titulo" value="{{$servico11titulo}}" type="text" class="form-control">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Descrição</label>
+                                                    <input name="servico11descricao"  type="text" class="form-control" value="{{$servico11descricao}}">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Preço</label>
+                                                    <input name="servico11preco"  type="text" class="form-control" value="{{$servico11preco}}">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Preço 2</label>
+                                                    <input name="servico11preco2"  type="text" class="form-control" value="{{$servico11preco2}}">
+                                                </div>
+
                                                 <div class="description col-md-12" style="margin-top: 20px; text-align: center;">
                                                     <button class="btn btn-icon btn-primary" style="margin: auto;" type="submit">
                                                         <span class="btn-inner--text">Atualizar</span>
                                                     </button>
                                                 </div>
-
                                             </div>
                                         </form>
                                     </div>

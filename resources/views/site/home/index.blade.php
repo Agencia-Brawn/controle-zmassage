@@ -178,8 +178,8 @@
     <div class="container">
 
       <div class="section-title">
-        <h2>Services</h2>
-        <p>Services</p>
+        <h2>{{$tituloPagina}}</h2>
+        <p>{{$tituloPrincipal}}</p>
       </div>
 
       <div class="row">
@@ -188,13 +188,11 @@
             <div class="icon">
               <img src="assets/img/services/service1.jpeg" alt="" class="img-fluid">
             </div>
-            <h4>Heilmassage, <br> 30 & 60 Minuten</h4>
-            <p>Heilmassage wirkt vitalisierend und aktivierend, regenerierend und entspannend, sowie schmerzlindernd.
-              Unterschiedliche Massagegriffe fördern die Entschlackung und Entgiftung des Körpers und führen zu einer
-              allgemeinen Entspannung von Körper, Geist und Seele.</p>
+            <h4>{{$servico1titulo}}</h4>
+            <p>{{$servico1descricao}}</p>
             <br>
-            <p style="font-size: 20px;"><b>30 Minuten - 35 €</b></p>
-            <p style="font-size: 20px;"><b>60 Minuten - 65 €</b></p>
+            <p style="font-size: 20px;"><b>{{$servico1preco}}</b></p>
+            <p style="font-size: 20px;"><b>{{$servico1preco2}}</b></p>
           </div>
         </div>
 
@@ -203,13 +201,11 @@
             <div class="icon">
               <img src="assets/img/services/service2.jpeg" alt="" class="img-fluid">
             </div>
-            <h4> Klassische Massage <br> 30 & 60 Minuten </h4>
-            <p> klassische Massage dient der Entspannung, Lockerung und Dehnung des Muskelgewebes, kann aber auch
-              schlaffe Muskeln kräftigen. Gleichzeitig wird die Durchblutung des Gewebes und der Haut stimuliert, was
-              sich positiv auf Kreislauf und Wohlbefinden auswirkt. </p>
+            <h4>{{$servico2titulo}}</h4>
+            <p>{{$servico2descricao}}</p>
             <br>
-            <p style="font-size: 20px;"><b>30 Minuten - 35 €</b></p>
-            <p style="font-size: 20px;"><b>60 Minuten - 65 €</b></p>
+            <p style="font-size: 20px;"><b>{{$servico2preco}}</b></p>
+            <p style="font-size: 20px;"><b>{{$servico2preco2}}</b></p>
           </div>
         </div>
 
@@ -218,13 +214,11 @@
             <div class="icon">
               <img src="assets/img/services/service3.jpeg" alt="" class="img-fluid">
             </div>
-            <h4> Bein- und Fußmassage <br> 30 & 60 Minuten, </h4>
-            <p> Die klassische Fuß- und Bein-Massage ist eine äußerst wohltuende und kräftige Massage. Sie entspannt die
-              Muskulatur, regt die Durchblutung an und beseitigt das Gefühl "schwerer" Beine. Dabei werden beide Füße
-              und Wadenbeine massiert. </p>
+            <h4>{{$servico3titulo}}</h4>
+            <p>{{$servico3descricao}}</p>
             <br>
-            <p style="font-size: 20px;"><b>30 Minuten - 35 €</b></p>
-            <p style="font-size: 20px;"><b>60 Minuten - 65 €</b></p>
+            <p style="font-size: 20px;"><b>{{$servico3preco}}</b></p>
+            <p style="font-size: 20px;"><b>{{$servico3preco2}}</b></p>
           </div>
         </div>
 
@@ -233,11 +227,11 @@
             <div class="icon">
               <img src="assets/img/services/service7.jpeg" alt="" class="img-fluid">
             </div>
-            <h4> Manuelle Lymphdrainage 30 & 60 Minuten </h4>
-            <p>Die Manuelle Lymphdrainage aktiviert mit sanften, pumpenden und kreisenden Bewegungen unser Lymphsystem
-              und hilft so Schwellungen und Schmerzen rasch zu reduzieren und das Gewebe wieder zu lockern.</p>
-            <p style="font-size: 20px;"><b>30 Minuten - 35 €</b></p>
-            <p style="font-size: 20px;"><b>60 Minuten - 65 €</b></p>
+            <h4>{{$servico4titulo}}</h4>
+            <p>{{$servico4descricao}}</p>
+            <br>
+            <p style="font-size: 20px;"><b>{{$servico4preco}}</b></p>
+            <p style="font-size: 20px;"><b>{{$servico4preco2}}</b></p>
           </div>
         </div>
 
@@ -246,13 +240,11 @@
             <div class="icon">
               <img src="assets/img/services/service4.jpeg" alt="" class="img-fluid">
             </div>
-            <h4> Fußreflexzonenmassage 30 Minuten </h4>
-            <p> Eine professionelle Fußreflexzonenmassage ist nicht nur entspannend, sie verbessert die Durchblutung der
-              Füße und kann dabei helfen, den ganzen Körper zu therapieren. Bei einer Fußreflexzonenmassage werden
-              bestimmte Druckpunkte am Fuß stimuliert, um zum Beispiel körperliche Beschwerden und Verspannungen zu
-              lösen. </p>
+            <h4>{{$servico5titulo}}</h4>
+            <p>{{$servico5descricao}}</p>
             <br>
-            <p style="font-size: 20px;"><b>30 Minuten - 35 €</b></p>
+            <p style="font-size: 20px;"><b>{{$servico5preco}}</b></p>
+            <p style="font-size: 20px;"><b>{{$servico5preco2}}</b></p>
           </div>
         </div>
 
@@ -261,14 +253,11 @@
             <div class="icon">
               <img src="assets/img/services/service5.jpeg" alt="" class="img-fluid">
             </div>
-            <h4> Harmonie in der Schwangerschaft 60 Minuten </h4>
-            <p> Lymphdrainage zur Entstauung der Beine. Klassische Rückenmassage. Die Massage wird abhängig von Stadium
-              und Beschwerden der Schwangeren durchgeführt werden. In der Frühschwangerschaft kann eine Massage den
-              Kreislauf anregen oder auch der eventuell auftretenden Übelkeit entgegenwirken. Im zweiten und dritten
-              Trimester kann bei Rücken- und Nackenschmerzen gezielt massiert werden. Die Durchblutung des Bindegewebes
-              und der Muskeln wird angeregt, Verspannungen werden gelöst. </p>
+            <h4>{{$servico6titulo}}</h4>
+            <p>{{$servico6descricao}}</p>
             <br>
-            <p style="font-size: 20px;"><b>60 Minuten - 65 €</b></p>
+            <p style="font-size: 20px;"><b>{{$servico6preco}}</b></p>
+            <p style="font-size: 20px;"><b>{{$servico6preco2}}</b></p>
           </div>
         </div>
 
@@ -280,16 +269,11 @@
             <div class="icon">
               <img src="assets/img/services/service6.jpeg" alt="" class="img-fluid">
             </div>
-            <h4>Schwangerschaft Rückenbehandlung 30 & 60 Minuten</h4>
-            <p>In der Frühschwangerschaft kann eine Massage den Kreislauf anregen oder auch der eventuell auftretenden
-              Übelkeit entgegenwirken. Im zweiten und dritten Trimester kann bei Rücken- und Nackenschmerzen gezielt
-              massiert werden. Die Durchblutung des Bindegewebes und der Muskeln wird angeregt, Verspannungen werden
-              gelöst. Auch Fußreflexzonenmassagen können bei Schwangeren eine wahre Wohltat sein - wenn z.B.
-              Wassereinlagerungen in den Beinen oder Verdauungsprobleme auftreten. Die Massage wird abhängig von Stadium
-              und Beschwerden der Schwangeren durchgeführt werden.</p>
+            <h4>{{$servico7titulo}}</h4>
+            <p>{{$servico7descricao}}</p>
             <br>
-            <p style="font-size: 20px;"><b>30 Minuten - 35 €</b></p>
-            <p style="font-size: 20px;"><b>60 Minuten - 65 €</b></p>
+            <p style="font-size: 20px;"><b>{{$servico7preco}}</b></p>
+            <p style="font-size: 20px;"><b>{{$servico7preco2}}</b></p>
           </div>
         </div>
 
@@ -298,20 +282,11 @@
             <div class="icon">
               <img src="assets/img/services/service8.jpeg" alt="" class="img-fluid">
             </div>
-            <h4> Kompressionstherapie, beide Beine und Hüfte 50 Minuten </h4>
-            <p>Es wird ein ein- bis mehrkammerige, doppelwandige Hüft- und Hosenmanschetten angelegt. Diese Manschetten
-              werden vom AIK-Gerät mechanisch über Schlauchsysteme mit Luft gefüllt. Abwechselnd finden so eine
-              Kompression und Druckentlastung statt. Beim liegenden Patienten kann so die Funktion der Muskelpumpe
-              simuliert und der venöse Abstrom verbessert werden. Außerdem wird es erfolgreich den effektiven Abbau von
-              Cellulite, eines Lipödems und Lymphödems unterstützen. Die Kammern erzeugen eine Druckwelle von unten nach
-              oben. Bei einem Lipödem kann diese Therapie deutlich zur Schmerzreduktion beitragen. AIK-Geräte sind aber
-              nicht nur bei Lip- und Lymphödemen einsetzbar. Sie können die gestörte Funktion von Venenabschnitten
-              kompensieren, die Strömungsgeschwindigkeit des Blutes in den Venen erhöhen und das Fortschreiten einer
-              chronischen Veneninsuffizienz verhindern. Im Rahmen einer Kompressionstherapie wird der Druck auf das
-              Gewebe erhöht und Ödeme können resorbiert werden. Unter einer Kompressionstherapie verbessert sich sowohl
-              die Blutzirkulation der großen Blutgefäße als auch die Durchblutung der Haut und der Lymphabfluss. </p>
+            <h4>{{$servico8titulo}}</h4>
+            <p>{{$servico8descricao}}</p>
             <br>
-            <p style="font-size: 20px;"><b>50 Minuten - 65 €</b></p>
+            <p style="font-size: 20px;"><b>{{$servico8preco}}</b></p>
+            <p style="font-size: 20px;"><b>{{$servico8preco2}}</b></p>
           </div>
         </div>
 
@@ -320,26 +295,11 @@
             <div class="icon">
               <img src="assets/img/services/service9.jpeg" alt="" class="img-fluid">
             </div>
-            <h4> Kompressionstherapie, ein Bein 25 Minuten </h4>
-            <p>
-              Es wird ein ein- bis mehrkammerige, doppelwandige Beinmanschette angelegt. Diese Manschette wird vom
-              AIK-Gerät mechanisch über Schlauchsysteme mit Luft gefüllt. Abwechselnd finden so eine Kompression und
-              Druckentlastung statt. Beim liegenden Patienten kann so die Funktion der Muskelpumpe simuliert und der
-              venöse Abstrom verbessert werden. Außerdem wird es erfolgreich den effektiven Abbau von Cellulite, eines
-              Lipödems und Lymphödems unterstützen.
-              <br>
-              Die Kammern erzeugen eine Druckwelle von unten nach oben. Bei einem Lipödem kann diese Therapie deutlich
-              zur Schmerzreduktion beitragen.
-              <br>
-              AIK-Geräte sind aber nicht nur bei Lip- und Lymphödemen einsetzbar. Sie können die gestörte Funktion von
-              Venenabschnitten kompensieren, die Strömungsgeschwindigkeit des Blutes in den Venen erhöhen und das
-              Fortschreiten einer chronischen Veneninsuffizienz verhindern. Im Rahmen einer Kompressionstherapie wird
-              der Druck auf das Gewebe erhöht und Ödeme können resorbiert werden. Unter einer Kompressionstherapie
-              verbessert sich sowohl die Blutzirkulation der großen Blutgefäße als auch die Durchblutung der Haut und
-              der Lymphabfluss.
-            </p>
+            <h4>{{$servico9titulo}}</h4>
+            <p>{{$servico9descricao}}</p>
             <br>
-            <p style="font-size: 20px;"><b>25 Minuten - 35 €</b></p>
+            <p style="font-size: 20px;"><b>{{$servico9preco}}</b></p>
+            <p style="font-size: 20px;"><b>{{$servico9preco2}}</b></p>
           </div>
         </div>
 
@@ -348,26 +308,11 @@
             <div class="icon">
               <img src="assets/img/services/service10.jpeg" alt="" class="img-fluid">
             </div>
-            <h4> Kompressionstherapie, ein Arm 25 Minuten </h4>
-            <p>
-              Es wird ein ein- bis mehrkammerige, doppelwandige Armmanschette angelegt. Diese Manschette werden vom
-              AIK-Gerät mechanisch über Schlauchsysteme mit Luft gefüllt. Abwechselnd finden so eine Kompression und
-              Druckentlastung statt. Beim liegenden Patienten kann so die Funktion der Muskelpumpe simuliert und der
-              venöse Abstrom verbessert werden. Außerdem wird es erfolgreich den effektiven Abbau von Cellulite, eines
-              Lipödems und Lymphödems unterstützen.
-              <br>
-              Die Kammern erzeugen eine Druckwelle von unten nach oben. Bei einem Lipödem kann diese Therapie deutlich
-              zur Schmerzreduktion beitragen.
-              <br>
-              AIK-Geräte sind aber nicht nur bei Lip- und Lymphödemen einsetzbar. Sie können die gestörte Funktion von
-              Venenabschnitten kompensieren, die Strömungsgeschwindigkeit des Blutes in den Venen erhöhen und das
-              Fortschreiten einer chronischen Veneninsuffizienz verhindern. Im Rahmen einer Kompressionstherapie wird
-              der Druck auf das Gewebe erhöht und Ödeme können resorbiert werden. Unter einer Kompressionstherapie
-              verbessert sich sowohl die Blutzirkulation der großen Blutgefäße als auch die Durchblutung der Haut und
-              der Lymphabfluss.
-            </p>
+            <h4>{{$servico10titulo}}</h4>
+            <p>{{$servico10descricao}}</p>
             <br>
-            <p style="font-size: 20px;"><b>25 Minuten - 35 €</b></p>
+            <p style="font-size: 20px;"><b>{{$servico10preco}}</b></p>
+            <p style="font-size: 20px;"><b>{{$servico10preco2}}</b></p>
           </div>
         </div>
 
@@ -376,26 +321,11 @@
             <div class="icon">
               <img src="assets/img/services/service11.jpeg" alt="" class="img-fluid">
             </div>
-            <h4> Kompressionstherapie Hüfte 25 Minuten </h4>
-            <p>
-              Es wird ein ein- bis mehrkammerige, doppelwandige Hüftmanschette angelegt. Diese Manschette wird vom
-              AIK-Gerät mechanisch über Schlauchsysteme mit Luft gefüllt. Abwechselnd finden so eine Kompression und
-              Druckentlastung statt. Beim liegenden Patienten kann so die Funktion der Muskelpumpe simuliert und der
-              venöse Abstrom verbessert werden. Außerdem wird es erfolgreich den effektiven Abbau von Cellulite, eines
-              Lipödems und Lymphödems unterstützen.
-              <br>
-              Die Kammern erzeugen eine Druckwelle von unten nach oben. Bei einem Lipödem kann diese Therapie deutlich
-              zur Schmerzreduktion beitragen.
-              <br>
-              AIK-Geräte sind aber nicht nur bei Lip- und Lymphödemen einsetzbar. Sie können die gestörte Funktion von
-              Venenabschnitten kompensieren, die Strömungsgeschwindigkeit des Blutes in den Venen erhöhen und das
-              Fortschreiten einer chronischen Veneninsuffizienz verhindern. Im Rahmen einer Kompressionstherapie wird
-              der Druck auf das Gewebe erhöht und Ödeme können resorbiert werden. Unter einer Kompressionstherapie
-              verbessert sich sowohl die Blutzirkulation der großen Blutgefäße als auch die Durchblutung der Haut und
-              der Lymphabfluss.
-            </p>
+            <h4>{{$servico11titulo}}</h4>
+            <p>{{$servico11descricao}}</p>
             <br>
-            <p style="font-size: 20px;"><b>25 Minuten - 35 €</b></p>
+            <p style="font-size: 20px;"><b>{{$servico11preco}}</b></p>
+            <p style="font-size: 20px;"><b>{{$servico11preco2}}</b></p>
           </div>
         </div>
 
