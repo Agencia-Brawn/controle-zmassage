@@ -35,12 +35,61 @@ class IndexController extends Controller
         $menu7=Confing::get('menu7');
         $menu8=Confing::get('menu8');
         $menu9=Confing::get('menu9');
-        $rodapeslide1=Confing::get('rodapeslide1');
-        $rodapeslide2=Confing::get('rodapeslide2');
-        $rodapeslide3=Confing::get('rodapeslide3');
-        $rodapeslide4=Confing::get('rodapeslide4');
-        $rodapeslide5=Confing::get('rodapeslide5');
-        $rodapeslide6=Confing::get('rodapeslide6');
+
+
+        $tituloPagina=Confing::get('tituloPagina');
+        $tituloPrincipal=Confing::get('tituloPrincipal');
+        
+        $servico1titulo=Confing::get('servico1titulo');
+        $servico2titulo=Confing::get('servico2titulo');
+        $servico3titulo=Confing::get('servico3titulo');
+        $servico4titulo=Confing::get('servico4titulo');
+        $servico5titulo=Confing::get('servico5titulo');
+        $servico6titulo=Confing::get('servico6titulo');
+        $servico7titulo=Confing::get('servico7titulo');
+        $servico8titulo=Confing::get('servico8titulo');
+        $servico9titulo=Confing::get('servico9titulo');
+        $servico10titulo=Confing::get('servico10titulo');
+        $servico11titulo=Confing::get('servico11titulo');
+        
+        $servico1descricao=Confing::get('servico1descricao');
+        $servico2descricao=Confing::get('servico2descricao');
+        $servico3descricao=Confing::get('servico3descricao');
+        $servico4descricao=Confing::get('servico4descricao');
+        $servico5descricao=Confing::get('servico5descricao');
+        $servico6descricao=Confing::get('servico6descricao');
+        $servico7descricao=Confing::get('servico7descricao');
+        $servico8descricao=Confing::get('servico8descricao');
+        $servico9descricao=Confing::get('servico9descricao');
+        $servico10descricao=Confing::get('servico10descricao');
+        $servico11descricao=Confing::get('servico11descricao');
+
+        $servico1preco=Confing::get('servico1preco');
+        $servico2preco=Confing::get('servico2preco');
+        $servico3preco=Confing::get('servico3preco');
+        $servico4preco=Confing::get('servico4preco');
+        $servico5preco=Confing::get('servico5preco');
+        $servico6preco=Confing::get('servico6preco');
+        $servico7preco=Confing::get('servico7preco');
+        $servico8preco=Confing::get('servico8preco');
+        $servico9preco=Confing::get('servico9preco');
+        $servico10preco=Confing::get('servico10preco');
+        $servico11preco=Confing::get('servico11preco');
+
+        $servico1preco2=Confing::get('servico1preco2');
+        $servico2preco2=Confing::get('servico2preco2');
+        $servico3preco2=Confing::get('servico3preco2');
+        $servico4preco2=Confing::get('servico4preco2');
+        $servico5preco2=Confing::get('servico5preco2');
+        $servico6preco2=Confing::get('servico6preco2');
+        $servico7preco2=Confing::get('servico7preco2');
+        $servico8preco2=Confing::get('servico8preco2');
+        $servico9preco2=Confing::get('servico9preco2');
+        $servico10preco2=Confing::get('servico10preco2');
+        $servico11preco2=Confing::get('servico11preco2');
+
+
+
         $associados1=Confing::get('associados1');
         $associados2=Confing::get('associados2');
         $associados3=Confing::get('associados3');
@@ -103,12 +152,60 @@ class IndexController extends Controller
             'menu7'=>$menu7,
             'menu8'=>$menu8,
             'menu9'=>$menu9,
-            'rodapeslide1'=>$rodapeslide1,
-            'rodapeslide2'=>$rodapeslide2,
-            'rodapeslide3'=>$rodapeslide3,
-            'rodapeslide4'=>$rodapeslide4,
-            'rodapeslide5'=>$rodapeslide5,
-            'rodapeslide6'=>$rodapeslide6,
+
+
+            'tituloPagina'=>$tituloPagina,
+            'tituloPrincipal'=>$tituloPrincipal,
+
+            'servico1titulo'=>$servico1titulo,
+            'servico2titulo'=>$servico2titulo,
+            'servico3titulo'=>$servico3titulo,
+            'servico4titulo'=>$servico4titulo,
+            'servico5titulo'=>$servico5titulo,
+            'servico6titulo'=>$servico6titulo,
+            'servico7titulo'=>$servico7titulo,
+            'servico8titulo'=>$servico8titulo,
+            'servico9titulo'=>$servico9titulo,
+            'servico10titulo'=>$servico10titulo,
+            'servico11titulo'=>$servico11titulo,
+
+            'servico1descricao'=>$servico1descricao,
+            'servico2descricao'=>$servico2descricao,
+            'servico3descricao'=>$servico3descricao,
+            'servico4descricao'=>$servico4descricao,
+            'servico5descricao'=>$servico5descricao,
+            'servico6descricao'=>$servico6descricao,
+            'servico7descricao'=>$servico7descricao,
+            'servico8descricao'=>$servico8descricao,
+            'servico9descricao'=>$servico9descricao,
+            'servico10descricao'=>$servico10descricao,
+            'servico11descricao'=>$servico11descricao,
+
+            'servico1preco'=>$servico1preco,
+            'servico2preco'=>$servico2preco,
+            'servico3preco'=>$servico3preco,
+            'servico4preco'=>$servico4preco,
+            'servico5preco'=>$servico5preco,
+            'servico6preco'=>$servico6preco,
+            'servico7preco'=>$servico7preco,
+            'servico8preco'=>$servico8preco,
+            'servico9preco'=>$servico9preco,
+            'servico10preco'=>$servico10preco,
+            'servico11preco'=>$servico11preco,
+
+            'servico1preco2'=>$servico1preco2,
+            'servico2preco2'=>$servico2preco2,
+            'servico3preco2'=>$servico3preco2,
+            'servico4preco2'=>$servico4preco2,
+            'servico5preco2'=>$servico5preco2,
+            'servico6preco2'=>$servico6preco2,
+            'servico7preco2'=>$servico7preco2,
+            'servico8preco2'=>$servico8preco2,
+            'servico9preco2'=>$servico9preco2,
+            'servico10preco2'=>$servico10preco2,
+            'servico11preco2'=>$servico11preco2,
+
+
             'associados1'=>$associados1,
             'associados2'=>$associados2,
             'associados3'=>$associados3,
@@ -175,12 +272,60 @@ class IndexController extends Controller
         $menu7=Confing::get('menu7');
         $menu8=Confing::get('menu8');
         $menu9=Confing::get('menu9');
-        $rodapeslide1=Confing::get('rodapeslide1');
-        $rodapeslide2=Confing::get('rodapeslide2');
-        $rodapeslide3=Confing::get('rodapeslide3');
-        $rodapeslide4=Confing::get('rodapeslide4');
-        $rodapeslide5=Confing::get('rodapeslide5');
-        $rodapeslide6=Confing::get('rodapeslide6');
+
+
+        $tituloPagina=Confing::get('tituloPagina');
+        $tituloPrincipal=Confing::get('tituloPrincipal');
+
+        $servico1titulo=Confing::get('servico1titulo');
+        $servico2titulo=Confing::get('servico2titulo');
+        $servico3titulo=Confing::get('servico3titulo');
+        $servico4titulo=Confing::get('servico4titulo');
+        $servico5titulo=Confing::get('servico5titulo');
+        $servico6titulo=Confing::get('servico6titulo');
+        $servico7titulo=Confing::get('servico7titulo');
+        $servico8titulo=Confing::get('servico8titulo');
+        $servico9titulo=Confing::get('servico9titulo');
+        $servico10titulo=Confing::get('servico10titulo');
+        $servico11titulo=Confing::get('servico11titulo');
+
+        $servico1descricao=Confing::get('servico1descricao');
+        $servico2descricao=Confing::get('servico2descricao');
+        $servico3descricao=Confing::get('servico3descricao');
+        $servico4descricao=Confing::get('servico4descricao');
+        $servico5descricao=Confing::get('servico5descricao');
+        $servico6descricao=Confing::get('servico6descricao');
+        $servico7descricao=Confing::get('servico7descricao');
+        $servico8descricao=Confing::get('servico8descricao');
+        $servico9descricao=Confing::get('servico9descricao');
+        $servico10descricao=Confing::get('servico10descricao');
+        $servico11descricao=Confing::get('servico11descricao');
+
+        $servico1preco=Confing::get('servico1preco');
+        $servico2preco=Confing::get('servico2preco');
+        $servico3preco=Confing::get('servico3preco');
+        $servico4preco=Confing::get('servico4preco');
+        $servico5preco=Confing::get('servico5preco');
+        $servico6preco=Confing::get('servico6preco');
+        $servico7preco=Confing::get('servico7preco');
+        $servico8preco=Confing::get('servico8preco');
+        $servico9preco=Confing::get('servico9preco');
+        $servico10preco=Confing::get('servico10preco');
+        $servico11preco=Confing::get('servico11preco');
+
+        $servico1preco2=Confing::get('servico1preco2');
+        $servico2preco2=Confing::get('servico2preco2');
+        $servico3preco2=Confing::get('servico3preco2');
+        $servico4preco2=Confing::get('servico4preco2');
+        $servico5preco2=Confing::get('servico5preco2');
+        $servico6preco2=Confing::get('servico6preco2');
+        $servico7preco2=Confing::get('servico7preco2');
+        $servico8preco2=Confing::get('servico8preco2');
+        $servico9preco2=Confing::get('servico9preco2');
+        $servico10preco2=Confing::get('servico10preco2');
+        $servico11preco2=Confing::get('servico11preco2');
+
+
         $associados1=Confing::get('associados1');
         $associados2=Confing::get('associados2');
         $associados3=Confing::get('associados3');
@@ -243,12 +388,58 @@ class IndexController extends Controller
             'menu7'=>$menu7,
             'menu8'=>$menu8,
             'menu9'=>$menu9,
-            'rodapeslide1'=>$rodapeslide1,
-            'rodapeslide2'=>$rodapeslide2,
-            'rodapeslide3'=>$rodapeslide3,
-            'rodapeslide4'=>$rodapeslide4,
-            'rodapeslide5'=>$rodapeslide5,
-            'rodapeslide6'=>$rodapeslide6,
+
+            'tituloPagina'=>$tituloPagina,
+            'tituloPrincipal'=>$tituloPrincipal,
+
+            'servico1titulo'=>$servico1titulo,
+            'servico2titulo'=>$servico2titulo,
+            'servico3titulo'=>$servico3titulo,
+            'servico4titulo'=>$servico4titulo,
+            'servico5titulo'=>$servico5titulo,
+            'servico6titulo'=>$servico6titulo,
+            'servico7titulo'=>$servico7titulo,
+            'servico8titulo'=>$servico8titulo,
+            'servico9titulo'=>$servico9titulo,
+            'servico10titulo'=>$servico10titulo,
+            'servico11titulo'=>$servico11titulo,
+
+            'servico1descricao'=>$servico1descricao,
+            'servico2descricao'=>$servico2descricao,
+            'servico3descricao'=>$servico3descricao,
+            'servico4descricao'=>$servico4descricao,
+            'servico5descricao'=>$servico5descricao,
+            'servico6descricao'=>$servico6descricao,
+            'servico7descricao'=>$servico7descricao,
+            'servico8descricao'=>$servico8descricao,
+            'servico9descricao'=>$servico9descricao,
+            'servico10descricao'=>$servico10descricao,
+            'servico11descricao'=>$servico11descricao,
+
+            'servico1preco'=>$servico1preco,
+            'servico2preco'=>$servico2preco,
+            'servico3preco'=>$servico3preco,
+            'servico4preco'=>$servico4preco,
+            'servico5preco'=>$servico5preco,
+            'servico6preco'=>$servico6preco,
+            'servico7preco'=>$servico7preco,
+            'servico8preco'=>$servico8preco,
+            'servico9preco'=>$servico9preco,
+            'servico10preco'=>$servico10preco,
+            'servico11preco'=>$servico11preco,
+
+            'servico1preco2'=>$servico1preco2,
+            'servico2preco2'=>$servico2preco2,
+            'servico3preco2'=>$servico3preco2,
+            'servico4preco2'=>$servico4preco2,
+            'servico5preco2'=>$servico5preco2,
+            'servico6preco2'=>$servico6preco2,
+            'servico7preco2'=>$servico7preco2,
+            'servico8preco2'=>$servico8preco2,
+            'servico9preco2'=>$servico9preco2,
+            'servico10preco2'=>$servico10preco2,
+            'servico11preco2'=>$servico11preco2,
+
             'associados1'=>$associados1,
             'associados2'=>$associados2,
             'associados3'=>$associados3,
