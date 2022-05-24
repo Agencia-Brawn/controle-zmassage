@@ -2,6 +2,8 @@
 
 @section('content')
 
+    @component('components.controle.menu.index')
+    @endcomponent
 
     <div class="col-xl-12 col-lg-12 col-md-12 container ml-5 pr-5" id="informacoes">
         <div class="row justify-content-center">
@@ -9,7 +11,7 @@
             <div class="coluna-painel">
 
                 <div class="col-lg-6 col-12" style="padding-left: 0px;">
-                    <h6 class="h2 text-black d-inline-block mb-0" >Painel de Informações</h6>
+                    <h6 class="h2 text-black d-inline-block mb-0" >Panel Control</h6>
                     <!-- <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
                         <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
                         <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
@@ -925,10 +927,10 @@
                                     <div class="tab-pane fade" id="tabs-icons-text-9" role="tabpanel" aria-labelledby="tabs-icons-text-9-tab">
                                         <form action="{{route('footer')}}" enctype="multipart/form-data" method="post">
                                         @csrf
-                                            <div class="alert alert-default text-center" role="alert">
+                                            {{-- <div class="alert alert-default text-center" role="alert">
                                                 <h2 class="text-white">Lembrete</h2>
                                                 <p>Para desativar um link basta deixar o campo vazio</p>
-                                            </div>
+                                            </div> --}}
                                             <div class="row">
                                                 {{-- <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Link Facebook</label> 

@@ -8,6 +8,9 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+// Controle
+@import '../../views/components/controle/menu/style.scss';
+
 // Arquivos Sass
 @import '../../views/site/home/style.scss';
 @import '../../views/controle/home/style.scss';
