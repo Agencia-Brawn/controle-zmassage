@@ -118,11 +118,6 @@
                                                     <input name="whatsapp" value="{{$whatsapp}}" type="text" class="form-control">
                                                 </div>
 
-                                                {{-- <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">E-mail</label>
-                                                    <input name="email" value="{{$email}}" type="text" class="form-control">
-                                                </div> --}}
-
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Link do Instagram</label>
                                                     <input name="instagram" value="{{$instagram}}" type="text" class="form-control">
@@ -132,11 +127,6 @@
                                                     <label class="form-control-label" for="basic-url">Link do Facebook</label>
                                                     <input name="facebook" value="{{$facebook}}" type="text" class="form-control">
                                                 </div>
-
-                                                {{-- <div class="description col-md-6" style="margin-bottom: 30px;">
-                                                    <label class="form-control-label" for="basic-url">Sistema Boleto</label>
-                                                    <input name="boleto" value="{{$boleto}}" type="text" class="form-control" placeholder="2 Via Boleto">
-                                                </div> --}}
 
                                                 <button class="btn btn-icon btn-primary" style="margin: auto;" type="subimt">
                                                     <span class="btn-inner--text">Atualizar</span>
@@ -195,7 +185,6 @@
                                                     <label class="form-control-label" for="basic-url">Logo Menu</label>
                                                     <input name="logo1" type="file" class="form-control">
                                                 </div>
-
                                                 <div class="description col-md-12 mt-3">
                                                     <img style="width: 30%; margin-top: 15px;" src="{{Storage::url($logo1)}}" alt="">
                                                     <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 210px <br> Altura: 140px">
@@ -241,6 +230,17 @@
                                                     <label class="form-control-label" for="basic-url">Imagem</label>
                                                 </div>
 
+                                                <div class="description col-md-12 mt-3" >
+                                                    <label class="form-control-label" for="basic-url">Logo Menu</label>
+                                                    <input name="slide1" type="file" class="form-control">
+                                                </div>
+                                                <div class="description col-md-12 mt-3">
+                                                    <img style="width: 30%; margin-top: 15px;" src="{{Storage::url($slide1)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 600px <br> Altura: 400px">
+                                                    <i class='bx bxs-info-circle'></i>
+                                                    </button>
+                                                </div>
+
                                                 <div class="description col-md-12 mt-3" style="margin-top: 20px; text-align: center;">
                                                     <button class="btn btn-icon btn-primary" style="margin: auto;" type="submit">
                                                         <span class="btn-inner--text">Atualizar</span>
@@ -269,17 +269,18 @@
 
                                             {{-- SERVIÇO 1 --}}
                                             <div class="row">
-                                                {{-- <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Ícone 1</label>
-                                                    <input name="rodapeslide1" type="file" class="form-control">
-                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($rodapeslide1)}}" alt="">
+                                                
+                                                <div class="description mt-3 col-12">
+                                                    <h2>Serviço 1</h2>
+                                                </div>
+                                                
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Imagem do Serviço</label>
+                                                    <input name="servico1img" type="file" class="form-control">
+                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($servico1img)}}" alt="">
                                                     <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
                                                         <i class='bx bxs-info-circle' ></i>
                                                     </button>
-                                                </div> --}}
-
-                                                <div class="description mt-3 col-12">
-                                                    <h2>Serviço 1</h2>
                                                 </div>
 
                                                 <div class="description col-md-6">
@@ -305,19 +306,19 @@
 
                                             {{-- SERVIÇO 2 --}}
                                             <div class="row">
-                                                {{-- <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Ícone 1</label>
-                                                    <input name="rodapeslide1" type="file" class="form-control">
-                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($rodapeslide1)}}" alt="">
-                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
-                                                        <i class='bx bxs-info-circle' ></i>
-                                                    </button>
-                                                </div> --}}
-
+                                                
                                                 <div class="description mt-3 col-12">
                                                     <h2>Serviço 2</h2>
                                                 </div>
-
+                                                
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Imagem do Serviço</label>
+                                                    <input name="servico2img" type="file" class="form-control">
+                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($servico2img)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
+                                                </div>
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Título </label>
                                                     <input name="servico2titulo" value="{{$servico2titulo}}" type="text" class="form-control">
@@ -341,19 +342,19 @@
 
                                             {{-- SERVIÇO 3 --}}
                                             <div class="row">
-                                                {{-- <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Ícone 1</label>
-                                                    <input name="rodapeslide1" type="file" class="form-control">
-                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($rodapeslide1)}}" alt="">
-                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
-                                                        <i class='bx bxs-info-circle' ></i>
-                                                    </button>
-                                                </div> --}}
-
+                                                
                                                 <div class="description mt-3 col-12">
                                                     <h2>Serviço 3</h2>
                                                 </div>
-
+                                                
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Imagem do Serviço</label>
+                                                    <input name="servico3img" type="file" class="form-control">
+                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($servico3img)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
+                                                </div>
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Título </label>
                                                     <input name="servico3titulo" value="{{$servico3titulo}}" type="text" class="form-control">
@@ -377,19 +378,19 @@
                                             
                                             {{-- SERVIÇO 4 --}}
                                             <div class="row">
-                                                {{-- <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Ícone 1</label>
-                                                    <input name="rodapeslide1" type="file" class="form-control">
-                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($rodapeslide1)}}" alt="">
-                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
-                                                        <i class='bx bxs-info-circle' ></i>
-                                                    </button>
-                                                </div> --}}
-
+                                                
                                                 <div class="description mt-3 col-12">
                                                     <h2>Serviço 4</h2>
                                                 </div>
-
+                                                
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Imagem do Serviço</label>
+                                                    <input name="servico4img" type="file" class="form-control">
+                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($servico4img)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
+                                                </div>
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Título </label>
                                                     <input name="servico4titulo" value="{{$servico4titulo}}" type="text" class="form-control">
@@ -413,19 +414,19 @@
 
                                             {{-- SERVIÇO 5 --}}
                                             <div class="row">
-                                                {{-- <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Ícone 1</label>
-                                                    <input name="rodapeslide1" type="file" class="form-control">
-                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($rodapeslide1)}}" alt="">
-                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
-                                                        <i class='bx bxs-info-circle' ></i>
-                                                    </button>
-                                                </div> --}}
-
+                                                
                                                 <div class="description mt-3 col-12">
                                                     <h2>Serviço 5</h2>
                                                 </div>
-
+                                                
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Imagem do Serviço</label>
+                                                    <input name="servico5img" type="file" class="form-control">
+                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($servico5img)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
+                                                </div>
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Título </label>
                                                     <input name="servico5titulo" value="{{$servico5titulo}}" type="text" class="form-control">
@@ -449,19 +450,19 @@
 
                                             {{-- SERVIÇO 6 --}}
                                             <div class="row">
-                                                {{-- <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Ícone 1</label>
-                                                    <input name="rodapeslide1" type="file" class="form-control">
-                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($rodapeslide1)}}" alt="">
-                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
-                                                        <i class='bx bxs-info-circle' ></i>
-                                                    </button>
-                                                </div> --}}
-
+                                                
                                                 <div class="description mt-3 col-12">
                                                     <h2>Serviço 6</h2>
                                                 </div>
-
+                                                
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Imagem do Serviço</label>
+                                                    <input name="servico6img" type="file" class="form-control">
+                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($servico6img)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
+                                                </div>
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Título </label>
                                                     <input name="servico6titulo" value="{{$servico6titulo}}" type="text" class="form-control">
@@ -484,19 +485,19 @@
 
                                             {{-- SERVIÇO 7 --}}
                                             <div class="row">
-                                                {{-- <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Ícone 1</label>
-                                                    <input name="rodapeslide1" type="file" class="form-control">
-                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($rodapeslide1)}}" alt="">
-                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
-                                                        <i class='bx bxs-info-circle' ></i>
-                                                    </button>
-                                                </div> --}}
-
+                                                
                                                 <div class="description mt-3 col-12">
                                                     <h2>Serviço 7</h2>
                                                 </div>
-
+                                                
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Imagem do Serviço</label>
+                                                    <input name="servico7img" type="file" class="form-control">
+                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($servico7img)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
+                                                </div>
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Título </label>
                                                     <input name="servico7titulo" value="{{$servico7titulo}}" type="text" class="form-control">
@@ -520,19 +521,19 @@
                                             
                                             {{-- SERVIÇO 8 --}}
                                             <div class="row">
-                                                {{-- <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Ícone 1</label>
-                                                    <input name="rodapeslide1" type="file" class="form-control">
-                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($rodapeslide1)}}" alt="">
-                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
-                                                        <i class='bx bxs-info-circle' ></i>
-                                                    </button>
-                                                </div> --}}
-
+                                                
                                                 <div class="description mt-3 col-12">
                                                     <h2>Serviço 8</h2>
                                                 </div>
-
+                                                
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Imagem do Serviço</label>
+                                                    <input name="servico8img" type="file" class="form-control">
+                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($servico8img)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
+                                                </div>
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Título </label>
                                                     <input name="servico8titulo" value="{{$servico8titulo}}" type="text" class="form-control">
@@ -557,19 +558,19 @@
 
                                             {{-- SERVIÇO 9 --}}
                                             <div class="row">
-                                                {{-- <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Ícone 1</label>
-                                                    <input name="rodapeslide1" type="file" class="form-control">
-                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($rodapeslide1)}}" alt="">
-                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
-                                                        <i class='bx bxs-info-circle' ></i>
-                                                    </button>
-                                                </div> --}}
-
+                                                
                                                 <div class="description mt-3 col-12">
                                                     <h2>Serviço 9</h2>
                                                 </div>
-
+                                                
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Imagem do Serviço</label>
+                                                    <input name="servico9img" type="file" class="form-control">
+                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($servico9img)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
+                                                </div>
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Título </label>
                                                     <input name="servico9titulo" value="{{$servico9titulo}}" type="text" class="form-control">
@@ -593,19 +594,19 @@
 
                                             {{-- SERVIÇO 10 --}}
                                             <div class="row">
-                                                {{-- <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Ícone 1</label>
-                                                    <input name="rodapeslide1" type="file" class="form-control">
-                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($rodapeslide1)}}" alt="">
-                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
-                                                        <i class='bx bxs-info-circle' ></i>
-                                                    </button>
-                                                </div> --}}
-
+                                                
                                                 <div class="description mt-3 col-12">
                                                     <h2>Serviço 10</h2>
                                                 </div>
-
+                                                
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Imagem do Serviço</label>
+                                                    <input name="servico10img" type="file" class="form-control">
+                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($servico10img)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
+                                                </div>
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Título </label>
                                                     <input name="servico10titulo" value="{{$servico10titulo}}" type="text" class="form-control">
@@ -629,19 +630,19 @@
 
                                             {{-- SERVIÇO 11 --}}
                                             <div class="row">
-                                                {{-- <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Ícone 1</label>
-                                                    <input name="rodapeslide1" type="file" class="form-control">
-                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($rodapeslide1)}}" alt="">
-                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
-                                                        <i class='bx bxs-info-circle' ></i>
-                                                    </button>
-                                                </div> --}}
-
+                                                
                                                 <div class="description mt-3 col-12">
                                                     <h2>Serviço 11</h2>
                                                 </div>
-
+                                                
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Imagem do Serviço</label>
+                                                    <input name="servico11img" type="file" class="form-control">
+                                                    <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($servico11img)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
+                                                </div>
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Título </label>
                                                     <input name="servico11titulo" value="{{$servico11titulo}}" type="text" class="form-control">

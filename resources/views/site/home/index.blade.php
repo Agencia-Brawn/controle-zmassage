@@ -9,7 +9,7 @@
       <!-- <h1><a href="index.html">Zmassage</a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
       <a href="" class="mr-auto">
-        <img src="assets/img/logo-sem-fundo.png" alt="" class="img-fluid">
+        <img src="{{Storage::url($logo1)}}" alt="" class="img-fluid">
       </a>
       <h2 style="color: #fff; font-weight: bold;" class="w-50"> {{$telefone}} </h2>
 
@@ -186,7 +186,7 @@
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
           <div class="icon-box">
             <div class="icon">
-              <img src="assets/img/services/service1.jpeg" alt="" class="img-fluid">
+              <img src="{{Storage::url($servico1img)}}" alt="" class="img-fluid">
             </div>
             <h4>{{$servico1titulo}}</h4>
             <p>{{$servico1descricao}}</p>
@@ -199,7 +199,7 @@
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
           <div class="icon-box">
             <div class="icon">
-              <img src="assets/img/services/service2.jpeg" alt="" class="img-fluid">
+              <img src="{{Storage::url($servico2img)}}" alt="" class="img-fluid">
             </div>
             <h4>{{$servico2titulo}}</h4>
             <p>{{$servico2descricao}}</p>
@@ -212,7 +212,7 @@
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
           <div class="icon-box">
             <div class="icon">
-              <img src="assets/img/services/service3.jpeg" alt="" class="img-fluid">
+              <img src="{{Storage::url($servico3img)}}" alt="" class="img-fluid">
             </div>
             <h4>{{$servico3titulo}}</h4>
             <p>{{$servico3descricao}}</p>
@@ -225,7 +225,7 @@
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-3">
           <div class="icon-box">
             <div class="icon">
-              <img src="assets/img/services/service7.jpeg" alt="" class="img-fluid">
+              <img src="{{Storage::url($servico4img)}}" alt="" class="img-fluid">
             </div>
             <h4>{{$servico4titulo}}</h4>
             <p>{{$servico4descricao}}</p>
@@ -238,7 +238,7 @@
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
           <div class="icon-box">
             <div class="icon">
-              <img src="assets/img/services/service4.jpeg" alt="" class="img-fluid">
+              <img src="{{Storage::url($servico5img)}}" alt="" class="img-fluid">
             </div>
             <h4>{{$servico5titulo}}</h4>
             <p>{{$servico5descricao}}</p>
@@ -251,7 +251,7 @@
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
           <div class="icon-box">
             <div class="icon">
-              <img src="assets/img/services/service5.jpeg" alt="" class="img-fluid">
+              <img src="{{Storage::url($servico6img)}}" alt="" class="img-fluid">
             </div>
             <h4>{{$servico6titulo}}</h4>
             <p>{{$servico6descricao}}</p>
@@ -267,7 +267,7 @@
         <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4">
           <div class="icon-box">
             <div class="icon">
-              <img src="assets/img/services/service6.jpeg" alt="" class="img-fluid">
+              <img src="{{Storage::url($servico7img)}}" alt="" class="img-fluid">
             </div>
             <h4>{{$servico7titulo}}</h4>
             <p>{{$servico7descricao}}</p>
@@ -280,7 +280,7 @@
         <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-3">
           <div class="icon-box">
             <div class="icon">
-              <img src="assets/img/services/service8.jpeg" alt="" class="img-fluid">
+              <img src="{{Storage::url($servico8img)}}" alt="" class="img-fluid">
             </div>
             <h4>{{$servico8titulo}}</h4>
             <p>{{$servico8descricao}}</p>
@@ -293,7 +293,7 @@
         <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-3">
           <div class="icon-box">
             <div class="icon">
-              <img src="assets/img/services/service9.jpeg" alt="" class="img-fluid">
+              <img src="{{Storage::url($servico9img)}}" alt="" class="img-fluid">
             </div>
             <h4>{{$servico9titulo}}</h4>
             <p>{{$servico9descricao}}</p>
@@ -306,7 +306,7 @@
         <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-3">
           <div class="icon-box">
             <div class="icon">
-              <img src="assets/img/services/service10.jpeg" alt="" class="img-fluid">
+              <img src="{{Storage::url($servico10img)}}" alt="" class="img-fluid">
             </div>
             <h4>{{$servico10titulo}}</h4>
             <p>{{$servico10descricao}}</p>
@@ -319,7 +319,7 @@
         <div class="col-lg-12 col-md-12 d-flex align-items-stretch mt-3">
           <div class="icon-box">
             <div class="icon">
-              <img src="assets/img/services/service11.jpeg" alt="" class="img-fluid">
+              <img src="{{Storage::url($servico11img)}}" alt="" class="img-fluid">
             </div>
             <h4>{{$servico11titulo}}</h4>
             <p>{{$servico11descricao}}</p>

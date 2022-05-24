@@ -53,6 +53,18 @@ class HomeController extends Controller
         $tituloPagina=Confing::get('tituloPagina');
         $tituloPrincipal=Confing::get('tituloPrincipal');
 
+        $servico1img=Confing::get('servico1img');
+        $servico2img=Confing::get('servico2img');
+        $servico3img=Confing::get('servico3img');
+        $servico4img=Confing::get('servico4img');
+        $servico5img=Confing::get('servico5img');
+        $servico6img=Confing::get('servico6img');
+        $servico7img=Confing::get('servico7img');
+        $servico8img=Confing::get('servico8img');
+        $servico9img=Confing::get('servico9img');
+        $servico10img=Confing::get('servico10img');
+        $servico11img=Confing::get('servico11img');
+
         $servico1titulo=Confing::get('servico1titulo');
         $servico2titulo=Confing::get('servico2titulo');
         $servico3titulo=Confing::get('servico3titulo');
@@ -168,6 +180,18 @@ class HomeController extends Controller
 
         'tituloPagina'=>$tituloPagina,
         'tituloPrincipal'=>$tituloPrincipal,
+
+        'servico1img'=>$servico1img,
+        'servico2img'=>$servico2img,
+        'servico3img'=>$servico3img,
+        'servico4img'=>$servico4img,
+        'servico5img'=>$servico5img,
+        'servico6img'=>$servico6img,
+        'servico7img'=>$servico7img,
+        'servico8img'=>$servico8img,
+        'servico9img'=>$servico9img,
+        'servico10img'=>$servico10img,
+        'servico11img'=>$servico11img,
 
         'servico1titulo'=>$servico1titulo,
         'servico2titulo'=>$servico2titulo,
@@ -333,26 +357,73 @@ class HomeController extends Controller
     public function rodapeslide(Request $request)
     {
         // dd($request);
-        if ($request->hasFile('rodapeslide1')) 
+        if ($request->hasFile('servico1img')) 
         {
-            $extension = $request->rodapeslide1->extension();
-            $path = $request->rodapeslide1->storeAs('public/images', "rodapeslide1.$extension");
-            Confing::atualizar('rodapeslide1',$path);
+            $extension = $request->servico1img->extension();
+            $path = $request->servico1img->storeAs('public/images', "servico1img.$extension");
+            Confing::atualizar('servico1img',$path);
         }
-
-        if ($request->hasFile('rodapeslide2')) 
+        if ($request->hasFile('servico2img')) 
         {
-            $extension = $request->rodapeslide2->extension();
-            $path = $request->rodapeslide2->storeAs('public/images', "rodapeslide2.$extension");
-            Confing::atualizar('rodapeslide2',$path);
+            $extension = $request->servico2img->extension();
+            $path = $request->servico2img->storeAs('public/images', "servico2img.$extension");
+            Confing::atualizar('servico2img',$path);
         }
-
-        if ($request->hasFile('rodapeslide3')) 
+        if ($request->hasFile('servico3img')) 
         {
-            $extension = $request->rodapeslide3->extension();
-            $path = $request->rodapeslide3->storeAs('public/images', "rodapeslide3.$extension");
-            Confing::atualizar('rodapeslide3',$path);
+            $extension = $request->servico3img->extension();
+            $path = $request->servico3img->storeAs('public/images', "servico3img.$extension");
+            Confing::atualizar('servico3img',$path);
         }
+        if ($request->hasFile('servico4img')) 
+        {
+            $extension = $request->servico4img->extension();
+            $path = $request->servico4img->storeAs('public/images', "servico4img.$extension");
+            Confing::atualizar('servico4img',$path);
+        }
+        if ($request->hasFile('servico5img')) 
+        {
+            $extension = $request->servico5img->extension();
+            $path = $request->servico5img->storeAs('public/images', "servico5img.$extension");
+            Confing::atualizar('servico5img',$path);
+        }
+        if ($request->hasFile('servico6img')) 
+        {
+            $extension = $request->servico6img->extension();
+            $path = $request->servico6img->storeAs('public/images', "servico6img.$extension");
+            Confing::atualizar('servico6img',$path);
+        }
+        if ($request->hasFile('servico7img')) 
+        {
+            $extension = $request->servico7img->extension();
+            $path = $request->servico7img->storeAs('public/images', "servico7img.$extension");
+            Confing::atualizar('servico7img',$path);
+        }
+        if ($request->hasFile('servico8img')) 
+        {
+            $extension = $request->servico8img->extension();
+            $path = $request->servico8img->storeAs('public/images', "servico8img.$extension");
+            Confing::atualizar('servico8img',$path);
+        }
+        if ($request->hasFile('servico9img')) 
+        {
+            $extension = $request->servico9img->extension();
+            $path = $request->servico9img->storeAs('public/images', "servico9img.$extension");
+            Confing::atualizar('servico9img',$path);
+        }
+        if ($request->hasFile('servico10img')) 
+        {
+            $extension = $request->servico10img->extension();
+            $path = $request->servico10img->storeAs('public/images', "servico10img.$extension");
+            Confing::atualizar('servico10img',$path);
+        }
+        if ($request->hasFile('servico11img')) 
+        {
+            $extension = $request->servico11img->extension();
+            $path = $request->servico11img->storeAs('public/images', "servico11img.$extension");
+            Confing::atualizar('servico11img',$path);
+        }
+        
 
         Confing::atualizar('tituloPagina',$request->tituloPagina);
         Confing::atualizar('tituloPrincipal',$request->tituloPrincipal);

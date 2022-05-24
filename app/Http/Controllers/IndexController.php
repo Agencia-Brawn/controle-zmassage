@@ -40,6 +40,19 @@ class IndexController extends Controller
         $tituloPagina=Confing::get('tituloPagina');
         $tituloPrincipal=Confing::get('tituloPrincipal');
 
+        
+        $servico1img=Confing::get('servico1img');
+        $servico2img=Confing::get('servico2img');
+        $servico3img=Confing::get('servico3img');
+        $servico4img=Confing::get('servico4img');
+        $servico5img=Confing::get('servico5img');
+        $servico6img=Confing::get('servico6img');
+        $servico7img=Confing::get('servico7img');
+        $servico8img=Confing::get('servico8img');
+        $servico9img=Confing::get('servico9img');
+        $servico10img=Confing::get('servico10img');
+        $servico11img=Confing::get('servico11img');
+
         $servico1titulo=Confing::get('servico1titulo');
         $servico2titulo=Confing::get('servico2titulo');
         $servico3titulo=Confing::get('servico3titulo');
@@ -159,6 +172,18 @@ class IndexController extends Controller
             'tituloPagina'=>$tituloPagina,
             'tituloPrincipal'=>$tituloPrincipal,
 
+            'servico1img'=>$servico1img,
+            'servico2img'=>$servico2img,
+            'servico3img'=>$servico3img,
+            'servico4img'=>$servico4img,
+            'servico5img'=>$servico5img,
+            'servico6img'=>$servico6img,
+            'servico7img'=>$servico7img,
+            'servico8img'=>$servico8img,
+            'servico9img'=>$servico9img,
+            'servico10img'=>$servico10img,
+            'servico11img'=>$servico11img,
+
             'servico1titulo'=>$servico1titulo,
             'servico2titulo'=>$servico2titulo,
             'servico3titulo'=>$servico3titulo,
@@ -276,8 +301,21 @@ class IndexController extends Controller
         $menu9=Confing::get('menu9');
 
 
+        
         $tituloPagina=Confing::get('tituloPagina');
         $tituloPrincipal=Confing::get('tituloPrincipal');
+        
+        $servico1img=Confing::get('servico1img');
+        $servico2img=Confing::get('servico2img');
+        $servico3img=Confing::get('servico3img');
+        $servico4img=Confing::get('servico4img');
+        $servico5img=Confing::get('servico5img');
+        $servico6img=Confing::get('servico6img');
+        $servico7img=Confing::get('servico7img');
+        $servico8img=Confing::get('servico8img');
+        $servico9img=Confing::get('servico9img');
+        $servico10img=Confing::get('servico10img');
+        $servico11img=Confing::get('servico11img');
 
         $servico1titulo=Confing::get('servico1titulo');
         $servico2titulo=Confing::get('servico2titulo');
@@ -395,6 +433,18 @@ class IndexController extends Controller
 
             'tituloPagina'=>$tituloPagina,
             'tituloPrincipal'=>$tituloPrincipal,
+
+            'servico1img'=>$servico1img,
+            'servico2img'=>$servico2img,
+            'servico3img'=>$servico3img,
+            'servico4img'=>$servico4img,
+            'servico5img'=>$servico5img,
+            'servico6img'=>$servico6img,
+            'servico7img'=>$servico7img,
+            'servico8img'=>$servico8img,
+            'servico9img'=>$servico9img,
+            'servico10img'=>$servico10img,
+            'servico11img'=>$servico11img,
 
             'servico1titulo'=>$servico1titulo,
             'servico2titulo'=>$servico2titulo,
