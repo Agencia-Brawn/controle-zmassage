@@ -98,8 +98,8 @@
     <div class="container">
 
       <div class="section-title">
-        <h2>STRUCTURE</h2>
-        <p>STRUCTURE</p>
+        <h2>{{$estruturatitulo1}}</h2>
+        <p>{{$estruturatitulo2}}</p>
       </div>
 
       <div class="container-fluid aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
@@ -108,11 +108,11 @@
           <div class="row g-0 portfolio-container" style="position: relative; height: 1125.9px;">
             <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
-              <img style="border-radius: 15px;" src="assets/img/structure/structure1.jpg" class="img-fluid" alt="">
+              <img style="border-radius: 15px;" src="{{Storage::url($estruturaimagem1)}}" class="img-fluid" alt="">
             </div>
             <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
-              <img style="border-radius: 15px;" src="assets/img/structure/structure2.jpg" class="img-fluid" alt="">
+              <img style="border-radius: 15px;" src="{{Storage::url($estruturaimagem2)}}" class="img-fluid" alt="">
             </div>
             <!-- <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
@@ -120,51 +120,51 @@
             </div> -->
             <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
-              <img style="border-radius: 15px;" src="assets/img/structure/structure4.jpg" class="img-fluid" alt="">
+              <img style="border-radius: 15px;" src="{{Storage::url($estruturaimagem3)}}" class="img-fluid" alt="">
             </div>
             <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
-              <img style="border-radius: 15px;" src="assets/img/structure/structure8.jpg" class="img-fluid" alt="">
+              <img style="border-radius: 15px;" src="{{Storage::url($estruturaimagem4)}}" class="img-fluid" alt="">
             </div>
             <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
-              <img style="border-radius: 15px;" src="assets/img/structure/structure5.jpg" class="img-fluid" alt="">
+              <img style="border-radius: 15px;" src="{{Storage::url($estruturaimagem5)}}" class="img-fluid" alt="">
             </div>
             <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
-              <img style="border-radius: 15px;" src="assets/img/structure/structure6.jpg" class="img-fluid" alt="">
+              <img style="border-radius: 15px;" src="{{Storage::url($estruturaimagem6)}}" class="img-fluid" alt="">
             </div>
             <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
-              <img style="border-radius: 15px;" src="assets/img/structure/structure7.jpg" class="img-fluid" alt="">
+              <img style="border-radius: 15px;" src="{{Storage::url($estruturaimagem7)}}" class="img-fluid" alt="">
             </div>
             <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
-              <img style="border-radius: 15px;" src="assets/img/structure/structure9.jpg" class="img-fluid" alt="">
+              <img style="border-radius: 15px;" src="{{Storage::url($estruturaimagem8)}}" class="img-fluid" alt="">
             </div>
             <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
-              <img style="border-radius: 15px;" src="assets/img/structure/structure10.jpg" class="img-fluid" alt="">
+              <img style="border-radius: 15px;" src="{{Storage::url($estruturaimagem9)}}" class="img-fluid" alt="">
             </div>
             <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
-              <img style="border-radius: 15px;" src="assets/img/structure/structure15.jpeg" class="img-fluid" alt="">
+              <img style="border-radius: 15px;" src="{{Storage::url($estruturaimagem10)}}" class="img-fluid" alt="">
             </div>
             <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
-              <img style="border-radius: 15px;" src="assets/img/structure/structure11.jpeg" class="img-fluid" alt="">
+              <img style="border-radius: 15px;" src="{{Storage::url($estruturaimagem11)}}" class="img-fluid" alt="">
             </div>
             <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
-              <img style="border-radius: 15px;" src="assets/img/structure/structure12.jpeg" class="img-fluid" alt="">
+              <img style="border-radius: 15px;" src="{{Storage::url($estruturaimagem12)}}" class="img-fluid" alt="">
             </div>
             <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
-              <img style="border-radius: 15px;" src="assets/img/structure/structure13.jpg" class="img-fluid" alt="">
+              <img style="border-radius: 15px;" src="{{Storage::url($estruturaimagem13)}}" class="img-fluid" alt="">
             </div>
             <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
-              <img style="border-radius: 15px;" src="assets/img/structure/structure14.jpg" class="img-fluid" alt="">
+              <img style="border-radius: 15px;" src="{{Storage::url($estruturaimagem14)}}" class="img-fluid" alt="">
             </div>
 
           </div>

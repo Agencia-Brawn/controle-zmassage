@@ -142,6 +142,25 @@ class IndexController extends Controller
         $modal8=Confing::get('modal8');
         $modal9=Confing::get('modal9');
 
+        $estruturatitulo1=Confing::get('estruturatitulo1');
+        $estruturatitulo2=Confing::get('estruturatitulo2');
+
+        $estruturaimagem1=Confing::get('estruturaimagem1');
+        $estruturaimagem2=Confing::get('estruturaimagem2');
+        $estruturaimagem3=Confing::get('estruturaimagem3');
+        $estruturaimagem4=Confing::get('estruturaimagem4');
+        $estruturaimagem5=Confing::get('estruturaimagem5');
+        $estruturaimagem6=Confing::get('estruturaimagem6');
+        $estruturaimagem7=Confing::get('estruturaimagem7');
+        $estruturaimagem8=Confing::get('estruturaimagem8');
+        $estruturaimagem9=Confing::get('estruturaimagem9');
+        $estruturaimagem10=Confing::get('estruturaimagem10');
+        $estruturaimagem11=Confing::get('estruturaimagem11');
+        $estruturaimagem12=Confing::get('estruturaimagem12');
+        $estruturaimagem13=Confing::get('estruturaimagem13');
+        $estruturaimagem14=Confing::get('estruturaimagem14');
+        
+
 
         return view("components.idiomas-site",[
             'telefone'=>$telefone,
@@ -269,6 +288,24 @@ class IndexController extends Controller
             'modal7'=>$modal7,
             'modal8'=>$modal8,
             'modal9'=>$modal9,
+
+            'estruturatitulo1'=>$estruturatitulo1,
+            'estruturatitulo2'=>$estruturatitulo2,
+    
+            'estruturaimagem1'=>$estruturaimagem1,
+            'estruturaimagem2'=>$estruturaimagem2,
+            'estruturaimagem3'=>$estruturaimagem3,
+            'estruturaimagem4'=>$estruturaimagem4,
+            'estruturaimagem5'=>$estruturaimagem5,
+            'estruturaimagem6'=>$estruturaimagem6,
+            'estruturaimagem7'=>$estruturaimagem7,
+            'estruturaimagem8'=>$estruturaimagem8,
+            'estruturaimagem9'=>$estruturaimagem9,
+            'estruturaimagem10'=>$estruturaimagem10,
+            'estruturaimagem11'=>$estruturaimagem11,
+            'estruturaimagem12'=>$estruturaimagem12,
+            'estruturaimagem13'=>$estruturaimagem13,
+            'estruturaimagem14'=>$estruturaimagem14,
         ]);
 
         
@@ -404,6 +441,24 @@ class IndexController extends Controller
         $modal8=Confing::get('modal8');
         $modal9=Confing::get('modal9');
 
+        $estruturatitulo1=Confing::get('estruturatitulo1');
+        $estruturatitulo2=Confing::get('estruturatitulo2');
+
+        $estruturaimagem1=Confing::get('estruturaimagem1');
+        $estruturaimagem2=Confing::get('estruturaimagem2');
+        $estruturaimagem3=Confing::get('estruturaimagem3');
+        $estruturaimagem4=Confing::get('estruturaimagem4');
+        $estruturaimagem5=Confing::get('estruturaimagem5');
+        $estruturaimagem6=Confing::get('estruturaimagem6');
+        $estruturaimagem7=Confing::get('estruturaimagem7');
+        $estruturaimagem8=Confing::get('estruturaimagem8');
+        $estruturaimagem9=Confing::get('estruturaimagem9');
+        $estruturaimagem10=Confing::get('estruturaimagem10');
+        $estruturaimagem11=Confing::get('estruturaimagem11');
+        $estruturaimagem12=Confing::get('estruturaimagem12');
+        $estruturaimagem13=Confing::get('estruturaimagem13');
+        $estruturaimagem14=Confing::get('estruturaimagem14');
+
 
 
         return view("site.home.index",[
@@ -531,6 +586,24 @@ class IndexController extends Controller
             'modal7'=>$modal7,
             'modal8'=>$modal8,
             'modal9'=>$modal9,
+
+            'estruturatitulo1'=>$estruturatitulo1,
+            'estruturatitulo2'=>$estruturatitulo2,
+    
+            'estruturaimagem1'=>$estruturaimagem1,
+            'estruturaimagem2'=>$estruturaimagem2,
+            'estruturaimagem3'=>$estruturaimagem3,
+            'estruturaimagem4'=>$estruturaimagem4,
+            'estruturaimagem5'=>$estruturaimagem5,
+            'estruturaimagem6'=>$estruturaimagem6,
+            'estruturaimagem7'=>$estruturaimagem7,
+            'estruturaimagem8'=>$estruturaimagem8,
+            'estruturaimagem9'=>$estruturaimagem9,
+            'estruturaimagem10'=>$estruturaimagem10,
+            'estruturaimagem11'=>$estruturaimagem11,
+            'estruturaimagem12'=>$estruturaimagem12,
+            'estruturaimagem13'=>$estruturaimagem13,
+            'estruturaimagem14'=>$estruturaimagem14,
         ]);
 
         

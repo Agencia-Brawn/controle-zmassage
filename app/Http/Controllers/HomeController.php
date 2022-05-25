@@ -151,6 +151,24 @@ class HomeController extends Controller
         $modal8=Confing::get('modal8');
         $modal9=Confing::get('modal9');
 
+        $estruturatitulo1=Confing::get('estruturatitulo1');
+        $estruturatitulo2=Confing::get('estruturatitulo2');
+
+        $estruturaimagem1=Confing::get('estruturaimagem1');
+        $estruturaimagem2=Confing::get('estruturaimagem2');
+        $estruturaimagem3=Confing::get('estruturaimagem3');
+        $estruturaimagem4=Confing::get('estruturaimagem4');
+        $estruturaimagem5=Confing::get('estruturaimagem5');
+        $estruturaimagem6=Confing::get('estruturaimagem6');
+        $estruturaimagem7=Confing::get('estruturaimagem7');
+        $estruturaimagem8=Confing::get('estruturaimagem8');
+        $estruturaimagem9=Confing::get('estruturaimagem9');
+        $estruturaimagem10=Confing::get('estruturaimagem10');
+        $estruturaimagem11=Confing::get('estruturaimagem11');
+        $estruturaimagem12=Confing::get('estruturaimagem12');
+        $estruturaimagem13=Confing::get('estruturaimagem13');
+        $estruturaimagem14=Confing::get('estruturaimagem14');
+
 
         return view('controle.home.index', [
         'telefone'=>$telefone,
@@ -278,6 +296,26 @@ class HomeController extends Controller
         'modal7'=>$modal7,
         'modal8'=>$modal8,
         'modal9'=>$modal9,
+
+        'estruturatitulo1'=>$estruturatitulo1,
+        'estruturatitulo2'=>$estruturatitulo2,
+
+        'estruturaimagem1'=>$estruturaimagem1,
+        'estruturaimagem2'=>$estruturaimagem2,
+        'estruturaimagem3'=>$estruturaimagem3,
+        'estruturaimagem4'=>$estruturaimagem4,
+        'estruturaimagem5'=>$estruturaimagem5,
+        'estruturaimagem6'=>$estruturaimagem6,
+        'estruturaimagem7'=>$estruturaimagem7,
+        'estruturaimagem8'=>$estruturaimagem8,
+        'estruturaimagem9'=>$estruturaimagem9,
+        'estruturaimagem10'=>$estruturaimagem10,
+        'estruturaimagem11'=>$estruturaimagem11,
+        'estruturaimagem12'=>$estruturaimagem12,
+        'estruturaimagem13'=>$estruturaimagem13,
+        'estruturaimagem14'=>$estruturaimagem14,
+        
+
         ]);
         
     }
@@ -481,6 +519,104 @@ class HomeController extends Controller
 
         return redirect()->back();
 
+    }
+
+    public function formestrutura(Request $request)
+    {
+        Confing::atualizar('estruturatitulo1',$request->estruturatitulo1);
+        Confing::atualizar('estruturatitulo2',$request->estruturatitulo2);
+
+
+        // dd($request);
+        if ($request->hasFile('estruturaimagem1')) 
+        {
+            $extension = $request->estruturaimagem1->extension();
+            $path = $request->estruturaimagem1->storeAs('public/images', "estruturaimagem1.$extension");
+            Confing::atualizar('estruturaimagem1',$path);
+        }
+        if ($request->hasFile('estruturaimagem2')) 
+        {
+            $extension = $request->estruturaimagem2->extension();
+            $path = $request->estruturaimagem2->storeAs('public/images', "estruturaimagem2.$extension");
+            Confing::atualizar('estruturaimagem2',$path);
+        }
+        if ($request->hasFile('estruturaimagem3')) 
+        {
+            $extension = $request->estruturaimagem3->extension();
+            $path = $request->estruturaimagem3->storeAs('public/images', "estruturaimagem3.$extension");
+            Confing::atualizar('estruturaimagem3',$path);
+        }
+        if ($request->hasFile('estruturaimagem4')) 
+        {
+            $extension = $request->estruturaimagem4->extension();
+            $path = $request->estruturaimagem4->storeAs('public/images', "estruturaimagem4.$extension");
+            Confing::atualizar('estruturaimagem4',$path);
+        }
+        if ($request->hasFile('estruturaimagem5')) 
+        {
+            $extension = $request->estruturaimagem5->extension();
+            $path = $request->estruturaimagem5->storeAs('public/images', "estruturaimagem5.$extension");
+            Confing::atualizar('estruturaimagem5',$path);
+        }
+        if ($request->hasFile('estruturaimagem6')) 
+        {
+            $extension = $request->estruturaimagem6->extension();
+            $path = $request->estruturaimagem6->storeAs('public/images', "estruturaimagem6.$extension");
+            Confing::atualizar('estruturaimagem6',$path);
+        }
+        if ($request->hasFile('estruturaimagem7')) 
+        {
+            $extension = $request->estruturaimagem7->extension();
+            $path = $request->estruturaimagem7->storeAs('public/images', "estruturaimagem7.$extension");
+            Confing::atualizar('estruturaimagem7',$path);
+        }
+        if ($request->hasFile('estruturaimagem8')) 
+        {
+            $extension = $request->estruturaimagem8->extension();
+            $path = $request->estruturaimagem8->storeAs('public/images', "estruturaimagem8.$extension");
+            Confing::atualizar('estruturaimagem8',$path);
+        }
+        if ($request->hasFile('estruturaimagem9')) 
+        {
+            $extension = $request->estruturaimagem9->extension();
+            $path = $request->estruturaimagem9->storeAs('public/images', "estruturaimagem9.$extension");
+            Confing::atualizar('estruturaimagem9',$path);
+        }
+        if ($request->hasFile('estruturaimagem10')) 
+        {
+            $extension = $request->estruturaimagem10->extension();
+            $path = $request->estruturaimagem10->storeAs('public/images', "estruturaimagem10.$extension");
+            Confing::atualizar('estruturaimagem10',$path);
+        }
+        if ($request->hasFile('estruturaimagem11')) 
+        {
+            $extension = $request->estruturaimagem11->extension();
+            $path = $request->estruturaimagem11->storeAs('public/images', "estruturaimagem11.$extension");
+            Confing::atualizar('estruturaimagem11',$path);
+        }
+        if ($request->hasFile('estruturaimagem12')) 
+        {
+            $extension = $request->estruturaimagem12->extension();
+            $path = $request->estruturaimagem12->storeAs('public/images', "estruturaimagem12.$extension");
+            Confing::atualizar('estruturaimagem12',$path);
+        }
+        if ($request->hasFile('estruturaimagem13')) 
+        {
+            $extension = $request->estruturaimagem13->extension();
+            $path = $request->estruturaimagem13->storeAs('public/images', "estruturaimagem13.$extension");
+            Confing::atualizar('estruturaimagem13',$path);
+        }
+        if ($request->hasFile('estruturaimagem14')) 
+        {
+            $extension = $request->estruturaimagem14->extension();
+            $path = $request->estruturaimagem14->storeAs('public/images', "estruturaimagem14.$extension");
+            Confing::atualizar('estruturaimagem14',$path);
+        }
+
+
+
+
+        return redirect()->back();
     }
 
     public function menu(Request $request)

@@ -48,26 +48,28 @@
                             </li>
 
                             <li class="nav-item">
+                                <a class="nav-link mb-sm-3 mb-md-0 mt-2" id="estrutura" data-toggle="tab" href="#etsrutura-1" role="tab" aria-controls="etsrutura-1" aria-selected="false">
+                                    Estrutura
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
                                 <a  class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-5-tab" data-toggle="tab" href="#tabs-icons-text-5" role="tab" aria-controls="tabs-icons-text-5" aria-selected="false">
                                     Contato
                                 </a>
                             </li>
-
-                            
 
                             <li class="nav-item">
                                 <a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-7-tab" data-toggle="tab" href="#tabs-icons-text-7" role="tab" aria-controls="tabs-icons-text-7" aria-selected="false">
                                     Depoimentos
                                 </a>
                             </li>
-
                             
                             <li class="nav-item">
                                 <a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-8-tab" data-toggle="tab" href="#tabs-icons-text-8" role="tab" aria-controls="tabs-icons-text-8" aria-selected="false">
                                     Agendamento
                                 </a>
                             </li>
-
 
                             <li class="nav-item">
                                 <a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-9-tab" data-toggle="tab" href="#tabs-icons-text-9" role="tab" aria-controls="tabs-icons-text-9" aria-selected="false">
@@ -668,6 +670,231 @@
                                                         <span class="btn-inner--text">Atualizar</span>
                                                     </button>
                                                 </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <!-- ESTRUTURA -->
+                                    <div class="tab-pane fade" id="etsrutura-1" role="tabpanel" aria-labelledby="estrutura">
+                                        <form action="{{route('formestrutura')}}" enctype="multipart/form-data" method="post">
+                                        @csrf
+                                        <div class="row">
+                                            <div class="description col-md-12">
+                                                <label class="form-control-label" for="basic-url">Título Pequeno</label>
+                                                <input name="estruturatitulo1" value="{{$estruturatitulo1}}" type="text" class="form-control">
+                                            </div>
+
+                                            <div class="description col-md-12">
+                                                <label class="form-control-label" for="basic-url">Título Principal</label>
+                                                <input name="estruturatitulo2"  type="text" class="form-control" value="{{$estruturatitulo2}}">
+                                            </div>
+                                        </div>
+
+                                            {{-- ESTRUTURA 1 --}}
+                                            <div class="row">
+                                                
+                                                <div>
+                                                    <div class="description mt-3 col-12">
+                                                        <h2>Estrutura 1</h2>
+                                                    </div>
+                                                    
+                                                    <div class="description col-md-6">
+                                                        <input name="estruturaimagem1" type="file" class="form-control">
+                                                        <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem1)}}" alt="">
+                                                        <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
+                                                            <i class='bx bxs-info-circle' ></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="description mt-3 col-12">
+                                                        <h2>Estrutura 2</h2>
+                                                    </div>
+                                                    
+                                                    <div class="description col-md-6">
+                                                        <input name="estruturaimagem2" type="file" class="form-control">
+                                                        <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem2)}}" alt="">
+                                                        <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
+                                                            <i class='bx bxs-info-circle' ></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="description mt-3 col-12">
+                                                        <h2>Estrutura 3</h2>
+                                                    </div>
+                                                    
+                                                    <div class="description col-md-6">
+                                                        <input name="estruturaimagem3" type="file" class="form-control">
+                                                        <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem3)}}" alt="">
+                                                        <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
+                                                            <i class='bx bxs-info-circle' ></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="description mt-3 col-12">
+                                                        <h2>Estrutura 4</h2>
+                                                    </div>
+                                                    
+                                                    <div class="description col-md-6">
+                                                        <input name="estruturaimagem4" type="file" class="form-control">
+                                                        <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem4)}}" alt="">
+                                                        <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
+                                                            <i class='bx bxs-info-circle' ></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="description mt-3 col-12">
+                                                        <h2>Estrutura 5</h2>
+                                                    </div>
+                                                    
+                                                    <div class="description col-md-6">
+                                                        <input name="estruturaimagem5" type="file" class="form-control">
+                                                        <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem5)}}" alt="">
+                                                        <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
+                                                            <i class='bx bxs-info-circle' ></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="description mt-3 col-12">
+                                                        <h2>Estrutura 6</h2>
+                                                    </div>
+                                                    
+                                                    <div class="description col-md-6">
+                                                        <input name="estruturaimagem6" type="file" class="form-control">
+                                                        <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem6)}}" alt="">
+                                                        <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
+                                                            <i class='bx bxs-info-circle' ></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="description mt-3 col-12">
+                                                        <h2>Estrutura 7</h2>
+                                                    </div>
+                                                    
+                                                    <div class="description col-md-6">
+                                                        <input name="estruturaimagem7" type="file" class="form-control">
+                                                        <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem7)}}" alt="">
+                                                        <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
+                                                            <i class='bx bxs-info-circle' ></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="description mt-3 col-12">
+                                                        <h2>Estrutura 8</h2>
+                                                    </div>
+                                                    
+                                                    <div class="description col-md-6">
+                                                        <input name="estruturaimagem8" type="file" class="form-control">
+                                                        <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem8)}}" alt="">
+                                                        <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
+                                                            <i class='bx bxs-info-circle' ></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="description mt-3 col-12">
+                                                        <h2>Estrutura 9</h2>
+                                                    </div>
+                                                    
+                                                    <div class="description col-md-6">
+                                                        <input name="estruturaimagem9" type="file" class="form-control">
+                                                        <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem9)}}" alt="">
+                                                        <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
+                                                            <i class='bx bxs-info-circle' ></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="description mt-3 col-12">
+                                                        <h2>Estrutura 10</h2>
+                                                    </div>
+                                                    
+                                                    <div class="description col-md-6">
+                                                        <input name="estruturaimagem10" type="file" class="form-control">
+                                                        <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem10)}}" alt="">
+                                                        <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
+                                                            <i class='bx bxs-info-circle' ></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="description mt-3 col-12">
+                                                        <h2>Estrutura 11</h2>
+                                                    </div>
+                                                    
+                                                    <div class="description col-md-6">
+                                                        <input name="estruturaimagem11" type="file" class="form-control">
+                                                        <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem11)}}" alt="">
+                                                        <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
+                                                            <i class='bx bxs-info-circle' ></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="description mt-3 col-12">
+                                                        <h2>Estrutura 12</h2>
+                                                    </div>
+                                                    
+                                                    <div class="description col-md-6">
+                                                        <input name="estruturaimagem12" type="file" class="form-control">
+                                                        <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem12)}}" alt="">
+                                                        <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
+                                                            <i class='bx bxs-info-circle' ></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="description mt-3 col-12">
+                                                        <h2>Estrutura 13</h2>
+                                                    </div>
+                                                    
+                                                    <div class="description col-md-6">
+                                                        <input name="estruturaimagem13" type="file" class="form-control">
+                                                        <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem13)}}" alt="">
+                                                        <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
+                                                            <i class='bx bxs-info-circle' ></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="description mt-3 col-12">
+                                                        <h2>Estrutura 14</h2>
+                                                    </div>
+                                                    
+                                                    <div class="description col-md-6">
+                                                        <input name="estruturaimagem14" type="file" class="form-control">
+                                                        <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem14)}}" alt="">
+                                                        <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
+                                                            <i class='bx bxs-info-circle' ></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="description col-md-12" style="margin-top: 20px; text-align: center;">
+                                                    <button class="btn btn-icon btn-primary" style="margin: auto;" type="submit">
+                                                        <span class="btn-inner--text">Atualizar</span>
+                                                    </button>
+                                                </div>
+
                                             </div>
                                         </form>
                                     </div>

@@ -29,6 +29,8 @@ Route::post('/logo', 'HomeController@logo')->name('logo');
 
 Route::post('/rodapeslide', 'HomeController@rodapeslide')->name('rodapeslide');
 
+Route::post('/formestrutura', 'HomeController@formestrutura')->name('formestrutura');
+
 Route::post('/menu', 'HomeController@menu')->name('menu');
 
 Route::post('/associados', 'HomeController@associados')->name('associados');
