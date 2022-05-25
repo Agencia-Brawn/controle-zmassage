@@ -1,18 +1,26 @@
 <div class="fixed-top" id="menu-controle">
   <div class="collapse" id="navbarToggleExternalContent">
     <div class="bg-dark p-4">
-      <ul class="nav justify-content-start">
+      <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link" href="#">Idioma 1</a>
+          <a class="zoom nav-link" href="#">
+            <img width="100px" src="assets/img/austria.png" alt="">
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Idioma 2</a>
+          <a class="nav-link" href="#">
+            <img width="100px" src="assets/img/reino-unido.png" alt="">
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Idioma 3</a>
+          <a class="nav-link" href="#">
+            <img width="100px" src="assets/img/brasil.png" alt="">
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Idioma 4</a>
+          <a class="nav-link" href="#">
+            <img width="100px" src="assets/img/espanha.png" alt="">
+          </a>
         </li>
       </ul>
     </div>

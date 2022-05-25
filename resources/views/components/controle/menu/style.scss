@@ -1,9 +1,13 @@
 #menu-controle {
   .nav .nav-item a {
     color: #fff;
+    transition: transform .2s;
 
     &:hover {
       color: #89D5ED;
+      -ms-transform: scale(1.2); /* IE 9 */
+      -webkit-transform: scale(1.2); /* Safari 3-8 */
+      transform: scale(1.2); ;
     }
   } 
 }
