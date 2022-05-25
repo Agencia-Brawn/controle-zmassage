@@ -904,19 +904,6 @@
                                         <form action="{{route('menu')}}" enctype="multipart/form-data" method="post">
                                         @csrf
                                             <div class="row">
-                                            
-                                                {{-- <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Imagem</label>
-                                                    <input name="menu1" type="file" class="form-control" placeholder="Logo">
-                                                </div>
-
-                                                <div class="description col-md-6">
-                                                    <img style="width: 40%; background: black; margin-top: 15px;"  src="{{Storage::url($menu1)}}" alt="">
-                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 2000px <br> Altura: 1300px">
-                                                        <i class='bx bxs-info-circle' ></i>
-                                                    </button>
-                                                </div> --}}
-
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Título Pequeno </label>
                                                     <input style="margin-bottom: 20px;" name="contatoTituloPagina" value="{{$contatoTituloPagina}}" type="text" class="form-control" >
@@ -1171,6 +1158,18 @@
                                                     !!}     
                                                     <input style="margin-bottom: 20px;" name="footer1" value="{{$footer1}}" type="text" class="form-control" >
                                                 </div> --}}
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Logo</label>
+                                                    <input name="modalimg" type="file" class="form-control" placeholder="Logo">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <img style="width: 40%; background: black; margin-top: 15px;"  src="{{Storage::url($modalimg)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 250px <br> Altura: 190px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
+                                                </div>
 
 
                                                 <div class="description col-md-6">

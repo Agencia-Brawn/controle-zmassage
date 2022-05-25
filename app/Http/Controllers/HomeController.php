@@ -141,6 +141,8 @@ class HomeController extends Controller
 
 
 
+        $modalimg=Confing::get('modalimg');
+
         $modal1=Confing::get('modal1');
         $modal2=Confing::get('modal2');
         $modal3=Confing::get('modal3');
@@ -286,6 +288,8 @@ class HomeController extends Controller
         'agendamento2'=>$agendamento2,
         'agendamentobotao'=>$agendamentobotao,
 
+
+        'modalimg'=>$modalimg,
 
         'modal1'=>$modal1,
         'modal2'=>$modal2,
@@ -663,25 +667,23 @@ class HomeController extends Controller
     public function receita(Request $request)
     {
         // dd($request);
-
         Confing::atualizar('agendamento1',$request->agendamento1);        
         Confing::atualizar('agendamento2',$request->agendamento2);        
         Confing::atualizar('agendamentobotao',$request->agendamentobotao);        
 
-        // if ($request->hasFile('receita9')) 
-        // {
-        //     $extension = $request->receita9->extension();
-        //     $path = $request->receita9->storeAs('public/images', "receita9.$extension");
-        //     Confing::atualizar('receita9',$path);
-        // }
-
         return redirect()->back();
-
     }
 
     public function footer(Request $request)
     {
         // dd($request);
+        
+        if ($request->hasFile('modalimg')) 
+        {
+            $extension = $request->modalimg->extension();
+            $path = $request->modalimg->storeAs('public/images', "modalimg.$extension");
+            Confing::atualizar('modalimg',$path);
+        }       
 
         Confing::atualizar('modal1',$request->modal1);        
         Confing::atualizar('modal2',$request->modal2);
@@ -692,14 +694,6 @@ class HomeController extends Controller
         Confing::atualizar('modal7',$request->modal7);
         Confing::atualizar('modal8',$request->modal8);
         Confing::atualizar('modal9',$request->modal9);
-
-
-        // if ($request->hasFile('footer13')) 
-        // {
-        //     $extension = $request->footer13->extension();
-        //     $path = $request->footer13->storeAs('public/images', "footer13.$extension");
-        //     Confing::atualizar('footer13',$path);
-        // }
 
         return redirect()->back();
 

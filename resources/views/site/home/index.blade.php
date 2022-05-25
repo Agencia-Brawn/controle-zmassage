@@ -452,7 +452,7 @@
         <div id="imagem-modal" class="modal-body text-center">
           <div class="row">
             <div class="col-12">
-              <img width="250px" src="assets/img/logo-circular.png" alt="" srcset="">
+              <img width="250px" src="{{Storage::url($modalimg)}}" alt="{{$modal1}}">
               <div class="row mt-3 d-flex justify-content-center">
                 <p style="width: 300px; color: #05c4f1; font-weight: bold;">
                   {{$modal1}}

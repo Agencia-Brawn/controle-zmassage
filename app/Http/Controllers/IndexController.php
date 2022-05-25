@@ -132,6 +132,8 @@ class IndexController extends Controller
 
 
         
+        $modalimg=Confing::get('modalimg');
+
         $modal1=Confing::get('modal1');
         $modal2=Confing::get('modal2');
         $modal3=Confing::get('modal3');
@@ -278,6 +280,7 @@ class IndexController extends Controller
 
 
 
+            'modalimg'=>$modalimg,
    
             'modal1'=>$modal1,
             'modal2'=>$modal2,
@@ -431,6 +434,8 @@ class IndexController extends Controller
 
 
 
+        $modalimg=Confing::get('modalimg');
+
         $modal1=Confing::get('modal1');
         $modal2=Confing::get('modal2');
         $modal3=Confing::get('modal3');
@@ -576,6 +581,8 @@ class IndexController extends Controller
             'agendamento2'=>$agendamento2,
             'agendamentobotao'=>$agendamentobotao,
 
+
+            'modalimg'=>$modalimg,
 
             'modal1'=>$modal1,
             'modal2'=>$modal2,
