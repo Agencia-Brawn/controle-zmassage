@@ -11,8 +11,7 @@ class IndexController extends Controller
 {
 
     public function index(){
-        // dd(Confing::atualizar('telefone1','(99)99'));
-        $telefone=Confing::get('telefone');
+        $textoresumo=Confing::get('textoresumo');
         $whatsapp=Confing::get('whatsapp');
         $email=Confing::get('email');
         $instagram=Confing::get('instagram');
@@ -37,10 +36,10 @@ class IndexController extends Controller
         $menu9=Confing::get('menu9');
 
 
+
         $tituloPagina=Confing::get('tituloPagina');
         $tituloPrincipal=Confing::get('tituloPrincipal');
 
-        
         $servico1img=Confing::get('servico1img');
         $servico2img=Confing::get('servico2img');
         $servico3img=Confing::get('servico3img');
@@ -117,18 +116,15 @@ class IndexController extends Controller
         $contatoLinkInstagram=Confing::get('contatoLinkInstagram');
 
 
+
         $depoimento1=Confing::get('depoimento1');
         $depoimento2=Confing::get('depoimento2');
-
-
-
 
 
 
         $agendamento1=Confing::get('agendamento1');
         $agendamento2=Confing::get('agendamento2');
         $agendamentobotao=Confing::get('agendamentobotao');
-
 
 
         
@@ -165,7 +161,7 @@ class IndexController extends Controller
 
 
         return view("components.idiomas-site",[
-            'telefone'=>$telefone,
+            'textoresumo'=>$textoresumo,
             'whatsapp'=>$whatsapp,
             'email'=>$email,
             'instagram'=>$instagram,
@@ -315,8 +311,7 @@ class IndexController extends Controller
     }
   
     public function home(){
-        // dd(Confing::atualizar('telefone1','(99)99'));
-        $telefone=Confing::get('telefone');
+        $textoresumo=Confing::get('textoresumo');
         $whatsapp=Confing::get('whatsapp');
         $email=Confing::get('email');
         $instagram=Confing::get('instagram');
@@ -467,7 +462,7 @@ class IndexController extends Controller
 
 
         return view("site.home.index",[
-            'telefone'=>$telefone,
+            'textoresumo'=>$textoresumo,
             'whatsapp'=>$whatsapp,
             'email'=>$email,
             'instagram'=>$instagram,
@@ -576,6 +571,7 @@ class IndexController extends Controller
             'depoimento1'=>$depoimento1,
             'depoimento2'=>$depoimento2,
 
+            
 
             'agendamento1'=>$agendamento1,
             'agendamento2'=>$agendamento2,
@@ -611,8 +607,6 @@ class IndexController extends Controller
             'estruturaimagem12'=>$estruturaimagem12,
             'estruturaimagem13'=>$estruturaimagem13,
             'estruturaimagem14'=>$estruturaimagem14,
-        ]);
-
-        
+        ]);        
     }
 }

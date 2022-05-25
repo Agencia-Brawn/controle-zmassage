@@ -11,7 +11,7 @@
       <a href="" class="mr-auto">
         <img src="{{Storage::url($logo1)}}" alt="" class="img-fluid">
       </a>
-      <h2 style="color: #fff; font-weight: bold;" class="w-50"> {{$telefone}} </h2>
+      <h2 style="color: #fff; font-weight: bold;" class="w-50"> {{$textoresumo}} </h2>
 
       <nav id="navbar" class="navbar mx-auto">
         <ul>
