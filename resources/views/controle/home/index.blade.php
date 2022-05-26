@@ -84,7 +84,7 @@
 						<div class="tab-content" id="myTabContent">
 							<!-- HOME -->
 							<div class="tab-pane fade active show" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
-								<form action="{{route('topo1')}}" method="post">
+								<form action="{{route('austriabanner')}}" method="post">
 									@csrf
 
 									<div class="row">
@@ -117,72 +117,73 @@
 
 							<!-- MENU -->
 							<div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
-									<form action="{{route('logo')}}" enctype="multipart/form-data" method="post">
+								<form action="{{route('austriamenu')}}" enctype="multipart/form-data" method="post">
 									@csrf
-											<div class="row">
-													<div class="description col-md-12">
-														<label class="form-control-label" for="basic-url">Menu 1</label>
-														<input name="menu2"  type="text" class="form-control" value="{{$menu2}}">
-													</div>
+									<div class="row">
+										<div class="description col-md-12">
+											<label class="form-control-label" for="basic-url">Menu 1</label>
+											<input name="menu2"  type="text" class="form-control" value="{{$menu2}}">
+										</div>
 
-													<div class="description col-md-12 mt-3">
-														<label class="form-control-label" for="basic-url">Menu 2</label>
-														<input name="menu3"  type="text" class="form-control" value="{{$menu3}}">
-													</div>
+										<div class="description col-md-12 mt-3">
+											<label class="form-control-label" for="basic-url">Menu 2</label>
+											<input name="menu3"  type="text" class="form-control" value="{{$menu3}}">
+										</div>
 
-													<div class="description col-md-12 mt-3">
-														<label class="form-control-label" for="basic-url">Menu 3</label>
-														<input name="menu4"  type="text" class="form-control" value="{{$menu4}}">
-													</div>
+										<div class="description col-md-12 mt-3">
+											<label class="form-control-label" for="basic-url">Menu 3</label>
+											<input name="menu4"  type="text" class="form-control" value="{{$menu4}}">
+										</div>
 
-													<div class="description col-md-12 mt-3">
-														<label class="form-control-label" for="basic-url">Menu 4</label>
-														<input name="menu5"  type="text" class="form-control" value="{{$menu5}}">
-													</div>
+										<div class="description col-md-12 mt-3">
+											<label class="form-control-label" for="basic-url">Menu 4</label>
+											<input name="menu5"  type="text" class="form-control" value="{{$menu5}}">
+										</div>
 
-													<div class="description col-md-12 mt-3">
-														<label class="form-control-label" for="basic-url">Menu 5</label>
-														<input name="menu6"  type="text" class="form-control" value="{{$menu6}}">
-													</div>
+										<div class="description col-md-12 mt-3">
+											<label class="form-control-label" for="basic-url">Menu 5</label>
+											<input name="menu6"  type="text" class="form-control" value="{{$menu6}}">
+										</div>
 
-													<div class="description col-md-12 mt-3">
-															<label class="form-control-label" for="basic-url">Menu 6</label>
-															<input name="menu7"  type="text" class="form-control" value="{{$menu7}}">
-													</div>
+										<div class="description col-md-12 mt-3">
+											<label class="form-control-label" for="basic-url">Menu 6</label>
+											<input name="menu7"  type="text" class="form-control" value="{{$menu7}}">
+										</div>
 
-													<div class="description col-md-12 mt-3">
-														<label class="form-control-label" for="basic-url">Menu 7</label>
-														<input name="menu8"  type="text" class="form-control" value="{{$menu8}}">
-													</div>
+										<div class="description col-md-12 mt-3">
+											<label class="form-control-label" for="basic-url">Menu 7</label>
+											<input name="menu8"  type="text" class="form-control" value="{{$menu8}}">
+										</div>
 
-													<div class="description col-md-12 mt-3">
-														<label class="form-control-label" for="basic-url">Menu 8</label>
-														<input name="menu9"  type="text" class="form-control" value="{{$menu9}}">
-													</div>
+										<div class="description col-md-12 mt-3">
+											<label class="form-control-label" for="basic-url">Menu 8</label>
+											<input name="menu9"  type="text" class="form-control" value="{{$menu9}}">
+										</div>
 
-													<div class="description col-md-12 mt-3" >
-														<label class="form-control-label" for="basic-url">Logo Menu</label>
-														<input name="logo1" type="file" class="form-control">
-													</div>
-													<div class="description col-md-12 mt-3">
-														<img style="width: 30%; margin-top: 15px;" src="{{Storage::url($logo1)}}" alt="">
-														<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 210px <br> Altura: 140px">
-															<i class='bx bxs-info-circle'></i>
-														</button>
-													</div>
+										<div class="description col-md-12 mt-3" >
+											<label class="form-control-label" for="basic-url">Logo Menu</label>
+											<input name="logo1" type="file" class="form-control">
+										</div>
+										<div class="description col-md-12 mt-3">
+											<img style="width: 30%; margin-top: 15px;" src="{{Storage::url($logo1)}}" alt="">
+											<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 210px <br> Altura: 140px">
+												<i class='bx bxs-info-circle'></i>
+											</button>
+										</div>
 
-													<div class="description col-md-12" style="margin-top: 20px; text-align: center;">
-														<button class="btn btn-icon btn-primary" style="margin: auto;" type="submit">
-															<span class="btn-inner--text">Atualizar</span>
-														</button>
-													</div>
-											</div>
-									</form>
+										<div class="description col-md-12" style="margin-top: 20px; text-align: center;">
+											<button class="btn btn-icon btn-primary" style="margin: auto;" type="submit">
+												<span class="btn-inner--text">Atualizar</span>
+											</button>
+										</div>
+
+									</div>
+								</form>
 							</div>
 
 							<!-- SOBRE -->
 							<div class="tab-pane fade" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
-								<form action="{{route('slide')}}" enctype="multipart/form-data" method="post">
+								<form action="{{route('austriasobre')}}" enctype="multipart/form-data" method="post">
 									@csrf
 										<div class="row">
 											<div class="description col-md-12 mt-3">
@@ -229,7 +230,7 @@
 
 							<!-- SERVIÇOS -->
 							<div class="tab-pane fade" id="tabs-icons-text-4" role="tabpanel" aria-labelledby="tabs-icons-text-4-tab">
-								<form action="{{route('rodapeslide')}}" enctype="multipart/form-data" method="post">
+								<form action="{{route('austriaservico')}}" enctype="multipart/form-data" method="post">
 									@csrf
 									<div class="row">
 										<div class="description col-md-12">
@@ -649,7 +650,7 @@
 
 							<!-- ESTRUTURA -->
 							<div class="tab-pane fade" id="etsrutura-1" role="tabpanel" aria-labelledby="estrutura">
-								<form action="{{route('formestrutura')}}" enctype="multipart/form-data" method="post">
+								<form action="{{route('austriaestrutura')}}" enctype="multipart/form-data" method="post">
 									@csrf
 									<div class="row">
 										<div class="description col-md-12">
@@ -872,7 +873,7 @@
 
 							<!-- CONTATO -->
 							<div class="tab-pane fade" id="tabs-icons-text-5" role="tabpanel" aria-labelledby="tabs-icons-text-5-tab">
-								<form action="{{route('menu')}}" enctype="multipart/form-data" method="post">
+								<form action="{{route('austriacontato')}}" enctype="multipart/form-data" method="post">
 									@csrf
 									<div class="row">
 										<div class="description col-md-6">
@@ -941,7 +942,7 @@
 
 							<!-- DEPOIMENTOS -->
 							<div class="tab-pane fade" id="tabs-icons-text-7" role="tabpanel" aria-labelledby="tabs-icons-text-7-tab">
-								<form action="{{route('associados')}}" enctype="multipart/form-data" method="post">
+								<form action="{{route('austriacontato')}}" enctype="multipart/form-data" method="post">
 									@csrf
 									<div class="row">
 										<div class="description col-md-12">
@@ -965,7 +966,7 @@
 
 							<!-- AGENDAMENTO -->
 							<div class="tab-pane fade" id="tabs-icons-text-8" role="tabpanel" aria-labelledby="tabs-icons-text-8-tab">
-								<form action="{{route('receita')}}" enctype="multipart/form-data" method="post">
+								<form action="{{route('austriaagendamento')}}" enctype="multipart/form-data" method="post">
 									<div class="row">
 										@csrf
 										<div class="description col-md-6">
@@ -994,7 +995,7 @@
 
 							<!-- MODAL -->
 							<div class="tab-pane fade" id="tabs-icons-text-9" role="tabpanel" aria-labelledby="tabs-icons-text-9-tab">
-								<form action="{{route('footer')}}" enctype="multipart/form-data" method="post">
+								<form action="{{route('austriamodal')}}" enctype="multipart/form-data" method="post">
 									@csrf
 									<div class="row">
 										<div class="description col-md-6">

@@ -19,26 +19,19 @@ Auth::routes();
 
 Route::get('/', 'IndexController@home')->name('home');
 
+// AUSTRIA
 Route::get('/controle', 'HomeController@home')->name('controle');
 
-Route::post('/topo1', 'HomeController@topo1')->name('topo1');
+Route::post('/austriabanner', 'HomeController@austriabanner')->name('austriabanner');
+Route::post('/austriamenu', 'HomeController@austriamenu')->name('austriamenu');
+Route::post('/austriasobre', 'HomeController@austriasobre')->name('austriasobre');
+Route::post('/austriaservico', 'HomeController@austriaservico')->name('austriaservico');
+Route::post('/austriaestrutura', 'HomeController@austriaestrutura')->name('austriaestrutura');
+Route::post('/austriacontato', 'HomeController@austriacontato')->name('austriacontato');
+Route::post('/austriadepoimentos', 'HomeController@austriadepoimentos')->name('austriadepoimentos');
+Route::post('/austriaagendamento', 'HomeController@austriaagendamento')->name('austriaagendamento');
+Route::post('/austriamodal', 'HomeController@austriamodal')->name('austriamodal');
 
-Route::post('/slide', 'HomeController@slide')->name('slide');
-
-Route::post('/logo', 'HomeController@logo')->name('logo');
-
-Route::post('/rodapeslide', 'HomeController@rodapeslide')->name('rodapeslide');
-
-Route::post('/formestrutura', 'HomeController@formestrutura')->name('formestrutura');
-
-Route::post('/menu', 'HomeController@menu')->name('menu');
-
-Route::post('/associados', 'HomeController@associados')->name('associados');
-
-Route::post('/receita', 'HomeController@receita')->name('receita');
-
-Route::post('/footer', 'HomeController@footer')->name('footer');
-
-
+// INGLÊS
 
 

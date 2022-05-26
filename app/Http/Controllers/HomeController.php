@@ -330,8 +330,8 @@ class HomeController extends Controller
 				'estruturaimagem14'=>$estruturaimagem14,
 				]);
 		}
-
-		public function topo1(Request $request)
+ 
+		public function austriabanner(Request $request)
 		{
 			Confing::atualizar('textoresumo',$request->textoresumo);
 			Confing::atualizar('whatsapp',$request->whatsapp);
@@ -342,7 +342,28 @@ class HomeController extends Controller
 			return redirect()->back()->with('status', "Conteúdo atualizado com sucesso");
 		}
 
-		public function slide(Request $request)
+		public function austriamenu(Request $request)
+		{
+				if ($request->hasFile('logo1')) 
+				{
+						$extension = $request->logo1->extension();
+						$path = $request->logo1->storeAs('public/images', "logo1.$extension");
+						Confing::atualizar('logo1',$path);
+				}
+
+				Confing::atualizar('menu2',$request->menu2);
+				Confing::atualizar('menu3',$request->menu3);
+				Confing::atualizar('menu4',$request->menu4);    
+				Confing::atualizar('menu5',$request->menu5);
+				Confing::atualizar('menu6',$request->menu6);
+				Confing::atualizar('menu7',$request->menu7);
+				Confing::atualizar('menu8',$request->menu8);
+				Confing::atualizar('menu9',$request->menu9);
+
+				return redirect()->back()->with('status', "Formulário Enviado com sucesso");
+		}
+
+		public function austriasobre(Request $request)
 		{
 			if ($request->hasFile('slide1')) 
 			{
@@ -372,28 +393,7 @@ class HomeController extends Controller
 			return redirect()->back()->with('status', "Conteúdo atualizado com sucesso");
 		}
 
-		public function logo(Request $request)
-		{
-				if ($request->hasFile('logo1')) 
-				{
-						$extension = $request->logo1->extension();
-						$path = $request->logo1->storeAs('public/images', "logo1.$extension");
-						Confing::atualizar('logo1',$path);
-				}
-
-				Confing::atualizar('menu2',$request->menu2);
-				Confing::atualizar('menu3',$request->menu3);
-				Confing::atualizar('menu4',$request->menu4);    
-				Confing::atualizar('menu5',$request->menu5);
-				Confing::atualizar('menu6',$request->menu6);
-				Confing::atualizar('menu7',$request->menu7);
-				Confing::atualizar('menu8',$request->menu8);
-				Confing::atualizar('menu9',$request->menu9);
-
-				return redirect()->back()->with('status', "Formulário Enviado com sucesso");
-		}
-
-		public function rodapeslide(Request $request)
+		public function austriaservico(Request $request)
 		{
 				if ($request->hasFile('servico1img')) 
 				{
@@ -516,7 +516,7 @@ class HomeController extends Controller
 				return redirect()->back()->with('status', "Conteúdo atualizado com sucesso");
 		}
 
-		public function formestrutura(Request $request)
+		public function austriaestrutura(Request $request)
 		{
 				Confing::atualizar('estruturatitulo1',$request->estruturatitulo1);
 				Confing::atualizar('estruturatitulo2',$request->estruturatitulo2);
@@ -609,7 +609,7 @@ class HomeController extends Controller
 				return redirect()->back()->with('status', "Conteúdo atualizado com sucesso");
 		}
 
-		public function menu(Request $request)
+		public function austriacontato(Request $request)
 		{
 				if ($request->hasFile('menu1')) 
 				{
@@ -637,7 +637,7 @@ class HomeController extends Controller
 				return redirect()->back()->with('status', "Conteúdo atualizado com sucesso");
 		}
 
-		public function associados(Request $request)
+		public function austriadepoimentos(Request $request)
 		{
 				Confing::atualizar('depoimento1',$request->depoimento1);
 				Confing::atualizar('depoimento2',$request->depoimento2);
@@ -645,7 +645,7 @@ class HomeController extends Controller
 				return redirect()->back()->with('status', "Conteúdo atualizado com sucesso");
 		}
 
-		public function receita(Request $request)
+		public function austriaagendamento(Request $request)
 		{
 				Confing::atualizar('agendamento1',$request->agendamento1);        
 				Confing::atualizar('agendamento2',$request->agendamento2);        
@@ -654,7 +654,7 @@ class HomeController extends Controller
 				return redirect()->back()->with('status', "Conteúdo atualizado com sucesso");
 		}
 
-		public function footer(Request $request)
+		public function austriamodal(Request $request)
 		{
 				if ($request->hasFile('modalimg')) 
 				{
