@@ -5,8 +5,6 @@
 	@component('components.controle.menu.index')
 	@endcomponent
 
-
-
 	<div class="col-xl-12 col-lg-12 col-md-12 container ml-5 pr-5" id="informacoes">
 		<div class="row justify-content-center">
 			<div class="coluna-painel">
@@ -23,7 +21,7 @@
 					<h6 class="h2 text-black d-inline-block mb-0" >Panel Control</h6>
 				</div>
 					
-				<div class="nav-wrapper">
+				<div class="nav-wrapper mb-3">
 					<ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
 						<li class="nav-item">
 								<a class="nav-link mb-sm-3 mb-md-0 mt-2 active" id="tabs-icons-text-9-tab" data-toggle="tab" href="#tabs-icons-text-9" role="tab" aria-controls="tabs-icons-text-9" aria-selected="false">
@@ -169,7 +167,7 @@
 													<div class="description col-md-12 mt-3">
 														<img style="width: 30%; margin-top: 15px;" src="{{Storage::url($logo1)}}" alt="">
 														<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 210px <br> Altura: 140px">
-															So wie ein Auto einen guten Mechaniker braucht, so braucht der Körper einen guten Masseur.<i class='bx bxs-info-circle'></i>
+															<i class='bx bxs-info-circle'></i>
 														</button>
 													</div>
 
@@ -681,436 +679,401 @@
 											</div>
 										</div>
 
-																								<div>
-																										<div class="description mt-3 col-12">
-																											<h2>Estrutura 2</h2>
-																										</div>
+										<div>
+												<div class="description mt-3 col-12">
+													<h2>Estrutura 2</h2>
+												</div>
 																										
-																										<div class="description col-md-6">
-																												<input name="estruturaimagem2" type="file" class="form-control">
-																												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem2)}}" alt="">
-																												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
-																														<i class='bx bxs-info-circle' ></i>
-																												</button>
-																										</div>
-																								</div>
-
-																								<div>
-																										<div class="description mt-3 col-12">
-																												<h2>Estrutura 3</h2>
-																										</div>
-																										
-																										<div class="description col-md-6">
-																												<input name="estruturaimagem3" type="file" class="form-control">
-																												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem3)}}" alt="">
-																												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
-																														<i class='bx bxs-info-circle' ></i>
-																												</button>
-																										</div>
-																								</div>
-
-																								<div>
-																										<div class="description mt-3 col-12">
-																												<h2>Estrutura 4</h2>
-																										</div>
-																										
-																										<div class="description col-md-6">
-																												<input name="estruturaimagem4" type="file" class="form-control">
-																												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem4)}}" alt="">
-																												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
-																														<i class='bx bxs-info-circle' ></i>
-																												</button>
-																										</div>
-																								</div>
-
-																								<div>
-																										<div class="description mt-3 col-12">
-																												<h2>Estrutura 5</h2>
-																										</div>
-																										
-																										<div class="description col-md-6">
-																												<input name="estruturaimagem5" type="file" class="form-control">
-																												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem5)}}" alt="">
-																												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
-																														<i class='bx bxs-info-circle' ></i>
-																												</button>
-																										</div>
-																								</div>
-
-																								<div>
-																										<div class="description mt-3 col-12">
-																												<h2>Estrutura 6</h2>
-																										</div>
-																										
-																										<div class="description col-md-6">
-																												<input name="estruturaimagem6" type="file" class="form-control">
-																												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem6)}}" alt="">
-																												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
-																														<i class='bx bxs-info-circle' ></i>
-																												</button>
-																										</div>
-																								</div>
-
-																								<div>
-																										<div class="description mt-3 col-12">
-																												<h2>Estrutura 7</h2>
-																										</div>
-																										
-																										<div class="description col-md-6">
-																												<input name="estruturaimagem7" type="file" class="form-control">
-																												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem7)}}" alt="">
-																												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
-																														<i class='bx bxs-info-circle' ></i>
-																												</button>
-																										</div>
-																								</div>
-
-																								<div>
-																										<div class="description mt-3 col-12">
-																												<h2>Estrutura 8</h2>
-																										</div>
-																										
-																										<div class="description col-md-6">
-																												<input name="estruturaimagem8" type="file" class="form-control">
-																												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem8)}}" alt="">
-																												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
-																														<i class='bx bxs-info-circle' ></i>
-																												</button>
-																										</div>
-																								</div>
-
-																								<div>
-																										<div class="description mt-3 col-12">
-																												<h2>Estrutura 9</h2>
-																										</div>
-																										
-																										<div class="description col-md-6">
-																												<input name="estruturaimagem9" type="file" class="form-control">
-																												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem9)}}" alt="">
-																												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
-																														<i class='bx bxs-info-circle' ></i>
-																												</button>
-																										</div>
-																								</div>
-
-																								<div>
-																										<div class="description mt-3 col-12">
-																												<h2>Estrutura 10</h2>
-																										</div>
-																										
-																										<div class="description col-md-6">
-																												<input name="estruturaimagem10" type="file" class="form-control">
-																												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem10)}}" alt="">
-																												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
-																														<i class='bx bxs-info-circle' ></i>
-																												</button>
-																										</div>
-																								</div>
-
-																								<div>
-																										<div class="description mt-3 col-12">
-																												<h2>Estrutura 11</h2>
-																										</div>
-																										
-																										<div class="description col-md-6">
-																												<input name="estruturaimagem11" type="file" class="form-control">
-																												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem11)}}" alt="">
-																												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
-																														<i class='bx bxs-info-circle' ></i>
-																												</button>
-																										</div>
-																								</div>
-
-																								<div>
-																										<div class="description mt-3 col-12">
-																												<h2>Estrutura 12</h2>
-																										</div>
-																										
-																										<div class="description col-md-6">
-																												<input name="estruturaimagem12" type="file" class="form-control">
-																												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem12)}}" alt="">
-																												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
-																														<i class='bx bxs-info-circle' ></i>
-																												</button>
-																										</div>
-																								</div>
-
-																								<div>
-																										<div class="description mt-3 col-12">
-																												<h2>Estrutura 13</h2>
-																										</div>
-																										
-																										<div class="description col-md-6">
-																												<input name="estruturaimagem13" type="file" class="form-control">
-																												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem13)}}" alt="">
-																												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
-																														<i class='bx bxs-info-circle' ></i>
-																												</button>
-																										</div>
-																								</div>
-
-																								<div>
-																										<div class="description mt-3 col-12">
-																												<h2>Estrutura 14</h2>
-																										</div>
-																										
-																										<div class="description col-md-6">
-																												<input name="estruturaimagem14" type="file" class="form-control">
-																												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem14)}}" alt="">
-																												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
-																														<i class='bx bxs-info-circle' ></i>
-																												</button>
-																										</div>
-																								</div>
-
-																								<div class="description col-md-12" style="margin-top: 20px; text-align: center;">
-																										<button class="btn btn-icon btn-primary" style="margin: auto;" type="submit">
-																												<span class="btn-inner--text">Atualizar</span>
-																										</button>
-																								</div>
-
-																						</div>
-																				</form>
-																		</div>
-
-																		<!-- CONTATO -->
-																		<div class="tab-pane fade" id="tabs-icons-text-5" role="tabpanel" aria-labelledby="tabs-icons-text-5-tab">
-																				<form action="{{route('menu')}}" enctype="multipart/form-data" method="post">
-																				@csrf
-																						<div class="row">
-																								<div class="description col-md-6">
-																										<label class="form-control-label" for="basic-url">Título Pequeno </label>
-																										<input style="margin-bottom: 20px;" name="contatoTituloPagina" value="{{$contatoTituloPagina}}" type="text" class="form-control" >
-																								</div>
-
-																								<div class="description col-md-6">
-																										<label class="form-control-label" for="basic-url">Título Principal </label>
-																										<input style="margin-bottom: 20px;" name="contatoTituloPagina2" value="{{$contatoTituloPagina2}}" type="text" class="form-control" >
-																								</div>
-
-																								<div class="description col-md-6">
-																										<label class="form-control-label" for="basic-url">Título Email</label>
-																										<input style="margin-bottom: 20px;" name="contatoTituloemail" value="{{$contatoTituloemail}}" type="text" class="form-control" >
-																								</div>
-
-																								<div class="description col-md-6">
-																										<label class="form-control-label" for="basic-url">Email</label>
-																										<input style="margin-bottom: 20px;" name="contatoemail" value="{{$contatoemail}}" type="text" class="form-control" >
-																								</div>
-
-																								<div class="description col-md-6">
-																										<label class="form-control-label" for="basic-url">Título Endereço</label>
-																										<input style="margin-bottom: 20px;" name="contatoTituloEndereco" value="{{$contatoTituloEndereco}}" type="text" class="form-control" >
-																								</div>
-
-																								<div class="description col-md-6">
-																										<label class="form-control-label" for="basic-url">SubTítulo Endereço</label>
-																										<input style="margin-bottom: 20px;" name="contatoSubtTituloEndereco" value="{{$contatoSubtTituloEndereco}}" type="text" class="form-control" >
-																								</div>
-
-																								<div class="description col-md-6">
-																										<label class="form-control-label" for="basic-url">Título Telefone</label>
-																										<input style="margin-bottom: 20px;" name="contatoTituloTelefone" value="{{$contatoTituloTelefone}}" type="text" class="form-control" >
-																								</div>
-
-																								<div class="description col-md-6">
-																										<label class="form-control-label" for="basic-url">Telefone</label>
-																										<input style="margin-bottom: 20px;" name="contatoTelefone" value="{{$contatoTelefone}}" type="text" class="form-control" >
-																								</div>          
-																								
-																								<div class="description col-md-6">
-																										<label class="form-control-label" for="basic-url">Link LinkedIn</label>
-																										<input style="margin-bottom: 20px;" name="contatoLinkLinkedin" value="{{$contatoLinkLinkedin}}" type="text" class="form-control" >
-																								</div>   
-
-																								<div class="description col-md-6">
-																										<label class="form-control-label" for="basic-url">Link Facebook</label>
-																										<input style="margin-bottom: 20px;" name="contatoLinkFacebook" value="{{$contatoLinkFacebook}}" type="text" class="form-control" >
-																								</div>
-
-																								<div class="description col-md-6">
-																										<label class="form-control-label" for="basic-url">Link Instagram</label>
-																										<input style="margin-bottom: 20px;" name="contatoLinkInstagram" value="{{$contatoLinkInstagram}}" type="text" class="form-control" >
-																								</div>
-										
-																								<div class="description col-md-12" style="margin-top: 20px; text-align: center;">
-																										<button class="btn btn-icon btn-primary" style="margin: auto;" type="submit">
-																												<span class="btn-inner--text">Atualizar</span>
-																										</button>
-																								</div>
-																						</div>
-																				</form>
-																		</div>
-
-																		<!-- DEPOIMENTOS -->
-																		<div class="tab-pane fade" id="tabs-icons-text-7" role="tabpanel" aria-labelledby="tabs-icons-text-7-tab">
-																				<form action="{{route('associados')}}" enctype="multipart/form-data" method="post">
-																				@csrf
-																						<div class="row">
-																								
-																								<div class="description col-md-12">
-																										<label class="form-control-label" for="basic-url">Título Pequeno</label>
-																										<input name="depoimento1" value="{{$depoimento1}}" type="text" class="form-control">
-																								</div>
-
-																								<div class="description col-md-12">
-																										<label class="form-control-label" for="basic-url">Título Principal</label>
-																										<input name="depoimento2" value="{{$depoimento2}}" type="text" class="form-control">
-																								</div>
-
-																								<div class="description col-md-12" style="margin-top: 20px; text-align: center;">
-																										<button class="btn btn-icon btn-primary" style="margin: auto;" type="submit">
-																												<span class="btn-inner--text">Atualizar</span>
-																										</button>
-																								</div>
-																						</div>
-																				</form>
-																		</div>
-
-																		<!-- AGENDAMENTO -->
-																		<div class="tab-pane fade" id="tabs-icons-text-8" role="tabpanel" aria-labelledby="tabs-icons-text-8-tab">
-																				<form action="{{route('receita')}}" enctype="multipart/form-data" method="post">
-																						<div class="row">
-																								@csrf
-
-																								<div class="description col-md-6">
-																										<label class="form-control-label" for="basic-url">Título Pequeno</label>
-																										<input style="margin-bottom: 20px;" name="agendamento1" value="{{$agendamento1}}" type="text" class="form-control" >
-																								</div>
-
-																								<div class="description col-md-6">
-																										<label class="form-control-label" for="basic-url">Título Principal</label>
-																										<input style="margin-bottom: 20px;" name="agendamento2" value="{{$agendamento2}}" type="text" class="form-control" >
-																								</div>
-
-
-																								<div class="description col-md-6">
-																										<label class="form-control-label" for="basic-url">Botão</label>
-																										<input style="margin-bottom: 20px;" name="agendamentobotao" value="{{$agendamentobotao}}" type="text" class="form-control" >
-																								</div>
-
-																						
-																								<div class="description col-md-12" style="margin-top: 20px; text-align: center;">
-																										<button class="btn btn-icon btn-primary" style="margin: auto;" type="submit">
-																												<span class="btn-inner--text">Atualizar</span>
-																										</button>
-																								</div>
-																						</div>
-																				</form>
-																		</div>
-
-																		<!-- MODAL -->
-																		<div class="tab-pane fade" id="tabs-icons-text-9" role="tabpanel" aria-labelledby="tabs-icons-text-9-tab">
-																				<form action="{{route('footer')}}" enctype="multipart/form-data" method="post">
-																				@csrf
-																						{{-- <div class="alert alert-default text-center" role="alert">
-																								<h2 class="text-white">Lembrete</h2>
-																								<p>Para desativar um link basta deixar o campo vazio</p>
-																						</div> --}}
-																						<div class="row">
-																								{{-- <div class="description col-md-6">
-																										<label class="form-control-label" for="basic-url">Link Facebook</label> 
-																										{!!$footer1 == '' ? 
-																												'<input class="ml-2 mr-3 form-check-input" type="radio" name="facebook" value="option1" disabled>
-																												<label class="ml-4 form-control-label text-muted" for="basic-url">Desativado</label>' 
-																												: 
-																												'<input class="ml-2 mr-3 form-check-input" type="radio" name="facebook" value="option1" checked >
-																												 <label class="ml-4 form-control-label text-muted" for="basic-url">Ativado</label>'
-																										!!}     
-																										<input style="margin-bottom: 20px;" name="footer1" value="{{$footer1}}" type="text" class="form-control" >
-																								</div> --}}
-
-																								<div class="description col-md-6">
-																										<label class="form-control-label" for="basic-url">Logo</label>
-																										<input name="modalimg" type="file" class="form-control" placeholder="Logo">
-																								</div>
-
-																								<div class="description col-md-6">
-																										<img style="width: 40%; background: black; margin-top: 15px;"  src="{{Storage::url($modalimg)}}" alt="">
-																										<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 250px <br> Altura: 190px">
-																												<i class='bx bxs-info-circle' ></i>
-																										</button>
-																								</div>
-
-
-																								<div class="description col-md-6">
-																										<label class="form-control-label" for="basic-url">Título</label>
-																										<input style="margin-bottom: 20px;" name="modal1" value="{{$modal1}}" type="text" class="form-control" >
-																								</div>
-
-																								<div class="description col-md-6">
-																										<label class="form-control-label" for="basic-url">Botão Agendamento</label>
-																										<input style="margin-bottom: 20px;" name="modal2" value="{{$modal2}}" type="text" class="form-control" >
-																								</div>
-
-																								<div class="description col-md-6">
-																										<label class="form-control-label" for="basic-url">Telefone</label>
-																										<input style="margin-bottom: 20px;" name="modal3" value="{{$modal3}}" type="text" class="form-control" >
-																								</div>
-
-																								<div class="description col-md-6">
-																										<label class="form-control-label" for="basic-url">Link WhatsApp</label>
-																										<input style="margin-bottom: 20px;" name="modal4" value="{{$modal4}}" type="text" class="form-control" >
-																								</div>
-
-																								<div class="description col-md-6">
-																										<label class="form-control-label" for="basic-url">Email</label>
-																										<input style="margin-bottom: 20px;" name="modal5" value="{{$modal5}}" type="text" class="form-control" >
-																								</div>
-
-																								<div class="description col-md-6">
-																										<label class="form-control-label" for="basic-url">Link Mapa</label>
-																										<input style="margin-bottom: 20px;" name="modal6" value="{{$modal6}}" type="text" class="form-control" >
-																								</div>
-
-																								<div class="description col-md-6">
-																										<label class="form-control-label" for="basic-url">Link Instagram</label>
-																										<input style="margin-bottom: 20px;" name="modal7" value="{{$modal7}}" type="text" class="form-control" >
-																								</div>
-
-																								<div class="description col-md-6">
-																										<label class="form-control-label" for="basic-url">Link Facebook</label>
-																										<input style="margin-bottom: 20px;" name="modal8" value="{{$modal8}}" type="text" class="form-control" >
-																								</div>
-
-																								<div class="description col-md-6">
-																										<label class="form-control-label" for="basic-url">Instrução de Click</label>
-																										<input style="margin-bottom: 20px;" name="modal9" value="{{$modal9}}" type="text" class="form-control" >
-																								</div>
-																						
-																								<div class="description col-md-12" style="margin-top: 20px; text-align: center;">
-																										<button class="btn btn-icon btn-primary" style="margin: auto;" type="submit">
-																												<span class="btn-inner--text">Atualizar</span>
-																										</button>
-																								</div>
-																						</div>
-																				</form>
-																		</div>
-																</div>
-														</div>
+												<div class="description col-md-6">
+													<input name="estruturaimagem2" type="file" class="form-control">
+													<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem2)}}" alt="">
+													<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
+														<i class='bx bxs-info-circle' ></i>
+													</button>
+												</div>
 										</div>
-								<!-- END TABELA DE INFO -->
-		 
-								<footer class="footer pt-0">
-									<div class="row align-items-center justify-content-lg-between">
-										<div class="col-lg-12">
-											<div class="copyright text-rigth  text-lg-rigth  text-muted"> © 2022 <a  class="font-weight-bold ml-1"> Alterlet </a> </div>
+
+										<div>
+											<div class="description mt-3 col-12">
+												<h2>Estrutura 3</h2>
+											</div>
+																										
+											<div class="description col-md-6">
+												<input name="estruturaimagem3" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem3)}}" alt="">
+												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
+													<i class='bx bxs-info-circle' ></i>
+												</button>
+											</div>
+										</div>
+
+										<div>
+											<div class="description mt-3 col-12">
+												<h2>Estrutura 4</h2>
+											</div>
+																										
+											<div class="description col-md-6">
+												<input name="estruturaimagem4" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem4)}}" alt="">
+												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
+													<i class='bx bxs-info-circle' ></i>
+												</button>
+											</div>
+										</div>
+
+										<div>
+											<div class="description mt-3 col-12">
+												<h2>Estrutura 5</h2>
+											</div>
+																										
+											<div class="description col-md-6">
+												<input name="estruturaimagem5" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem5)}}" alt="">
+												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
+													<i class='bx bxs-info-circle' ></i>
+												</button>
+											</div>
+										</div>
+
+										<div>
+											<div class="description mt-3 col-12">
+												<h2>Estrutura 6</h2>
+											</div>
+																										
+											<div class="description col-md-6">
+												<input name="estruturaimagem6" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem6)}}" alt="">
+												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
+													<i class='bx bxs-info-circle' ></i>
+												</button>
+											</div>
+										</div>
+
+										<div>
+											<div class="description mt-3 col-12">
+												<h2>Estrutura 7</h2>
+											</div>
+																										
+											<div class="description col-md-6">
+												<input name="estruturaimagem7" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem7)}}" alt="">
+												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
+													<i class='bx bxs-info-circle' ></i>
+												</button>
+											</div>
+										</div>
+
+										<div>
+											<div class="description mt-3 col-12">
+												<h2>Estrutura 8</h2>
+											</div>
+																										
+											<div class="description col-md-6">
+												<input name="estruturaimagem8" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem8)}}" alt="">
+												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
+													<i class='bx bxs-info-circle' ></i>
+												</button>
+											</div>
+										</div>
+
+										<div>
+											<div class="description mt-3 col-12">
+												<h2>Estrutura 9</h2>
+											</div>
+																										
+											<div class="description col-md-6">
+												<input name="estruturaimagem9" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem9)}}" alt="">
+												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
+													<i class='bx bxs-info-circle' ></i>
+												</button>
+											</div>
+										</div>
+
+										<div>
+											<div class="description mt-3 col-12">
+												<h2>Estrutura 10</h2>
+											</div>
+																										
+											<div class="description col-md-6">
+												<input name="estruturaimagem10" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem10)}}" alt="">
+												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
+													<i class='bx bxs-info-circle' ></i>
+												</button>
+											</div>
+										</div>
+
+										<div>
+											<div class="description mt-3 col-12">
+												<h2>Estrutura 11</h2>
+											</div>
+																										
+											<div class="description col-md-6">
+												<input name="estruturaimagem11" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem11)}}" alt="">
+												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
+													<i class='bx bxs-info-circle' ></i>
+												</button>
+											</div>
+										</div>
+
+										<div>
+											<div class="description mt-3 col-12">
+												<h2>Estrutura 12</h2>
+											</div>
+																										
+											<div class="description col-md-6">
+												<input name="estruturaimagem12" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem12)}}" alt="">
+												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
+													<i class='bx bxs-info-circle' ></i>
+												</button>
+											</div>
+										</div>
+
+										<div>
+											<div class="description mt-3 col-12">
+												<h2>Estrutura 13</h2>
+											</div>
+																										
+											<div class="description col-md-6">
+												<input name="estruturaimagem13" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem13)}}" alt="">
+												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
+													<i class='bx bxs-info-circle' ></i>
+												</button>
+											</div>
+										</div>
+
+										<div>
+											<div class="description mt-3 col-12">
+												<h2>Estrutura 14</h2>
+											</div>
+																										
+											<div class="description col-md-6">
+												<input name="estruturaimagem14" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem14)}}" alt="">
+												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
+													<i class='bx bxs-info-circle' ></i>
+												</button>
+											</div>
+										</div>
+
+										<div class="description col-md-12" style="margin-top: 20px; text-align: center;">
+											<button class="btn btn-icon btn-primary" style="margin: auto;" type="submit">
+												<span class="btn-inner--text">Atualizar</span>
+											</button>
 										</div>
 									</div>
-								</footer>
+								</form>
+							</div>
 
-								</div>
+							<!-- CONTATO -->
+							<div class="tab-pane fade" id="tabs-icons-text-5" role="tabpanel" aria-labelledby="tabs-icons-text-5-tab">
+								<form action="{{route('menu')}}" enctype="multipart/form-data" method="post">
+									@csrf
+									<div class="row">
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Título Pequeno </label>
+											<input style="margin-bottom: 20px;" name="contatoTituloPagina" value="{{$contatoTituloPagina}}" type="text" class="form-control" >
+										</div>
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Título Principal </label>
+											<input style="margin-bottom: 20px;" name="contatoTituloPagina2" value="{{$contatoTituloPagina2}}" type="text" class="form-control" >
+										</div>
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Título Email</label>
+											<input style="margin-bottom: 20px;" name="contatoTituloemail" value="{{$contatoTituloemail}}" type="text" class="form-control" >
+										</div>
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Email</label>
+											<input style="margin-bottom: 20px;" name="contatoemail" value="{{$contatoemail}}" type="text" class="form-control" >
+										</div>
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Título Endereço</label>
+											<input style="margin-bottom: 20px;" name="contatoTituloEndereco" value="{{$contatoTituloEndereco}}" type="text" class="form-control" >
+										</div>
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">SubTítulo Endereço</label>
+											<input style="margin-bottom: 20px;" name="contatoSubtTituloEndereco" value="{{$contatoSubtTituloEndereco}}" type="text" class="form-control" >
+										</div>
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Título Telefone</label>
+											<input style="margin-bottom: 20px;" name="contatoTituloTelefone" value="{{$contatoTituloTelefone}}" type="text" class="form-control" >
+										</div>
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Telefone</label>
+											<input style="margin-bottom: 20px;" name="contatoTelefone" value="{{$contatoTelefone}}" type="text" class="form-control" >
+										</div>          
+																								
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Link LinkedIn</label>
+											<input style="margin-bottom: 20px;" name="contatoLinkLinkedin" value="{{$contatoLinkLinkedin}}" type="text" class="form-control" >
+										</div>   
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Link Facebook</label>
+											<input style="margin-bottom: 20px;" name="contatoLinkFacebook" value="{{$contatoLinkFacebook}}" type="text" class="form-control" >
+										</div>
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Link Instagram</label>
+											<input style="margin-bottom: 20px;" name="contatoLinkInstagram" value="{{$contatoLinkInstagram}}" type="text" class="form-control" >
+										</div>
+										
+										<div class="description col-md-12" style="margin-top: 20px; text-align: center;">
+											<button class="btn btn-icon btn-primary" style="margin: auto;" type="submit">
+												<span class="btn-inner--text">Atualizar</span>
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+
+							<!-- DEPOIMENTOS -->
+							<div class="tab-pane fade" id="tabs-icons-text-7" role="tabpanel" aria-labelledby="tabs-icons-text-7-tab">
+								<form action="{{route('associados')}}" enctype="multipart/form-data" method="post">
+									@csrf
+									<div class="row">
+										<div class="description col-md-12">
+											<label class="form-control-label" for="basic-url">Título Pequeno</label>
+											<input name="depoimento1" value="{{$depoimento1}}" type="text" class="form-control">
+										</div>
+
+										<div class="description col-md-12">
+											<label class="form-control-label" for="basic-url">Título Principal</label>
+											<input name="depoimento2" value="{{$depoimento2}}" type="text" class="form-control">
+										</div>
+
+										<div class="description col-md-12" style="margin-top: 20px; text-align: center;">
+											<button class="btn btn-icon btn-primary" style="margin: auto;" type="submit">
+												<span class="btn-inner--text">Atualizar</span>
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+
+							<!-- AGENDAMENTO -->
+							<div class="tab-pane fade" id="tabs-icons-text-8" role="tabpanel" aria-labelledby="tabs-icons-text-8-tab">
+								<form action="{{route('receita')}}" enctype="multipart/form-data" method="post">
+									<div class="row">
+										@csrf
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Título Pequeno</label>
+											<input style="margin-bottom: 20px;" name="agendamento1" value="{{$agendamento1}}" type="text" class="form-control" >
+										</div>
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Título Principal</label>
+											<input style="margin-bottom: 20px;" name="agendamento2" value="{{$agendamento2}}" type="text" class="form-control" >
+										</div>
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Botão</label>
+											<input style="margin-bottom: 20px;" name="agendamentobotao" value="{{$agendamentobotao}}" type="text" class="form-control" >
+										</div>
+
+										<div class="description col-md-12" style="margin-top: 20px; text-align: center;">
+											<button class="btn btn-icon btn-primary" style="margin: auto;" type="submit">
+												<span class="btn-inner--text">Atualizar</span>
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+
+							<!-- MODAL -->
+							<div class="tab-pane fade" id="tabs-icons-text-9" role="tabpanel" aria-labelledby="tabs-icons-text-9-tab">
+								<form action="{{route('footer')}}" enctype="multipart/form-data" method="post">
+									@csrf
+									<div class="row">
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Logo</label>
+											<input name="modalimg" type="file" class="form-control" placeholder="Logo">
+										</div>
+
+										<div class="description col-md-6">
+											<img style="width: 40%; background: black; margin-top: 15px;"  src="{{Storage::url($modalimg)}}" alt="">
+											<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 250px <br> Altura: 190px">
+												<i class='bx bxs-info-circle' ></i>
+											</button>
+										</div>
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Título</label>
+											<input style="margin-bottom: 20px;" name="modal1" value="{{$modal1}}" type="text" class="form-control" >
+										</div>
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Botão Agendamento</label>
+											<input style="margin-bottom: 20px;" name="modal2" value="{{$modal2}}" type="text" class="form-control" >
+										</div>
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Telefone</label>
+											<input style="margin-bottom: 20px;" name="modal3" value="{{$modal3}}" type="text" class="form-control" >
+										</div>
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Link WhatsApp</label>
+											<input style="margin-bottom: 20px;" name="modal4" value="{{$modal4}}" type="text" class="form-control" >
+										</div>
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Email</label>
+											<input style="margin-bottom: 20px;" name="modal5" value="{{$modal5}}" type="text" class="form-control" >
+										</div>
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Link Mapa</label>
+											<input style="margin-bottom: 20px;" name="modal6" value="{{$modal6}}" type="text" class="form-control" >
+										</div>
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Link Instagram</label>
+											<input style="margin-bottom: 20px;" name="modal7" value="{{$modal7}}" type="text" class="form-control" >
+										</div>
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Link Facebook</label>
+											<input style="margin-bottom: 20px;" name="modal8" value="{{$modal8}}" type="text" class="form-control" >
+										</div>
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Instrução de Click</label>
+											<input style="margin-bottom: 20px;" name="modal9" value="{{$modal9}}" type="text" class="form-control" >
+										</div>
+																						
+										<div class="description col-md-12" style="margin-top: 20px; text-align: center;">
+											<button class="btn btn-icon btn-primary" style="margin: auto;" type="submit">
+												<span class="btn-inner--text">Atualizar</span>
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
 						</div>
+					</div>
 				</div>
+		 
+				@component('components.controle.footer')
+				@endcomponent
+
+			</div>
 		</div>
+	</div>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-
-	<script>
-		$(function () {
-			$('[data-toggle="tooltip"]').tooltip()
-		})
-	</script>
+	@component('components.controle.scripts')
+	@endcomponent
 
 @endsection
