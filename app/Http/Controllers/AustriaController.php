@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Confing;
 
-class HomeController extends Controller
+class AustriaController extends Controller
 {
 		/**
 		 * Create a new controller instance.

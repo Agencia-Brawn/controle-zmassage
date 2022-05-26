@@ -17,20 +17,23 @@ Route::get('/welcome', function () {
 
 Auth::routes(); 
 
-Route::get('/', 'IndexController@home')->name('home');
+Route::get('/en', 'EnglishPageController@home')->name('home');
+Route::get('/pt', 'PortuguesPageController@home')->name('home');
+Route::get('/es', 'EspanholPageController@home')->name('home');
 
 // AUSTRIA
-Route::get('/controle', 'HomeController@home')->name('controle');
+Route::get('/', 'AustriaPageController@home')->name('home');
+Route::get('/controle', 'AustriaController@home')->name('controle');
 
-Route::post('/austriabanner', 'HomeController@austriabanner')->name('austriabanner');
-Route::post('/austriamenu', 'HomeController@austriamenu')->name('austriamenu');
-Route::post('/austriasobre', 'HomeController@austriasobre')->name('austriasobre');
-Route::post('/austriaservico', 'HomeController@austriaservico')->name('austriaservico');
-Route::post('/austriaestrutura', 'HomeController@austriaestrutura')->name('austriaestrutura');
-Route::post('/austriacontato', 'HomeController@austriacontato')->name('austriacontato');
-Route::post('/austriadepoimentos', 'HomeController@austriadepoimentos')->name('austriadepoimentos');
-Route::post('/austriaagendamento', 'HomeController@austriaagendamento')->name('austriaagendamento');
-Route::post('/austriamodal', 'HomeController@austriamodal')->name('austriamodal');
+Route::post('/austriabanner', 'AustriaController@austriabanner')->name('austriabanner');
+Route::post('/austriamenu', 'AustriaController@austriamenu')->name('austriamenu');
+Route::post('/austriasobre', 'AustriaController@austriasobre')->name('austriasobre');
+Route::post('/austriaservico', 'AustriaController@austriaservico')->name('austriaservico');
+Route::post('/austriaestrutura', 'AustriaController@austriaestrutura')->name('austriaestrutura');
+Route::post('/austriacontato', 'AustriaController@austriacontato')->name('austriacontato');
+Route::post('/austriadepoimentos', 'AustriaController@austriadepoimentos')->name('austriadepoimentos');
+Route::post('/austriaagendamento', 'AustriaController@austriaagendamento')->name('austriaagendamento');
+Route::post('/austriamodal', 'AustriaController@austriamodal')->name('austriamodal');
 
 // INGLÊS
 

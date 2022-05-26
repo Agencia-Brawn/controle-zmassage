@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Confing;
 
 
-class IndexController extends Controller
+class PortuguesPageController extends Controller
 {
 
     public function index(){
@@ -461,7 +461,7 @@ class IndexController extends Controller
 
 
 
-        return view("site.home.index",[
+        return view("site.pt.index",[
             'textoresumo'=>$textoresumo,
             'whatsapp'=>$whatsapp,
             'email'=>$email,
