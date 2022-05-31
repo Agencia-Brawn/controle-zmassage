@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/welcome', function () {
-    return view('welcome');
-});
+Route::get('/', 'AustriaPageController@home')->name('home');
 
 Auth::routes(); 
 
@@ -22,7 +20,7 @@ Route::get('/pt', 'PortuguesPageController@home')->name('home');
 Route::get('/es', 'EspanholPageController@home')->name('home');
 
 // AUSTRIA
-Route::get('/', 'AustriaPageController@home')->name('home');
+Route::get('/au', 'AustriaPageController@home')->name('home');
 Route::get('/controle', 'AustriaController@home')->name('controle');
 
 Route::post('/austriabanner', 'AustriaController@austriabanner')->name('austriabanner');
