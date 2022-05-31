@@ -29,5 +29,19 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        @guest
+        @else
+        <a class="nav-link" style="position: absolute;top: 0%;right: 0%;" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+          Sair
+        </a>
+
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+          @csrf
+        </form>
+        @endguest
+      </li>
+    </ul>
   </nav>
 </div>
