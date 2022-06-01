@@ -48,6 +48,12 @@
 						</li>
 
 						<li class="nav-item">
+							<a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-8-tab" data-toggle="tab" href="#tabs-icons-text-8" role="tab" aria-controls="tabs-icons-text-8" aria-selected="false">
+								Agendamento
+							</a>
+						</li>
+
+						<li class="nav-item">
 							<a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-4-tab" data-toggle="tab" href="#tabs-icons-text-4" role="tab" aria-controls="tabs-icons-text-4" aria-selected="false">
 								Serviços
 							</a>
@@ -60,20 +66,14 @@
 						</li>
 
 						<li class="nav-item">
-							<a  class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-5-tab" data-toggle="tab" href="#tabs-icons-text-5" role="tab" aria-controls="tabs-icons-text-5" aria-selected="false">
-								Contato
-							</a>
-						</li>
-
-						<li class="nav-item">
 							<a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-7-tab" data-toggle="tab" href="#tabs-icons-text-7" role="tab" aria-controls="tabs-icons-text-7" aria-selected="false">
 								Depoimentos
 							</a>
 						</li>
-														
+
 						<li class="nav-item">
-							<a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-8-tab" data-toggle="tab" href="#tabs-icons-text-8" role="tab" aria-controls="tabs-icons-text-8" aria-selected="false">
-								Agendamento
+							<a  class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-5-tab" data-toggle="tab" href="#tabs-icons-text-5" role="tab" aria-controls="tabs-icons-text-5" aria-selected="false">
+								Contato
 							</a>
 						</li>
 					</ul>
@@ -82,30 +82,101 @@
 				<div class="card shadow">
 					<div class="card-body">
 						<div class="tab-content" id="myTabContent">
+							<!-- MODAL -->
+							<div class="tab-pane fade active show" id="tabs-icons-text-9" role="tabpanel" aria-labelledby="tabs-icons-text-9-tab">
+								<form action="{{route('portuguesmodal')}}" enctype="multipart/form-data" method="post">
+									@csrf
+									<div class="row">
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Logo</label>
+											<input name="portuguesmodalimg" type="file" class="form-control" placeholder="Logo">
+										</div>
+
+										<div class="description col-md-6">
+											<img style="width: 40%; background: black; margin-top: 15px;"  src="{{Storage::url($portuguesmodalimg)}}" alt="">
+											<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 250px <br> Altura: 190px">
+												<i class='bx bxs-info-circle' ></i>
+											</button>
+										</div>
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Título</label>
+											<input style="margin-bottom: 20px;" name="portuguesmodal1" value="{{$portuguesmodal1}}" type="text" class="form-control" >
+										</div>
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Botão Agendamento</label>
+											<input style="margin-bottom: 20px;" name="portuguesmodal2" value="{{$portuguesmodal2}}" type="text" class="form-control" >
+										</div>
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Telefone</label>
+											<input style="margin-bottom: 20px;" name="portuguesmodal3" value="{{$portuguesmodal3}}" type="text" class="form-control" >
+										</div>
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Link WhatsApp</label>
+											<input style="margin-bottom: 20px;" name="portuguesmodal4" value="{{$portuguesmodal4}}" type="text" class="form-control" >
+										</div>
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Email</label>
+											<input style="margin-bottom: 20px;" name="portuguesmodal5" value="{{$portuguesmodal5}}" type="text" class="form-control" >
+										</div>
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Link Mapa</label>
+											<input style="margin-bottom: 20px;" name="portuguesmodal6" value="{{$portuguesmodal6}}" type="text" class="form-control" >
+										</div>
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Link Instagram</label>
+											<input style="margin-bottom: 20px;" name="portuguesmodal7" value="{{$portuguesmodal7}}" type="text" class="form-control" >
+										</div>
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Link Facebook</label>
+											<input style="margin-bottom: 20px;" name="portuguesmodal8" value="{{$portuguesmodal8}}" type="text" class="form-control" >
+										</div>
+
+										<div class="description col-md-6">
+											<label class="form-control-label" for="basic-url">Instrução de Click</label>
+											<input style="margin-bottom: 20px;" name="portuguesmodal9" value="{{$portuguesmodal9}}" type="text" class="form-control" >
+										</div>
+																						
+										<div class="description col-md-12" style="margin-top: 20px; text-align: center;">
+											<button class="btn btn-icon btn-primary" style="margin: auto;" type="submit">
+												<span class="btn-inner--text">Atualizar</span>
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+
 							<!-- HOME -->
-							<div class="tab-pane fade active show" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
-								<form action="{{route('austriabanner')}}" method="post">
+							<div class="tab-pane fade" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
+								<form action="{{route('portuguesbanner')}}" method="POST">
 									@csrf
 
 									<div class="row">
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Resumo Inicial</label>
-											<input name="textoresumo" value="{{$textoresumo}}" type="text" class="form-control">
+											<input name="portuguestextoresumo" value="{{$portuguestextoresumo}}" type="text" class="form-control">
 										</div>
 
 										<div class="description col-md-6">
-											<label class="form-control-label" for="basic-url">WhatsApp</label>
-											<input name="whatsapp" value="{{$whatsapp}}" type="text" class="form-control">
+											<label class="form-control-label" for="basic-url">Link do LinkedIn</label>
+											<input name="portugueswhatsapp" value="{{$portugueswhatsapp}}" type="text" class="form-control">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Link do Instagram</label>
-											<input name="instagram" value="{{$instagram}}" type="text" class="form-control">
+											<input name="portuguesinstagram" value="{{$portuguesinstagram}}" type="text" class="form-control">
 										</div>
 																								
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Link do Facebook</label>
-											<input name="facebook" value="{{$facebook}}" type="text" class="form-control">
+											<input name="portuguesfacebook" value="{{$portuguesfacebook}}" type="text" class="form-control">
 										</div>
 
 										<button class="btn btn-icon btn-primary mx-auto mt-4" type="subimt">
@@ -117,55 +188,55 @@
 
 							<!-- MENU -->
 							<div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
-								<form action="{{route('austriamenu')}}" enctype="multipart/form-data" method="post">
+								<form action="{{route('portuguesmenu')}}" enctype="multipart/form-data" method="post">
 									@csrf
 									<div class="row">
 										<div class="description col-md-12">
 											<label class="form-control-label" for="basic-url">Menu 1</label>
-											<input name="menu2"  type="text" class="form-control" value="{{$menu2}}">
+											<input name="portuguesmenu2"  type="text" class="form-control" value="{{$portuguesmenu2}}">
 										</div>
 
 										<div class="description col-md-12 mt-3">
 											<label class="form-control-label" for="basic-url">Menu 2</label>
-											<input name="menu3"  type="text" class="form-control" value="{{$menu3}}">
+											<input name="portuguesmenu3"  type="text" class="form-control" value="{{$portuguesmenu3}}">
 										</div>
 
 										<div class="description col-md-12 mt-3">
 											<label class="form-control-label" for="basic-url">Menu 3</label>
-											<input name="menu4"  type="text" class="form-control" value="{{$menu4}}">
+											<input name="portuguesmenu4"  type="text" class="form-control" value="{{$portuguesmenu4}}">
 										</div>
 
 										<div class="description col-md-12 mt-3">
 											<label class="form-control-label" for="basic-url">Menu 4</label>
-											<input name="menu5"  type="text" class="form-control" value="{{$menu5}}">
+											<input name="portuguesmenu5"  type="text" class="form-control" value="{{$portuguesmenu5}}">
 										</div>
 
 										<div class="description col-md-12 mt-3">
 											<label class="form-control-label" for="basic-url">Menu 5</label>
-											<input name="menu6"  type="text" class="form-control" value="{{$menu6}}">
+											<input name="portuguesmenu6"  type="text" class="form-control" value="{{$portuguesmenu6}}">
 										</div>
 
 										<div class="description col-md-12 mt-3">
 											<label class="form-control-label" for="basic-url">Menu 6</label>
-											<input name="menu7"  type="text" class="form-control" value="{{$menu7}}">
+											<input name="portuguesmenu7"  type="text" class="form-control" value="{{$portuguesmenu7}}">
 										</div>
 
 										<div class="description col-md-12 mt-3">
 											<label class="form-control-label" for="basic-url">Menu 7</label>
-											<input name="menu8"  type="text" class="form-control" value="{{$menu8}}">
+											<input name="portuguesmenu8"  type="text" class="form-control" value="{{$portuguesmenu8}}">
 										</div>
 
 										<div class="description col-md-12 mt-3">
 											<label class="form-control-label" for="basic-url">Menu 8</label>
-											<input name="menu9"  type="text" class="form-control" value="{{$menu9}}">
+											<input name="portuguesmenu9"  type="text" class="form-control" value="{{$portuguesmenu9}}">
 										</div>
 
 										<div class="description col-md-12 mt-3" >
 											<label class="form-control-label" for="basic-url">Logo Menu</label>
-											<input name="logo1" type="file" class="form-control">
+											<input name="portugueslogo1" type="file" class="form-control">
 										</div>
 										<div class="description col-md-12 mt-3">
-											<img style="width: 30%; margin-top: 15px;" src="{{Storage::url($logo1)}}" alt="">
+											<img style="width: 30%; margin-top: 15px;" src="{{Storage::url($portugueslogo1)}}" alt="">
 											<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 210px <br> Altura: 140px">
 												<i class='bx bxs-info-circle'></i>
 											</button>
@@ -183,27 +254,27 @@
 
 							<!-- SOBRE -->
 							<div class="tab-pane fade" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
-								<form action="{{route('austriasobre')}}" enctype="multipart/form-data" method="post">
+								<form action="{{route('portuguessobre')}}" enctype="multipart/form-data" method="post">
 									@csrf
 										<div class="row">
 											<div class="description col-md-12 mt-3">
 												<label class="form-control-label" for="basic-url">Titulo 1</label>
-												<input name="slide4"  type="text" class="form-control" value="{{$slide4}}">
+												<input name="portuguesslide4"  type="text" class="form-control" value="{{$portuguesslide4}}">
 											</div>
 
 											<div class="description col-md-12 mt-3">
 												<label class="form-control-label" for="basic-url">Titulo da Página</label>
-												<input name="slide5"  type="text" class="form-control" value="{{$slide5}}">
+												<input name="portuguesslide5"  type="text" class="form-control" value="{{$portuguesslide5}}">
 											</div>
 
 											<div class="description col-md-12 mt-3">
 												<label class="form-control-label" for="basic-url">Titulo do Texto</label>
-												<input name="slide6"  type="text" class="form-control" value="{{$slide6}}">
+												<input name="portuguesslide6"  type="text" class="form-control" value="{{$portuguesslide6}}">
 											</div>
 
 											<div class="description col-md-12 mt-3">
 												<label class="form-control-label" for="basic-url">Texto</label>
-												<input name="slide7"  type="text" class="form-control" value="{{$slide7}}">
+												<input name="portuguesslide7"  type="text" class="form-control" value="{{$portuguesslide7}}">
 											</div>
 
 											<div class="description col-md-12 mt-3">
@@ -212,10 +283,10 @@
 
 											<div class="description col-md-12 mt-3" >
 												<label class="form-control-label" for="basic-url">Logo Menu</label>
-												<input name="slide1" type="file" class="form-control">
+												<input name="portuguesslide1" type="file" class="form-control">
 											</div>
 											<div class="description col-md-12 mt-3">
-												<img style="width: 30%; margin-top: 15px;" src="{{Storage::url($slide1)}}" alt="">
+												<img style="width: 30%; margin-top: 15px;" src="{{Storage::url($portuguesslide1)}}" alt="">
 												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 600px <br> Altura: 400px"><i class='bx bxs-info-circle'></i></button>
 											</div>
 
@@ -230,17 +301,17 @@
 
 							<!-- SERVIÇOS -->
 							<div class="tab-pane fade" id="tabs-icons-text-4" role="tabpanel" aria-labelledby="tabs-icons-text-4-tab">
-								<form action="{{route('austriaservico')}}" enctype="multipart/form-data" method="post">
+								<form action="{{route('portuguesservico')}}" enctype="multipart/form-data" method="post">
 									@csrf
 									<div class="row">
 										<div class="description col-md-12">
 											<label class="form-control-label" for="basic-url">Título Pequeno</label>
-											<input name="tituloPagina" value="{{$tituloPagina}}" type="text" class="form-control">
+											<input name="portuguestituloPagina" value="{{$portuguestituloPagina}}" type="text" class="form-control">
 										</div>
 
 										<div class="description col-md-12">
 											<label class="form-control-label" for="basic-url">Título Principal</label>
-											<input name="tituloPrincipal"  type="text" class="form-control" value="{{$tituloPrincipal}}">
+											<input name="portuguestituloPrincipal"  type="text" class="form-control" value="{{$portuguestituloPrincipal}}">
 										</div>
 									</div>
 
@@ -252,8 +323,8 @@
 																								
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
-											<input name="servico1img" type="file" class="form-control">
-											<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($servico1img)}}" alt="">
+											<input name="portuguesservico1img" type="file" class="form-control">
+											<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($portuguesservico1img)}}" alt="">
 											<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
 												<i class='bx bxs-info-circle' ></i>
 											</button>
@@ -261,22 +332,22 @@
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Título </label>
-											<input name="servico1titulo" value="{{$servico1titulo}}" type="text" class="form-control">
+											<input name="portuguesservico1titulo" value="{{$portuguesservico1titulo}}" type="text" class="form-control">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Descrição</label>
-											<input name="servico1descricao"  type="text" class="form-control" value="{{$servico1descricao}}">
+											<input name="portuguesservico1descricao"  type="text" class="form-control" value="{{$portuguesservico1descricao}}">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Preço 1</label>
-											<input name="servico1preco"  type="text" class="form-control" value="{{$servico1preco}}">
+											<input name="portuguesservico1preco"  type="text" class="form-control" value="{{$portuguesservico1preco}}">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Preço 2</label>
-											<input name="servico1preco2"  type="text" class="form-control" value="{{$servico1preco2}}">
+											<input name="portuguesservico1preco2"  type="text" class="form-control" value="{{$portuguesservico1preco2}}">
 										</div>
 									</div>
 
@@ -288,8 +359,8 @@
 																								
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
-											<input name="servico2img" type="file" class="form-control">
-											<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($servico2img)}}" alt="">
+											<input name="portuguesservico2img" type="file" class="form-control">
+											<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($portuguesservico2img)}}" alt="">
 											<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
 												<i class='bx bxs-info-circle' ></i>
 											</button>
@@ -297,22 +368,22 @@
 										
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Título </label>
-											<input name="servico2titulo" value="{{$servico2titulo}}" type="text" class="form-control">
+											<input name="portuguesservico2titulo" value="{{$portuguesservico2titulo}}" type="text" class="form-control">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Descrição</label>
-											<input name="servico2descricao"  type="text" class="form-control" value="{{$servico2descricao}}">
+											<input name="portuguesservico2descricao"  type="text" class="form-control" value="{{$portuguesservico2descricao}}">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Preço</label>
-											<input name="servico2preco"  type="text" class="form-control" value="{{$servico2preco}}">
+											<input name="portuguesservico2preco"  type="text" class="form-control" value="{{$portuguesservico2preco}}">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Preço 2</label>
-											<input name="servico2preco2"  type="text" class="form-control" value="{{$servico2preco2}}">
+											<input name="portuguesservico2preco2"  type="text" class="form-control" value="{{$portuguesservico2preco2}}">
 										</div>
 									</div>
 
@@ -324,8 +395,8 @@
 																								
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
-											<input name="servico3img" type="file" class="form-control">
-											<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($servico3img)}}" alt="">
+											<input name="portuguesservico3img" type="file" class="form-control">
+											<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($portuguesservico3img)}}" alt="">
 											<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
 												<i class='bx bxs-info-circle' ></i>
 											</button>
@@ -333,22 +404,22 @@
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Título </label>
-											<input name="servico3titulo" value="{{$servico3titulo}}" type="text" class="form-control">
+											<input name="portuguesservico3titulo" value="{{$portuguesservico3titulo}}" type="text" class="form-control">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Descrição</label>
-											<input name="servico3descricao"  type="text" class="form-control" value="{{$servico3descricao}}">
+											<input name="portuguesservico3descricao"  type="text" class="form-control" value="{{$portuguesservico3descricao}}">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Preço</label>
-											<input name="servico4preco"  type="text" class="form-control" value="{{$servico4preco}}">
+											<input name="portuguesservico4preco"  type="text" class="form-control" value="{{$portuguesservico4preco}}">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Preço 2</label>
-											<input name="servico3preco2"  type="text" class="form-control" value="{{$servico3preco2}}">
+											<input name="portuguesservico3preco2"  type="text" class="form-control" value="{{$portuguesservico3preco2}}">
 										</div>
 									</div>
 																						
@@ -360,8 +431,8 @@
 																								
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
-											<input name="servico4img" type="file" class="form-control">
-											<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($servico4img)}}" alt="">
+											<input name="portuguesservico4img" type="file" class="form-control">
+											<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($portuguesservico4img)}}" alt="">
 											<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
 												<i class='bx bxs-info-circle' ></i>
 											</button>
@@ -369,22 +440,22 @@
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Título </label>
-											<input name="servico4titulo" value="{{$servico4titulo}}" type="text" class="form-control">
+											<input name="portuguesservico4titulo" value="{{$portuguesservico4titulo}}" type="text" class="form-control">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Descrição</label>
-											<input name="servico4descricao"  type="text" class="form-control" value="{{$servico4descricao}}">
+											<input name="portuguesservico4descricao"  type="text" class="form-control" value="{{$portuguesservico4descricao}}">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Preço</label>
-											<input name="servico4preco"  type="text" class="form-control" value="{{$servico4preco}}">
+											<input name="portuguesservico4preco"  type="text" class="form-control" value="{{$portuguesservico4preco}}">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Preço 2</label>
-											<input name="servico4preco2"  type="text" class="form-control" value="{{$servico4preco2}}">
+											<input name="portuguesservico4preco2"  type="text" class="form-control" value="{{$portuguesservico4preco2}}">
 										</div>
 									</div>
 
@@ -396,8 +467,8 @@
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
-											<input name="servico5img" type="file" class="form-control">
-												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($servico5img)}}" alt="">
+											<input name="portuguesservico5img" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($portuguesservico5img)}}" alt="">
 												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
 													<i class='bx bxs-info-circle' ></i>
 												</button>
@@ -405,22 +476,22 @@
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Título </label>
-											<input name="servico5titulo" value="{{$servico5titulo}}" type="text" class="form-control">
+											<input name="portuguesservico5titulo" value="{{$portuguesservico5titulo}}" type="text" class="form-control">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Descrição</label>
-											<input name="servico5descricao"  type="text" class="form-control" value="{{$servico5descricao}}">
+											<input name="portuguesservico5descricao"  type="text" class="form-control" value="{{$portuguesservico5descricao}}">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Preço</label>
-											<input name="servico5preco"  type="text" class="form-control" value="{{$servico5preco}}">
+											<input name="portuguesservico5preco"  type="text" class="form-control" value="{{$portuguesservico5preco}}">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Preço 2</label>
-											<input name="servico5preco2"  type="text" class="form-control" value="{{$servico5preco2}}">
+											<input name="portuguesservico5preco2"  type="text" class="form-control" value="{{$portuguesservico5preco2}}">
 										</div>
 									</div>
 
@@ -432,8 +503,8 @@
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
-											<input name="servico6img" type="file" class="form-control">
-												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($servico6img)}}" alt="">
+											<input name="portuguesservico6img" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($portuguesservico6img)}}" alt="">
 												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
 													<i class='bx bxs-info-circle' ></i>
 												</button>
@@ -441,22 +512,22 @@
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Título </label>
-											<input name="servico6titulo" value="{{$servico6titulo}}" type="text" class="form-control">
+											<input name="portuguesservico6titulo" value="{{$portuguesservico6titulo}}" type="text" class="form-control">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Descrição</label>
-											<input name="servico6descricao"  type="text" class="form-control" value="{{$servico6descricao}}">
+											<input name="portuguesservico6descricao"  type="text" class="form-control" value="{{$portuguesservico6descricao}}">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Preço</label>
-											<input name="servico6preco"  type="text" class="form-control" value="{{$servico6preco}}">
+											<input name="portuguesservico6preco"  type="text" class="form-control" value="{{$portuguesservico6preco}}">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Preço 2</label>
-											<input name="servico6preco2"  type="text" class="form-control" value="{{$servico6preco2}}">
+											<input name="portuguesservico6preco2"  type="text" class="form-control" value="{{$portuguesservico6preco2}}">
 										</div>
 									</div>
 
@@ -468,8 +539,8 @@
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
-											<input name="servico7img" type="file" class="form-control">
-												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($servico7img)}}" alt="">
+											<input name="portuguesservico7img" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($portuguesservico7img)}}" alt="">
 												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
 													<i class='bx bxs-info-circle' ></i>
 												</button>
@@ -477,22 +548,22 @@
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Título </label>
-											<input name="servico7titulo" value="{{$servico7titulo}}" type="text" class="form-control">
+											<input name="portuguesservico7titulo" value="{{$portuguesservico7titulo}}" type="text" class="form-control">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Descrição</label>
-											<input name="servico7descricao"  type="text" class="form-control" value="{{$servico7descricao}}">
+											<input name="portuguesservico7descricao"  type="text" class="form-control" value="{{$portuguesservico7descricao}}">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Preço</label>
-											<input name="servico7preco"  type="text" class="form-control" value="{{$servico7preco}}">
+											<input name="portuguesservico7preco"  type="text" class="form-control" value="{{$portuguesservico7preco}}">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Preço 2</label>
-											<input name="servico7preco2"  type="text" class="form-control" value="{{$servico7preco2}}">
+											<input name="portuguesservico7preco2"  type="text" class="form-control" value="{{$portuguesservico7preco2}}">
 										</div>
 									</div>
 																						
@@ -504,8 +575,8 @@
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
-											<input name="servico8img" type="file" class="form-control">
-												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($servico8img)}}" alt="">
+											<input name="portuguesservico8img" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($portuguesservico8img)}}" alt="">
 												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
 													<i class='bx bxs-info-circle' ></i>
 												</button>
@@ -513,22 +584,22 @@
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Título </label>
-											<input name="servico8titulo" value="{{$servico8titulo}}" type="text" class="form-control">
+											<input name="portuguesservico8titulo" value="{{$portuguesservico8titulo}}" type="text" class="form-control">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Descrição</label>
-											<input name="servico8descricao"  type="text" class="form-control" value="{{$servico8descricao}}">
+											<input name="portuguesservico8descricao"  type="text" class="form-control" value="{{$portuguesservico8descricao}}">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Preço</label>
-											<input name="servico8preco"  type="text" class="form-control" value="{{$servico8preco}}">
+											<input name="portuguesservico8preco"  type="text" class="form-control" value="{{$portuguesservico8preco}}">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Preço 2</label>
-											<input name="servico8preco2"  type="text" class="form-control" value="{{$servico8preco2}}">
+											<input name="portuguesservico8preco2"  type="text" class="form-control" value="{{$portuguesservico8preco2}}">
 										</div>
 									</div>
 
@@ -540,8 +611,8 @@
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
-											<input name="servico9img" type="file" class="form-control">
-												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($servico9img)}}" alt="">
+											<input name="portuguesservico9img" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($portuguesservico9img)}}" alt="">
 												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
 													<i class='bx bxs-info-circle' ></i>
 												</button>
@@ -549,22 +620,22 @@
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Título </label>
-											<input name="servico9titulo" value="{{$servico9titulo}}" type="text" class="form-control">
+											<input name="portuguesservico9titulo" value="{{$portuguesservico9titulo}}" type="text" class="form-control">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Descrição</label>
-											<input name="servico9descricao"  type="text" class="form-control" value="{{$servico9descricao}}">
+											<input name="portuguesservico9descricao"  type="text" class="form-control" value="{{$portuguesservico9descricao}}">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Preço</label>
-											<input name="servico9preco" type="text" class="form-control" value="{{$servico9preco}}">
+											<input name="portuguesservico9preco" type="text" class="form-control" value="{{$portuguesservico9preco}}">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Preço 2</label>
-											<input name="servico9preco2"  type="text" class="form-control" value="{{$servico9preco2}}">
+											<input name="portuguesservico9preco2"  type="text" class="form-control" value="{{$portuguesservico9preco2}}">
 										</div>
 									</div>
 
@@ -576,8 +647,8 @@
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
-											<input name="servico10img" type="file" class="form-control">
-												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($servico10img)}}" alt="">
+											<input name="portuguesservico10img" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($portuguesservico10img)}}" alt="">
 												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
 													<i class='bx bxs-info-circle' ></i>
 												</button>
@@ -585,22 +656,22 @@
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Título </label>
-											<input name="servico10titulo" value="{{$servico10titulo}}" type="text" class="form-control">
+											<input name="portuguesservico10titulo" value="{{$portuguesservico10titulo}}" type="text" class="form-control">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Descrição</label>
-											<input name="servico10descricao"  type="text" class="form-control" value="{{$servico10descricao}}">
+											<input name="portuguesservico10descricao"  type="text" class="form-control" value="{{$portuguesservico10descricao}}">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Preço</label>
-											<input name="servico10preco"  type="text" class="form-control" value="{{$servico10preco}}">
+											<input name="portuguesservico10preco"  type="text" class="form-control" value="{{$portuguesservico10preco}}">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Preço 2</label>
-											<input name="servico10preco2"  type="text" class="form-control" value="{{$servico10preco2}}">
+											<input name="portuguesservico10preco2"  type="text" class="form-control" value="{{$portuguesservico10preco2}}">
 										</div>
 									</div>
 
@@ -612,8 +683,8 @@
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
-											<input name="servico11img" type="file" class="form-control">
-												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($servico11img)}}" alt="">
+											<input name="portuguesservico11img" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($portuguesservico11img)}}" alt="">
 												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
 													<i class='bx bxs-info-circle' ></i>
 												</button>
@@ -621,22 +692,22 @@
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Título </label>
-											<input name="servico11titulo" value="{{$servico11titulo}}" type="text" class="form-control">
+											<input name="portuguesservico11titulo" value="{{$portuguesservico11titulo}}" type="text" class="form-control">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Descrição</label>
-											<input name="servico11descricao"  type="text" class="form-control" value="{{$servico11descricao}}">
+											<input name="portuguesservico11descricao"  type="text" class="form-control" value="{{$portuguesservico11descricao}}">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Preço</label>
-											<input name="servico11preco"  type="text" class="form-control" value="{{$servico11preco}}">
+											<input name="portuguesservico11preco"  type="text" class="form-control" value="{{$portuguesservico11preco}}">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Preço 2</label>
-											<input name="servico11preco2"  type="text" class="form-control" value="{{$servico11preco2}}">
+											<input name="portuguesservico11preco2"  type="text" class="form-control" value="{{$portuguesservico11preco2}}">
 										</div>
 
 										<div class="description col-md-12" style="margin-top: 20px; text-align: center;">
@@ -650,17 +721,17 @@
 
 							<!-- ESTRUTURA -->
 							<div class="tab-pane fade" id="etsrutura-1" role="tabpanel" aria-labelledby="estrutura">
-								<form action="{{route('austriaestrutura')}}" enctype="multipart/form-data" method="post">
+								<form action="{{route('portuguesestrutura')}}" enctype="multipart/form-data" method="post">
 									@csrf
 									<div class="row">
 										<div class="description col-md-12">
 											<label class="form-control-label" for="basic-url">Título Pequeno</label>
-											<input name="estruturatitulo1" value="{{$estruturatitulo1}}" type="text" class="form-control">
+											<input name="portuguesestruturatitulo1" value="{{$portuguesestruturatitulo1}}" type="text" class="form-control">
 										</div>
 
 										<div class="description col-md-12">
 											<label class="form-control-label" for="basic-url">Título Principal</label>
-											<input name="estruturatitulo2"  type="text" class="form-control" value="{{$estruturatitulo2}}">
+											<input name="portuguesestruturatitulo2"  type="text" class="form-control" value="{{$portuguesestruturatitulo2}}">
 										</div>
 									</div>
 
@@ -672,8 +743,8 @@
 											</div>
 																										
 											<div class="description col-md-6">
-												<input name="estruturaimagem1" type="file" class="form-control">
-												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem1)}}" alt="">
+												<input name="portuguesestruturaimagem1" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($portuguesestruturaimagem1)}}" alt="">
 												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
 													<i class='bx bxs-info-circle' ></i>
 												</button>
@@ -686,8 +757,8 @@
 												</div>
 																										
 												<div class="description col-md-6">
-													<input name="estruturaimagem2" type="file" class="form-control">
-													<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem2)}}" alt="">
+													<input name="portuguesestruturaimagem2" type="file" class="form-control">
+													<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($portuguesestruturaimagem2)}}" alt="">
 													<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
 														<i class='bx bxs-info-circle' ></i>
 													</button>
@@ -700,8 +771,8 @@
 											</div>
 																										
 											<div class="description col-md-6">
-												<input name="estruturaimagem3" type="file" class="form-control">
-												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem3)}}" alt="">
+												<input name="portuguesestruturaimagem3" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($portuguesestruturaimagem3)}}" alt="">
 												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
 													<i class='bx bxs-info-circle' ></i>
 												</button>
@@ -714,8 +785,8 @@
 											</div>
 																										
 											<div class="description col-md-6">
-												<input name="estruturaimagem4" type="file" class="form-control">
-												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem4)}}" alt="">
+												<input name="portuguesestruturaimagem4" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($portuguesestruturaimagem4)}}" alt="">
 												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
 													<i class='bx bxs-info-circle' ></i>
 												</button>
@@ -728,8 +799,8 @@
 											</div>
 																										
 											<div class="description col-md-6">
-												<input name="estruturaimagem5" type="file" class="form-control">
-												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem5)}}" alt="">
+												<input name="portuguesestruturaimagem5" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($portuguesestruturaimagem5)}}" alt="">
 												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
 													<i class='bx bxs-info-circle' ></i>
 												</button>
@@ -742,8 +813,8 @@
 											</div>
 																										
 											<div class="description col-md-6">
-												<input name="estruturaimagem6" type="file" class="form-control">
-												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem6)}}" alt="">
+												<input name="portuguesestruturaimagem6" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($portuguesestruturaimagem6)}}" alt="">
 												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
 													<i class='bx bxs-info-circle' ></i>
 												</button>
@@ -756,8 +827,8 @@
 											</div>
 																										
 											<div class="description col-md-6">
-												<input name="estruturaimagem7" type="file" class="form-control">
-												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem7)}}" alt="">
+												<input name="portuguesestruturaimagem7" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($portuguesestruturaimagem7)}}" alt="">
 												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
 													<i class='bx bxs-info-circle' ></i>
 												</button>
@@ -770,8 +841,8 @@
 											</div>
 																										
 											<div class="description col-md-6">
-												<input name="estruturaimagem8" type="file" class="form-control">
-												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem8)}}" alt="">
+												<input name="portuguesestruturaimagem8" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($portuguesestruturaimagem8)}}" alt="">
 												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
 													<i class='bx bxs-info-circle' ></i>
 												</button>
@@ -784,8 +855,8 @@
 											</div>
 																										
 											<div class="description col-md-6">
-												<input name="estruturaimagem9" type="file" class="form-control">
-												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem9)}}" alt="">
+												<input name="portuguesestruturaimagem9" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($portuguesestruturaimagem9)}}" alt="">
 												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
 													<i class='bx bxs-info-circle' ></i>
 												</button>
@@ -798,8 +869,8 @@
 											</div>
 																										
 											<div class="description col-md-6">
-												<input name="estruturaimagem10" type="file" class="form-control">
-												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem10)}}" alt="">
+												<input name="portuguesestruturaimagem10" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($portuguesestruturaimagem10)}}" alt="">
 												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
 													<i class='bx bxs-info-circle' ></i>
 												</button>
@@ -812,8 +883,8 @@
 											</div>
 																										
 											<div class="description col-md-6">
-												<input name="estruturaimagem11" type="file" class="form-control">
-												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem11)}}" alt="">
+												<input name="portuguesestruturaimagem11" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($portuguesestruturaimagem11)}}" alt="">
 												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
 													<i class='bx bxs-info-circle' ></i>
 												</button>
@@ -826,8 +897,8 @@
 											</div>
 																										
 											<div class="description col-md-6">
-												<input name="estruturaimagem12" type="file" class="form-control">
-												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem12)}}" alt="">
+												<input name="portuguesestruturaimagem12" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($portuguesestruturaimagem12)}}" alt="">
 												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
 													<i class='bx bxs-info-circle' ></i>
 												</button>
@@ -840,8 +911,8 @@
 											</div>
 																										
 											<div class="description col-md-6">
-												<input name="estruturaimagem13" type="file" class="form-control">
-												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem13)}}" alt="">
+												<input name="portuguesestruturaimagem13" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($portuguesestruturaimagem13)}}" alt="">
 												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
 													<i class='bx bxs-info-circle' ></i>
 												</button>
@@ -854,8 +925,8 @@
 											</div>
 																										
 											<div class="description col-md-6">
-												<input name="estruturaimagem14" type="file" class="form-control">
-												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($estruturaimagem14)}}" alt="">
+												<input name="portuguesestruturaimagem14" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($portuguesestruturaimagem14)}}" alt="">
 												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 300px <br> Altura: 150px">
 													<i class='bx bxs-info-circle' ></i>
 												</button>
@@ -873,62 +944,62 @@
 
 							<!-- CONTATO -->
 							<div class="tab-pane fade" id="tabs-icons-text-5" role="tabpanel" aria-labelledby="tabs-icons-text-5-tab">
-								<form action="{{route('austriacontato')}}" enctype="multipart/form-data" method="post">
+								<form action="{{route('portuguescontato')}}" enctype="multipart/form-data" method="post">
 									@csrf
 									<div class="row">
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Título Pequeno </label>
-											<input style="margin-bottom: 20px;" name="contatoTituloPagina" value="{{$contatoTituloPagina}}" type="text" class="form-control" >
+											<input style="margin-bottom: 20px;" name="portuguescontatoTituloPagina" value="{{$portuguescontatoTituloPagina}}" type="text" class="form-control" >
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Título Principal </label>
-											<input style="margin-bottom: 20px;" name="contatoTituloPagina2" value="{{$contatoTituloPagina2}}" type="text" class="form-control" >
+											<input style="margin-bottom: 20px;" name="portuguescontatoTituloPagina2" value="{{$portuguescontatoTituloPagina2}}" type="text" class="form-control" >
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Título Email</label>
-											<input style="margin-bottom: 20px;" name="contatoTituloemail" value="{{$contatoTituloemail}}" type="text" class="form-control" >
+											<input style="margin-bottom: 20px;" name="portuguescontatoTituloemail" value="{{$portuguescontatoTituloemail}}" type="text" class="form-control" >
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Email</label>
-											<input style="margin-bottom: 20px;" name="contatoemail" value="{{$contatoemail}}" type="text" class="form-control" >
+											<input style="margin-bottom: 20px;" name="portuguescontatoemail" value="{{$portuguescontatoemail}}" type="text" class="form-control" >
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Título Endereço</label>
-											<input style="margin-bottom: 20px;" name="contatoTituloEndereco" value="{{$contatoTituloEndereco}}" type="text" class="form-control" >
+											<input style="margin-bottom: 20px;" name="portuguescontatoTituloEndereco" value="{{$portuguescontatoTituloEndereco}}" type="text" class="form-control" >
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">SubTítulo Endereço</label>
-											<input style="margin-bottom: 20px;" name="contatoSubtTituloEndereco" value="{{$contatoSubtTituloEndereco}}" type="text" class="form-control" >
+											<input style="margin-bottom: 20px;" name="portuguescontatoSubtTituloEndereco" value="{{$portuguescontatoSubtTituloEndereco}}" type="text" class="form-control" >
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Título Telefone</label>
-											<input style="margin-bottom: 20px;" name="contatoTituloTelefone" value="{{$contatoTituloTelefone}}" type="text" class="form-control" >
+											<input style="margin-bottom: 20px;" name="portuguescontatoTituloTelefone" value="{{$portuguescontatoTituloTelefone}}" type="text" class="form-control" >
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Telefone</label>
-											<input style="margin-bottom: 20px;" name="contatoTelefone" value="{{$contatoTelefone}}" type="text" class="form-control" >
+											<input style="margin-bottom: 20px;" name="portuguescontatoTelefone" value="{{$portuguescontatoTelefone}}" type="text" class="form-control" >
 										</div>          
 																								
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Link LinkedIn</label>
-											<input style="margin-bottom: 20px;" name="contatoLinkLinkedin" value="{{$contatoLinkLinkedin}}" type="text" class="form-control" >
+											<input style="margin-bottom: 20px;" name="portuguescontatoLinkLinkedin" value="{{$portuguescontatoLinkLinkedin}}" type="text" class="form-control" >
 										</div>   
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Link Facebook</label>
-											<input style="margin-bottom: 20px;" name="contatoLinkFacebook" value="{{$contatoLinkFacebook}}" type="text" class="form-control" >
+											<input style="margin-bottom: 20px;" name="portuguescontatoLinkFacebook" value="{{$portuguescontatoLinkFacebook}}" type="text" class="form-control" >
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Link Instagram</label>
-											<input style="margin-bottom: 20px;" name="contatoLinkInstagram" value="{{$contatoLinkInstagram}}" type="text" class="form-control" >
+											<input style="margin-bottom: 20px;" name="portuguescontatoLinkInstagram" value="{{$portuguescontatoLinkInstagram}}" type="text" class="form-control" >
 										</div>
 										
 										<div class="description col-md-12" style="margin-top: 20px; text-align: center;">
@@ -942,17 +1013,17 @@
 
 							<!-- DEPOIMENTOS -->
 							<div class="tab-pane fade" id="tabs-icons-text-7" role="tabpanel" aria-labelledby="tabs-icons-text-7-tab">
-								<form action="{{route('austriacontato')}}" enctype="multipart/form-data" method="post">
+								<form action="{{route('portuguesdepoimentos')}}" enctype="multipart/form-data" method="post">
 									@csrf
 									<div class="row">
 										<div class="description col-md-12">
 											<label class="form-control-label" for="basic-url">Título Pequeno</label>
-											<input name="depoimento1" value="{{$depoimento1}}" type="text" class="form-control">
+											<input name="portuguesdepoimento1" value="{{$portuguesdepoimento1}}" type="text" class="form-control">
 										</div>
 
 										<div class="description col-md-12">
 											<label class="form-control-label" for="basic-url">Título Principal</label>
-											<input name="depoimento2" value="{{$depoimento2}}" type="text" class="form-control">
+											<input name="portuguesdepoimento2" value="{{$portuguesdepoimento2}}" type="text" class="form-control">
 										</div>
 
 										<div class="description col-md-12" style="margin-top: 20px; text-align: center;">
@@ -966,95 +1037,24 @@
 
 							<!-- AGENDAMENTO -->
 							<div class="tab-pane fade" id="tabs-icons-text-8" role="tabpanel" aria-labelledby="tabs-icons-text-8-tab">
-								<form action="{{route('austriaagendamento')}}" enctype="multipart/form-data" method="post">
+								<form action="{{route('portuguesagendamento')}}" enctype="multipart/form-data" method="post">
 									<div class="row">
 										@csrf
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Título Pequeno</label>
-											<input style="margin-bottom: 20px;" name="agendamento1" value="{{$agendamento1}}" type="text" class="form-control" >
+											<input style="margin-bottom: 20px;" name="portuguesagendamento1" value="{{$portuguesagendamento1}}" type="text" class="form-control" >
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Título Principal</label>
-											<input style="margin-bottom: 20px;" name="agendamento2" value="{{$agendamento2}}" type="text" class="form-control" >
+											<input style="margin-bottom: 20px;" name="portuguesagendamento2" value="{{$portuguesagendamento2}}" type="text" class="form-control" >
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Botão</label>
-											<input style="margin-bottom: 20px;" name="agendamentobotao" value="{{$agendamentobotao}}" type="text" class="form-control" >
+											<input style="margin-bottom: 20px;" name="portuguesagendamentobotao" value="{{$portuguesagendamentobotao}}" type="text" class="form-control" >
 										</div>
 
-										<div class="description col-md-12" style="margin-top: 20px; text-align: center;">
-											<button class="btn btn-icon btn-primary" style="margin: auto;" type="submit">
-												<span class="btn-inner--text">Atualizar</span>
-											</button>
-										</div>
-									</div>
-								</form>
-							</div>
-
-							<!-- MODAL -->
-							<div class="tab-pane fade" id="tabs-icons-text-9" role="tabpanel" aria-labelledby="tabs-icons-text-9-tab">
-								<form action="{{route('austriamodal')}}" enctype="multipart/form-data" method="post">
-									@csrf
-									<div class="row">
-										<div class="description col-md-6">
-											<label class="form-control-label" for="basic-url">Logo</label>
-											<input name="modalimg" type="file" class="form-control" placeholder="Logo">
-										</div>
-
-										<div class="description col-md-6">
-											<img style="width: 40%; background: black; margin-top: 15px;"  src="{{Storage::url($modalimg)}}" alt="">
-											<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 250px <br> Altura: 190px">
-												<i class='bx bxs-info-circle' ></i>
-											</button>
-										</div>
-
-										<div class="description col-md-6">
-											<label class="form-control-label" for="basic-url">Título</label>
-											<input style="margin-bottom: 20px;" name="modal1" value="{{$modal1}}" type="text" class="form-control" >
-										</div>
-
-										<div class="description col-md-6">
-											<label class="form-control-label" for="basic-url">Botão Agendamento</label>
-											<input style="margin-bottom: 20px;" name="modal2" value="{{$modal2}}" type="text" class="form-control" >
-										</div>
-
-										<div class="description col-md-6">
-											<label class="form-control-label" for="basic-url">Telefone</label>
-											<input style="margin-bottom: 20px;" name="modal3" value="{{$modal3}}" type="text" class="form-control" >
-										</div>
-
-										<div class="description col-md-6">
-											<label class="form-control-label" for="basic-url">Link WhatsApp</label>
-											<input style="margin-bottom: 20px;" name="modal4" value="{{$modal4}}" type="text" class="form-control" >
-										</div>
-
-										<div class="description col-md-6">
-											<label class="form-control-label" for="basic-url">Email</label>
-											<input style="margin-bottom: 20px;" name="modal5" value="{{$modal5}}" type="text" class="form-control" >
-										</div>
-
-										<div class="description col-md-6">
-											<label class="form-control-label" for="basic-url">Link Mapa</label>
-											<input style="margin-bottom: 20px;" name="modal6" value="{{$modal6}}" type="text" class="form-control" >
-										</div>
-
-										<div class="description col-md-6">
-											<label class="form-control-label" for="basic-url">Link Instagram</label>
-											<input style="margin-bottom: 20px;" name="modal7" value="{{$modal7}}" type="text" class="form-control" >
-										</div>
-
-										<div class="description col-md-6">
-											<label class="form-control-label" for="basic-url">Link Facebook</label>
-											<input style="margin-bottom: 20px;" name="modal8" value="{{$modal8}}" type="text" class="form-control" >
-										</div>
-
-										<div class="description col-md-6">
-											<label class="form-control-label" for="basic-url">Instrução de Click</label>
-											<input style="margin-bottom: 20px;" name="modal9" value="{{$modal9}}" type="text" class="form-control" >
-										</div>
-																						
 										<div class="description col-md-12" style="margin-top: 20px; text-align: center;">
 											<button class="btn btn-icon btn-primary" style="margin: auto;" type="submit">
 												<span class="btn-inner--text">Atualizar</span>
