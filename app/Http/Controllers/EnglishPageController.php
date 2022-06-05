@@ -11,602 +11,602 @@ class EnglishPageController extends Controller
 {
 
     public function index(){
-        $textoresumo=Confing::get('textoresumo');
-        $whatsapp=Confing::get('whatsapp');
-        $email=Confing::get('email');
-        $instagram=Confing::get('instagram');
-        $facebook=Confing::get('facebook');
-        $boleto=Confing::get('boleto');
-        $slide1=Confing::get('slide1');
-        $slide2=Confing::get('slide2');
-        $slide3=Confing::get('slide3');
-        $slide4=Confing::get('slide4');
-        $slide5=Confing::get('slide5');
-        $slide6=Confing::get('slide6');
-        $slide7=Confing::get('slide7');
-        $slide8=Confing::get('slide8');
-        $logo1=Confing::get('logo1');
-        $menu2=Confing::get('menu2');
-        $menu3=Confing::get('menu3');
-        $menu4=Confing::get('menu4');
-        $menu5=Confing::get('menu5');
-        $menu6=Confing::get('menu6');
-        $menu7=Confing::get('menu7');
-        $menu8=Confing::get('menu8');
-        $menu9=Confing::get('menu9');
+        $englishtextoresumo=Confing::get('englishtextoresumo');
+        $englishwhatsapp=Confing::get('englishwhatsapp');
+        $englishemail=Confing::get('englishemail');
+        $englishinstagram=Confing::get('englishinstagram');
+        $englishfacebook=Confing::get('englishfacebook');
+        $englishboleto=Confing::get('englishboleto');
+        $englishslide1=Confing::get('englishslide1');
+        $englishslide2=Confing::get('englishslide2');
+        $englishslide3=Confing::get('englishslide3');
+        $englishslide4=Confing::get('englishslide4');
+        $englishslide5=Confing::get('englishslide5');
+        $englishslide6=Confing::get('englishslide6');
+        $englishslide7=Confing::get('englishslide7');
+        $englishslide8=Confing::get('englishslide8');
+        $englishlogo1=Confing::get('englishlogo1');
+        $englishmenu2=Confing::get('englishmenu2');
+        $englishmenu3=Confing::get('englishmenu3');
+        $englishmenu4=Confing::get('englishmenu4');
+        $englishmenu5=Confing::get('englishmenu5');
+        $englishmenu6=Confing::get('englishmenu6');
+        $englishmenu7=Confing::get('englishmenu7');
+        $englishmenu8=Confing::get('englishmenu8');
+        $englishmenu9=Confing::get('englishmenu9');
 
 
 
-        $tituloPagina=Confing::get('tituloPagina');
-        $tituloPrincipal=Confing::get('tituloPrincipal');
+        $englishtituloPagina=Confing::get('englishtituloPagina');
+        $englishtituloPrincipal=Confing::get('englishtituloPrincipal');
 
-        $servico1img=Confing::get('servico1img');
-        $servico2img=Confing::get('servico2img');
-        $servico3img=Confing::get('servico3img');
-        $servico4img=Confing::get('servico4img');
-        $servico5img=Confing::get('servico5img');
-        $servico6img=Confing::get('servico6img');
-        $servico7img=Confing::get('servico7img');
-        $servico8img=Confing::get('servico8img');
-        $servico9img=Confing::get('servico9img');
-        $servico10img=Confing::get('servico10img');
-        $servico11img=Confing::get('servico11img');
+        $englishservico1img=Confing::get('englishservico1img');
+        $englishservico2img=Confing::get('englishservico2img');
+        $englishservico3img=Confing::get('englishservico3img');
+        $englishservico4img=Confing::get('englishservico4img');
+        $englishservico5img=Confing::get('englishservico5img');
+        $englishservico6img=Confing::get('englishservico6img');
+        $englishservico7img=Confing::get('englishservico7img');
+        $englishservico8img=Confing::get('englishservico8img');
+        $englishservico9img=Confing::get('englishservico9img');
+        $englishservico10img=Confing::get('englishservico10img');
+        $englishservico11img=Confing::get('englishservico11img');
 
-        $servico1titulo=Confing::get('servico1titulo');
-        $servico2titulo=Confing::get('servico2titulo');
-        $servico3titulo=Confing::get('servico3titulo');
-        $servico4titulo=Confing::get('servico4titulo');
-        $servico5titulo=Confing::get('servico5titulo');
-        $servico6titulo=Confing::get('servico6titulo');
-        $servico7titulo=Confing::get('servico7titulo');
-        $servico8titulo=Confing::get('servico8titulo');
-        $servico9titulo=Confing::get('servico9titulo');
-        $servico10titulo=Confing::get('servico10titulo');
-        $servico11titulo=Confing::get('servico11titulo');
+        $englishservico1titulo=Confing::get('englishservico1titulo');
+        $englishservico2titulo=Confing::get('englishservico2titulo');
+        $englishservico3titulo=Confing::get('englishservico3titulo');
+        $englishservico4titulo=Confing::get('englishservico4titulo');
+        $englishservico5titulo=Confing::get('englishservico5titulo');
+        $englishservico6titulo=Confing::get('englishservico6titulo');
+        $englishservico7titulo=Confing::get('englishservico7titulo');
+        $englishservico8titulo=Confing::get('englishservico8titulo');
+        $englishservico9titulo=Confing::get('englishservico9titulo');
+        $englishservico10titulo=Confing::get('englishservico10titulo');
+        $englishservico11titulo=Confing::get('englishservico11titulo');
         
-        $servico1descricao=Confing::get('servico1descricao');
-        $servico2descricao=Confing::get('servico2descricao');
-        $servico3descricao=Confing::get('servico3descricao');
-        $servico4descricao=Confing::get('servico4descricao');
-        $servico5descricao=Confing::get('servico5descricao');
-        $servico6descricao=Confing::get('servico6descricao');
-        $servico7descricao=Confing::get('servico7descricao');
-        $servico8descricao=Confing::get('servico8descricao');
-        $servico9descricao=Confing::get('servico9descricao');
-        $servico10descricao=Confing::get('servico10descricao');
-        $servico11descricao=Confing::get('servico11descricao');
+        $englishservico1descricao=Confing::get('englishservico1descricao');
+        $englishservico2descricao=Confing::get('englishservico2descricao');
+        $englishservico3descricao=Confing::get('englishservico3descricao');
+        $englishservico4descricao=Confing::get('englishservico4descricao');
+        $englishservico5descricao=Confing::get('englishservico5descricao');
+        $englishservico6descricao=Confing::get('englishservico6descricao');
+        $englishservico7descricao=Confing::get('englishservico7descricao');
+        $englishservico8descricao=Confing::get('englishservico8descricao');
+        $englishservico9descricao=Confing::get('englishservico9descricao');
+        $englishservico10descricao=Confing::get('englishservico10descricao');
+        $englishservico11descricao=Confing::get('englishservico11descricao');
 
-        $servico1preco=Confing::get('servico1preco');
-        $servico2preco=Confing::get('servico2preco');
-        $servico3preco=Confing::get('servico3preco');
-        $servico4preco=Confing::get('servico4preco');
-        $servico5preco=Confing::get('servico5preco');
-        $servico6preco=Confing::get('servico6preco');
-        $servico7preco=Confing::get('servico7preco');
-        $servico8preco=Confing::get('servico8preco');
-        $servico9preco=Confing::get('servico9preco');
-        $servico10preco=Confing::get('servico10preco');
-        $servico11preco=Confing::get('servico11preco');
+        $englishservico1preco=Confing::get('englishservico1preco');
+        $englishservico2preco=Confing::get('englishservico2preco');
+        $englishservico3preco=Confing::get('englishservico3preco');
+        $englishservico4preco=Confing::get('englishservico4preco');
+        $englishservico5preco=Confing::get('englishservico5preco');
+        $englishservico6preco=Confing::get('englishservico6preco');
+        $englishservico7preco=Confing::get('englishservico7preco');
+        $englishservico8preco=Confing::get('englishservico8preco');
+        $englishservico9preco=Confing::get('englishservico9preco');
+        $englishservico10preco=Confing::get('englishservico10preco');
+        $englishservico11preco=Confing::get('englishservico11preco');
 
-        $servico1preco2=Confing::get('servico1preco2');
-        $servico2preco2=Confing::get('servico2preco2');
-        $servico3preco2=Confing::get('servico3preco2');
-        $servico4preco2=Confing::get('servico4preco2');
-        $servico5preco2=Confing::get('servico5preco2');
-        $servico6preco2=Confing::get('servico6preco2');
-        $servico7preco2=Confing::get('servico7preco2');
-        $servico8preco2=Confing::get('servico8preco2');
-        $servico9preco2=Confing::get('servico9preco2');
-        $servico10preco2=Confing::get('servico10preco2');
-        $servico11preco2=Confing::get('servico11preco2');
-
-
-
-        $contatoTituloPagina=Confing::get('contatoTituloPagina');
-        $contatoTituloPagina2=Confing::get('contatoTituloPagina2');
-        $contatoTituloemail=Confing::get('contatoTituloemail');
-        $contatoemail=Confing::get('contatoemail');
-        $contatoTituloEndereco=Confing::get('contatoTituloEndereco');
-        $contatoSubtTituloEndereco=Confing::get('contatoSubtTituloEndereco');
-        $contatoTituloTelefone=Confing::get('contatoTituloTelefone');
-        $contatoTelefone=Confing::get('contatoTelefone');
-        $contatoLinkTelefone=Confing::get('contatoLinkTelefone');
-        $contatoLinkLinkedin=Confing::get('contatoLinkLinkedin');
-        $contatoLinkFacebook=Confing::get('contatoLinkFacebook');
-        $contatoLinkInstagram=Confing::get('contatoLinkInstagram');
+        $englishservico1preco2=Confing::get('englishservico1preco2');
+        $englishservico2preco2=Confing::get('englishservico2preco2');
+        $englishservico3preco2=Confing::get('englishservico3preco2');
+        $englishservico4preco2=Confing::get('englishservico4preco2');
+        $englishservico5preco2=Confing::get('englishservico5preco2');
+        $englishservico6preco2=Confing::get('englishservico6preco2');
+        $englishservico7preco2=Confing::get('englishservico7preco2');
+        $englishservico8preco2=Confing::get('englishservico8preco2');
+        $englishservico9preco2=Confing::get('englishservico9preco2');
+        $englishservico10preco2=Confing::get('englishservico10preco2');
+        $englishservico11preco2=Confing::get('englishservico11preco2');
 
 
 
-        $depoimento1=Confing::get('depoimento1');
-        $depoimento2=Confing::get('depoimento2');
+        $englishcontatoTituloPagina=Confing::get('englishcontatoTituloPagina');
+        $englishcontatoTituloPagina2=Confing::get('englishcontatoTituloPagina2');
+        $englishcontatoTituloemail=Confing::get('englishcontatoTituloemail');
+        $englishcontatoemail=Confing::get('englishcontatoemail');
+        $englishcontatoTituloEndereco=Confing::get('englishcontatoTituloEndereco');
+        $englishcontatoSubtTituloEndereco=Confing::get('englishcontatoSubtTituloEndereco');
+        $englishcontatoTituloTelefone=Confing::get('englishcontatoTituloTelefone');
+        $englishcontatoTelefone=Confing::get('englishcontatoTelefone');
+        $englishcontatoLinkTelefone=Confing::get('englishcontatoLinkTelefone');
+        $englishcontatoLinkLinkedin=Confing::get('englishcontatoLinkLinkedin');
+        $englishcontatoLinkFacebook=Confing::get('englishcontatoLinkFacebook');
+        $englishcontatoLinkInstagram=Confing::get('englishcontatoLinkInstagram');
 
 
 
-        $agendamento1=Confing::get('agendamento1');
-        $agendamento2=Confing::get('agendamento2');
-        $agendamentobotao=Confing::get('agendamentobotao');
+        $englishdepoimento1=Confing::get('englishdepoimento1');
+        $englishdepoimento2=Confing::get('englishdepoimento2');
+
+
+
+        $englishagendamento1=Confing::get('englishagendamento1');
+        $englishagendamento2=Confing::get('englishagendamento2');
+        $englishagendamentobotao=Confing::get('englishagendamentobotao');
 
 
         
-        $modalimg=Confing::get('modalimg');
+        $englishmodalimg=Confing::get('englishmodalimg');
 
-        $modal1=Confing::get('modal1');
-        $modal2=Confing::get('modal2');
-        $modal3=Confing::get('modal3');
-        $modal4=Confing::get('modal4');
-        $modal5=Confing::get('modal5');
-        $modal6=Confing::get('modal6');
-        $modal7=Confing::get('modal7');
-        $modal8=Confing::get('modal8');
-        $modal9=Confing::get('modal9');
+        $englishmodal1=Confing::get('englishmodal1');
+        $englishmodal2=Confing::get('englishmodal2');
+        $englishmodal3=Confing::get('englishmodal3');
+        $englishmodal4=Confing::get('englishmodal4');
+        $englishmodal5=Confing::get('englishmodal5');
+        $englishmodal6=Confing::get('englishmodal6');
+        $englishmodal7=Confing::get('englishmodal7');
+        $englishmodal8=Confing::get('englishmodal8');
+        $englishmodal9=Confing::get('englishmodal9');
 
-        $estruturatitulo1=Confing::get('estruturatitulo1');
-        $estruturatitulo2=Confing::get('estruturatitulo2');
+        $englishestruturatitulo1=Confing::get('englishestruturatitulo1');
+        $englishestruturatitulo2=Confing::get('englishestruturatitulo2');
 
-        $estruturaimagem1=Confing::get('estruturaimagem1');
-        $estruturaimagem2=Confing::get('estruturaimagem2');
-        $estruturaimagem3=Confing::get('estruturaimagem3');
-        $estruturaimagem4=Confing::get('estruturaimagem4');
-        $estruturaimagem5=Confing::get('estruturaimagem5');
-        $estruturaimagem6=Confing::get('estruturaimagem6');
-        $estruturaimagem7=Confing::get('estruturaimagem7');
-        $estruturaimagem8=Confing::get('estruturaimagem8');
-        $estruturaimagem9=Confing::get('estruturaimagem9');
-        $estruturaimagem10=Confing::get('estruturaimagem10');
-        $estruturaimagem11=Confing::get('estruturaimagem11');
-        $estruturaimagem12=Confing::get('estruturaimagem12');
-        $estruturaimagem13=Confing::get('estruturaimagem13');
-        $estruturaimagem14=Confing::get('estruturaimagem14');
+        $englishestruturaimagem1=Confing::get('englishestruturaimagem1');
+        $englishestruturaimagem2=Confing::get('englishestruturaimagem2');
+        $englishestruturaimagem3=Confing::get('englishestruturaimagem3');
+        $englishestruturaimagem4=Confing::get('englishestruturaimagem4');
+        $englishestruturaimagem5=Confing::get('englishestruturaimagem5');
+        $englishestruturaimagem6=Confing::get('englishestruturaimagem6');
+        $englishestruturaimagem7=Confing::get('englishestruturaimagem7');
+        $englishestruturaimagem8=Confing::get('englishestruturaimagem8');
+        $englishestruturaimagem9=Confing::get('englishestruturaimagem9');
+        $englishestruturaimagem10=Confing::get('englishestruturaimagem10');
+        $englishestruturaimagem11=Confing::get('englishestruturaimagem11');
+        $englishestruturaimagem12=Confing::get('englishestruturaimagem12');
+        $englishestruturaimagem13=Confing::get('englishestruturaimagem13');
+        $englishestruturaimagem14=Confing::get('englishestruturaimagem14');
         
 
 
         return view("components.idiomas-site",[
-            'textoresumo'=>$textoresumo,
-            'whatsapp'=>$whatsapp,
-            'email'=>$email,
-            'instagram'=>$instagram,
-            'facebook'=>$facebook,
-            'boleto'=>$boleto,
-            'slide1'=>$slide1,
-            'slide2'=>$slide2,
-            'slide3'=>$slide3,
-            'slide4'=>$slide4,
-            'slide5'=>$slide5,
-            'slide6'=>$slide6,
-            'slide7'=>$slide7,
-            'slide8'=>$slide8,
-            'logo1'=>$logo1,
-            'menu2'=>$menu2,
-            'menu3'=>$menu3,
-            'menu4'=>$menu4,
-            'menu5'=>$menu5,
-            'menu6'=>$menu6,
-            'menu7'=>$menu7,
-            'menu8'=>$menu8,
-            'menu9'=>$menu9,
+            'englishtextoresumo'=>$englishtextoresumo,
+            'englishwhatsapp'=>$englishwhatsapp,
+            'englishemail'=>$englishemail,
+            'englishinstagram'=>$englishinstagram,
+            'englishfacebook'=>$englishfacebook,
+            'englishboleto'=>$englishboleto,
+            'englishslide1'=>$englishslide1,
+            'englishslide2'=>$englishslide2,
+            'englishslide3'=>$englishslide3,
+            'englishslide4'=>$englishslide4,
+            'englishslide5'=>$englishslide5,
+            'englishslide6'=>$englishslide6,
+            'englishslide7'=>$englishslide7,
+            'englishslide8'=>$englishslide8,
+            'englishlogo1'=>$englishlogo1,
+            'englishmenu2'=>$englishmenu2,
+            'englishmenu3'=>$englishmenu3,
+            'englishmenu4'=>$englishmenu4,
+            'englishmenu5'=>$englishmenu5,
+            'englishmenu6'=>$englishmenu6,
+            'englishmenu7'=>$englishmenu7,
+            'englishmenu8'=>$englishmenu8,
+            'englishmenu9'=>$englishmenu9,
 
 
-            'tituloPagina'=>$tituloPagina,
-            'tituloPrincipal'=>$tituloPrincipal,
+            'englishtituloPagina'=>$englishtituloPagina,
+            'englishtituloPrincipal'=>$englishtituloPrincipal,
 
-            'servico1img'=>$servico1img,
-            'servico2img'=>$servico2img,
-            'servico3img'=>$servico3img,
-            'servico4img'=>$servico4img,
-            'servico5img'=>$servico5img,
-            'servico6img'=>$servico6img,
-            'servico7img'=>$servico7img,
-            'servico8img'=>$servico8img,
-            'servico9img'=>$servico9img,
-            'servico10img'=>$servico10img,
-            'servico11img'=>$servico11img,
+            'englishservico1img'=>$englishservico1img,
+            'englishservico2img'=>$englishservico2img,
+            'englishservico3img'=>$englishservico3img,
+            'englishservico4img'=>$englishservico4img,
+            'englishservico5img'=>$englishservico5img,
+            'englishservico6img'=>$englishservico6img,
+            'englishservico7img'=>$englishservico7img,
+            'englishservico8img'=>$englishservico8img,
+            'englishservico9img'=>$englishservico9img,
+            'englishservico10img'=>$englishservico10img,
+            'englishservico11img'=>$englishservico11img,
 
-            'servico1titulo'=>$servico1titulo,
-            'servico2titulo'=>$servico2titulo,
-            'servico3titulo'=>$servico3titulo,
-            'servico4titulo'=>$servico4titulo,
-            'servico5titulo'=>$servico5titulo,
-            'servico6titulo'=>$servico6titulo,
-            'servico7titulo'=>$servico7titulo,
-            'servico8titulo'=>$servico8titulo,
-            'servico9titulo'=>$servico9titulo,
-            'servico10titulo'=>$servico10titulo,
-            'servico11titulo'=>$servico11titulo,
+            'englishservico1titulo'=>$englishservico1titulo,
+            'englishservico2titulo'=>$englishservico2titulo,
+            'englishservico3titulo'=>$englishservico3titulo,
+            'englishservico4titulo'=>$englishservico4titulo,
+            'englishservico5titulo'=>$englishservico5titulo,
+            'englishservico6titulo'=>$englishservico6titulo,
+            'englishservico7titulo'=>$englishservico7titulo,
+            'englishservico8titulo'=>$englishservico8titulo,
+            'englishservico9titulo'=>$englishservico9titulo,
+            'englishservico10titulo'=>$englishservico10titulo,
+            'englishservico11titulo'=>$englishservico11titulo,
 
-            'servico1descricao'=>$servico1descricao,
-            'servico2descricao'=>$servico2descricao,
-            'servico3descricao'=>$servico3descricao,
-            'servico4descricao'=>$servico4descricao,
-            'servico5descricao'=>$servico5descricao,
-            'servico6descricao'=>$servico6descricao,
-            'servico7descricao'=>$servico7descricao,
-            'servico8descricao'=>$servico8descricao,
-            'servico9descricao'=>$servico9descricao,
-            'servico10descricao'=>$servico10descricao,
-            'servico11descricao'=>$servico11descricao,
+            'englishservico1descricao'=>$englishservico1descricao,
+            'englishservico2descricao'=>$englishservico2descricao,
+            'englishservico3descricao'=>$englishservico3descricao,
+            'englishservico4descricao'=>$englishservico4descricao,
+            'englishservico5descricao'=>$englishservico5descricao,
+            'englishservico6descricao'=>$englishservico6descricao,
+            'englishservico7descricao'=>$englishservico7descricao,
+            'englishservico8descricao'=>$englishservico8descricao,
+            'englishservico9descricao'=>$englishservico9descricao,
+            'englishservico10descricao'=>$englishservico10descricao,
+            'englishservico11descricao'=>$englishservico11descricao,
 
-            'servico1preco'=>$servico1preco,
-            'servico2preco'=>$servico2preco,
-            'servico3preco'=>$servico3preco,
-            'servico4preco'=>$servico4preco,
-            'servico5preco'=>$servico5preco,
-            'servico6preco'=>$servico6preco,
-            'servico7preco'=>$servico7preco,
-            'servico8preco'=>$servico8preco,
-            'servico9preco'=>$servico9preco,
-            'servico10preco'=>$servico10preco,
-            'servico11preco'=>$servico11preco,
+            'englishservico1preco'=>$englishservico1preco,
+            'englishservico2preco'=>$englishservico2preco,
+            'englishservico3preco'=>$englishservico3preco,
+            'englishservico4preco'=>$englishservico4preco,
+            'englishservico5preco'=>$englishservico5preco,
+            'englishservico6preco'=>$englishservico6preco,
+            'englishservico7preco'=>$englishservico7preco,
+            'englishservico8preco'=>$englishservico8preco,
+            'englishservico9preco'=>$englishservico9preco,
+            'englishservico10preco'=>$englishservico10preco,
+            'englishservico11preco'=>$englishservico11preco,
 
-            'servico1preco2'=>$servico1preco2,
-            'servico2preco2'=>$servico2preco2,
-            'servico3preco2'=>$servico3preco2,
-            'servico4preco2'=>$servico4preco2,
-            'servico5preco2'=>$servico5preco2,
-            'servico6preco2'=>$servico6preco2,
-            'servico7preco2'=>$servico7preco2,
-            'servico8preco2'=>$servico8preco2,
-            'servico9preco2'=>$servico9preco2,
-            'servico10preco2'=>$servico10preco2,
-            'servico11preco2'=>$servico11preco2,
+            'englishservico1preco2'=>$englishservico1preco2,
+            'englishservico2preco2'=>$englishservico2preco2,
+            'englishservico3preco2'=>$englishservico3preco2,
+            'englishservico4preco2'=>$englishservico4preco2,
+            'englishservico5preco2'=>$englishservico5preco2,
+            'englishservico6preco2'=>$englishservico6preco2,
+            'englishservico7preco2'=>$englishservico7preco2,
+            'englishservico8preco2'=>$englishservico8preco2,
+            'englishservico9preco2'=>$englishservico9preco2,
+            'englishservico10preco2'=>$englishservico10preco2,
+            'englishservico11preco2'=>$englishservico11preco2,
 
 
-            'contatoTituloPagina'=>$contatoTituloPagina,
-            'contatoTituloPagina2'=>$contatoTituloPagina2,
+            'englishcontatoTituloPagina'=>$englishcontatoTituloPagina,
+            'englishcontatoTituloPagina2'=>$englishcontatoTituloPagina2,
 
-            'contatoTituloemail'=>$contatoTituloemail,
-            'contatoemail'=>$contatoemail,
+            'englishcontatoTituloemail'=>$englishcontatoTituloemail,
+            'englishcontatoemail'=>$englishcontatoemail,
 
-            'contatoTituloEndereco'=>$contatoTituloEndereco,
-            'contatoSubtTituloEndereco'=>$contatoSubtTituloEndereco,
+            'englishcontatoTituloEndereco'=>$englishcontatoTituloEndereco,
+            'englishcontatoSubtTituloEndereco'=>$englishcontatoSubtTituloEndereco,
             
-            'contatoTituloTelefone'=>$contatoTituloTelefone,
-            'contatoTelefone'=>$contatoTelefone,
+            'englishcontatoTituloTelefone'=>$englishcontatoTituloTelefone,
+            'englishcontatoTelefone'=>$englishcontatoTelefone,
 
-            'contatoLinkLinkedin'=>$contatoLinkLinkedin,
-            'contatoLinkFacebook'=>$contatoLinkFacebook,
-            'contatoLinkInstagram'=>$contatoLinkInstagram,
+            'englishcontatoLinkLinkedin'=>$englishcontatoLinkLinkedin,
+            'englishcontatoLinkFacebook'=>$englishcontatoLinkFacebook,
+            'englishcontatoLinkInstagram'=>$englishcontatoLinkInstagram,
 
             
-            'depoimento1'=>$depoimento1,
-            'depoimento2'=>$depoimento2,
+            'englishdepoimento1'=>$englishdepoimento1,
+            'englishdepoimento2'=>$englishdepoimento2,
 
-            'agendamento1'=>$agendamento1,
-            'agendamento2'=>$agendamento2,
-            'agendamentobotao'=>$agendamentobotao,
+            'englishagendamento1'=>$englishagendamento1,
+            'englishagendamento2'=>$englishagendamento2,
+            'englishagendamentobotao'=>$englishagendamentobotao,
 
 
 
-            'modalimg'=>$modalimg,
+            'englishmodalimg'=>$englishmodalimg,
    
-            'modal1'=>$modal1,
-            'modal2'=>$modal2,
-            'modal3'=>$modal3,
-            'modal4'=>$modal4,
-            'modal5'=>$modal5,
-            'modal6'=>$modal6,
-            'modal7'=>$modal7,
-            'modal8'=>$modal8,
-            'modal9'=>$modal9,
+            'englishmodal1'=>$englishmodal1,
+            'englishmodal2'=>$englishmodal2,
+            'englishmodal3'=>$englishmodal3,
+            'englishmodal4'=>$englishmodal4,
+            'englishmodal5'=>$englishmodal5,
+            'englishmodal6'=>$englishmodal6,
+            'englishmodal7'=>$englishmodal7,
+            'englishmodal8'=>$englishmodal8,
+            'englishmodal9'=>$englishmodal9,
 
-            'estruturatitulo1'=>$estruturatitulo1,
-            'estruturatitulo2'=>$estruturatitulo2,
+            'englishestruturatitulo1'=>$englishestruturatitulo1,
+            'englishestruturatitulo2'=>$englishestruturatitulo2,
     
-            'estruturaimagem1'=>$estruturaimagem1,
-            'estruturaimagem2'=>$estruturaimagem2,
-            'estruturaimagem3'=>$estruturaimagem3,
-            'estruturaimagem4'=>$estruturaimagem4,
-            'estruturaimagem5'=>$estruturaimagem5,
-            'estruturaimagem6'=>$estruturaimagem6,
-            'estruturaimagem7'=>$estruturaimagem7,
-            'estruturaimagem8'=>$estruturaimagem8,
-            'estruturaimagem9'=>$estruturaimagem9,
-            'estruturaimagem10'=>$estruturaimagem10,
-            'estruturaimagem11'=>$estruturaimagem11,
-            'estruturaimagem12'=>$estruturaimagem12,
-            'estruturaimagem13'=>$estruturaimagem13,
-            'estruturaimagem14'=>$estruturaimagem14,
+            'englishestruturaimagem1'=>$englishestruturaimagem1,
+            'englishestruturaimagem2'=>$englishestruturaimagem2,
+            'englishestruturaimagem3'=>$englishestruturaimagem3,
+            'englishestruturaimagem4'=>$englishestruturaimagem4,
+            'englishestruturaimagem5'=>$englishestruturaimagem5,
+            'englishestruturaimagem6'=>$englishestruturaimagem6,
+            'englishestruturaimagem7'=>$englishestruturaimagem7,
+            'englishestruturaimagem8'=>$englishestruturaimagem8,
+            'englishestruturaimagem9'=>$englishestruturaimagem9,
+            'englishestruturaimagem10'=>$englishestruturaimagem10,
+            'englishestruturaimagem11'=>$englishestruturaimagem11,
+            'englishestruturaimagem12'=>$englishestruturaimagem12,
+            'englishestruturaimagem13'=>$englishestruturaimagem13,
+            'englishestruturaimagem14'=>$englishestruturaimagem14,
         ]);
 
         
     }
   
     public function home(){
-        $textoresumo=Confing::get('textoresumo');
-        $whatsapp=Confing::get('whatsapp');
-        $email=Confing::get('email');
-        $instagram=Confing::get('instagram');
-        $facebook=Confing::get('facebook');
-        $boleto=Confing::get('boleto');
-        $slide1=Confing::get('slide1');
-        $slide2=Confing::get('slide2');
-        $slide3=Confing::get('slide3');
-        $slide4=Confing::get('slide4');
-        $slide5=Confing::get('slide5');
-        $slide6=Confing::get('slide6');
-        $slide7=Confing::get('slide7');
-        $slide8=Confing::get('slide8');
-        $logo1=Confing::get('logo1');
-        $menu2=Confing::get('menu2');
-        $menu3=Confing::get('menu3');
-        $menu4=Confing::get('menu4');
-        $menu5=Confing::get('menu5');
-        $menu6=Confing::get('menu6');
-        $menu7=Confing::get('menu7');
-        $menu8=Confing::get('menu8');
-        $menu9=Confing::get('menu9');
+        $englishtextoresumo=Confing::get('englishtextoresumo');
+        $englishwhatsapp=Confing::get('englishwhatsapp');
+        $englishemail=Confing::get('englishemail');
+        $englishinstagram=Confing::get('englishinstagram');
+        $englishfacebook=Confing::get('englishfacebook');
+        $englishboleto=Confing::get('englishboleto');
+        $englishslide1=Confing::get('englishslide1');
+        $englishslide2=Confing::get('englishslide2');
+        $englishslide3=Confing::get('englishslide3');
+        $englishslide4=Confing::get('englishslide4');
+        $englishslide5=Confing::get('englishslide5');
+        $englishslide6=Confing::get('englishslide6');
+        $englishslide7=Confing::get('englishslide7');
+        $englishslide8=Confing::get('englishslide8');
+        $englishlogo1=Confing::get('englishlogo1');
+        $englishmenu2=Confing::get('englishmenu2');
+        $englishmenu3=Confing::get('englishmenu3');
+        $englishmenu4=Confing::get('englishmenu4');
+        $englishmenu5=Confing::get('englishmenu5');
+        $englishmenu6=Confing::get('englishmenu6');
+        $englishmenu7=Confing::get('englishmenu7');
+        $englishmenu8=Confing::get('englishmenu8');
+        $englishmenu9=Confing::get('englishmenu9');
 
 
         
-        $tituloPagina=Confing::get('tituloPagina');
-        $tituloPrincipal=Confing::get('tituloPrincipal');
+        $englishtituloPagina=Confing::get('englishtituloPagina');
+        $englishtituloPrincipal=Confing::get('englishtituloPrincipal');
         
-        $servico1img=Confing::get('servico1img');
-        $servico2img=Confing::get('servico2img');
-        $servico3img=Confing::get('servico3img');
-        $servico4img=Confing::get('servico4img');
-        $servico5img=Confing::get('servico5img');
-        $servico6img=Confing::get('servico6img');
-        $servico7img=Confing::get('servico7img');
-        $servico8img=Confing::get('servico8img');
-        $servico9img=Confing::get('servico9img');
-        $servico10img=Confing::get('servico10img');
-        $servico11img=Confing::get('servico11img');
+        $englishservico1img=Confing::get('englishservico1img');
+        $englishservico2img=Confing::get('englishservico2img');
+        $englishservico3img=Confing::get('englishservico3img');
+        $englishservico4img=Confing::get('englishservico4img');
+        $englishservico5img=Confing::get('englishservico5img');
+        $englishservico6img=Confing::get('englishservico6img');
+        $englishservico7img=Confing::get('englishservico7img');
+        $englishservico8img=Confing::get('englishservico8img');
+        $englishservico9img=Confing::get('englishservico9img');
+        $englishservico10img=Confing::get('englishservico10img');
+        $englishservico11img=Confing::get('englishservico11img');
 
-        $servico1titulo=Confing::get('servico1titulo');
-        $servico2titulo=Confing::get('servico2titulo');
-        $servico3titulo=Confing::get('servico3titulo');
-        $servico4titulo=Confing::get('servico4titulo');
-        $servico5titulo=Confing::get('servico5titulo');
-        $servico6titulo=Confing::get('servico6titulo');
-        $servico7titulo=Confing::get('servico7titulo');
-        $servico8titulo=Confing::get('servico8titulo');
-        $servico9titulo=Confing::get('servico9titulo');
-        $servico10titulo=Confing::get('servico10titulo');
-        $servico11titulo=Confing::get('servico11titulo');
+        $englishservico1titulo=Confing::get('englishservico1titulo');
+        $englishservico2titulo=Confing::get('englishservico2titulo');
+        $englishservico3titulo=Confing::get('englishservico3titulo');
+        $englishservico4titulo=Confing::get('englishservico4titulo');
+        $englishservico5titulo=Confing::get('englishservico5titulo');
+        $englishservico6titulo=Confing::get('englishservico6titulo');
+        $englishservico7titulo=Confing::get('englishservico7titulo');
+        $englishservico8titulo=Confing::get('englishservico8titulo');
+        $englishservico9titulo=Confing::get('englishservico9titulo');
+        $englishservico10titulo=Confing::get('englishservico10titulo');
+        $englishservico11titulo=Confing::get('englishservico11titulo');
 
-        $servico1descricao=Confing::get('servico1descricao');
-        $servico2descricao=Confing::get('servico2descricao');
-        $servico3descricao=Confing::get('servico3descricao');
-        $servico4descricao=Confing::get('servico4descricao');
-        $servico5descricao=Confing::get('servico5descricao');
-        $servico6descricao=Confing::get('servico6descricao');
-        $servico7descricao=Confing::get('servico7descricao');
-        $servico8descricao=Confing::get('servico8descricao');
-        $servico9descricao=Confing::get('servico9descricao');
-        $servico10descricao=Confing::get('servico10descricao');
-        $servico11descricao=Confing::get('servico11descricao');
+        $englishservico1descricao=Confing::get('englishservico1descricao');
+        $englishservico2descricao=Confing::get('englishservico2descricao');
+        $englishservico3descricao=Confing::get('englishservico3descricao');
+        $englishservico4descricao=Confing::get('englishservico4descricao');
+        $englishservico5descricao=Confing::get('englishservico5descricao');
+        $englishservico6descricao=Confing::get('englishservico6descricao');
+        $englishservico7descricao=Confing::get('englishservico7descricao');
+        $englishservico8descricao=Confing::get('englishservico8descricao');
+        $englishservico9descricao=Confing::get('englishservico9descricao');
+        $englishservico10descricao=Confing::get('englishservico10descricao');
+        $englishservico11descricao=Confing::get('englishservico11descricao');
 
-        $servico1preco=Confing::get('servico1preco');
-        $servico2preco=Confing::get('servico2preco');
-        $servico3preco=Confing::get('servico3preco');
-        $servico4preco=Confing::get('servico4preco');
-        $servico5preco=Confing::get('servico5preco');
-        $servico6preco=Confing::get('servico6preco');
-        $servico7preco=Confing::get('servico7preco');
-        $servico8preco=Confing::get('servico8preco');
-        $servico9preco=Confing::get('servico9preco');
-        $servico10preco=Confing::get('servico10preco');
-        $servico11preco=Confing::get('servico11preco');
+        $englishservico1preco=Confing::get('englishservico1preco');
+        $englishservico2preco=Confing::get('englishservico2preco');
+        $englishservico3preco=Confing::get('englishservico3preco');
+        $englishservico4preco=Confing::get('englishservico4preco');
+        $englishservico5preco=Confing::get('englishservico5preco');
+        $englishservico6preco=Confing::get('englishservico6preco');
+        $englishservico7preco=Confing::get('englishservico7preco');
+        $englishservico8preco=Confing::get('englishservico8preco');
+        $englishservico9preco=Confing::get('englishservico9preco');
+        $englishservico10preco=Confing::get('englishservico10preco');
+        $englishservico11preco=Confing::get('englishservico11preco');
 
-        $servico1preco2=Confing::get('servico1preco2');
-        $servico2preco2=Confing::get('servico2preco2');
-        $servico3preco2=Confing::get('servico3preco2');
-        $servico4preco2=Confing::get('servico4preco2');
-        $servico5preco2=Confing::get('servico5preco2');
-        $servico6preco2=Confing::get('servico6preco2');
-        $servico7preco2=Confing::get('servico7preco2');
-        $servico8preco2=Confing::get('servico8preco2');
-        $servico9preco2=Confing::get('servico9preco2');
-        $servico10preco2=Confing::get('servico10preco2');
-        $servico11preco2=Confing::get('servico11preco2');
-
-
-
-        $contatoTituloPagina=Confing::get('contatoTituloPagina');
-        $contatoTituloPagina2=Confing::get('contatoTituloPagina2');
-
-        $contatoTituloemail=Confing::get('contatoTituloemail');
-        $contatoemail=Confing::get('contatoemail');
-
-        $contatoTituloEndereco=Confing::get('contatoTituloEndereco');
-        $contatoSubtTituloEndereco=Confing::get('contatoSubtTituloEndereco');
-
-        $contatoTituloTelefone=Confing::get('contatoTituloTelefone');
-        $contatoTelefone=Confing::get('contatoTelefone');
-
-        $contatoLinkLinkedin=Confing::get('contatoLinkLinkedin');
-        $contatoLinkFacebook=Confing::get('contatoLinkFacebook');
-        $contatoLinkInstagram=Confing::get('contatoLinkInstagram');
-
-
-        $depoimento1=Confing::get('depoimento1');
-        $depoimento2=Confing::get('depoimento2');
-
-
-        $agendamento1=Confing::get('agendamento1');
-        $agendamento2=Confing::get('agendamento2');
-        $agendamentobotao=Confing::get('agendamentobotao');
+        $englishservico1preco2=Confing::get('englishservico1preco2');
+        $englishservico2preco2=Confing::get('englishservico2preco2');
+        $englishservico3preco2=Confing::get('englishservico3preco2');
+        $englishservico4preco2=Confing::get('englishservico4preco2');
+        $englishservico5preco2=Confing::get('englishservico5preco2');
+        $englishservico6preco2=Confing::get('englishservico6preco2');
+        $englishservico7preco2=Confing::get('englishservico7preco2');
+        $englishservico8preco2=Confing::get('englishservico8preco2');
+        $englishservico9preco2=Confing::get('englishservico9preco2');
+        $englishservico10preco2=Confing::get('englishservico10preco2');
+        $englishservico11preco2=Confing::get('englishservico11preco2');
 
 
 
-        $modalimg=Confing::get('modalimg');
+        $englishcontatoTituloPagina=Confing::get('englishcontatoTituloPagina');
+        $englishcontatoTituloPagina2=Confing::get('englishcontatoTituloPagina2');
 
-        $modal1=Confing::get('modal1');
-        $modal2=Confing::get('modal2');
-        $modal3=Confing::get('modal3');
-        $modal4=Confing::get('modal4');
-        $modal5=Confing::get('modal5');
-        $modal6=Confing::get('modal6');
-        $modal7=Confing::get('modal7');
-        $modal8=Confing::get('modal8');
-        $modal9=Confing::get('modal9');
+        $englishcontatoTituloemail=Confing::get('englishcontatoTituloemail');
+        $englishcontatoemail=Confing::get('englishcontatoemail');
 
-        $estruturatitulo1=Confing::get('estruturatitulo1');
-        $estruturatitulo2=Confing::get('estruturatitulo2');
+        $englishcontatoTituloEndereco=Confing::get('englishcontatoTituloEndereco');
+        $englishcontatoSubtTituloEndereco=Confing::get('englishcontatoSubtTituloEndereco');
 
-        $estruturaimagem1=Confing::get('estruturaimagem1');
-        $estruturaimagem2=Confing::get('estruturaimagem2');
-        $estruturaimagem3=Confing::get('estruturaimagem3');
-        $estruturaimagem4=Confing::get('estruturaimagem4');
-        $estruturaimagem5=Confing::get('estruturaimagem5');
-        $estruturaimagem6=Confing::get('estruturaimagem6');
-        $estruturaimagem7=Confing::get('estruturaimagem7');
-        $estruturaimagem8=Confing::get('estruturaimagem8');
-        $estruturaimagem9=Confing::get('estruturaimagem9');
-        $estruturaimagem10=Confing::get('estruturaimagem10');
-        $estruturaimagem11=Confing::get('estruturaimagem11');
-        $estruturaimagem12=Confing::get('estruturaimagem12');
-        $estruturaimagem13=Confing::get('estruturaimagem13');
-        $estruturaimagem14=Confing::get('estruturaimagem14');
+        $englishcontatoTituloTelefone=Confing::get('englishcontatoTituloTelefone');
+        $englishcontatoTelefone=Confing::get('englishcontatoTelefone');
+
+        $englishcontatoLinkLinkedin=Confing::get('englishcontatoLinkLinkedin');
+        $englishcontatoLinkFacebook=Confing::get('englishcontatoLinkFacebook');
+        $englishcontatoLinkInstagram=Confing::get('englishcontatoLinkInstagram');
+
+
+        $englishdepoimento1=Confing::get('englishdepoimento1');
+        $englishdepoimento2=Confing::get('englishdepoimento2');
+
+
+        $englishagendamento1=Confing::get('englishagendamento1');
+        $englishagendamento2=Confing::get('englishagendamento2');
+        $englishagendamentobotao=Confing::get('englishagendamentobotao');
+
+
+
+        $englishmodalimg=Confing::get('englishmodalimg');
+
+        $englishmodal1=Confing::get('englishmodal1');
+        $englishmodal2=Confing::get('englishmodal2');
+        $englishmodal3=Confing::get('englishmodal3');
+        $englishmodal4=Confing::get('englishmodal4');
+        $englishmodal5=Confing::get('englishmodal5');
+        $englishmodal6=Confing::get('englishmodal6');
+        $englishmodal7=Confing::get('englishmodal7');
+        $englishmodal8=Confing::get('englishmodal8');
+        $englishmodal9=Confing::get('englishmodal9');
+
+        $englishestruturatitulo1=Confing::get('englishestruturatitulo1');
+        $englishestruturatitulo2=Confing::get('englishestruturatitulo2');
+
+        $englishestruturaimagem1=Confing::get('englishestruturaimagem1');
+        $englishestruturaimagem2=Confing::get('englishestruturaimagem2');
+        $englishestruturaimagem3=Confing::get('englishestruturaimagem3');
+        $englishestruturaimagem4=Confing::get('englishestruturaimagem4');
+        $englishestruturaimagem5=Confing::get('englishestruturaimagem5');
+        $englishestruturaimagem6=Confing::get('englishestruturaimagem6');
+        $englishestruturaimagem7=Confing::get('englishestruturaimagem7');
+        $englishestruturaimagem8=Confing::get('englishestruturaimagem8');
+        $englishestruturaimagem9=Confing::get('englishestruturaimagem9');
+        $englishestruturaimagem10=Confing::get('englishestruturaimagem10');
+        $englishestruturaimagem11=Confing::get('englishestruturaimagem11');
+        $englishestruturaimagem12=Confing::get('englishestruturaimagem12');
+        $englishestruturaimagem13=Confing::get('englishestruturaimagem13');
+        $englishestruturaimagem14=Confing::get('englishestruturaimagem14');
 
 
 
         return view("site.en.index",[
-            'textoresumo'=>$textoresumo,
-            'whatsapp'=>$whatsapp,
-            'email'=>$email,
-            'instagram'=>$instagram,
-            'facebook'=>$facebook,
-            'boleto'=>$boleto,
-            'slide1'=>$slide1,
-            'slide2'=>$slide2,
-            'slide3'=>$slide3,
-            'slide4'=>$slide4,
-            'slide5'=>$slide5,
-            'slide6'=>$slide6,
-            'slide7'=>$slide7,
-            'slide8'=>$slide8,
-            'logo1'=>$logo1,
-            'menu2'=>$menu2,
-            'menu3'=>$menu3,
-            'menu4'=>$menu4,
-            'menu5'=>$menu5,
-            'menu6'=>$menu6,
-            'menu7'=>$menu7,
-            'menu8'=>$menu8,
-            'menu9'=>$menu9,
+            'englishtextoresumo'=>$englishtextoresumo,
+            'englishwhatsapp'=>$englishwhatsapp,
+            'englishemail'=>$englishemail,
+            'englishinstagram'=>$englishinstagram,
+            'englishfacebook'=>$englishfacebook,
+            'englishboleto'=>$englishboleto,
+            'englishslide1'=>$englishslide1,
+            'englishslide2'=>$englishslide2,
+            'englishslide3'=>$englishslide3,
+            'englishslide4'=>$englishslide4,
+            'englishslide5'=>$englishslide5,
+            'englishslide6'=>$englishslide6,
+            'englishslide7'=>$englishslide7,
+            'englishslide8'=>$englishslide8,
+            'englishlogo1'=>$englishlogo1,
+            'englishmenu2'=>$englishmenu2,
+            'englishmenu3'=>$englishmenu3,
+            'englishmenu4'=>$englishmenu4,
+            'englishmenu5'=>$englishmenu5,
+            'englishmenu6'=>$englishmenu6,
+            'englishmenu7'=>$englishmenu7,
+            'englishmenu8'=>$englishmenu8,
+            'englishmenu9'=>$englishmenu9,
 
-            'tituloPagina'=>$tituloPagina,
-            'tituloPrincipal'=>$tituloPrincipal,
+            'englishtituloPagina'=>$englishtituloPagina,
+            'englishtituloPrincipal'=>$englishtituloPrincipal,
 
-            'servico1img'=>$servico1img,
-            'servico2img'=>$servico2img,
-            'servico3img'=>$servico3img,
-            'servico4img'=>$servico4img,
-            'servico5img'=>$servico5img,
-            'servico6img'=>$servico6img,
-            'servico7img'=>$servico7img,
-            'servico8img'=>$servico8img,
-            'servico9img'=>$servico9img,
-            'servico10img'=>$servico10img,
-            'servico11img'=>$servico11img,
+            'englishservico1img'=>$englishservico1img,
+            'englishservico2img'=>$englishservico2img,
+            'englishservico3img'=>$englishservico3img,
+            'englishservico4img'=>$englishservico4img,
+            'englishservico5img'=>$englishservico5img,
+            'englishservico6img'=>$englishservico6img,
+            'englishservico7img'=>$englishservico7img,
+            'englishservico8img'=>$englishservico8img,
+            'englishservico9img'=>$englishservico9img,
+            'englishservico10img'=>$englishservico10img,
+            'englishservico11img'=>$englishservico11img,
 
-            'servico1titulo'=>$servico1titulo,
-            'servico2titulo'=>$servico2titulo,
-            'servico3titulo'=>$servico3titulo,
-            'servico4titulo'=>$servico4titulo,
-            'servico5titulo'=>$servico5titulo,
-            'servico6titulo'=>$servico6titulo,
-            'servico7titulo'=>$servico7titulo,
-            'servico8titulo'=>$servico8titulo,
-            'servico9titulo'=>$servico9titulo,
-            'servico10titulo'=>$servico10titulo,
-            'servico11titulo'=>$servico11titulo,
+            'englishservico1titulo'=>$englishservico1titulo,
+            'englishservico2titulo'=>$englishservico2titulo,
+            'englishservico3titulo'=>$englishservico3titulo,
+            'englishservico4titulo'=>$englishservico4titulo,
+            'englishservico5titulo'=>$englishservico5titulo,
+            'englishservico6titulo'=>$englishservico6titulo,
+            'englishservico7titulo'=>$englishservico7titulo,
+            'englishservico8titulo'=>$englishservico8titulo,
+            'englishservico9titulo'=>$englishservico9titulo,
+            'englishservico10titulo'=>$englishservico10titulo,
+            'englishservico11titulo'=>$englishservico11titulo,
 
-            'servico1descricao'=>$servico1descricao,
-            'servico2descricao'=>$servico2descricao,
-            'servico3descricao'=>$servico3descricao,
-            'servico4descricao'=>$servico4descricao,
-            'servico5descricao'=>$servico5descricao,
-            'servico6descricao'=>$servico6descricao,
-            'servico7descricao'=>$servico7descricao,
-            'servico8descricao'=>$servico8descricao,
-            'servico9descricao'=>$servico9descricao,
-            'servico10descricao'=>$servico10descricao,
-            'servico11descricao'=>$servico11descricao,
+            'englishservico1descricao'=>$englishservico1descricao,
+            'englishservico2descricao'=>$englishservico2descricao,
+            'englishservico3descricao'=>$englishservico3descricao,
+            'englishservico4descricao'=>$englishservico4descricao,
+            'englishservico5descricao'=>$englishservico5descricao,
+            'englishservico6descricao'=>$englishservico6descricao,
+            'englishservico7descricao'=>$englishservico7descricao,
+            'englishservico8descricao'=>$englishservico8descricao,
+            'englishservico9descricao'=>$englishservico9descricao,
+            'englishservico10descricao'=>$englishservico10descricao,
+            'englishservico11descricao'=>$englishservico11descricao,
 
-            'servico1preco'=>$servico1preco,
-            'servico2preco'=>$servico2preco,
-            'servico3preco'=>$servico3preco,
-            'servico4preco'=>$servico4preco,
-            'servico5preco'=>$servico5preco,
-            'servico6preco'=>$servico6preco,
-            'servico7preco'=>$servico7preco,
-            'servico8preco'=>$servico8preco,
-            'servico9preco'=>$servico9preco,
-            'servico10preco'=>$servico10preco,
-            'servico11preco'=>$servico11preco,
+            'englishservico1preco'=>$englishservico1preco,
+            'englishservico2preco'=>$englishservico2preco,
+            'englishservico3preco'=>$englishservico3preco,
+            'englishservico4preco'=>$englishservico4preco,
+            'englishservico5preco'=>$englishservico5preco,
+            'englishservico6preco'=>$englishservico6preco,
+            'englishservico7preco'=>$englishservico7preco,
+            'englishservico8preco'=>$englishservico8preco,
+            'englishservico9preco'=>$englishservico9preco,
+            'englishservico10preco'=>$englishservico10preco,
+            'englishservico11preco'=>$englishservico11preco,
 
-            'servico1preco2'=>$servico1preco2,
-            'servico2preco2'=>$servico2preco2,
-            'servico3preco2'=>$servico3preco2,
-            'servico4preco2'=>$servico4preco2,
-            'servico5preco2'=>$servico5preco2,
-            'servico6preco2'=>$servico6preco2,
-            'servico7preco2'=>$servico7preco2,
-            'servico8preco2'=>$servico8preco2,
-            'servico9preco2'=>$servico9preco2,
-            'servico10preco2'=>$servico10preco2,
-            'servico11preco2'=>$servico11preco2,
+            'englishservico1preco2'=>$englishservico1preco2,
+            'englishservico2preco2'=>$englishservico2preco2,
+            'englishservico3preco2'=>$englishservico3preco2,
+            'englishservico4preco2'=>$englishservico4preco2,
+            'englishservico5preco2'=>$englishservico5preco2,
+            'englishservico6preco2'=>$englishservico6preco2,
+            'englishservico7preco2'=>$englishservico7preco2,
+            'englishservico8preco2'=>$englishservico8preco2,
+            'englishservico9preco2'=>$englishservico9preco2,
+            'englishservico10preco2'=>$englishservico10preco2,
+            'englishservico11preco2'=>$englishservico11preco2,
 
 
-            'contatoTituloPagina'=>$contatoTituloPagina,
-            'contatoTituloPagina2'=>$contatoTituloPagina2,
+            'englishcontatoTituloPagina'=>$englishcontatoTituloPagina,
+            'englishcontatoTituloPagina2'=>$englishcontatoTituloPagina2,
 
-            'contatoTituloemail'=>$contatoTituloemail,
-            'contatoemail'=>$contatoemail,
+            'englishcontatoTituloemail'=>$englishcontatoTituloemail,
+            'englishcontatoemail'=>$englishcontatoemail,
 
-            'contatoTituloEndereco'=>$contatoTituloEndereco,
-            'contatoSubtTituloEndereco'=>$contatoSubtTituloEndereco,
+            'englishcontatoTituloEndereco'=>$englishcontatoTituloEndereco,
+            'englishcontatoSubtTituloEndereco'=>$englishcontatoSubtTituloEndereco,
             
-            'contatoTituloTelefone'=>$contatoTituloTelefone,
-            'contatoTelefone'=>$contatoTelefone,
+            'englishcontatoTituloTelefone'=>$englishcontatoTituloTelefone,
+            'englishcontatoTelefone'=>$englishcontatoTelefone,
 
-            'contatoLinkLinkedin'=>$contatoLinkLinkedin,
-            'contatoLinkFacebook'=>$contatoLinkFacebook,
-            'contatoLinkInstagram'=>$contatoLinkInstagram,
+            'englishcontatoLinkLinkedin'=>$englishcontatoLinkLinkedin,
+            'englishcontatoLinkFacebook'=>$englishcontatoLinkFacebook,
+            'englishcontatoLinkInstagram'=>$englishcontatoLinkInstagram,
 
 
 
-            'depoimento1'=>$depoimento1,
-            'depoimento2'=>$depoimento2,
+            'englishdepoimento1'=>$englishdepoimento1,
+            'englishdepoimento2'=>$englishdepoimento2,
 
             
 
-            'agendamento1'=>$agendamento1,
-            'agendamento2'=>$agendamento2,
-            'agendamentobotao'=>$agendamentobotao,
+            'englishagendamento1'=>$englishagendamento1,
+            'englishagendamento2'=>$englishagendamento2,
+            'englishagendamentobotao'=>$englishagendamentobotao,
 
 
-            'modalimg'=>$modalimg,
+            'englishmodalimg'=>$englishmodalimg,
 
-            'modal1'=>$modal1,
-            'modal2'=>$modal2,
-            'modal3'=>$modal3,
-            'modal4'=>$modal4,
-            'modal5'=>$modal5,
-            'modal6'=>$modal6,
-            'modal7'=>$modal7,
-            'modal8'=>$modal8,
-            'modal9'=>$modal9,
+            'englishmodal1'=>$englishmodal1,
+            'englishmodal2'=>$englishmodal2,
+            'englishmodal3'=>$englishmodal3,
+            'englishmodal4'=>$englishmodal4,
+            'englishmodal5'=>$englishmodal5,
+            'englishmodal6'=>$englishmodal6,
+            'englishmodal7'=>$englishmodal7,
+            'englishmodal8'=>$englishmodal8,
+            'englishmodal9'=>$englishmodal9,
 
-            'estruturatitulo1'=>$estruturatitulo1,
-            'estruturatitulo2'=>$estruturatitulo2,
+            'englishestruturatitulo1'=>$englishestruturatitulo1,
+            'englishestruturatitulo2'=>$englishestruturatitulo2,
     
-            'estruturaimagem1'=>$estruturaimagem1,
-            'estruturaimagem2'=>$estruturaimagem2,
-            'estruturaimagem3'=>$estruturaimagem3,
-            'estruturaimagem4'=>$estruturaimagem4,
-            'estruturaimagem5'=>$estruturaimagem5,
-            'estruturaimagem6'=>$estruturaimagem6,
-            'estruturaimagem7'=>$estruturaimagem7,
-            'estruturaimagem8'=>$estruturaimagem8,
-            'estruturaimagem9'=>$estruturaimagem9,
-            'estruturaimagem10'=>$estruturaimagem10,
-            'estruturaimagem11'=>$estruturaimagem11,
-            'estruturaimagem12'=>$estruturaimagem12,
-            'estruturaimagem13'=>$estruturaimagem13,
-            'estruturaimagem14'=>$estruturaimagem14,
+            'englishestruturaimagem1'=>$englishestruturaimagem1,
+            'englishestruturaimagem2'=>$englishestruturaimagem2,
+            'englishestruturaimagem3'=>$englishestruturaimagem3,
+            'englishestruturaimagem4'=>$englishestruturaimagem4,
+            'englishestruturaimagem5'=>$englishestruturaimagem5,
+            'englishestruturaimagem6'=>$englishestruturaimagem6,
+            'englishestruturaimagem7'=>$englishestruturaimagem7,
+            'englishestruturaimagem8'=>$englishestruturaimagem8,
+            'englishestruturaimagem9'=>$englishestruturaimagem9,
+            'englishestruturaimagem10'=>$englishestruturaimagem10,
+            'englishestruturaimagem11'=>$englishestruturaimagem11,
+            'englishestruturaimagem12'=>$englishestruturaimagem12,
+            'englishestruturaimagem13'=>$englishestruturaimagem13,
+            'englishestruturaimagem14'=>$englishestruturaimagem14,
         ]);        
     }
 }

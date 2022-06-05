@@ -25,585 +25,585 @@ class EnglishController extends Controller
 		 */
 		public function home()
 		{
-			$textoresumo=Confing::get('textoresumo');
-			$whatsapp=Confing::get('whatsapp');
-			$instagram=Confing::get('instagram');
-			$email=Confing::get('email');
-			$facebook=Confing::get('facebook');
-			$boleto=Confing::get('boleto');
-			$logo1=Confing::get('logo1');
-			$menu2=Confing::get('menu2');
-			$menu3=Confing::get('menu3');
-			$menu4=Confing::get('menu4');
-			$menu5=Confing::get('menu5');
-			$menu6=Confing::get('menu6');
-			$menu7=Confing::get('menu7');
-			$menu8=Confing::get('menu8');
-			$menu9=Confing::get('menu9');
+			$englishtextoresumo=Confing::get('englishtextoresumo');
+			$englishwhatsapp=Confing::get('englishwhatsapp');
+			$englishinstagram=Confing::get('englishinstagram');
+			$englishemail=Confing::get('englishemail');
+			$englishfacebook=Confing::get('englishfacebook');
+			$englishboleto=Confing::get('englishboleto');
+			$englishlogo1=Confing::get('englishlogo1');
+			$englishmenu2=Confing::get('englishmenu2');
+			$englishmenu3=Confing::get('englishmenu3');
+			$englishmenu4=Confing::get('englishmenu4');
+			$englishmenu5=Confing::get('englishmenu5');
+			$englishmenu6=Confing::get('englishmenu6');
+			$englishmenu7=Confing::get('englishmenu7');
+			$englishmenu8=Confing::get('englishmenu8');
+			$englishmenu9=Confing::get('englishmenu9');
 
 
 
-			$slide1=Confing::get('slide1');
-			$slide2=Confing::get('slide2');
-			$slide3=Confing::get('slide3');
-			$slide4=Confing::get('slide4');
-			$slide5=Confing::get('slide5');
-			$slide6=Confing::get('slide6');
-			$slide7=Confing::get('slide7');
-			$slide8=Confing::get('slide8');
+			$englishslide1=Confing::get('englishslide1');
+			$englishslide2=Confing::get('englishslide2');
+			$englishslide3=Confing::get('englishslide3');
+			$englishslide4=Confing::get('englishslide4');
+			$englishslide5=Confing::get('englishslide5');
+			$englishslide6=Confing::get('englishslide6');
+			$englishslide7=Confing::get('englishslide7');
+			$englishslide8=Confing::get('englishslide8');
 
 
 
-			$tituloPagina=Confing::get('tituloPagina');
-			$tituloPrincipal=Confing::get('tituloPrincipal');
+			$englishtituloPagina=Confing::get('englishtituloPagina');
+			$englishtituloPrincipal=Confing::get('englishtituloPrincipal');
 
-			$servico1img=Confing::get('servico1img');
-			$servico2img=Confing::get('servico2img');
-			$servico3img=Confing::get('servico3img');
-			$servico4img=Confing::get('servico4img');
-			$servico5img=Confing::get('servico5img');
-			$servico6img=Confing::get('servico6img');
-			$servico7img=Confing::get('servico7img');
-			$servico8img=Confing::get('servico8img');
-			$servico9img=Confing::get('servico9img');
-			$servico10img=Confing::get('servico10img');
-			$servico11img=Confing::get('servico11img');
+			$englishservico1img=Confing::get('englishservico1img');
+			$englishservico2img=Confing::get('englishservico2img');
+			$englishservico3img=Confing::get('englishservico3img');
+			$englishservico4img=Confing::get('englishservico4img');
+			$englishservico5img=Confing::get('englishservico5img');
+			$englishservico6img=Confing::get('englishservico6img');
+			$englishservico7img=Confing::get('englishservico7img');
+			$englishservico8img=Confing::get('englishservico8img');
+			$englishservico9img=Confing::get('englishservico9img');
+			$englishservico10img=Confing::get('englishservico10img');
+			$englishservico11img=Confing::get('englishservico11img');
 
-			$servico1titulo=Confing::get('servico1titulo');
-			$servico2titulo=Confing::get('servico2titulo');
-			$servico3titulo=Confing::get('servico3titulo');
-			$servico4titulo=Confing::get('servico4titulo');
-			$servico5titulo=Confing::get('servico5titulo');
-			$servico6titulo=Confing::get('servico6titulo');
-			$servico7titulo=Confing::get('servico7titulo');
-			$servico8titulo=Confing::get('servico8titulo');
-			$servico9titulo=Confing::get('servico9titulo');
-			$servico10titulo=Confing::get('servico10titulo');
-			$servico11titulo=Confing::get('servico11titulo');
+			$englishservico1titulo=Confing::get('englishservico1titulo');
+			$englishservico2titulo=Confing::get('englishservico2titulo');
+			$englishservico3titulo=Confing::get('englishservico3titulo');
+			$englishservico4titulo=Confing::get('englishservico4titulo');
+			$englishservico5titulo=Confing::get('englishservico5titulo');
+			$englishservico6titulo=Confing::get('englishservico6titulo');
+			$englishservico7titulo=Confing::get('englishservico7titulo');
+			$englishservico8titulo=Confing::get('englishservico8titulo');
+			$englishservico9titulo=Confing::get('englishservico9titulo');
+			$englishservico10titulo=Confing::get('englishservico10titulo');
+			$englishservico11titulo=Confing::get('englishservico11titulo');
 
-			$servico1descricao=Confing::get('servico1descricao');
-			$servico2descricao=Confing::get('servico2descricao');
-			$servico3descricao=Confing::get('servico3descricao');
-			$servico4descricao=Confing::get('servico4descricao');
-			$servico5descricao=Confing::get('servico5descricao');
-			$servico6descricao=Confing::get('servico6descricao');
-			$servico7descricao=Confing::get('servico7descricao');
-			$servico8descricao=Confing::get('servico8descricao');
-			$servico9descricao=Confing::get('servico9descricao');
-			$servico10descricao=Confing::get('servico10descricao');
-			$servico11descricao=Confing::get('servico11descricao');
+			$englishservico1descricao=Confing::get('englishservico1descricao');
+			$englishservico2descricao=Confing::get('englishservico2descricao');
+			$englishservico3descricao=Confing::get('englishservico3descricao');
+			$englishservico4descricao=Confing::get('englishservico4descricao');
+			$englishservico5descricao=Confing::get('englishservico5descricao');
+			$englishservico6descricao=Confing::get('englishservico6descricao');
+			$englishservico7descricao=Confing::get('englishservico7descricao');
+			$englishservico8descricao=Confing::get('englishservico8descricao');
+			$englishservico9descricao=Confing::get('englishservico9descricao');
+			$englishservico10descricao=Confing::get('englishservico10descricao');
+			$englishservico11descricao=Confing::get('englishservico11descricao');
 
-			$servico1preco=Confing::get('servico1preco');
-			$servico2preco=Confing::get('servico2preco');
-			$servico3preco=Confing::get('servico3preco');
-			$servico4preco=Confing::get('servico4preco');
-			$servico5preco=Confing::get('servico5preco');
-			$servico6preco=Confing::get('servico6preco');
-			$servico7preco=Confing::get('servico7preco');
-			$servico8preco=Confing::get('servico8preco');
-			$servico9preco=Confing::get('servico9preco');
-			$servico10preco=Confing::get('servico10preco');
-			$servico11preco=Confing::get('servico11preco');
+			$englishservico1preco=Confing::get('englishservico1preco');
+			$englishservico2preco=Confing::get('englishservico2preco');
+			$englishservico3preco=Confing::get('englishservico3preco');
+			$englishservico4preco=Confing::get('englishservico4preco');
+			$englishservico5preco=Confing::get('englishservico5preco');
+			$englishservico6preco=Confing::get('englishservico6preco');
+			$englishservico7preco=Confing::get('englishservico7preco');
+			$englishservico8preco=Confing::get('englishservico8preco');
+			$englishservico9preco=Confing::get('englishservico9preco');
+			$englishservico10preco=Confing::get('englishservico10preco');
+			$englishservico11preco=Confing::get('englishservico11preco');
 
-			$servico1preco2=Confing::get('servico1preco2');
-			$servico2preco2=Confing::get('servico2preco2');
-			$servico3preco2=Confing::get('servico3preco2');
-			$servico4preco2=Confing::get('servico4preco2');
-			$servico5preco2=Confing::get('servico5preco2');
-			$servico6preco2=Confing::get('servico6preco2');
-			$servico7preco2=Confing::get('servico7preco2');
-			$servico8preco2=Confing::get('servico8preco2');
-			$servico9preco2=Confing::get('servico9preco2');
-			$servico10preco2=Confing::get('servico10preco2');
-			$servico11preco2=Confing::get('servico11preco2');
+			$englishservico1preco2=Confing::get('englishservico1preco2');
+			$englishservico2preco2=Confing::get('englishservico2preco2');
+			$englishservico3preco2=Confing::get('englishservico3preco2');
+			$englishservico4preco2=Confing::get('englishservico4preco2');
+			$englishservico5preco2=Confing::get('englishservico5preco2');
+			$englishservico6preco2=Confing::get('englishservico6preco2');
+			$englishservico7preco2=Confing::get('englishservico7preco2');
+			$englishservico8preco2=Confing::get('englishservico8preco2');
+			$englishservico9preco2=Confing::get('englishservico9preco2');
+			$englishservico10preco2=Confing::get('englishservico10preco2');
+			$englishservico11preco2=Confing::get('englishservico11preco2');
 
 
 
-			$contatoTituloPagina=Confing::get('contatoTituloPagina');
-			$contatoTituloPagina2=Confing::get('contatoTituloPagina2');
+			$englishcontatoTituloPagina=Confing::get('englishcontatoTituloPagina');
+			$englishcontatoTituloPagina2=Confing::get('englishcontatoTituloPagina2');
 				
-			$contatoTituloemail=Confing::get('contatoTituloemail');
-			$contatoemail=Confing::get('contatoemail');
+			$englishcontatoTituloemail=Confing::get('englishcontatoTituloemail');
+			$englishcontatoemail=Confing::get('englishcontatoemail');
 				
-			$contatoTituloEndereco=Confing::get('contatoTituloEndereco');
-			$contatoSubtTituloEndereco=Confing::get('contatoSubtTituloEndereco');
+			$englishcontatoTituloEndereco=Confing::get('englishcontatoTituloEndereco');
+			$englishcontatoSubtTituloEndereco=Confing::get('englishcontatoSubtTituloEndereco');
 				
-			$contatoTituloTelefone=Confing::get('contatoTituloTelefone');
-			$contatoTelefone=Confing::get('contatoTelefone');
+			$englishcontatoTituloTelefone=Confing::get('englishcontatoTituloTelefone');
+			$englishcontatoTelefone=Confing::get('englishcontatoTelefone');
 
-			$contatoLinkLinkedin=Confing::get('contatoLinkLinkedin');
-			$contatoLinkFacebook=Confing::get('contatoLinkFacebook');
-			$contatoLinkInstagram=Confing::get('contatoLinkInstagram');
+			$englishcontatoLinkLinkedin=Confing::get('englishcontatoLinkLinkedin');
+			$englishcontatoLinkFacebook=Confing::get('englishcontatoLinkFacebook');
+			$englishcontatoLinkInstagram=Confing::get('englishcontatoLinkInstagram');
 
-			$depoimento1=Confing::get('depoimento1');
-			$depoimento2=Confing::get('depoimento2');
+			$englishdepoimento1=Confing::get('englishdepoimento1');
+			$englishdepoimento2=Confing::get('englishdepoimento2');
 
-			$agendamento1=Confing::get('agendamento1');
-			$agendamento2=Confing::get('agendamento2');
-			$agendamentobotao=Confing::get('agendamentobotao');
+			$englishagendamento1=Confing::get('englishagendamento1');
+			$englishagendamento2=Confing::get('englishagendamento2');
+			$englishagendamentobotao=Confing::get('englishagendamentobotao');
 
 
 
-			$modalimg=Confing::get('modalimg');
+			$englishmodalimg=Confing::get('englishmodalimg');
 
-			$modal1=Confing::get('modal1');
-			$modal2=Confing::get('modal2');
-			$modal3=Confing::get('modal3');
-			$modal4=Confing::get('modal4');
-			$modal5=Confing::get('modal5');
-			$modal6=Confing::get('modal6');
-			$modal7=Confing::get('modal7');
-			$modal8=Confing::get('modal8');
-			$modal9=Confing::get('modal9');
+			$englishmodal1=Confing::get('englishmodal1');
+			$englishmodal2=Confing::get('englishmodal2');
+			$englishmodal3=Confing::get('englishmodal3');
+			$englishmodal4=Confing::get('englishmodal4');
+			$englishmodal5=Confing::get('englishmodal5');
+			$englishmodal6=Confing::get('englishmodal6');
+			$englishmodal7=Confing::get('englishmodal7');
+			$englishmodal8=Confing::get('englishmodal8');
+			$englishmodal9=Confing::get('englishmodal9');
 
 
 			
-			$estruturatitulo1=Confing::get('estruturatitulo1');
-			$estruturatitulo2=Confing::get('estruturatitulo2');
+			$englishestruturatitulo1=Confing::get('englishestruturatitulo1');
+			$englishestruturatitulo2=Confing::get('englishestruturatitulo2');
 
-			$estruturaimagem1=Confing::get('estruturaimagem1');
-			$estruturaimagem2=Confing::get('estruturaimagem2');
-			$estruturaimagem3=Confing::get('estruturaimagem3');
-			$estruturaimagem4=Confing::get('estruturaimagem4');
-			$estruturaimagem5=Confing::get('estruturaimagem5');
-			$estruturaimagem6=Confing::get('estruturaimagem6');
-			$estruturaimagem7=Confing::get('estruturaimagem7');
-			$estruturaimagem8=Confing::get('estruturaimagem8');
-			$estruturaimagem9=Confing::get('estruturaimagem9');
-			$estruturaimagem10=Confing::get('estruturaimagem10');
-			$estruturaimagem11=Confing::get('estruturaimagem11');
-			$estruturaimagem12=Confing::get('estruturaimagem12');
-			$estruturaimagem13=Confing::get('estruturaimagem13');
-			$estruturaimagem14=Confing::get('estruturaimagem14');
+			$englishestruturaimagem1=Confing::get('englishestruturaimagem1');
+			$englishestruturaimagem2=Confing::get('englishestruturaimagem2');
+			$englishestruturaimagem3=Confing::get('englishestruturaimagem3');
+			$englishestruturaimagem4=Confing::get('englishestruturaimagem4');
+			$englishestruturaimagem5=Confing::get('englishestruturaimagem5');
+			$englishestruturaimagem6=Confing::get('englishestruturaimagem6');
+			$englishestruturaimagem7=Confing::get('englishestruturaimagem7');
+			$englishestruturaimagem8=Confing::get('englishestruturaimagem8');
+			$englishestruturaimagem9=Confing::get('englishestruturaimagem9');
+			$englishestruturaimagem10=Confing::get('englishestruturaimagem10');
+			$englishestruturaimagem11=Confing::get('englishestruturaimagem11');
+			$englishestruturaimagem12=Confing::get('englishestruturaimagem12');
+			$englishestruturaimagem13=Confing::get('englishestruturaimagem13');
+			$englishestruturaimagem14=Confing::get('englishestruturaimagem14');
 
 
 			return view('controle.en.index', [
-				'textoresumo'=>$textoresumo,
-				'whatsapp'=>$whatsapp,
-				'instagram'=>$instagram,
-				'email'=>$email,
-				'facebook'=>$facebook,
-				'boleto'=>$boleto,
-				'logo1'=>$logo1,
-				'menu2'=>$menu2,
-				'menu3'=>$menu3,
-				'menu4'=>$menu4,
-				'menu5'=>$menu5,
-				'menu6'=>$menu6,
-				'menu7'=>$menu7,
-				'menu8'=>$menu8,
-				'menu9'=>$menu9,
+				'englishtextoresumo'=>$englishtextoresumo,
+				'englishwhatsapp'=>$englishwhatsapp,
+				'englishinstagram'=>$englishinstagram,
+				'englishemail'=>$englishemail,
+				'englishfacebook'=>$englishfacebook,
+				'englishboleto'=>$englishboleto,
+				'englishlogo1'=>$englishlogo1,
+				'englishmenu2'=>$englishmenu2,
+				'englishmenu3'=>$englishmenu3,
+				'englishmenu4'=>$englishmenu4,
+				'englishmenu5'=>$englishmenu5,
+				'englishmenu6'=>$englishmenu6,
+				'englishmenu7'=>$englishmenu7,
+				'englishmenu8'=>$englishmenu8,
+				'englishmenu9'=>$englishmenu9,
 
 
 
-				'slide1'=>$slide1,
-				'slide2'=>$slide2,
-				'slide3'=>$slide3,
-				'slide4'=>$slide4,
-				'slide5'=>$slide5,
-				'slide6'=>$slide6,
-				'slide7'=>$slide7,
-				'slide8'=>$slide8,
+				'englishslide1'=>$englishslide1,
+				'englishslide2'=>$englishslide2,
+				'englishslide3'=>$englishslide3,
+				'englishslide4'=>$englishslide4,
+				'englishslide5'=>$englishslide5,
+				'englishslide6'=>$englishslide6,
+				'englishslide7'=>$englishslide7,
+				'englishslide8'=>$englishslide8,
 
 
 
-				'tituloPagina'=>$tituloPagina,
-				'tituloPrincipal'=>$tituloPrincipal,
+				'englishtituloPagina'=>$englishtituloPagina,
+				'englishtituloPrincipal'=>$englishtituloPrincipal,
 
-				'servico1img'=>$servico1img,
-				'servico2img'=>$servico2img,
-				'servico3img'=>$servico3img,
-				'servico4img'=>$servico4img,
-				'servico5img'=>$servico5img,
-				'servico6img'=>$servico6img,
-				'servico7img'=>$servico7img,
-				'servico8img'=>$servico8img,
-				'servico9img'=>$servico9img,
-				'servico10img'=>$servico10img,
-				'servico11img'=>$servico11img,
+				'englishservico1img'=>$englishservico1img,
+				'englishservico2img'=>$englishservico2img,
+				'englishservico3img'=>$englishservico3img,
+				'englishservico4img'=>$englishservico4img,
+				'englishservico5img'=>$englishservico5img,
+				'englishservico6img'=>$englishservico6img,
+				'englishservico7img'=>$englishservico7img,
+				'englishservico8img'=>$englishservico8img,
+				'englishservico9img'=>$englishservico9img,
+				'englishservico10img'=>$englishservico10img,
+				'englishservico11img'=>$englishservico11img,
 
-				'servico1titulo'=>$servico1titulo,
-				'servico2titulo'=>$servico2titulo,
-				'servico3titulo'=>$servico3titulo,
-				'servico4titulo'=>$servico4titulo,
-				'servico5titulo'=>$servico5titulo,
-				'servico6titulo'=>$servico6titulo,
-				'servico7titulo'=>$servico7titulo,
-				'servico8titulo'=>$servico8titulo,
-				'servico9titulo'=>$servico9titulo,
-				'servico10titulo'=>$servico10titulo,
-				'servico11titulo'=>$servico11titulo,
+				'englishservico1titulo'=>$englishservico1titulo,
+				'englishservico2titulo'=>$englishservico2titulo,
+				'englishservico3titulo'=>$englishservico3titulo,
+				'englishservico4titulo'=>$englishservico4titulo,
+				'englishservico5titulo'=>$englishservico5titulo,
+				'englishservico6titulo'=>$englishservico6titulo,
+				'englishservico7titulo'=>$englishservico7titulo,
+				'englishservico8titulo'=>$englishservico8titulo,
+				'englishservico9titulo'=>$englishservico9titulo,
+				'englishservico10titulo'=>$englishservico10titulo,
+				'englishservico11titulo'=>$englishservico11titulo,
 
-				'servico1descricao'=>$servico1descricao,
-				'servico2descricao'=>$servico2descricao,
-				'servico3descricao'=>$servico3descricao,
-				'servico4descricao'=>$servico4descricao,
-				'servico5descricao'=>$servico5descricao,
-				'servico6descricao'=>$servico6descricao,
-				'servico7descricao'=>$servico7descricao,
-				'servico8descricao'=>$servico8descricao,
-				'servico9descricao'=>$servico9descricao,
-				'servico10descricao'=>$servico10descricao,
-				'servico11descricao'=>$servico11descricao,
+				'englishservico1descricao'=>$englishservico1descricao,
+				'englishservico2descricao'=>$englishservico2descricao,
+				'englishservico3descricao'=>$englishservico3descricao,
+				'englishservico4descricao'=>$englishservico4descricao,
+				'englishservico5descricao'=>$englishservico5descricao,
+				'englishservico6descricao'=>$englishservico6descricao,
+				'englishservico7descricao'=>$englishservico7descricao,
+				'englishservico8descricao'=>$englishservico8descricao,
+				'englishservico9descricao'=>$englishservico9descricao,
+				'englishservico10descricao'=>$englishservico10descricao,
+				'englishservico11descricao'=>$englishservico11descricao,
 
-				'servico1preco'=>$servico1preco,
-				'servico2preco'=>$servico2preco,
-				'servico3preco'=>$servico3preco,
-				'servico4preco'=>$servico4preco,
-				'servico5preco'=>$servico5preco,
-				'servico6preco'=>$servico6preco,
-				'servico7preco'=>$servico7preco,
-				'servico8preco'=>$servico8preco,
-				'servico9preco'=>$servico9preco,
-				'servico10preco'=>$servico10preco,
-				'servico11preco'=>$servico11preco,
+				'englishservico1preco'=>$englishservico1preco,
+				'englishservico2preco'=>$englishservico2preco,
+				'englishservico3preco'=>$englishservico3preco,
+				'englishservico4preco'=>$englishservico4preco,
+				'englishservico5preco'=>$englishservico5preco,
+				'englishservico6preco'=>$englishservico6preco,
+				'englishservico7preco'=>$englishservico7preco,
+				'englishservico8preco'=>$englishservico8preco,
+				'englishservico9preco'=>$englishservico9preco,
+				'englishservico10preco'=>$englishservico10preco,
+				'englishservico11preco'=>$englishservico11preco,
 
-				'servico1preco2'=>$servico1preco2,
-				'servico2preco2'=>$servico2preco2,
-				'servico3preco2'=>$servico3preco2,
-				'servico4preco2'=>$servico4preco2,
-				'servico5preco2'=>$servico5preco2,
-				'servico6preco2'=>$servico6preco2,
-				'servico7preco2'=>$servico7preco2,
-				'servico8preco2'=>$servico8preco2,
-				'servico9preco2'=>$servico9preco2,
-				'servico10preco2'=>$servico10preco2,
-				'servico11preco2'=>$servico11preco2,
+				'englishservico1preco2'=>$englishservico1preco2,
+				'englishservico2preco2'=>$englishservico2preco2,
+				'englishservico3preco2'=>$englishservico3preco2,
+				'englishservico4preco2'=>$englishservico4preco2,
+				'englishservico5preco2'=>$englishservico5preco2,
+				'englishservico6preco2'=>$englishservico6preco2,
+				'englishservico7preco2'=>$englishservico7preco2,
+				'englishservico8preco2'=>$englishservico8preco2,
+				'englishservico9preco2'=>$englishservico9preco2,
+				'englishservico10preco2'=>$englishservico10preco2,
+				'englishservico11preco2'=>$englishservico11preco2,
 
 
 
-				'contatoTituloPagina'=>$contatoTituloPagina,
-				'contatoTituloPagina2'=>$contatoTituloPagina2,
+				'englishcontatoTituloPagina'=>$englishcontatoTituloPagina,
+				'englishcontatoTituloPagina2'=>$englishcontatoTituloPagina2,
 
-				'contatoTituloemail'=>$contatoTituloemail,
-				'contatoemail'=>$contatoemail,
+				'englishcontatoTituloemail'=>$englishcontatoTituloemail,
+				'englishcontatoemail'=>$englishcontatoemail,
 
-				'contatoTituloEndereco'=>$contatoTituloEndereco,
-				'contatoSubtTituloEndereco'=>$contatoSubtTituloEndereco,
+				'englishcontatoTituloEndereco'=>$englishcontatoTituloEndereco,
+				'englishcontatoSubtTituloEndereco'=>$englishcontatoSubtTituloEndereco,
 				
-				'contatoTituloTelefone'=>$contatoTituloTelefone,
-				'contatoTelefone'=>$contatoTelefone,
+				'englishcontatoTituloTelefone'=>$englishcontatoTituloTelefone,
+				'englishcontatoTelefone'=>$englishcontatoTelefone,
 
-				'contatoLinkLinkedin'=>$contatoLinkLinkedin,
-				'contatoLinkFacebook'=>$contatoLinkFacebook,
-				'contatoLinkInstagram'=>$contatoLinkInstagram,
-
-
-
-				'depoimento1'=>$depoimento1,
-				'depoimento2'=>$depoimento2,
-
-				'agendamento1'=>$agendamento1,
-				'agendamento2'=>$agendamento2,
-				'agendamentobotao'=>$agendamentobotao,
+				'englishcontatoLinkLinkedin'=>$englishcontatoLinkLinkedin,
+				'englishcontatoLinkFacebook'=>$englishcontatoLinkFacebook,
+				'englishcontatoLinkInstagram'=>$englishcontatoLinkInstagram,
 
 
 
-				'modalimg'=>$modalimg,
+				'englishdepoimento1'=>$englishdepoimento1,
+				'englishdepoimento2'=>$englishdepoimento2,
 
-				'modal1'=>$modal1,
-				'modal2'=>$modal2,
-				'modal3'=>$modal3,
-				'modal4'=>$modal4,
-				'modal5'=>$modal5,
-				'modal6'=>$modal6,
-				'modal7'=>$modal7,
-				'modal8'=>$modal8,
-				'modal9'=>$modal9,
+				'englishagendamento1'=>$englishagendamento1,
+				'englishagendamento2'=>$englishagendamento2,
+				'englishagendamentobotao'=>$englishagendamentobotao,
 
-				'estruturatitulo1'=>$estruturatitulo1,
-				'estruturatitulo2'=>$estruturatitulo2,
 
-				'estruturaimagem1'=>$estruturaimagem1,
-				'estruturaimagem2'=>$estruturaimagem2,
-				'estruturaimagem3'=>$estruturaimagem3,
-				'estruturaimagem4'=>$estruturaimagem4,
-				'estruturaimagem5'=>$estruturaimagem5,
-				'estruturaimagem6'=>$estruturaimagem6,
-				'estruturaimagem7'=>$estruturaimagem7,
-				'estruturaimagem8'=>$estruturaimagem8,
-				'estruturaimagem9'=>$estruturaimagem9,
-				'estruturaimagem10'=>$estruturaimagem10,
-				'estruturaimagem11'=>$estruturaimagem11,
-				'estruturaimagem12'=>$estruturaimagem12,
-				'estruturaimagem13'=>$estruturaimagem13,
-				'estruturaimagem14'=>$estruturaimagem14,
+
+				'englishmodalimg'=>$englishmodalimg,
+
+				'englishmodal1'=>$englishmodal1,
+				'englishmodal2'=>$englishmodal2,
+				'englishmodal3'=>$englishmodal3,
+				'englishmodal4'=>$englishmodal4,
+				'englishmodal5'=>$englishmodal5,
+				'englishmodal6'=>$englishmodal6,
+				'englishmodal7'=>$englishmodal7,
+				'englishmodal8'=>$englishmodal8,
+				'englishmodal9'=>$englishmodal9,
+
+				'englishestruturatitulo1'=>$englishestruturatitulo1,
+				'englishestruturatitulo2'=>$englishestruturatitulo2,
+
+				'englishestruturaimagem1'=>$englishestruturaimagem1,
+				'englishestruturaimagem2'=>$englishestruturaimagem2,
+				'englishestruturaimagem3'=>$englishestruturaimagem3,
+				'englishestruturaimagem4'=>$englishestruturaimagem4,
+				'englishestruturaimagem5'=>$englishestruturaimagem5,
+				'englishestruturaimagem6'=>$englishestruturaimagem6,
+				'englishestruturaimagem7'=>$englishestruturaimagem7,
+				'englishestruturaimagem8'=>$englishestruturaimagem8,
+				'englishestruturaimagem9'=>$englishestruturaimagem9,
+				'englishestruturaimagem10'=>$englishestruturaimagem10,
+				'englishestruturaimagem11'=>$englishestruturaimagem11,
+				'englishestruturaimagem12'=>$englishestruturaimagem12,
+				'englishestruturaimagem13'=>$englishestruturaimagem13,
+				'englishestruturaimagem14'=>$englishestruturaimagem14,
 				]);
 		}
  
 		public function englishbanner(Request $request)
 		{
-			Confing::atualizar('textoresumo',$request->textoresumo);
-			Confing::atualizar('whatsapp',$request->whatsapp);
-			Confing::atualizar('instagram',$request->instagram);
-			Confing::atualizar('email',$request->email);
-			Confing::atualizar('facebook',$request->facebook);
+			Confing::atualizar('englishtextoresumo',$request->englishtextoresumo);
+			Confing::atualizar('englishwhatsapp',$request->englishwhatsapp);
+			Confing::atualizar('englishinstagram',$request->englishinstagram);
+			Confing::atualizar('englishemail',$request->englishemail);
+			Confing::atualizar('englishfacebook',$request->englishfacebook);
 				
 			return redirect()->back()->with('status', "Conteúdo atualizado com sucesso");
 		}
 
 		public function englishmenu(Request $request)
 		{
-				if ($request->hasFile('logo1')) 
+				if ($request->hasFile('englishlogo1')) 
 				{
-						$extension = $request->logo1->extension();
-						$path = $request->logo1->storeAs('public/images', "logo1.$extension");
-						Confing::atualizar('logo1',$path);
+						$extension = $request->englishlogo1->extension();
+						$path = $request->englishlogo1->storeAs('public/images', "englishlogo1.$extension");
+						Confing::atualizar('englishlogo1',$path);
 				}
 
-				Confing::atualizar('menu2',$request->menu2);
-				Confing::atualizar('menu3',$request->menu3);
-				Confing::atualizar('menu4',$request->menu4);    
-				Confing::atualizar('menu5',$request->menu5);
-				Confing::atualizar('menu6',$request->menu6);
-				Confing::atualizar('menu7',$request->menu7);
-				Confing::atualizar('menu8',$request->menu8);
-				Confing::atualizar('menu9',$request->menu9);
+				Confing::atualizar('englishmenu2',$request->englishmenu2);
+				Confing::atualizar('englishmenu3',$request->englishmenu3);
+				Confing::atualizar('englishmenu4',$request->englishmenu4);    
+				Confing::atualizar('englishmenu5',$request->englishmenu5);
+				Confing::atualizar('englishmenu6',$request->englishmenu6);
+				Confing::atualizar('englishmenu7',$request->englishmenu7);
+				Confing::atualizar('englishmenu8',$request->englishmenu8);
+				Confing::atualizar('englishmenu9',$request->englishmenu9);
 
 				return redirect()->back()->with('status', "Formulário Enviado com sucesso");
 		}
 
 		public function englishsobre(Request $request)
 		{
-			if ($request->hasFile('slide1')) 
+			if ($request->hasFile('englishslide1')) 
 			{
-				$extension = $request->slide1->extension();
-				$path = $request->slide1->storeAs('public/images', "slide1.$extension");
-				Confing::atualizar('slide1',$path);
+				$extension = $request->englishslide1->extension();
+				$path = $request->englishslide1->storeAs('public/images', "englishslide1.$extension");
+				Confing::atualizar('englishslide1',$path);
 			}
-			if ($request->hasFile('slide2')) 
+			if ($request->hasFile('englishslide2')) 
 			{
-				$extension = $request->slide2->extension();
-				$path = $request->slide2->storeAs('public/images', "slide2.$extension");
-				Confing::atualizar('slide2',$path);
+				$extension = $request->englishslide2->extension();
+				$path = $request->englishslide2->storeAs('public/images', "englishslide2.$extension");
+				Confing::atualizar('englishslide2',$path);
 			}
-			if ($request->hasFile('slide3')) 
+			if ($request->hasFile('englishslide3')) 
 			{
-				$extension = $request->slide3->extension();
-				$path = $request->slide3->storeAs('public/images', "slide3.$extension");
-				Confing::atualizar('slide3',$path);
+				$extension = $request->englishslide3->extension();
+				$path = $request->englishslide3->storeAs('public/images', "englishslide3.$extension");
+				Confing::atualizar('englishslide3',$path);
 			}
 
-			Confing::atualizar('slide4',$request->slide4);
-			Confing::atualizar('slide5',$request->slide5);
-			Confing::atualizar('slide6',$request->slide6);
-			Confing::atualizar('slide7',$request->slide7);
-			Confing::atualizar('slide8',$request->slide8);
+			Confing::atualizar('englishslide4',$request->englishslide4);
+			Confing::atualizar('englishslide5',$request->englishslide5);
+			Confing::atualizar('englishslide6',$request->englishslide6);
+			Confing::atualizar('englishslide7',$request->englishslide7);
+			Confing::atualizar('englishslide8',$request->englishslide8);
 
 			return redirect()->back()->with('status', "Conteúdo atualizado com sucesso");
 		}
 
 		public function englishservico(Request $request)
 		{
-				if ($request->hasFile('servico1img')) 
+				if ($request->hasFile('englishservico1img')) 
 				{
-						$extension = $request->servico1img->extension();
-						$path = $request->servico1img->storeAs('public/images', "servico1img.$extension");
-						Confing::atualizar('servico1img',$path);
+						$extension = $request->englishservico1img->extension();
+						$path = $request->englishservico1img->storeAs('public/images', "englishservico1img.$extension");
+						Confing::atualizar('englishservico1img',$path);
 				}
-				if ($request->hasFile('servico2img')) 
+				if ($request->hasFile('englishservico2img')) 
 				{
-						$extension = $request->servico2img->extension();
-						$path = $request->servico2img->storeAs('public/images', "servico2img.$extension");
-						Confing::atualizar('servico2img',$path);
+						$extension = $request->englishservico2img->extension();
+						$path = $request->englishservico2img->storeAs('public/images', "englishservico2img.$extension");
+						Confing::atualizar('englishservico2img',$path);
 				}
-				if ($request->hasFile('servico3img')) 
+				if ($request->hasFile('englishservico3img')) 
 				{
-						$extension = $request->servico3img->extension();
-						$path = $request->servico3img->storeAs('public/images', "servico3img.$extension");
-						Confing::atualizar('servico3img',$path);
+						$extension = $request->englishservico3img->extension();
+						$path = $request->englishservico3img->storeAs('public/images', "englishservico3img.$extension");
+						Confing::atualizar('englishservico3img',$path);
 				}
-				if ($request->hasFile('servico4img')) 
+				if ($request->hasFile('englishservico4img')) 
 				{
-						$extension = $request->servico4img->extension();
-						$path = $request->servico4img->storeAs('public/images', "servico4img.$extension");
-						Confing::atualizar('servico4img',$path);
+						$extension = $request->englishservico4img->extension();
+						$path = $request->englishservico4img->storeAs('public/images', "englishservico4img.$extension");
+						Confing::atualizar('englishservico4img',$path);
 				}
-				if ($request->hasFile('servico5img')) 
+				if ($request->hasFile('englishservico5img')) 
 				{
-						$extension = $request->servico5img->extension();
-						$path = $request->servico5img->storeAs('public/images', "servico5img.$extension");
-						Confing::atualizar('servico5img',$path);
+						$extension = $request->englishservico5img->extension();
+						$path = $request->englishservico5img->storeAs('public/images', "englishservico5img.$extension");
+						Confing::atualizar('englishservico5img',$path);
 				}
-				if ($request->hasFile('servico6img')) 
+				if ($request->hasFile('englishservico6img')) 
 				{
-						$extension = $request->servico6img->extension();
-						$path = $request->servico6img->storeAs('public/images', "servico6img.$extension");
-						Confing::atualizar('servico6img',$path);
+						$extension = $request->englishservico6img->extension();
+						$path = $request->englishservico6img->storeAs('public/images', "englishservico6img.$extension");
+						Confing::atualizar('englishservico6img',$path);
 				}
-				if ($request->hasFile('servico7img')) 
+				if ($request->hasFile('englishservico7img')) 
 				{
-						$extension = $request->servico7img->extension();
-						$path = $request->servico7img->storeAs('public/images', "servico7img.$extension");
-						Confing::atualizar('servico7img',$path);
+						$extension = $request->englishservico7img->extension();
+						$path = $request->englishservico7img->storeAs('public/images', "englishservico7img.$extension");
+						Confing::atualizar('englishservico7img',$path);
 				}
-				if ($request->hasFile('servico8img')) 
+				if ($request->hasFile('englishservico8img')) 
 				{
-						$extension = $request->servico8img->extension();
-						$path = $request->servico8img->storeAs('public/images', "servico8img.$extension");
-						Confing::atualizar('servico8img',$path);
+						$extension = $request->englishservico8img->extension();
+						$path = $request->englishservico8img->storeAs('public/images', "englishservico8img.$extension");
+						Confing::atualizar('englishservico8img',$path);
 				}
-				if ($request->hasFile('servico9img')) 
+				if ($request->hasFile('englishservico9img')) 
 				{
-						$extension = $request->servico9img->extension();
-						$path = $request->servico9img->storeAs('public/images', "servico9img.$extension");
-						Confing::atualizar('servico9img',$path);
+						$extension = $request->englishservico9img->extension();
+						$path = $request->englishservico9img->storeAs('public/images', "englishservico9img.$extension");
+						Confing::atualizar('englishservico9img',$path);
 				}
-				if ($request->hasFile('servico10img')) 
+				if ($request->hasFile('englishservico10img')) 
 				{
-						$extension = $request->servico10img->extension();
-						$path = $request->servico10img->storeAs('public/images', "servico10img.$extension");
-						Confing::atualizar('servico10img',$path);
+						$extension = $request->englishservico10img->extension();
+						$path = $request->englishservico10img->storeAs('public/images', "englishservico10img.$extension");
+						Confing::atualizar('englishservico10img',$path);
 				}
-				if ($request->hasFile('servico11img')) 
+				if ($request->hasFile('englishservico11img')) 
 				{
-						$extension = $request->servico11img->extension();
-						$path = $request->servico11img->storeAs('public/images', "servico11img.$extension");
-						Confing::atualizar('servico11img',$path);
+						$extension = $request->englishservico11img->extension();
+						$path = $request->englishservico11img->storeAs('public/images', "englishservico11img.$extension");
+						Confing::atualizar('englishservico11img',$path);
 				}
 				
-				Confing::atualizar('tituloPagina',$request->tituloPagina);
-				Confing::atualizar('tituloPrincipal',$request->tituloPrincipal);
+				Confing::atualizar('englishtituloPagina',$request->englishtituloPagina);
+				Confing::atualizar('englishtituloPrincipal',$request->englishtituloPrincipal);
 
-				Confing::atualizar('servico1titulo',$request->servico1titulo);
-				Confing::atualizar('servico2titulo',$request->servico2titulo);
-				Confing::atualizar('servico3titulo',$request->servico3titulo);
-				Confing::atualizar('servico4titulo',$request->servico4titulo);
-				Confing::atualizar('servico5titulo',$request->servico5titulo);
-				Confing::atualizar('servico6titulo',$request->servico6titulo);
-				Confing::atualizar('servico7titulo',$request->servico7titulo);
-				Confing::atualizar('servico8titulo',$request->servico8titulo);
-				Confing::atualizar('servico9titulo',$request->servico9titulo);
-				Confing::atualizar('servico10titulo',$request->servico10titulo);
-				Confing::atualizar('servico11titulo',$request->servico11titulo);
+				Confing::atualizar('englishservico1titulo',$request->englishservico1titulo);
+				Confing::atualizar('englishservico2titulo',$request->englishservico2titulo);
+				Confing::atualizar('englishservico3titulo',$request->englishservico3titulo);
+				Confing::atualizar('englishservico4titulo',$request->englishservico4titulo);
+				Confing::atualizar('englishservico5titulo',$request->englishservico5titulo);
+				Confing::atualizar('englishservico6titulo',$request->englishservico6titulo);
+				Confing::atualizar('englishservico7titulo',$request->englishservico7titulo);
+				Confing::atualizar('englishservico8titulo',$request->englishservico8titulo);
+				Confing::atualizar('englishservico9titulo',$request->englishservico9titulo);
+				Confing::atualizar('englishservico10titulo',$request->englishservico10titulo);
+				Confing::atualizar('englishservico11titulo',$request->englishservico11titulo);
 
-				Confing::atualizar('servico1descricao',$request->servico1descricao);
-				Confing::atualizar('servico2descricao',$request->servico2descricao);
-				Confing::atualizar('servico3descricao',$request->servico3descricao);
-				Confing::atualizar('servico4descricao',$request->servico4descricao);
-				Confing::atualizar('servico5descricao',$request->servico5descricao);
-				Confing::atualizar('servico6descricao',$request->servico6descricao);
-				Confing::atualizar('servico7descricao',$request->servico7descricao);
-				Confing::atualizar('servico8descricao',$request->servico8descricao);
-				Confing::atualizar('servico9descricao',$request->servico9descricao);
-				Confing::atualizar('servico10descricao',$request->servico10descricao);
-				Confing::atualizar('servico11descricao',$request->servico11descricao);
+				Confing::atualizar('englishservico1descricao',$request->englishservico1descricao);
+				Confing::atualizar('englishservico2descricao',$request->englishservico2descricao);
+				Confing::atualizar('englishservico3descricao',$request->englishservico3descricao);
+				Confing::atualizar('englishservico4descricao',$request->englishservico4descricao);
+				Confing::atualizar('englishservico5descricao',$request->englishservico5descricao);
+				Confing::atualizar('englishservico6descricao',$request->englishservico6descricao);
+				Confing::atualizar('englishservico7descricao',$request->englishservico7descricao);
+				Confing::atualizar('englishservico8descricao',$request->englishservico8descricao);
+				Confing::atualizar('englishservico9descricao',$request->englishservico9descricao);
+				Confing::atualizar('englishservico10descricao',$request->englishservico10descricao);
+				Confing::atualizar('englishservico11descricao',$request->englishservico11descricao);
 
-				Confing::atualizar('servico1preco',$request->servico1preco);
-				Confing::atualizar('servico2preco',$request->servico2preco);
-				Confing::atualizar('servico3preco',$request->servico3preco);
-				Confing::atualizar('servico4preco',$request->servico4preco);
-				Confing::atualizar('servico5preco',$request->servico5preco);
-				Confing::atualizar('servico6preco',$request->servico6preco);
-				Confing::atualizar('servico7preco',$request->servico7preco);
-				Confing::atualizar('servico8preco',$request->servico8preco);
-				Confing::atualizar('servico9preco',$request->servico9preco);
-				Confing::atualizar('servico10preco',$request->servico10preco);
-				Confing::atualizar('servico11preco',$request->servico11preco);
+				Confing::atualizar('englishservico1preco',$request->englishservico1preco);
+				Confing::atualizar('englishservico2preco',$request->englishservico2preco);
+				Confing::atualizar('englishservico3preco',$request->englishservico3preco);
+				Confing::atualizar('englishservico4preco',$request->englishservico4preco);
+				Confing::atualizar('englishservico5preco',$request->englishservico5preco);
+				Confing::atualizar('englishservico6preco',$request->englishservico6preco);
+				Confing::atualizar('englishservico7preco',$request->englishservico7preco);
+				Confing::atualizar('englishservico8preco',$request->englishservico8preco);
+				Confing::atualizar('englishservico9preco',$request->englishservico9preco);
+				Confing::atualizar('englishservico10preco',$request->englishservico10preco);
+				Confing::atualizar('englishservico11preco',$request->englishservico11preco);
 
-				Confing::atualizar('servico1preco2',$request->servico1preco2);
-				Confing::atualizar('servico2preco2',$request->servico2preco2);
-				Confing::atualizar('servico3preco2',$request->servico3preco2);
-				Confing::atualizar('servico4preco2',$request->servico4preco2);
-				Confing::atualizar('servico5preco2',$request->servico5preco2);
-				Confing::atualizar('servico6preco2',$request->servico6preco2);
-				Confing::atualizar('servico7preco2',$request->servico7preco2);
-				Confing::atualizar('servico8preco2',$request->servico8preco2);
-				Confing::atualizar('servico9preco2',$request->servico9preco2);
-				Confing::atualizar('servico10preco2',$request->servico10preco2);
-				Confing::atualizar('servico11preco2',$request->servico11preco2);
+				Confing::atualizar('englishservico1preco2',$request->englishservico1preco2);
+				Confing::atualizar('englishservico2preco2',$request->englishservico2preco2);
+				Confing::atualizar('englishservico3preco2',$request->englishservico3preco2);
+				Confing::atualizar('englishservico4preco2',$request->englishservico4preco2);
+				Confing::atualizar('englishservico5preco2',$request->englishservico5preco2);
+				Confing::atualizar('englishservico6preco2',$request->englishservico6preco2);
+				Confing::atualizar('englishservico7preco2',$request->englishservico7preco2);
+				Confing::atualizar('englishservico8preco2',$request->englishservico8preco2);
+				Confing::atualizar('englishservico9preco2',$request->englishservico9preco2);
+				Confing::atualizar('englishservico10preco2',$request->englishservico10preco2);
+				Confing::atualizar('englishservico11preco2',$request->englishservico11preco2);
 		 
 				return redirect()->back()->with('status', "Conteúdo atualizado com sucesso");
 		}
 
 		public function englishestrutura(Request $request)
 		{
-				Confing::atualizar('estruturatitulo1',$request->estruturatitulo1);
-				Confing::atualizar('estruturatitulo2',$request->estruturatitulo2);
+				Confing::atualizar('englishestruturatitulo1',$request->englishestruturatitulo1);
+				Confing::atualizar('englishestruturatitulo2',$request->englishestruturatitulo2);
 
-				if ($request->hasFile('estruturaimagem1')) 
+				if ($request->hasFile('englishestruturaimagem1')) 
 				{
-						$extension = $request->estruturaimagem1->extension();
-						$path = $request->estruturaimagem1->storeAs('public/images', "estruturaimagem1.$extension");
-						Confing::atualizar('estruturaimagem1',$path);
+						$extension = $request->englishestruturaimagem1->extension();
+						$path = $request->englishestruturaimagem1->storeAs('public/images', "englishestruturaimagem1.$extension");
+						Confing::atualizar('englishestruturaimagem1',$path);
 				}
-				if ($request->hasFile('estruturaimagem2')) 
+				if ($request->hasFile('englishestruturaimagem2')) 
 				{
-						$extension = $request->estruturaimagem2->extension();
-						$path = $request->estruturaimagem2->storeAs('public/images', "estruturaimagem2.$extension");
-						Confing::atualizar('estruturaimagem2',$path);
+						$extension = $request->englishestruturaimagem2->extension();
+						$path = $request->englishestruturaimagem2->storeAs('public/images', "englishestruturaimagem2.$extension");
+						Confing::atualizar('englishestruturaimagem2',$path);
 				}
-				if ($request->hasFile('estruturaimagem3')) 
+				if ($request->hasFile('englishestruturaimagem3')) 
 				{
-						$extension = $request->estruturaimagem3->extension();
-						$path = $request->estruturaimagem3->storeAs('public/images', "estruturaimagem3.$extension");
-						Confing::atualizar('estruturaimagem3',$path);
+						$extension = $request->englishestruturaimagem3->extension();
+						$path = $request->englishestruturaimagem3->storeAs('public/images', "englishestruturaimagem3.$extension");
+						Confing::atualizar('englishestruturaimagem3',$path);
 				}
-				if ($request->hasFile('estruturaimagem4')) 
+				if ($request->hasFile('englishestruturaimagem4')) 
 				{
-						$extension = $request->estruturaimagem4->extension();
-						$path = $request->estruturaimagem4->storeAs('public/images', "estruturaimagem4.$extension");
-						Confing::atualizar('estruturaimagem4',$path);
+						$extension = $request->englishestruturaimagem4->extension();
+						$path = $request->englishestruturaimagem4->storeAs('public/images', "englishestruturaimagem4.$extension");
+						Confing::atualizar('englishestruturaimagem4',$path);
 				}
-				if ($request->hasFile('estruturaimagem5')) 
+				if ($request->hasFile('englishestruturaimagem5')) 
 				{
-						$extension = $request->estruturaimagem5->extension();
-						$path = $request->estruturaimagem5->storeAs('public/images', "estruturaimagem5.$extension");
-						Confing::atualizar('estruturaimagem5',$path);
+						$extension = $request->englishestruturaimagem5->extension();
+						$path = $request->englishestruturaimagem5->storeAs('public/images', "englishestruturaimagem5.$extension");
+						Confing::atualizar('englishestruturaimagem5',$path);
 				}
-				if ($request->hasFile('estruturaimagem6')) 
+				if ($request->hasFile('englishestruturaimagem6')) 
 				{
-						$extension = $request->estruturaimagem6->extension();
-						$path = $request->estruturaimagem6->storeAs('public/images', "estruturaimagem6.$extension");
-						Confing::atualizar('estruturaimagem6',$path);
+						$extension = $request->englishestruturaimagem6->extension();
+						$path = $request->englishestruturaimagem6->storeAs('public/images', "englishestruturaimagem6.$extension");
+						Confing::atualizar('englishestruturaimagem6',$path);
 				}
-				if ($request->hasFile('estruturaimagem7')) 
+				if ($request->hasFile('englishestruturaimagem7')) 
 				{
-						$extension = $request->estruturaimagem7->extension();
-						$path = $request->estruturaimagem7->storeAs('public/images', "estruturaimagem7.$extension");
-						Confing::atualizar('estruturaimagem7',$path);
+						$extension = $request->englishestruturaimagem7->extension();
+						$path = $request->englishestruturaimagem7->storeAs('public/images', "englishestruturaimagem7.$extension");
+						Confing::atualizar('englishestruturaimagem7',$path);
 				}
-				if ($request->hasFile('estruturaimagem8')) 
+				if ($request->hasFile('englishestruturaimagem8')) 
 				{
-						$extension = $request->estruturaimagem8->extension();
-						$path = $request->estruturaimagem8->storeAs('public/images', "estruturaimagem8.$extension");
-						Confing::atualizar('estruturaimagem8',$path);
+						$extension = $request->englishestruturaimagem8->extension();
+						$path = $request->englishestruturaimagem8->storeAs('public/images', "englishestruturaimagem8.$extension");
+						Confing::atualizar('englishestruturaimagem8',$path);
 				}
-				if ($request->hasFile('estruturaimagem9')) 
+				if ($request->hasFile('englishestruturaimagem9')) 
 				{
-						$extension = $request->estruturaimagem9->extension();
-						$path = $request->estruturaimagem9->storeAs('public/images', "estruturaimagem9.$extension");
-						Confing::atualizar('estruturaimagem9',$path);
+						$extension = $request->englishestruturaimagem9->extension();
+						$path = $request->englishestruturaimagem9->storeAs('public/images', "englishestruturaimagem9.$extension");
+						Confing::atualizar('englishestruturaimagem9',$path);
 				}
-				if ($request->hasFile('estruturaimagem10')) 
+				if ($request->hasFile('englishestruturaimagem10')) 
 				{
-						$extension = $request->estruturaimagem10->extension();
-						$path = $request->estruturaimagem10->storeAs('public/images', "estruturaimagem10.$extension");
-						Confing::atualizar('estruturaimagem10',$path);
+						$extension = $request->englishestruturaimagem10->extension();
+						$path = $request->englishestruturaimagem10->storeAs('public/images', "englishestruturaimagem10.$extension");
+						Confing::atualizar('englishestruturaimagem10',$path);
 				}
-				if ($request->hasFile('estruturaimagem11')) 
+				if ($request->hasFile('englishestruturaimagem11')) 
 				{
-						$extension = $request->estruturaimagem11->extension();
-						$path = $request->estruturaimagem11->storeAs('public/images', "estruturaimagem11.$extension");
-						Confing::atualizar('estruturaimagem11',$path);
+						$extension = $request->englishestruturaimagem11->extension();
+						$path = $request->englishestruturaimagem11->storeAs('public/images', "englishestruturaimagem11.$extension");
+						Confing::atualizar('englishestruturaimagem11',$path);
 				}
-				if ($request->hasFile('estruturaimagem12')) 
+				if ($request->hasFile('englishestruturaimagem12')) 
 				{
-						$extension = $request->estruturaimagem12->extension();
-						$path = $request->estruturaimagem12->storeAs('public/images', "estruturaimagem12.$extension");
-						Confing::atualizar('estruturaimagem12',$path);
+						$extension = $request->englishestruturaimagem12->extension();
+						$path = $request->englishestruturaimagem12->storeAs('public/images', "englishestruturaimagem12.$extension");
+						Confing::atualizar('englishestruturaimagem12',$path);
 				}
-				if ($request->hasFile('estruturaimagem13')) 
+				if ($request->hasFile('englishestruturaimagem13')) 
 				{
-						$extension = $request->estruturaimagem13->extension();
-						$path = $request->estruturaimagem13->storeAs('public/images', "estruturaimagem13.$extension");
-						Confing::atualizar('estruturaimagem13',$path);
+						$extension = $request->englishestruturaimagem13->extension();
+						$path = $request->englishestruturaimagem13->storeAs('public/images', "englishestruturaimagem13.$extension");
+						Confing::atualizar('englishestruturaimagem13',$path);
 				}
-				if ($request->hasFile('estruturaimagem14')) 
+				if ($request->hasFile('englishestruturaimagem14')) 
 				{
-						$extension = $request->estruturaimagem14->extension();
-						$path = $request->estruturaimagem14->storeAs('public/images', "estruturaimagem14.$extension");
-						Confing::atualizar('estruturaimagem14',$path);
+						$extension = $request->englishestruturaimagem14->extension();
+						$path = $request->englishestruturaimagem14->storeAs('public/images', "englishestruturaimagem14.$extension");
+						Confing::atualizar('englishestruturaimagem14',$path);
 				}
 
 				return redirect()->back()->with('status', "Conteúdo atualizado com sucesso");
@@ -611,67 +611,67 @@ class EnglishController extends Controller
 
 		public function englishcontato(Request $request)
 		{
-				if ($request->hasFile('menu1')) 
+				if ($request->hasFile('englishmenu1')) 
 				{
-						$extension = $request->menu1->extension();
-						$path = $request->menu1->storeAs('public/images', "menu1.$extension");
-						Confing::atualizar('menu1',$path);
+						$extension = $request->englishmenu1->extension();
+						$path = $request->englishmenu1->storeAs('public/images', "englishmenu1.$extension");
+						Confing::atualizar('englishmenu1',$path);
 				}
 
-				Confing::atualizar('contatoTituloPagina',$request->contatoTituloPagina);
-				Confing::atualizar('contatoTituloPagina2',$request->contatoTituloPagina2);
+				Confing::atualizar('englishcontatoTituloPagina',$request->englishcontatoTituloPagina);
+				Confing::atualizar('englishcontatoTituloPagina2',$request->englishcontatoTituloPagina2);
 
-				Confing::atualizar('contatoTituloemail',$request->contatoTituloemail);
-				Confing::atualizar('contatoemail',$request->contatoemail);
+				Confing::atualizar('englishcontatoTituloemail',$request->englishcontatoTituloemail);
+				Confing::atualizar('englishcontatoemail',$request->englishcontatoemail);
 
-				Confing::atualizar('contatoTituloEndereco',$request->contatoTituloEndereco);
-				Confing::atualizar('contatoSubtTituloEndereco',$request->contatoSubtTituloEndereco);
+				Confing::atualizar('englishcontatoTituloEndereco',$request->englishcontatoTituloEndereco);
+				Confing::atualizar('englishcontatoSubtTituloEndereco',$request->englishcontatoSubtTituloEndereco);
 
-				Confing::atualizar('contatoTituloTelefone',$request->contatoTituloTelefone);
-				Confing::atualizar('contatoTelefone',$request->contatoTelefone);
+				Confing::atualizar('englishcontatoTituloTelefone',$request->englishcontatoTituloTelefone);
+				Confing::atualizar('englishcontatoTelefone',$request->englishcontatoTelefone);
 
-				Confing::atualizar('contatoLinkLinkedin',$request->contatoLinkLinkedin);
-				Confing::atualizar('contatoLinkFacebook',$request->contatoLinkFacebook);
-				Confing::atualizar('contatoLinkInstagram',$request->contatoLinkInstagram); 
+				Confing::atualizar('englishcontatoLinkLinkedin',$request->englishcontatoLinkLinkedin);
+				Confing::atualizar('englishcontatoLinkFacebook',$request->englishcontatoLinkFacebook);
+				Confing::atualizar('englishcontatoLinkInstagram',$request->englishcontatoLinkInstagram); 
 
 				return redirect()->back()->with('status', "Conteúdo atualizado com sucesso");
 		}
 
 		public function englishdepoimentos(Request $request)
 		{
-				Confing::atualizar('depoimento1',$request->depoimento1);
-				Confing::atualizar('depoimento2',$request->depoimento2);
+				Confing::atualizar('englishdepoimento1',$request->englishdepoimento1);
+				Confing::atualizar('englishdepoimento2',$request->englishdepoimento2);
 
 				return redirect()->back()->with('status', "Conteúdo atualizado com sucesso");
 		}
 
 		public function englishagendamento(Request $request)
 		{
-				Confing::atualizar('agendamento1',$request->agendamento1);        
-				Confing::atualizar('agendamento2',$request->agendamento2);        
-				Confing::atualizar('agendamentobotao',$request->agendamentobotao);        
+				Confing::atualizar('englishagendamento1',$request->englishagendamento1);        
+				Confing::atualizar('englishagendamento2',$request->englishagendamento2);        
+				Confing::atualizar('englishagendamentobotao',$request->englishagendamentobotao);        
 
 				return redirect()->back()->with('status', "Conteúdo atualizado com sucesso");
 		}
 
 		public function englishmodal(Request $request)
 		{
-				if ($request->hasFile('modalimg')) 
+				if ($request->hasFile('englishmodalimg')) 
 				{
-						$extension = $request->modalimg->extension();
-						$path = $request->modalimg->storeAs('public/images', "modalimg.$extension");
-						Confing::atualizar('modalimg',$path);
+						$extension = $request->englishmodalimg->extension();
+						$path = $request->englishmodalimg->storeAs('public/images', "englishmodalimg.$extension");
+						Confing::atualizar('englishmodalimg',$path);
 				}       
 
-				Confing::atualizar('modal1',$request->modal1);        
-				Confing::atualizar('modal2',$request->modal2);
-				Confing::atualizar('modal3',$request->modal3);
-				Confing::atualizar('modal4',$request->modal4);
-				Confing::atualizar('modal5',$request->modal5);
-				Confing::atualizar('modal6',$request->modal6);
-				Confing::atualizar('modal7',$request->modal7);
-				Confing::atualizar('modal8',$request->modal8);
-				Confing::atualizar('modal9',$request->modal9);
+				Confing::atualizar('englishmodal1',$request->englishmodal1);        
+				Confing::atualizar('englishmodal2',$request->englishmodal2);
+				Confing::atualizar('englishmodal3',$request->englishmodal3);
+				Confing::atualizar('englishmodal4',$request->englishmodal4);
+				Confing::atualizar('englishmodal5',$request->englishmodal5);
+				Confing::atualizar('englishmodal6',$request->englishmodal6);
+				Confing::atualizar('englishmodal7',$request->englishmodal7);
+				Confing::atualizar('englishmodal8',$request->englishmodal8);
+				Confing::atualizar('englishmodal9',$request->englishmodal9);
 
 				return redirect()->back()->with('status', "Conteúdo atualizado com sucesso");
 

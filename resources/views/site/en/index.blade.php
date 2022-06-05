@@ -9,22 +9,22 @@
       <!-- <h1><a href="index.html">Zmassage</a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
       <a href="" class="mr-auto">
-        <img src="{{Storage::url($logo1)}}" alt="" class="img-fluid">
+        <img src="{{Storage::url($englishlogo1)}}" alt="" class="img-fluid">
       </a>
-      <h2 style="color: #fff; font-weight: bold;" class="w-50"> {{$textoresumo}} </h2>
+      <h2 style="color: #fff; font-weight: bold;" class="w-50"> {{$englishtextoresumo}} </h2>
 
       <nav id="navbar" class="navbar mx-auto">
         <ul>
-          <li><a class="nav-link active" href="">{{$menu2}}</a></li>
-          <li><a class="nav-link" href="#about">{{$menu3}}</a></li>
-          <li><a class="nav-link" href="#agendamento">{{$menu4}}</a></li>
-          <li><a class="nav-link" href="#services">{{$menu5}}</a></li>
-          <li><a class="nav-link" href="#sructure">{{$menu6}}</a></li>
-          <li><a class="nav-link" href="#portfolio">{{$menu7}}</a></li>
-          <li><a class="nav-link" href="#contact">{{$menu8}}</a></li>
+          <li><a class="nav-link active" href="">{{$englishmenu2}}</a></li>
+          <li><a class="nav-link" href="#about">{{$englishmenu3}}</a></li>
+          <li><a class="nav-link" href="#agendamento">{{$englishmenu4}}</a></li>
+          <li><a class="nav-link" href="#services">{{$englishmenu5}}</a></li>
+          <li><a class="nav-link" href="#sructure">{{$englishmenu6}}</a></li>
+          <li><a class="nav-link" href="#portfolio">{{$englishmenu7}}</a></li>
+          <li><a class="nav-link" href="#contact">{{$englishmenu8}}</a></li>
           <li>
             <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#idiomaModal"> 
-              {{$menu9}}  
+              {{$englishmenu9}}  
               <i class="bi bi-translate fs-5 pe-2"></i> 
             </a>
           </li>
@@ -34,13 +34,13 @@
       <!-- .navbar -->
 
       <div class="social-links">
-        <a target="_blank" href="{{$whatsapp}}"  class="linkedin">
+        <a target="_blank" href="{{$englishwhatsapp}}"  class="linkedin">
           <i class="bi bi-linkedin"></i>
         </a>
-        <a target="_blank" href="{{$facebook}}" class="linkedin">
+        <a target="_blank" href="{{$englishfacebook}}" class="linkedin">
           <i class="bi bi-facebook"></i>
         </a>
-        <a target="_blank" href="{{$instagram}}" class="linkedin">
+        <a target="_blank" href="{{$englishinstagram}}" class="linkedin">
           <i class="bi bi-instagram"></i>
         </a>
       </div>
@@ -55,17 +55,17 @@
     <div class="about-me container">
 
       <div class="section-title">
-        <h2>{{$slide4}}</h2>
-        <p>{{$slide5}}</p>
+        <h2>{{$englishslide4}}</h2>
+        <p>{{$englishslide5}}</p>
       </div>
 
       <div class="row align-items-center">
         <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/about2.jpg" class="img-fluid" alt="">
+          <img src="{{Storage::url($englishslide1)}}" class="img-fluid" alt="">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>{{$slide6}}</h3>
-          <p>{{$slide7}}</p>
+          <h3>{{$englishslide6}}</h3>
+          <p>{{$englishslide7}}</p>
         </div>
       </div>
 
@@ -77,15 +77,15 @@
     <div class="about-me container">
 
       <div class="section-title">
-        <h2>{{$agendamento1}}</h2>
-        <p>{{$agendamento2}}</p>
+        <h2>{{$englishagendamento1}}</h2>
+        <p>{{$englishagendamento2}}</p>
       </div>
 
       <div class="row align-items-center">
         <div class="col-lg-12 pt-4 pt-lg-0 content" data-aos="fade-left">
           <div class="text-center">
             <a href="https://zmassage.simplybook.it/v2/" target="_blank">
-              <button class="btn p-2"> {{$agendamentobotao}} </button>
+              <button class="btn p-2"> {{$englishagendamentobotao}} </button>
             </a>
           </div>
         </div>
@@ -98,8 +98,8 @@
     <div class="container">
 
       <div class="section-title">
-        <h2>{{$estruturatitulo1}}</h2>
-        <p>{{$estruturatitulo2}}</p>
+        <h2>{{$englishestruturatitulo1}}</h2>
+        <p>{{$englishestruturatitulo2}}</p>
       </div>
 
       <div class="container-fluid aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
@@ -108,11 +108,11 @@
           <div class="row g-0 portfolio-container" style="position: relative; height: 1125.9px;">
             <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
-              <img style="border-radius: 15px;" src="{{Storage::url($estruturaimagem1)}}" class="img-fluid" alt="">
+              <img style="border-radius: 15px;" src="{{Storage::url($englishestruturaimagem1)}}" class="img-fluid" alt="">
             </div>
             <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
-              <img style="border-radius: 15px;" src="{{Storage::url($estruturaimagem2)}}" class="img-fluid" alt="">
+              <img style="border-radius: 15px;" src="{{Storage::url($englishestruturaimagem2)}}" class="img-fluid" alt="">
             </div>
             <!-- <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
@@ -120,51 +120,51 @@
             </div> -->
             <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
-              <img style="border-radius: 15px;" src="{{Storage::url($estruturaimagem3)}}" class="img-fluid" alt="">
+              <img style="border-radius: 15px;" src="{{Storage::url($englishestruturaimagem3)}}" class="img-fluid" alt="">
             </div>
             <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
-              <img style="border-radius: 15px;" src="{{Storage::url($estruturaimagem4)}}" class="img-fluid" alt="">
+              <img style="border-radius: 15px;" src="{{Storage::url($englishestruturaimagem4)}}" class="img-fluid" alt="">
             </div>
             <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
-              <img style="border-radius: 15px;" src="{{Storage::url($estruturaimagem5)}}" class="img-fluid" alt="">
+              <img style="border-radius: 15px;" src="{{Storage::url($englishestruturaimagem5)}}" class="img-fluid" alt="">
             </div>
             <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
-              <img style="border-radius: 15px;" src="{{Storage::url($estruturaimagem6)}}" class="img-fluid" alt="">
+              <img style="border-radius: 15px;" src="{{Storage::url($englishestruturaimagem6)}}" class="img-fluid" alt="">
             </div>
             <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
-              <img style="border-radius: 15px;" src="{{Storage::url($estruturaimagem7)}}" class="img-fluid" alt="">
+              <img style="border-radius: 15px;" src="{{Storage::url($englishestruturaimagem7)}}" class="img-fluid" alt="">
             </div>
             <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
-              <img style="border-radius: 15px;" src="{{Storage::url($estruturaimagem8)}}" class="img-fluid" alt="">
+              <img style="border-radius: 15px;" src="{{Storage::url($englishestruturaimagem8)}}" class="img-fluid" alt="">
             </div>
             <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
-              <img style="border-radius: 15px;" src="{{Storage::url($estruturaimagem9)}}" class="img-fluid" alt="">
+              <img style="border-radius: 15px;" src="{{Storage::url($englishestruturaimagem9)}}" class="img-fluid" alt="">
             </div>
             <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
-              <img style="border-radius: 15px;" src="{{Storage::url($estruturaimagem10)}}" class="img-fluid" alt="">
+              <img style="border-radius: 15px;" src="{{Storage::url($englishestruturaimagem10)}}" class="img-fluid" alt="">
             </div>
             <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
-              <img style="border-radius: 15px;" src="{{Storage::url($estruturaimagem11)}}" class="img-fluid" alt="">
+              <img style="border-radius: 15px;" src="{{Storage::url($englishestruturaimagem11)}}" class="img-fluid" alt="">
             </div>
             <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
-              <img style="border-radius: 15px;" src="{{Storage::url($estruturaimagem12)}}" class="img-fluid" alt="">
+              <img style="border-radius: 15px;" src="{{Storage::url($englishestruturaimagem12)}}" class="img-fluid" alt="">
             </div>
             <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
-              <img style="border-radius: 15px;" src="{{Storage::url($estruturaimagem13)}}" class="img-fluid" alt="">
+              <img style="border-radius: 15px;" src="{{Storage::url($englishestruturaimagem13)}}" class="img-fluid" alt="">
             </div>
             <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
               style="position: absolute; left: 0px; top: 0px;">
-              <img style="border-radius: 15px;" src="{{Storage::url($estruturaimagem14)}}" class="img-fluid" alt="">
+              <img style="border-radius: 15px;" src="{{Storage::url($englishestruturaimagem14)}}" class="img-fluid" alt="">
             </div>
 
           </div>
@@ -178,86 +178,86 @@
     <div class="container">
 
       <div class="section-title">
-        <h2>{{$tituloPagina}}</h2>
-        <p>{{$tituloPrincipal}}</p>
+        <h2>{{$englishtituloPagina}}</h2>
+        <p>{{$englishtituloPrincipal}}</p>
       </div>
 
       <div class="row">
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
           <div class="icon-box">
             <div class="icon">
-              <img src="{{Storage::url($servico1img)}}" alt="" class="img-fluid">
+              <img src="{{Storage::url($englishservico1img)}}" alt="" class="img-fluid">
             </div>
-            <h4>{{$servico1titulo}}</h4>
-            <p>{{$servico1descricao}}</p>
+            <h4>{{$englishservico1titulo}}</h4>
+            <p>{{$englishservico1descricao}}</p>
             <br>
-            <p style="font-size: 20px;"><b>{{$servico1preco}}</b></p>
-            <p style="font-size: 20px;"><b>{{$servico1preco2}}</b></p>
+            <p style="font-size: 20px;"><b>{{$englishservico1preco}}</b></p>
+            <p style="font-size: 20px;"><b>{{$englishservico1preco2}}</b></p>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
           <div class="icon-box">
             <div class="icon">
-              <img src="{{Storage::url($servico2img)}}" alt="" class="img-fluid">
+              <img src="{{Storage::url($englishservico2img)}}" alt="" class="img-fluid">
             </div>
-            <h4>{{$servico2titulo}}</h4>
-            <p>{{$servico2descricao}}</p>
+            <h4>{{$englishservico2titulo}}</h4>
+            <p>{{$englishservico2descricao}}</p>
             <br>
-            <p style="font-size: 20px;"><b>{{$servico2preco}}</b></p>
-            <p style="font-size: 20px;"><b>{{$servico2preco2}}</b></p>
+            <p style="font-size: 20px;"><b>{{$englishservico2preco}}</b></p>
+            <p style="font-size: 20px;"><b>{{$englishservico2preco2}}</b></p>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
           <div class="icon-box">
             <div class="icon">
-              <img src="{{Storage::url($servico3img)}}" alt="" class="img-fluid">
+              <img src="{{Storage::url($englishservico3img)}}" alt="" class="img-fluid">
             </div>
-            <h4>{{$servico3titulo}}</h4>
-            <p>{{$servico3descricao}}</p>
+            <h4>{{$englishservico3titulo}}</h4>
+            <p>{{$englishservico3descricao}}</p>
             <br>
-            <p style="font-size: 20px;"><b>{{$servico3preco}}</b></p>
-            <p style="font-size: 20px;"><b>{{$servico3preco2}}</b></p>
+            <p style="font-size: 20px;"><b>{{$englishservico3preco}}</b></p>
+            <p style="font-size: 20px;"><b>{{$englishservico3preco2}}</b></p>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-3">
           <div class="icon-box">
             <div class="icon">
-              <img src="{{Storage::url($servico4img)}}" alt="" class="img-fluid">
+              <img src="{{Storage::url($englishservico4img)}}" alt="" class="img-fluid">
             </div>
-            <h4>{{$servico4titulo}}</h4>
-            <p>{{$servico4descricao}}</p>
+            <h4>{{$englishservico4titulo}}</h4>
+            <p>{{$englishservico4descricao}}</p>
             <br>
-            <p style="font-size: 20px;"><b>{{$servico4preco}}</b></p>
-            <p style="font-size: 20px;"><b>{{$servico4preco2}}</b></p>
+            <p style="font-size: 20px;"><b>{{$englishservico4preco}}</b></p>
+            <p style="font-size: 20px;"><b>{{$englishservico4preco2}}</b></p>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
           <div class="icon-box">
             <div class="icon">
-              <img src="{{Storage::url($servico5img)}}" alt="" class="img-fluid">
+              <img src="{{Storage::url($englishservico5img)}}" alt="" class="img-fluid">
             </div>
-            <h4>{{$servico5titulo}}</h4>
-            <p>{{$servico5descricao}}</p>
+            <h4>{{$englishservico5titulo}}</h4>
+            <p>{{$englishservico5descricao}}</p>
             <br>
-            <p style="font-size: 20px;"><b>{{$servico5preco}}</b></p>
-            <p style="font-size: 20px;"><b>{{$servico5preco2}}</b></p>
+            <p style="font-size: 20px;"><b>{{$englishservico5preco}}</b></p>
+            <p style="font-size: 20px;"><b>{{$englishservico5preco2}}</b></p>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
           <div class="icon-box">
             <div class="icon">
-              <img src="{{Storage::url($servico6img)}}" alt="" class="img-fluid">
+              <img src="{{Storage::url($englishservico6img)}}" alt="" class="img-fluid">
             </div>
-            <h4>{{$servico6titulo}}</h4>
-            <p>{{$servico6descricao}}</p>
+            <h4>{{$englishservico6titulo}}</h4>
+            <p>{{$englishservico6descricao}}</p>
             <br>
-            <p style="font-size: 20px;"><b>{{$servico6preco}}</b></p>
-            <p style="font-size: 20px;"><b>{{$servico6preco2}}</b></p>
+            <p style="font-size: 20px;"><b>{{$englishservico6preco}}</b></p>
+            <p style="font-size: 20px;"><b>{{$englishservico6preco2}}</b></p>
           </div>
         </div>
 
@@ -267,65 +267,65 @@
         <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4">
           <div class="icon-box">
             <div class="icon">
-              <img src="{{Storage::url($servico7img)}}" alt="" class="img-fluid">
+              <img src="{{Storage::url($englishservico7img)}}" alt="" class="img-fluid">
             </div>
-            <h4>{{$servico7titulo}}</h4>
-            <p>{{$servico7descricao}}</p>
+            <h4>{{$englishservico7titulo}}</h4>
+            <p>{{$englishservico7descricao}}</p>
             <br>
-            <p style="font-size: 20px;"><b>{{$servico7preco}}</b></p>
-            <p style="font-size: 20px;"><b>{{$servico7preco2}}</b></p>
+            <p style="font-size: 20px;"><b>{{$englishservico7preco}}</b></p>
+            <p style="font-size: 20px;"><b>{{$englishservico7preco2}}</b></p>
           </div>
         </div>
 
         <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-3">
           <div class="icon-box">
             <div class="icon">
-              <img src="{{Storage::url($servico8img)}}" alt="" class="img-fluid">
+              <img src="{{Storage::url($englishservico8img)}}" alt="" class="img-fluid">
             </div>
-            <h4>{{$servico8titulo}}</h4>
-            <p>{{$servico8descricao}}</p>
+            <h4>{{$englishservico8titulo}}</h4>
+            <p>{{$englishservico8descricao}}</p>
             <br>
-            <p style="font-size: 20px;"><b>{{$servico8preco}}</b></p>
-            <p style="font-size: 20px;"><b>{{$servico8preco2}}</b></p>
+            <p style="font-size: 20px;"><b>{{$englishservico8preco}}</b></p>
+            <p style="font-size: 20px;"><b>{{$englishservico8preco2}}</b></p>
           </div>
         </div>
 
         <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-3">
           <div class="icon-box">
             <div class="icon">
-              <img src="{{Storage::url($servico9img)}}" alt="" class="img-fluid">
+              <img src="{{Storage::url($englishservico9img)}}" alt="" class="img-fluid">
             </div>
-            <h4>{{$servico9titulo}}</h4>
-            <p>{{$servico9descricao}}</p>
+            <h4>{{$englishservico9titulo}}</h4>
+            <p>{{$englishservico9descricao}}</p>
             <br>
-            <p style="font-size: 20px;"><b>{{$servico9preco}}</b></p>
-            <p style="font-size: 20px;"><b>{{$servico9preco2}}</b></p>
+            <p style="font-size: 20px;"><b>{{$englishservico9preco}}</b></p>
+            <p style="font-size: 20px;"><b>{{$englishservico9preco2}}</b></p>
           </div>
         </div>
 
         <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-3">
           <div class="icon-box">
             <div class="icon">
-              <img src="{{Storage::url($servico10img)}}" alt="" class="img-fluid">
+              <img src="{{Storage::url($englishservico10img)}}" alt="" class="img-fluid">
             </div>
-            <h4>{{$servico10titulo}}</h4>
-            <p>{{$servico10descricao}}</p>
+            <h4>{{$englishservico10titulo}}</h4>
+            <p>{{$englishservico10descricao}}</p>
             <br>
-            <p style="font-size: 20px;"><b>{{$servico10preco}}</b></p>
-            <p style="font-size: 20px;"><b>{{$servico10preco2}}</b></p>
+            <p style="font-size: 20px;"><b>{{$englishservico10preco}}</b></p>
+            <p style="font-size: 20px;"><b>{{$englishservico10preco2}}</b></p>
           </div>
         </div>
 
         <div class="col-lg-12 col-md-12 d-flex align-items-stretch mt-3">
           <div class="icon-box">
             <div class="icon">
-              <img src="{{Storage::url($servico11img)}}" alt="" class="img-fluid">
+              <img src="{{Storage::url($englishservico11img)}}" alt="" class="img-fluid">
             </div>
-            <h4>{{$servico11titulo}}</h4>
-            <p>{{$servico11descricao}}</p>
+            <h4>{{$englishservico11titulo}}</h4>
+            <p>{{$englishservico11descricao}}</p>
             <br>
-            <p style="font-size: 20px;"><b>{{$servico11preco}}</b></p>
-            <p style="font-size: 20px;"><b>{{$servico11preco2}}</b></p>
+            <p style="font-size: 20px;"><b>{{$englishservico11preco}}</b></p>
+            <p style="font-size: 20px;"><b>{{$englishservico11preco2}}</b></p>
           </div>
         </div>
 
@@ -342,8 +342,8 @@
       <div class="testimonials container">
 
         <div class="section-title">
-          <h2>{{$depoimento1}}</h2>
-          <p>{{$depoimento2}}</p>
+          <h2>{{$englishdepoimento1}}</h2>
+          <p>{{$englishdepoimento2}}</p>
         </div>
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -364,8 +364,8 @@
     <div class="container">
 
       <div class="section-title">
-        <h2>{{$contatoTituloPagina}}</h2>
-        <p>{{$contatoTituloPagina2}}</p>
+        <h2>{{$englishcontatoTituloPagina}}</h2>
+        <p>{{$englishcontatoTituloPagina2}}</p>
       </div>
 
       <div class="row mt-2">
@@ -373,10 +373,10 @@
         <div class="col-md-6 d-flex align-items-stretch">
           <div class="info-box">
             <i class="bx bx-map"></i>
-            <h3>{{$contatoTituloEndereco}}</h3>
+            <h3>{{$englishcontatoTituloEndereco}}</h3>
             <p> 
               <a style="color: #fff;" target="__blank" href="https://goo.gl/maps/rLJGjkhmnTUZ2RjM9"> 
-              {{$contatoSubtTituloEndereco}}
+              {{$englishcontatoSubtTituloEndereco}}
               </a>
             </p>
           </div>
@@ -385,10 +385,10 @@
         <div class="col-md-6 d-flex align-items-stretch">
           <div class="info-box">
             <i class="bx bx-phone"></i>
-            <h3>{{$contatoTituloTelefone}}</h3>
+            <h3>{{$englishcontatoTituloTelefone}}</h3>
             <p> 
-              <a style="color: #fff;" href="tel:{{$contatoTelefone}}"> 
-                {{$contatoTelefone}}
+              <a style="color: #fff;" href="tel:{{$englishcontatoTelefone}}"> 
+                {{$englishcontatoTelefone}}
               </a>
             </p>
           </div>
@@ -405,11 +405,11 @@
             <h3>Social Profiles</h3>
             <div class="social-links">
               <!-- <a target="_blank" href="https://twitter.com/Zmassage1" class="twitter"><i class="bi bi-twitter"></i></a> -->
-              <a target="_blank" href="{{$contatoLinkLinkedin}}"
+              <a target="_blank" href="{{$englishcontatoLinkLinkedin}}"
                 class="linkedin"><i class="bi bi-linkedin"></i></a>
-              <a target="_blank" href="{{$contatoLinkFacebook}}" class="linkedin"><i
+              <a target="_blank" href="{{$englishcontatoLinkFacebook}}" class="linkedin"><i
                   class="bi bi-facebook"></i></a>
-              <a target="_blank" href="{{$contatoLinkInstagram}}" class="linkedin"><i
+              <a target="_blank" href="{{$englishcontatoLinkInstagram}}" class="linkedin"><i
                   class="bi bi-instagram"></i></a>
             </div>
           </div>
@@ -418,8 +418,8 @@
         <div class="col-md-6 mt-4 d-flex align-items-stretch">
           <div class="info-box">
             <i class="bx bx-envelope"></i>
-            <h3>{{$contatoTituloemail}}</h3>
-            <a style="color: #fff;" href="mailto:{{$contatoemail}}">{{$contatoemail}}</a>
+            <h3>{{$englishcontatoTituloemail}}</h3>
+            <a style="color: #fff;" href="mailto:{{$englishcontatoemail}}">{{$englishcontatoemail}}</a>
           </div>
         </div>
         <!-- <div class="col-md-6 mt-4 d-flex align-items-stretch">
@@ -452,38 +452,38 @@
         <div id="imagem-modal" class="modal-body text-center">
           <div class="row">
             <div class="col-12">
-              <img width="250px" src="{{Storage::url($modalimg)}}" alt="{{$modal1}}">
+              <img width="250px" src="{{Storage::url($englishmodalimg)}}" alt="{{$englishmodal1}}">
               <div class="row mt-3 d-flex justify-content-center">
                 <p style="width: 300px; color: #05c4f1; font-weight: bold;">
-                  {{$modal1}}
+                  {{$englishmodal1}}
                 </p>
               </div>
               <div class="row d-flex justify-content-center">
                 <div style="width: 300px;">
                   <a target="__blank" href="https://zmassage.simplybook.it/v2/" class="btn d-flex btn-agendamento">
                     <i style="font-size: 32px;" class='bx bx-calendar'></i>
-                    {{$modal2}}
+                    {{$englishmodal2}}
                   </a>
                 </div>
               </div>
               <br>
               <div class="row" style="display: inline-flex;">
                 <div class="col-4">
-                  <a href="tel:{{$modal3}}">
+                  <a href="tel:{{$englishmodal3}}">
                     <div id="icons-modal" class="d-flex justify-content-center align-items-center">
                       <i style="font-size: 32px;" class='bx bxs-phone'></i>
                     </div>
                   </a>
                 </div>
                 <div class="col-4">
-                  <a target="__blank" href="{{$modal4}}">
+                  <a target="__blank" href="{{$englishmodal4}}">
                     <div id="icons-modal" class="d-flex justify-content-center align-items-center">
                       <i style="font-size: 36px;" class='bx bxl-whatsapp'></i>
                     </div>
                   </a>
                 </div>
                 <div class="col-4">
-                  <a href="mailto:{{$modal5}}">
+                  <a href="mailto:{{$englishmodal5}}">
                     <div id="icons-modal" class="d-flex justify-content-center align-items-center">
                       <i style="font-size: 32px;" class='bx bx-envelope'></i>
                     </div>
@@ -494,21 +494,21 @@
               <div class="row mt-3 mb-3" style="display: inline-flex;">
                 <div class="col-4">
                   <a target="__blank"
-                    href="{{$modal6}}">
+                    href="{{$englishmodal6}}">
                     <div id="icons-modal" class="d-flex justify-content-center align-items-center">
                       <i style="font-size: 32px;" class='bx bxs-map'></i>
                     </div>
                   </a>
                 </div>
                 <div class="col-4">
-                  <a target="__blank" href="{{$modal7}}">
+                  <a target="__blank" href="{{$englishmodal7}}">
                     <div id="icons-modal" class="d-flex justify-content-center align-items-center">
                       <i style="font-size: 32px;" class='bx bxl-instagram'></i>
                     </div>
                   </a>
                 </div>
                 <div class="col-4">
-                  <a target="__blank" href="{{$modal8}}">
+                  <a target="__blank" href="{{$englishmodal8}}">
                     <div id="icons-modal" class="d-flex justify-content-center align-items-center">
                       <i style="font-size: 32px;" class='bx bxl-facebook'></i>
                     </div>
@@ -517,7 +517,7 @@
               </div>
               <div class="row mt-3 d-flex justify-content-center">
                 <p>
-                  {{$modal9}}
+                  {{$englishmodal9}}
                 </p>
               </div>
               <img class="mb-3" width="64px" src="assets/img/ferramenta-de-mao.png" alt="" srcset="">
@@ -532,5 +532,6 @@
   <!-- MODAL IDIOMAS -->
   @component('components.site.modal-idiomas')
   @endcomponent
+
 
 @endsection

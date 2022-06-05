@@ -33,8 +33,8 @@ Route::post('/austriaagendamento', 'AustriaController@austriaagendamento')->name
 Route::post('/austriamodal', 'AustriaController@austriamodal')->name('austriamodal');
 
 // INGLÊS
-Route::get('/controle/au', 'EnglishController@home')->name('controle');
-Route::get('/es', 'EnglishController@home')->name('home');
+Route::get('/controle/en', 'EnglishController@home')->name('english.controle');
+Route::get('/en', 'EnglishPageController@home')->name('english.home');
 
 Route::post('/englishbanner', 'EnglishController@englishbanner')->name('englishbanner');
 Route::post('/englishmenu', 'EnglishController@englishmenu')->name('englishmenu');
