@@ -4,22 +4,22 @@
       <ul class="nav justify-content-center">
         <li class="nav-item">
           <a class="zoom nav-link" href="#">
-            <img width="100px" src="assets/img/austria.png" alt="">
+            <img width="100px" src="/assets/img/austria.png" alt="">
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">
-            <img width="100px" src="assets/img/reino-unido.png" alt="">
+            <img width="100px" src="/assets/img/reino-unido.png" alt="">
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">
-            <img width="100px" src="assets/img/brasil.png" alt="">
+            <img width="100px" src="/assets/img/brasil.png" alt="">
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">
-            <img width="100px" src="assets/img/espanha.png" alt="">
+            <img width="100px" src="/assets/img/espanha.png" alt="">
           </a>
         </li>
       </ul>
