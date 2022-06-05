@@ -19,8 +19,8 @@ Route::get('/en', 'EnglishPageController@home')->name('home');
 // AUSTRIA
 Route::get('/', 'AustriaPageController@home')->name('home');
 Route::get('/au', 'AustriaPageController@home')->name('home');
-Route::get('/controle/au', 'AustriaController@home')->name('controle');
-Route::get('/controle', 'AustriaController@home')->name('controle');
+Route::get('/controle/au', 'AustriaController@home')->name('austria.controle');
+Route::get('/controle', 'AustriaController@home')->name('austria.controle');
 
 Route::post('/austriabanner', 'AustriaController@austriabanner')->name('austriabanner');
 Route::post('/austriamenu', 'AustriaController@austriamenu')->name('austriamenu');
@@ -49,7 +49,7 @@ Route::post('/englishmodal', 'EnglishController@englishmodal')->name('englishmod
 
 // ESPANHOL
 Route::get('/es', 'EspanholPageController@home')->name('home');
-Route::get('/controle/es', 'EspanholController@home')->name('controle');
+Route::get('/controle/es', 'EspanholController@home')->name('espanhol.controle');
 
 Route::post('/espanholbanner', 'EspanholController@espanholbanner')->name('espanholbanner');
 Route::post('/espanholmenu', 'EspanholController@espanholmenu')->name('espanholmenu');
@@ -63,7 +63,7 @@ Route::post('/espanholmodal', 'EspanholController@espanholmodal')->name('espanho
 
 // PORTUGUÊS
 Route::get('/pt', 'PortuguesPageController@home')->name('home');
-Route::get('/controle/pt', 'PortuguesController@home')->name('controle');
+Route::get('/controle/pt', 'PortuguesController@home')->name('portugues.controle');
 
 Route::post('/portuguesbanner', 'PortuguesController@portuguesbanner')->name('portuguesbanner');
 Route::post('/portuguesmenu', 'PortuguesController@portuguesmenu')->name('portuguesmenu');

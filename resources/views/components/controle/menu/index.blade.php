@@ -3,22 +3,22 @@
     <div class="bg-dark p-4">
       <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a class="zoom nav-link" href="#">
+          <a class="zoom nav-link" href="{{ route('austria.controle') }}">
             <img width="100px" src="/assets/img/austria.png" alt="">
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="{{ route('english.controle') }}">
             <img width="100px" src="/assets/img/reino-unido.png" alt="">
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="{{ route('portugues.controle') }}">
             <img width="100px" src="/assets/img/brasil.png" alt="">
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="{{ route('espanhol.controle') }}">
             <img width="100px" src="/assets/img/espanha.png" alt="">
           </a>
         </li>
