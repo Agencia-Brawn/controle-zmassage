@@ -48,18 +48,18 @@ Route::post('/englishmodal', 'EnglishController@englishmodal')->name('englishmod
 
 
 // ESPANHOL
-Route::get('/es', 'EnglishController@home')->name('home');
-Route::get('/controle/au', 'EnglishController@home')->name('controle');
+Route::get('/es', 'EspanholPageController@home')->name('home');
+Route::get('/controle/es', 'EspanholController@home')->name('controle');
 
-Route::post('/englishbanner', 'EnglishController@englishbanner')->name('englishbanner');
-Route::post('/englishmenu', 'EnglishController@englishmenu')->name('englishmenu');
-Route::post('/englishsobre', 'EnglishController@englishsobre')->name('englishsobre');
-Route::post('/englishservico', 'EnglishController@englishservico')->name('englishservico');
-Route::post('/englishestrutura', 'EnglishController@englishestrutura')->name('englishestrutura');
-Route::post('/englishcontato', 'EnglishController@englishcontato')->name('englishcontato');
-Route::post('/englishdepoimentos', 'EnglishController@englishdepoimentos')->name('englishdepoimentos');
-Route::post('/englishagendamento', 'EnglishController@englishagendamento')->name('englishagendamento');
-Route::post('/englishmodal', 'EnglishController@englishmodal')->name('englishmodal');
+Route::post('/espanholbanner', 'EspanholController@espanholbanner')->name('espanholbanner');
+Route::post('/espanholmenu', 'EspanholController@espanholmenu')->name('espanholmenu');
+Route::post('/espanholsobre', 'EspanholController@espanholsobre')->name('espanholsobre');
+Route::post('/espanholservico', 'EspanholController@espanholservico')->name('espanholservico');
+Route::post('/espanholestrutura', 'EspanholController@espanholestrutura')->name('espanholestrutura');
+Route::post('/espanholcontato', 'EspanholController@espanholcontato')->name('espanholcontato');
+Route::post('/espanholdepoimentos', 'EspanholController@espanholdepoimentos')->name('espanholdepoimentos');
+Route::post('/espanholagendamento', 'EspanholController@espanholagendamento')->name('espanholagendamento');
+Route::post('/espanholmodal', 'EspanholController@espanholmodal')->name('espanholmodal');
 
 // PORTUGUÊS
 Route::get('/pt', 'PortuguesPageController@home')->name('home');
