@@ -942,7 +942,7 @@
 
 							<!-- DEPOIMENTOS -->
 							<div class="tab-pane fade" id="tabs-icons-text-7" role="tabpanel" aria-labelledby="tabs-icons-text-7-tab">
-								<form action="{{route('austriacontato')}}" enctype="multipart/form-data" method="post">
+								<form action="{{route('austriadepoimentos')}}" enctype="multipart/form-data" method="post">
 									@csrf
 									<div class="row">
 										<div class="description col-md-12">

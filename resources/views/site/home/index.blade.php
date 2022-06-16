@@ -61,7 +61,7 @@
 
       <div class="row align-items-center">
         <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/about2.jpg" class="img-fluid" alt="">
+          <img src="{{Storage::url($slide1)}}" class="img-fluid" alt="">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
           <h3>{{$slide6}}</h3>
