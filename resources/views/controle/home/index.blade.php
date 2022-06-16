@@ -343,7 +343,7 @@
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Preço</label>
-											<input name="servico4preco"  type="text" class="form-control" value="{{$servico4preco}}">
+											<input name="servico3preco"  type="text" class="form-control" value="{{$servico3preco}}">
 										</div>
 
 										<div class="description col-md-6">
