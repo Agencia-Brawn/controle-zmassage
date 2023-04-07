@@ -65,7 +65,7 @@
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
           <h3>{{$portuguesslide6}}</h3>
-          <p>{{$portuguesslide7}}</p>
+          <p style="line-height: 32px;">{{$portuguesslide7}}</p>
         </div>
       </div>
 
