@@ -84,9 +84,12 @@
       <div class="row align-items-center">
         <div class="col-lg-12 pt-4 pt-lg-0 content" data-aos="fade-left">
           <div class="text-center">
-            <a href="https://zmassage.simplybook.it/v2/" target="_blank">
+            <script src="//widget.simplybook.it/v2/widget/widget.js"></script>
+            <script>var widget = new SimplybookWidget({"widget_type":"button","url":"https:\/\/zmassage.simplybook.it","theme":"default","theme_settings":{"timeline_hide_unavailable":"1","hide_past_days":"0","timeline_show_end_time":"0","timeline_modern_display":"as_slots","sb_base_color":"#33bb60","display_item_mode":"block","booking_nav_bg_color":"#d1e9c6","body_bg_color":"#f7f7f7","sb_review_image":"","dark_font_color":"#494949","light_font_color":"#ffffff","btn_color_1":"#5e7da7","sb_company_label_color":"#ffffff","hide_img_mode":"0","show_sidebar":"1","sb_busy":"#dad2ce","sb_available":"#d3e0f1"},"timeline":"modern_week","datepicker":"top_calendar","is_rtl":false,"app_config":{"clear_session":0,"allow_switch_to_ada":0,"predefined":[]},"button_title":"Jetzt buchen","button_background_color":"#33bb60","button_text_color":"#ffffff","button_position":"right","button_position_offset":"55%"});</script>
+            <iframe src="https://www.zmassage.simplybook.it/v2/" width="100%" height="600px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            {{-- <a href="https://zmassage.simplybook.it/v2/" target="_blank">
               <button class="btn p-2"> {{$agendamentobotao}} </button>
-            </a>
+            </a> --}}
           </div>
         </div>
       </div>
