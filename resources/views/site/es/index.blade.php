@@ -15,13 +15,13 @@
 
       <nav id="navbar" class="navbar mx-auto">
         <ul>
-          <li><a class="nav-link active" href="">{{$espanholmenu2}}</a></li>
           <li><a class="nav-link" href="#about">{{$espanholmenu3}}</a></li>
           <li><a class="nav-link" href="#agendamento">{{$espanholmenu4}}</a></li>
           <li><a class="nav-link" href="#services">{{$espanholmenu5}}</a></li>
           <li><a class="nav-link" href="#sructure">{{$espanholmenu6}}</a></li>
           <li><a class="nav-link" href="#portfolio">{{$espanholmenu7}}</a></li>
           <li><a class="nav-link" href="#contact">{{$espanholmenu8}}</a></li>
+          <li><a class="nav-link active" href="">{{$espanholmenu2}}</a></li>
           <li>
             <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#idiomaModal"> 
               {{$espanholmenu9}}  
