@@ -441,7 +441,7 @@
   </div>
   
   <!-- MODAL DE INICIALIZAÇÃO -->
-  <div class="modal fade" id="cartao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  {{-- <div class="modal fade" id="cartao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content" style="background: none; border: none;">
         <div class="modal-header mx-auto" style="border-bottom: none;">
@@ -527,7 +527,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> --}}
 
   <!-- MODAL IDIOMAS -->
   @component('components.site.modal-idiomas')
