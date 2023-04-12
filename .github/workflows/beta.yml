@@ -12,7 +12,7 @@ on:
         description: "File synchronization"
         required: true
         # delta | full (delta sobe apenas as alterações)
-        default: "full"
+        default: "delta"
 
 # Tarefas
 jobs:
@@ -36,7 +36,7 @@ jobs:
         uses: milanmk/actions-file-deployer@master
         with:
           remote-protocol: "sftp"
-          remote-host: "sitebeta.editoraproficient.com.br"
+          remote-host: "zmassage.alterlet.com.br"
           remote-port: "65002"
           remote-user: "u555202273"
           # Adicione o secret da senha
