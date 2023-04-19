@@ -16,7 +16,7 @@
       <nav id="navbar" class="navbar mx-auto">
         <ul>
           <li><a class="nav-link" href="#about">{{$englishmenu3}}</a></li>
-          <li><a class="nav-link" href="#agendamento">{{$englishmenu4}}</a></li>
+          {{-- <li><a class="nav-link" href="#agendamento">{{$englishmenu4}}</a></li> --}}
           <li><a class="nav-link" href="#services">{{$englishmenu5}}</a></li>
           <li><a class="nav-link" href="#sructure">{{$englishmenu6}}</a></li>
           <li><a class="nav-link" href="#portfolio">{{$englishmenu7}}</a></li>
