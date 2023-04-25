@@ -117,10 +117,10 @@
                                     "predefined": []
                                 },
                                 "button_title": "Jetzt buchen",
-                                "button_background_color": "#33bb60",
+                                "button_background_color": "#0FC0EC",
                                 "button_text_color": "#ffffff",
-                                "button_position": "right",
-                                "button_position_offset": "55%"
+                                "button_position": "bottom",
+                                "button_position_offset": "45%"
                             });
                         </script>
                       
