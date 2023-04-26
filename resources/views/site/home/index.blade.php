@@ -71,6 +71,72 @@
         </div><!-- End About Me -->
     </section>
 
+
+
+    <!-- Button trigger modal -->
+    {{-- <button type="button" id="botao-modal" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+        style="
+        bottom: 0%; 
+        color: #fff;
+        z-index: 10000000;
+        position: absolute; 
+        background-color: #05c4f1;">
+        Agendamento
+    </button> --}}
+    <div class="text-center" style="z-index: 99999;">
+        <script src="//widget.simplybook.it/v2/widget/widget.js"></script>
+        <script>
+            var widget = new SimplybookWidget({
+                "widget_type": "button",
+                "url": "https:\/\/zmassage.simplybook.it",
+                "theme": "default",
+                "theme_settings": {
+                    "timeline_hide_unavailable": "1",
+                    "hide_past_days": "0",
+                    "timeline_show_end_time": "0",
+                    "timeline_modern_display": "as_slots",
+                    "sb_base_color": "#33bb60",
+                    "display_item_mode": "block",
+                    "booking_nav_bg_color": "#d1e9c6",
+                    "body_bg_color": "#f7f7f7",
+                    "sb_review_image": "",
+                    "dark_font_color": "#494949",
+                    "light_font_color": "#ffffff",
+                    "btn_color_1": "#5e7da7",
+                    "sb_company_label_color": "#ffffff",
+                    "hide_img_mode": "0",
+                    "show_sidebar": "1",
+                    "sb_busy": "#dad2ce",
+                    "sb_available": "#d3e0f1"
+                },
+                "timeline": "modern_week",
+                "datepicker": "top_calendar",
+                "is_rtl": false,
+                "app_config": {
+                    "clear_session": 0,
+                    "allow_switch_to_ada": 0,
+                    "predefined": []
+                },
+                "button_title": "Jetzt buchen",
+                "button_background_color": "#0FC0EC",
+                "button_text_color": "#ffffff",
+                "button_position": "bottom",
+            });
+        </script>
+
+        <script>
+            var largura = window.screen.width;
+            var larguraFinal = (largura - 131) / 2;
+            var minhaDiv = document.querySelector(".simplybook-widget-button");
+            minhaDiv.style.left = larguraFinal + "px";
+            minhaDiv.style.zindex = "999999";
+        </script>
+    </div>
+
+
+
+
+
     <!-- ======= AGENDAMENTOS ======= -->
     <section id="agendamento" class="agendamento">
         <div class="about-me container">
@@ -82,53 +148,6 @@
 
             <div class="row align-items-center">
                 <div class="col-lg-12 pt-4 pt-lg-0 content" data-aos="fade-left">
-                    <div class="text-center">
-                        <script src="//widget.simplybook.it/v2/widget/widget.js"></script>
-                        <script>
-                            var widget = new SimplybookWidget({
-                                "widget_type": "button",
-                                "url": "https:\/\/zmassage.simplybook.it",
-                                "theme": "default",
-                                "theme_settings": {
-                                    "timeline_hide_unavailable": "1",
-                                    "hide_past_days": "0",
-                                    "timeline_show_end_time": "0",
-                                    "timeline_modern_display": "as_slots",
-                                    "sb_base_color": "#33bb60",
-                                    "display_item_mode": "block",
-                                    "booking_nav_bg_color": "#d1e9c6",
-                                    "body_bg_color": "#f7f7f7",
-                                    "sb_review_image": "",
-                                    "dark_font_color": "#494949",
-                                    "light_font_color": "#ffffff",
-                                    "btn_color_1": "#5e7da7",
-                                    "sb_company_label_color": "#ffffff",
-                                    "hide_img_mode": "0",
-                                    "show_sidebar": "1",
-                                    "sb_busy": "#dad2ce",
-                                    "sb_available": "#d3e0f1"
-                                },
-                                "timeline": "modern_week",
-                                "datepicker": "top_calendar",
-                                "is_rtl": false,
-                                "app_config": {
-                                    "clear_session": 0,
-                                    "allow_switch_to_ada": 0,
-                                    "predefined": []
-                                },
-                                "button_title": "Jetzt buchen",
-                                "button_background_color": "#0FC0EC",
-                                "button_text_color": "#ffffff",
-                                "button_position": "bottom",
-                                "button_position_offset": "45%"
-                            });
-                        </script>
-                      
-                        {{-- <iframe src="https://zmassage.simplybook.it/v2/" width="100%" height="600px" style="border:0;" allowfullscreen="" loading="lazy"></iframe> --}}
-                        {{-- <a href="https://zmassage.simplybook.it/v2/" target="_blank">
-              <button class="btn p-2"> {{$agendamentobotao}} </button>
-            </a> --}}
-                    </div>
                 </div>
             </div>
         </div>
@@ -149,22 +168,22 @@
                     <div class="row g-0 portfolio-container" style="position: relative; height: 1125.9px;">
                         <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
                             style="position: absolute; left: 0px; top: 0px;">
-                            <img style="border-radius: 15px;" src="{{ Storage::url($estruturaimagem1) }}"
-                                class="img-fluid" alt="">
+                            <img style="border-radius: 15px;" src="{{ Storage::url($estruturaimagem1) }}" class="img-fluid"
+                                alt="">
                         </div>
                         <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
                             style="position: absolute; left: 0px; top: 0px;">
-                            <img style="border-radius: 15px;" src="{{ Storage::url($estruturaimagem2) }}"
-                                class="img-fluid" alt="">
+                            <img style="border-radius: 15px;" src="{{ Storage::url($estruturaimagem2) }}" class="img-fluid"
+                                alt="">
                         </div>
                         <!-- <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
-                  style="position: absolute; left: 0px; top: 0px;">
-                  <img style="border-radius: 15px;" src="assets/img/structure/structure3.jpg" class="img-fluid" alt="">
-                </div> -->
+                                                      style="position: absolute; left: 0px; top: 0px;">
+                                                      <img style="border-radius: 15px;" src="assets/img/structure/structure3.jpg" class="img-fluid" alt="">
+                                                    </div> -->
                         <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
                             style="position: absolute; left: 0px; top: 0px;">
-                            <img style="border-radius: 15px;" src="{{ Storage::url($estruturaimagem3) }}"
-                                class="img-fluid" alt="">
+                            <img style="border-radius: 15px;" src="{{ Storage::url($estruturaimagem3) }}" class="img-fluid"
+                                alt="">
                         </div>
                         <div class="zoom p-3 col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app"
                             style="position: absolute; left: 0px; top: 0px;">
@@ -481,12 +500,12 @@
                     </div>
                 </div>
                 <!-- <div class="col-md-6 mt-4 d-flex align-items-stretch">
-              <div class="info-box">
-                <i class="bx bx-phone-call"></i>
-                <h3>Call Me</h3>
-                <p>+1 5589 55488 55</p>
-              </div>
-            </div> -->
+                                                  <div class="info-box">
+                                                    <i class="bx bx-phone-call"></i>
+                                                    <h3>Call Me</h3>
+                                                    <p>+1 5589 55488 55</p>
+                                                  </div>
+                                                </div> -->
             </div>
 
         </div>

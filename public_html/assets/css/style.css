@@ -1089,6 +1089,7 @@ section .container {
   .credits {
     text-align: center;
     padding: 10px;
+    top: 0;
     /* background: rgba(0, 0, 0, 0.8); */
   }
 }
