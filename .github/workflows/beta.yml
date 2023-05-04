@@ -42,5 +42,5 @@ jobs:
           # Adicione o secret da senha
           remote-password: '${{ secrets.FTP_SITEBETA_PASS }}'
           # Altere o nome do diretório do projeto
-          remote-path: "/home/u555202273/domains/alterlet.com.br/"
+          remote-path: "/home/u555202273/domains/sitebeta.live/"
           sync: "delta"
