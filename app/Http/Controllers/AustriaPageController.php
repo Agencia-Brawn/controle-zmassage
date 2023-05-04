@@ -25,6 +25,8 @@ class AustriaPageController extends Controller
         $slide6=Confing::get('slide6');
         $slide7=Confing::get('slide7');
         $slide8=Confing::get('slide8');
+        $containerlgpd=Confing::get('containerlgpd');
+        $titlelgpd=Confing::get('titlelgpd');
         $logo1=Confing::get('logo1');
         $menu2=Confing::get('menu2');
         $menu3=Confing::get('menu3');
@@ -157,8 +159,6 @@ class AustriaPageController extends Controller
         $estruturaimagem12=Confing::get('estruturaimagem12');
         $estruturaimagem13=Confing::get('estruturaimagem13');
         $estruturaimagem14=Confing::get('estruturaimagem14');
-        
-
 
         return view("components.idiomas-site",[
             'textoresumo'=>$textoresumo,
@@ -175,6 +175,8 @@ class AustriaPageController extends Controller
             'slide6'=>$slide6,
             'slide7'=>$slide7,
             'slide8'=>$slide8,
+            'containerlgpd'=>$containerlgpd,
+            'titlelgpd'=>$titlelgpd,
             'logo1'=>$logo1,
             'menu2'=>$menu2,
             'menu3'=>$menu3,
@@ -305,6 +307,8 @@ class AustriaPageController extends Controller
             'estruturaimagem12'=>$estruturaimagem12,
             'estruturaimagem13'=>$estruturaimagem13,
             'estruturaimagem14'=>$estruturaimagem14,
+            'textolgpd'=>$textolgpd,
+            'titlelgpd'=>$titlelgpd,
         ]);
 
         
@@ -325,6 +329,8 @@ class AustriaPageController extends Controller
         $slide6=Confing::get('slide6');
         $slide7=Confing::get('slide7');
         $slide8=Confing::get('slide8');
+        $containerlgpd=Confing::get('containerlgpd');
+        $titlelgpd=Confing::get('titlelgpd');
         $logo1=Confing::get('logo1');
         $menu2=Confing::get('menu2');
         $menu3=Confing::get('menu3');
@@ -460,7 +466,7 @@ class AustriaPageController extends Controller
         $estruturaimagem14=Confing::get('estruturaimagem14');
 
 
-
+    
         return view("site.home.index",[
             'textoresumo'=>$textoresumo,
             'whatsapp'=>$whatsapp,
@@ -476,6 +482,8 @@ class AustriaPageController extends Controller
             'slide6'=>$slide6,
             'slide7'=>$slide7,
             'slide8'=>$slide8,
+            'containerlgpd'=>$containerlgpd,
+            'titlelgpd'=>$titlelgpd,
             'logo1'=>$logo1,
             'menu2'=>$menu2,
             'menu3'=>$menu3,

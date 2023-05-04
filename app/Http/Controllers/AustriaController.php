@@ -51,6 +51,8 @@ class AustriaController extends Controller
 			$slide6=Confing::get('slide6');
 			$slide7=Confing::get('slide7');
 			$slide8=Confing::get('slide8');
+			$containerlgpd=Confing::get('containerlgpd');
+			$titlelgpd=Confing::get('titlelgpd');
 
 
 
@@ -204,6 +206,8 @@ class AustriaController extends Controller
 				'slide6'=>$slide6,
 				'slide7'=>$slide7,
 				'slide8'=>$slide8,
+				'containerlgpd'=>$containerlgpd,
+				'titlelgpd'=>$titlelgpd,
 
 
 
@@ -389,6 +393,9 @@ class AustriaController extends Controller
 			Confing::atualizar('slide6',$request->slide6);
 			Confing::atualizar('slide7',$request->slide7);
 			Confing::atualizar('slide8',$request->slide8);
+			Confing::atualizar('containerlgpd',$request->containerlgpd);
+			Confing::atualizar('titlelgpd',$request->titlelgpd);
+
 
 			return redirect()->back()->with('status', "Conteúdo atualizado com sucesso");
 		}

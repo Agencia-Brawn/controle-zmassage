@@ -14,13 +14,14 @@
 
             <nav id="navbar" class="navbar mx-auto">
                 <ul>
+                    <li><a class="nav-link active" href="">{{ $menu2 }}</a></li>
                     <li><a class="nav-link" href="#about">{{ $menu3 }}</a></li>
                     {{-- <li><a class="nav-link" href="#agendamento">{{ $menu4 }}</a></li> --}}
                     <li><a class="nav-link" href="#services">{{ $menu5 }}</a></li>
                     <li><a class="nav-link" href="#sructure">{{ $menu6 }}</a></li>
                     <li><a class="nav-link" href="#portfolio">{{ $menu7 }}</a></li>
                     <li><a class="nav-link" href="#contact">{{ $menu8 }}</a></li>
-                    <li><a class="nav-link active" href="">{{ $menu2 }}</a></li>
+                    <li><a class="nav-link" href="#lgpd">AGB</a></li>
                     <li>
                         <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#idiomaModal">
                             {{ $menu9 }}
@@ -65,6 +66,24 @@
                 <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
                     <h3>{{ $slide6 }}</h3>
                     <p style="line-height: 32px;">{{ $slide7 }}</p>
+                </div>
+            </div>
+
+        </div><!-- End About Me -->
+    </section>
+
+    <!-- ======= AGB ======= -->
+    <section id="lgpd" class="about">
+
+        <div class="about-me container">
+
+            <div class="section-title">
+                <h2>{{ $titlelgpd }}</h2>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-lg-12 pt-4 pt-lg-0 content" data-aos="fade-left" style="text-align: justify;">
+                    {!! $containerlgpd !!}
                 </div>
             </div>
 
