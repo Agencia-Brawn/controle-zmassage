@@ -73,7 +73,7 @@
     </div><!-- End About Me -->
   </section>
 
-  <!-- ======= AGB ======= -->
+  <!-- ======= LGPD ======= -->
   <section id="lgpd" class="about">
 
     <div class="about-me container">

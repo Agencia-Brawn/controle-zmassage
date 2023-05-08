@@ -85,7 +85,7 @@
 
 						<li class="nav-item">
 							<a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-10-tab" data-toggle="tab" href="#tabs-icons-text-10" role="tab" aria-controls="tabs-icons-text-10" aria-selected="false">
-								AGB
+								LGPD
 							</a>
 						</li>
 					</ul>
