@@ -176,6 +176,9 @@ class EnglishController extends Controller
 			$englishestruturaimagem13=Confing::get('englishestruturaimagem13');
 			$englishestruturaimagem14=Confing::get('englishestruturaimagem14');
 
+			$englishcontainerlgpd=Confing::get('englishcontainerlgpd');
+			$englishtitlelgpd=Confing::get('englishtitlelgpd');
+
 
 			return view('controle.en.index', [
 				'englishtextoresumo'=>$englishtextoresumo,
@@ -328,6 +331,9 @@ class EnglishController extends Controller
 				'englishestruturaimagem12'=>$englishestruturaimagem12,
 				'englishestruturaimagem13'=>$englishestruturaimagem13,
 				'englishestruturaimagem14'=>$englishestruturaimagem14,
+				
+				'englishcontainerlgpd'=>$englishcontainerlgpd,
+				'englishtitlelgpd'=>$englishtitlelgpd,
 				]);
 		}
  
@@ -390,6 +396,9 @@ class EnglishController extends Controller
 			Confing::atualizar('englishslide7',$request->englishslide7);
 			Confing::atualizar('englishslide8',$request->englishslide8);
 
+			Confing::atualizar('englishcontainerlgpd',$request->englishcontainerlgpd);
+			Confing::atualizar('englishtitlelgpd',$request->englishtitlelgpd);
+			
 			return redirect()->back()->with('status', "Conteúdo atualizado com sucesso");
 		}
 

@@ -157,6 +157,9 @@ class EnglishPageController extends Controller
         $englishestruturaimagem12=Confing::get('englishestruturaimagem12');
         $englishestruturaimagem13=Confing::get('englishestruturaimagem13');
         $englishestruturaimagem14=Confing::get('englishestruturaimagem14');
+
+        $englishcontainerlgpd=Confing::get('englishcontainerlgpd');
+        $englishtitlelgpd=Confing::get('englishtitlelgpd');
         
 
 
@@ -305,6 +308,9 @@ class EnglishPageController extends Controller
             'englishestruturaimagem12'=>$englishestruturaimagem12,
             'englishestruturaimagem13'=>$englishestruturaimagem13,
             'englishestruturaimagem14'=>$englishestruturaimagem14,
+
+            'englishcontainerlgpd'=>$englishcontainerlgpd,
+            'englishtitlelgpd'=>$englishtitlelgpd,
         ]);
 
         
@@ -459,6 +465,9 @@ class EnglishPageController extends Controller
         $englishestruturaimagem13=Confing::get('englishestruturaimagem13');
         $englishestruturaimagem14=Confing::get('englishestruturaimagem14');
 
+        $englishcontainerlgpd=Confing::get('englishcontainerlgpd');
+        $englishtitlelgpd=Confing::get('englishtitlelgpd');
+        
 
 
         return view("site.en.index",[
@@ -607,6 +616,9 @@ class EnglishPageController extends Controller
             'englishestruturaimagem12'=>$englishestruturaimagem12,
             'englishestruturaimagem13'=>$englishestruturaimagem13,
             'englishestruturaimagem14'=>$englishestruturaimagem14,
+
+            'englishcontainerlgpd'=>$englishcontainerlgpd,
+            'englishtitlelgpd'=>$englishtitlelgpd,
         ]);        
     }
 }
