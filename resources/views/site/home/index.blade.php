@@ -21,7 +21,7 @@
                     <li><a class="nav-link" href="#sructure">{{ $menu6 }}</a></li>
                     <li><a class="nav-link" href="#portfolio">{{ $menu7 }}</a></li>
                     <li><a class="nav-link" href="#contact">{{ $menu8 }}</a></li>
-                    <li><a class="nav-link" href="#lgpd">AGB</a></li>
+                    <li><a class="nav-link" href="#lgpd">LGPD</a></li>
                     <li>
                         <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#idiomaModal">
                             {{ $menu9 }}
@@ -72,7 +72,7 @@
         </div><!-- End About Me -->
     </section>
 
-    <!-- ======= AGB ======= -->
+    <!-- ======= LGPD ======= -->
     <section id="lgpd" class="about">
 
         <div class="about-me container">
