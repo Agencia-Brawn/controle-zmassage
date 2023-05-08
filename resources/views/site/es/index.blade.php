@@ -21,7 +21,8 @@
           <li><a class="nav-link" href="#sructure">{{$espanholmenu6}}</a></li>
           <li><a class="nav-link" href="#portfolio">{{$espanholmenu7}}</a></li>
           <li><a class="nav-link" href="#contact">{{$espanholmenu8}}</a></li>
-          <li><a class="nav-link active" href="">{{$espanholmenu2}}</a></li>
+          <li><a class="nav-link" href="">{{$espanholmenu2}}</a></li>
+          <li><a class="nav-link" href="#lgpd">LGPD</a></li>
           <li>
             <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#idiomaModal"> 
               {{$espanholmenu9}}  
@@ -71,6 +72,24 @@
 
     </div><!-- End About Me -->
   </section>
+
+  <!-- ======= AGB ======= -->
+  <section id="lgpd" class="about">
+
+    <div class="about-me container">
+
+        <div class="section-title">
+            <h2>{{ $espanholtitlelgpd }}</h2>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-lg-12 pt-4 pt-lg-0 content" data-aos="fade-left" style="text-align: justify;">
+                {!! $espanholcontainerlgpd !!}
+            </div>
+        </div>
+
+    </div><!-- End About Me -->
+</section>  
 
   <!-- ======= AGENDAMENTOS ======= -->
   <section id="agendamento" class="agendamento">

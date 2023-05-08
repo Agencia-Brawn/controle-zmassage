@@ -157,6 +157,10 @@ class EspanholPageController extends Controller
         $espanholestruturaimagem12=Confing::get('espanholestruturaimagem12');
         $espanholestruturaimagem13=Confing::get('espanholestruturaimagem13');
         $espanholestruturaimagem14=Confing::get('espanholestruturaimagem14');
+
+
+        $espanholcontainerlgpd=Confing::get('espanholcontainerlgpd');
+        $espanholtitlelgpd=Confing::get('espanholtitlelgpd');
         
 
 
@@ -305,6 +309,9 @@ class EspanholPageController extends Controller
             'espanholestruturaimagem12'=>$espanholestruturaimagem12,
             'espanholestruturaimagem13'=>$espanholestruturaimagem13,
             'espanholestruturaimagem14'=>$espanholestruturaimagem14,
+
+            'espanholcontainerlgpd'=>$espanholcontainerlgpd,
+            'espanholtitlelgpd'=>$espanholtitlelgpd,
         ]);
 
         
@@ -458,6 +465,9 @@ class EspanholPageController extends Controller
         $espanholestruturaimagem12=Confing::get('espanholestruturaimagem12');
         $espanholestruturaimagem13=Confing::get('espanholestruturaimagem13');
         $espanholestruturaimagem14=Confing::get('espanholestruturaimagem14');
+         
+        $espanholcontainerlgpd=Confing::get('espanholcontainerlgpd');
+        $espanholtitlelgpd=Confing::get('espanholtitlelgpd');
 
 
 
@@ -607,6 +617,9 @@ class EspanholPageController extends Controller
             'espanholestruturaimagem12'=>$espanholestruturaimagem12,
             'espanholestruturaimagem13'=>$espanholestruturaimagem13,
             'espanholestruturaimagem14'=>$espanholestruturaimagem14,
+
+            'espanholcontainerlgpd'=>$espanholcontainerlgpd,
+            'espanholtitlelgpd'=>$espanholtitlelgpd,
         ]);        
     }
 }

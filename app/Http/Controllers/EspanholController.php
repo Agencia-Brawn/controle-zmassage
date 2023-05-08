@@ -176,6 +176,9 @@ class EspanholController extends Controller
 			$espanholestruturaimagem13=Confing::get('espanholestruturaimagem13');
 			$espanholestruturaimagem14=Confing::get('espanholestruturaimagem14');
 
+			$espanholcontainerlgpd=Confing::get('espanholcontainerlgpd');
+			$espanholtitlelgpd=Confing::get('espanholtitlelgpd');
+
 
 			return view('controle.es.index', [
 				'espanholtextoresumo'=>$espanholtextoresumo,
@@ -328,6 +331,10 @@ class EspanholController extends Controller
 				'espanholestruturaimagem12'=>$espanholestruturaimagem12,
 				'espanholestruturaimagem13'=>$espanholestruturaimagem13,
 				'espanholestruturaimagem14'=>$espanholestruturaimagem14,
+
+
+				'espanholcontainerlgpd'=>$espanholcontainerlgpd,
+				'espanholtitlelgpd'=>$espanholtitlelgpd,
 				]);
 		}
  
@@ -389,6 +396,9 @@ class EspanholController extends Controller
 			Confing::atualizar('espanholslide6',$request->espanholslide6);
 			Confing::atualizar('espanholslide7',$request->espanholslide7);
 			Confing::atualizar('espanholslide8',$request->espanholslide8);
+
+			Confing::atualizar('espanholcontainerlgpd',$request->espanholcontainerlgpd);
+			Confing::atualizar('espanholtitlelgpd',$request->espanholtitlelgpd);
 
 			return redirect()->back()->with('status', "Conteúdo atualizado com sucesso");
 		}
