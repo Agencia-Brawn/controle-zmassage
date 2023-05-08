@@ -157,6 +157,9 @@ class PortuguesPageController extends Controller
         $portuguesestruturaimagem12=Confing::get('portuguesestruturaimagem12');
         $portuguesestruturaimagem13=Confing::get('portuguesestruturaimagem13');
         $portuguesestruturaimagem14=Confing::get('portuguesestruturaimagem14');
+
+        $portuguescontainerlgpd=Confing::get('portuguescontainerlgpd');
+        $portuguestitlelgpd=Confing::get('portuguestitlelgpd');
         
 
 
@@ -305,6 +308,9 @@ class PortuguesPageController extends Controller
             'portuguesestruturaimagem12'=>$portuguesestruturaimagem12,
             'portuguesestruturaimagem13'=>$portuguesestruturaimagem13,
             'portuguesestruturaimagem14'=>$portuguesestruturaimagem14,
+
+            'portuguescontainerlgpd'=>$portuguescontainerlgpd,
+            'portuguestitlelgpd'=>$portuguestitlelgpd,
         ]);
 
         
@@ -459,6 +465,9 @@ class PortuguesPageController extends Controller
         $portuguesestruturaimagem13=Confing::get('portuguesestruturaimagem13');
         $portuguesestruturaimagem14=Confing::get('portuguesestruturaimagem14');
 
+        $portuguescontainerlgpd=Confing::get('portuguescontainerlgpd');
+        $portuguestitlelgpd=Confing::get('portuguestitlelgpd');
+
 
 
         return view("site.pt.index",[
@@ -607,6 +616,9 @@ class PortuguesPageController extends Controller
             'portuguesestruturaimagem12'=>$portuguesestruturaimagem12,
             'portuguesestruturaimagem13'=>$portuguesestruturaimagem13,
             'portuguesestruturaimagem14'=>$portuguesestruturaimagem14,
+
+            'portuguescontainerlgpd'=>$portuguescontainerlgpd,
+            'portuguestitlelgpd'=>$portuguestitlelgpd,
         ]);        
     }
 }

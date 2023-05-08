@@ -176,6 +176,9 @@ class PortuguesController extends Controller
 			$portuguesestruturaimagem13=Confing::get('portuguesestruturaimagem13');
 			$portuguesestruturaimagem14=Confing::get('portuguesestruturaimagem14');
 
+			$portuguescontainerlgpd=Confing::get('portuguescontainerlgpd');
+			$portuguestitlelgpd=Confing::get('portuguestitlelgpd');
+
 
 			return view('controle.pt.index', [
 				'portuguestextoresumo'=>$portuguestextoresumo,
@@ -328,6 +331,9 @@ class PortuguesController extends Controller
 				'portuguesestruturaimagem12'=>$portuguesestruturaimagem12,
 				'portuguesestruturaimagem13'=>$portuguesestruturaimagem13,
 				'portuguesestruturaimagem14'=>$portuguesestruturaimagem14,
+
+				'portuguescontainerlgpd'=>$portuguescontainerlgpd,
+				'portuguestitlelgpd'=>$portuguestitlelgpd,
 				]);
 		}
  
@@ -389,6 +395,9 @@ class PortuguesController extends Controller
 			Confing::atualizar('portuguesslide6',$request->portuguesslide6);
 			Confing::atualizar('portuguesslide7',$request->portuguesslide7);
 			Confing::atualizar('portuguesslide8',$request->portuguesslide8);
+
+			Confing::atualizar('portuguescontainerlgpd',$request->portuguescontainerlgpd);
+			Confing::atualizar('portuguestitlelgpd',$request->portuguestitlelgpd);
 
 			return redirect()->back()->with('status', "Conteúdo atualizado com sucesso");
 		}

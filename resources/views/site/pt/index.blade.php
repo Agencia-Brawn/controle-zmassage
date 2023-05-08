@@ -21,7 +21,8 @@
           <li><a class="nav-link" href="#sructure">{{$portuguesmenu6}}</a></li>
           <li><a class="nav-link" href="#portfolio">{{$portuguesmenu7}}</a></li>
           <li><a class="nav-link" href="#contact">{{$portuguesmenu8}}</a></li>
-          <li><a class="nav-link active" href="">{{$portuguesmenu2}}</a></li>
+          <li><a class="nav-link" href="">{{$portuguesmenu2}}</a></li>
+          <li><a class="nav-link" href="#lgpd">LGPD</a></li>
           <li>
             <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#idiomaModal"> 
               {{$portuguesmenu9}}  
@@ -71,6 +72,24 @@
 
     </div><!-- End About Me -->
   </section>
+
+  <!-- ======= LGPD ======= -->
+  <section id="lgpd" class="about">
+
+    <div class="about-me container">
+
+        <div class="section-title">
+            <h2>{{ $portuguestitlelgpd }}</h2>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-lg-12 pt-4 pt-lg-0 content" data-aos="fade-left" style="text-align: justify;">
+                {!! $portuguescontainerlgpd !!}
+            </div>
+        </div>
+
+    </div><!-- End About Me -->
+</section>
 
   <!-- ======= AGENDAMENTOS ======= -->
   <section id="agendamento" class="agendamento">

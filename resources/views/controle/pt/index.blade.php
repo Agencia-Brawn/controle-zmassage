@@ -31,7 +31,7 @@
 
 						<li class="nav-item">
 							<a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true">
-								AGB
+								Home
 							</a>
 						</li>						
 
@@ -74,6 +74,12 @@
 						<li class="nav-item">
 							<a  class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-5-tab" data-toggle="tab" href="#tabs-icons-text-5" role="tab" aria-controls="tabs-icons-text-5" aria-selected="false">
 								Contato
+							</a>
+						</li>
+
+						<li class="nav-item">
+							<a  class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-10-tab" data-toggle="tab" href="#tabs-icons-text-10" role="tab" aria-controls="tabs-icons-text-10" aria-selected="false">
+								LGPD
 							</a>
 						</li>
 					</ul>
@@ -1063,6 +1069,30 @@
 									</div>
 								</form>
 							</div>
+
+							<!-- LGPD -->
+							<div class="tab-pane fade" id="tabs-icons-text-10" role="tabpanel" aria-labelledby="tabs-icons-text-10-tab">
+								<form action="{{route('portuguessobre')}}" enctype="multipart/form-data" method="post">
+									@csrf
+										<div class="row">
+											<div class="description col-md-12 mt-3">
+												<label class="form-control-label" for="basic-url">Titulo 1</label>
+												<input name="portuguestitlelgpd"  type="text" class="form-control" value="{{$portuguestitlelgpd}}">
+											</div>
+
+											<div class="description col-12 mt-3">
+												<textarea id="editor-lgpd" name="portuguescontainerlgpd" class="form-control" cols="30" rows="10">{!!isset($portuguescontainerlgpd) ? $portuguescontainerlgpd : '' !!}</textarea>
+											</div>			
+											
+
+											<div class="description col-md-12 mt-3" style="margin-top: 20px; text-align: center;">
+												<button class="btn btn-icon btn-primary" style="margin: auto;" type="submit">
+													<span class="btn-inner--text">Atualizar</span>
+												</button>
+											</div>
+										</div>
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1073,6 +1103,96 @@
 			</div>
 		</div>
 	</div>
+
+	<script>
+		window.addEventListener("load", (e)=>{
+			ClassicEditor.create( document.querySelector( '#editor-lgpd' ), {
+				toolbar: {
+					items: [
+						'heading',
+						'|',
+						'bold',
+						'italic',
+						'link',
+						'bulletedList',
+						'numberedList',
+						'|',
+						'outdent',
+						'indent',
+						'|',
+						'blockQuote',
+						'undo',
+						'redo'
+					],
+					language: 'pt-br',
+					shouldNotGroupWhenFull: true
+				},
+				list: {
+					properties: {
+						styles: true,
+						startIndex: true,
+						reversed: true
+					}
+				},
+				heading: {
+					options: [
+						{ model: 'paragraph', title: 'Parágrafo', class: 'ck-heading_paragraph' },
+						{ model: 'heading1', view: 'h1', title: 'Título 1', class: 'ck-heading_heading1' },
+						{ model: 'heading2', view: 'h2', title: 'Título 2', class: 'ck-heading_heading2' },
+						{ model: 'heading3', view: 'h3', title: 'Título 3', class: 'ck-heading_heading3' },
+						{ model: 'heading4', view: 'h4', title: 'Título 4', class: 'ck-heading_heading4' },
+						{ model: 'heading5', view: 'h5', title: 'Título 5', class: 'ck-heading_heading5' },
+						{ model: 'heading6', view: 'h6', title: 'Título 6', class: 'ck-heading_heading6' }
+					]
+				},
+				placeholder: 'Escreva sua notícia...',
+				htmlEmbed: {
+					showPreviews: true
+				},
+				mention: {
+						feeds: [
+								{
+										marker: '@',
+										feed: [
+												'@apple', '@bears', '@brownie', '@cake', '@cake', '@candy', '@canes', '@chocolate', '@cookie', '@cotton', '@cream',
+												'@cupcake', '@danish', '@donut', '@dragée', '@fruitcake', '@gingerbread', '@gummi', '@ice', '@jelly-o',
+												'@liquorice', '@macaroon', '@marzipan', '@oat', '@pie', '@plum', '@pudding', '@sesame', '@snaps', '@soufflé',
+												'@sugar', '@sweet', '@topping', '@wafer'
+										],
+										minimumCharacters: 1
+								}
+						]
+				},
+				removePlugins: [
+						// These two are commercial, but you can try them out without registering to a trial.
+						// 'ExportPdf',
+						// 'ExportWord',
+						'CKBox',
+						'CKFinder',
+						'EasyImage',
+						// This sample uses the Base64UploadAdapter to handle image uploads as it requires no configuration.
+						// https://ckeditor.com/docs/ckeditor5/latest/features/images/image-upload/base64-upload-adapter.html
+						// Storing images as Base64 is usually a very bad idea.
+						// Replace it on production website with other solutions:
+						// https://ckeditor.com/docs/ckeditor5/latest/features/images/image-upload/image-upload.html
+						// 'Base64UploadAdapter',
+						'RealTimeCollaborativeComments',
+						'RealTimeCollaborativeTrackChanges',
+						'RealTimeCollaborativeRevisionHistory',
+						'PresenceList',
+						'Comments',
+						'TrackChanges',
+						'TrackChangesData',
+						'RevisionHistory',
+						'Pagination',
+						'WProofreader',
+						// Careful, with the Mathtype plugin CKEditor will not load when loading this sample
+						// from a local file system (file://) - load this site via HTTP server if you enable MathType
+						'MathType'
+				],
+			});
+		});
+	</script>
 
 	@component('components.controle.scripts')
 	@endcomponent
