@@ -36,6 +36,7 @@ class AustriaPageController extends Controller
         $menu7=Confing::get('menu7');
         $menu8=Confing::get('menu8');
         $menu9=Confing::get('menu9');
+        $menu10=Confing::get('menu10');
 
 
 
@@ -186,6 +187,7 @@ class AustriaPageController extends Controller
             'menu7'=>$menu7,
             'menu8'=>$menu8,
             'menu9'=>$menu9,
+            'menu10'=>$menu10,
 
 
             'tituloPagina'=>$tituloPagina,
@@ -340,6 +342,7 @@ class AustriaPageController extends Controller
         $menu7=Confing::get('menu7');
         $menu8=Confing::get('menu8');
         $menu9=Confing::get('menu9');
+        $menu10=Confing::get('menu10');
 
 
         
@@ -493,6 +496,7 @@ class AustriaPageController extends Controller
             'menu7'=>$menu7,
             'menu8'=>$menu8,
             'menu9'=>$menu9,
+            'menu10'=>$menu10,
 
             'tituloPagina'=>$tituloPagina,
             'tituloPrincipal'=>$tituloPrincipal,

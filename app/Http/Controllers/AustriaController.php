@@ -40,6 +40,7 @@ class AustriaController extends Controller
 			$menu7=Confing::get('menu7');
 			$menu8=Confing::get('menu8');
 			$menu9=Confing::get('menu9');
+			$menu10=Confing::get('menu10');
 
 
 
@@ -195,6 +196,7 @@ class AustriaController extends Controller
 				'menu7'=>$menu7,
 				'menu8'=>$menu8,
 				'menu9'=>$menu9,
+				'menu10'=>$menu10,
 
 
 
@@ -363,6 +365,7 @@ class AustriaController extends Controller
 				Confing::atualizar('menu7',$request->menu7);
 				Confing::atualizar('menu8',$request->menu8);
 				Confing::atualizar('menu9',$request->menu9);
+				Confing::atualizar('menu10',$request->menu10);
 
 				return redirect()->back()->with('status', "Formulário Enviado com sucesso");
 		}

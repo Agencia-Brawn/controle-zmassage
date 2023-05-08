@@ -22,7 +22,7 @@
           <li><a class="nav-link" href="#portfolio">{{$englishmenu7}}</a></li>
           <li><a class="nav-link" href="#contact">{{$englishmenu8}}</a></li>
           <li><a class="nav-link" href="">{{$englishmenu2}}</a></li>
-          <li><a class="nav-link" href="#lgpd">LGPD</a></li>
+          <li><a class="nav-link" href="#lgpd">{{$englishmenu10}}</a></li>
           <li>
             <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#idiomaModal"> 
               {{$englishmenu9}}  

@@ -40,6 +40,7 @@ class EspanholController extends Controller
 			$espanholmenu7=Confing::get('espanholmenu7');
 			$espanholmenu8=Confing::get('espanholmenu8');
 			$espanholmenu9=Confing::get('espanholmenu9');
+			$espanholmenu10=Confing::get('espanholmenu10');
 
 
 
@@ -196,6 +197,7 @@ class EspanholController extends Controller
 				'espanholmenu7'=>$espanholmenu7,
 				'espanholmenu8'=>$espanholmenu8,
 				'espanholmenu9'=>$espanholmenu9,
+				'espanholmenu10'=>$espanholmenu10,
 
 
 
@@ -366,6 +368,7 @@ class EspanholController extends Controller
 				Confing::atualizar('espanholmenu7',$request->espanholmenu7);
 				Confing::atualizar('espanholmenu8',$request->espanholmenu8);
 				Confing::atualizar('espanholmenu9',$request->espanholmenu9);
+				Confing::atualizar('espanholmenu10',$request->espanholmenu10);
 
 				return redirect()->back()->with('status', "Formulário Enviado com sucesso");
 		}

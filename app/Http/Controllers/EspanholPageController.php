@@ -34,6 +34,7 @@ class EspanholPageController extends Controller
         $espanholmenu7=Confing::get('espanholmenu7');
         $espanholmenu8=Confing::get('espanholmenu8');
         $espanholmenu9=Confing::get('espanholmenu9');
+        $espanholmenu10=Confing::get('espanholmenu10');
 
 
 
@@ -188,6 +189,7 @@ class EspanholPageController extends Controller
             'espanholmenu7'=>$espanholmenu7,
             'espanholmenu8'=>$espanholmenu8,
             'espanholmenu9'=>$espanholmenu9,
+            'espanholmenu10'=>$espanholmenu10,
 
 
             'espanholtituloPagina'=>$espanholtituloPagina,
@@ -341,6 +343,7 @@ class EspanholPageController extends Controller
         $espanholmenu7=Confing::get('espanholmenu7');
         $espanholmenu8=Confing::get('espanholmenu8');
         $espanholmenu9=Confing::get('espanholmenu9');
+        $espanholmenu10=Confing::get('espanholmenu10');
 
 
         
@@ -495,6 +498,7 @@ class EspanholPageController extends Controller
             'espanholmenu7'=>$espanholmenu7,
             'espanholmenu8'=>$espanholmenu8,
             'espanholmenu9'=>$espanholmenu9,
+            'espanholmenu10'=>$espanholmenu10,
 
             'espanholtituloPagina'=>$espanholtituloPagina,
             'espanholtituloPrincipal'=>$espanholtituloPrincipal,

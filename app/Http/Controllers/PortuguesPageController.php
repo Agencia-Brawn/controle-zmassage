@@ -34,6 +34,7 @@ class PortuguesPageController extends Controller
         $portuguesmenu7=Confing::get('portuguesmenu7');
         $portuguesmenu8=Confing::get('portuguesmenu8');
         $portuguesmenu9=Confing::get('portuguesmenu9');
+        $portuguesmenu10=Confing::get('portuguesmenu10');
 
 
 
@@ -187,6 +188,7 @@ class PortuguesPageController extends Controller
             'portuguesmenu7'=>$portuguesmenu7,
             'portuguesmenu8'=>$portuguesmenu8,
             'portuguesmenu9'=>$portuguesmenu9,
+            'portuguesmenu10'=>$portuguesmenu10,
 
 
             'portuguestituloPagina'=>$portuguestituloPagina,
@@ -340,6 +342,7 @@ class PortuguesPageController extends Controller
         $portuguesmenu7=Confing::get('portuguesmenu7');
         $portuguesmenu8=Confing::get('portuguesmenu8');
         $portuguesmenu9=Confing::get('portuguesmenu9');
+        $portuguesmenu10=Confing::get('portuguesmenu10');
 
 
         
@@ -494,6 +497,7 @@ class PortuguesPageController extends Controller
             'portuguesmenu7'=>$portuguesmenu7,
             'portuguesmenu8'=>$portuguesmenu8,
             'portuguesmenu9'=>$portuguesmenu9,
+            'portuguesmenu10'=>$portuguesmenu10,
 
             'portuguestituloPagina'=>$portuguestituloPagina,
             'portuguestituloPrincipal'=>$portuguestituloPrincipal,

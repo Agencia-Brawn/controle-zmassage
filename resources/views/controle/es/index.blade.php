@@ -237,6 +237,11 @@
 											<input name="espanholmenu9"  type="text" class="form-control" value="{{$espanholmenu9}}">
 										</div>
 
+										<div class="description col-md-12 mt-3">
+											<label class="form-control-label" for="basic-url">Menu 9</label>
+											<input name="espanholmenu10"  type="text" class="form-control" value="{{$espanholmenu10}}">
+										</div>
+
 										<div class="description col-md-12 mt-3" >
 											<label class="form-control-label" for="basic-url">Logo Menu</label>
 											<input name="espanhollogo1" type="file" class="form-control">

@@ -34,6 +34,7 @@ class EnglishPageController extends Controller
         $englishmenu7=Confing::get('englishmenu7');
         $englishmenu8=Confing::get('englishmenu8');
         $englishmenu9=Confing::get('englishmenu9');
+        $englishmenu10=Confing::get('englishmenu10');
 
 
 
@@ -187,6 +188,7 @@ class EnglishPageController extends Controller
             'englishmenu7'=>$englishmenu7,
             'englishmenu8'=>$englishmenu8,
             'englishmenu9'=>$englishmenu9,
+            'englishmenu10'=>$englishmenu10,
 
 
             'englishtituloPagina'=>$englishtituloPagina,
@@ -340,6 +342,7 @@ class EnglishPageController extends Controller
         $englishmenu7=Confing::get('englishmenu7');
         $englishmenu8=Confing::get('englishmenu8');
         $englishmenu9=Confing::get('englishmenu9');
+        $englishmenu10=Confing::get('englishmenu10');
 
 
         
@@ -494,6 +497,7 @@ class EnglishPageController extends Controller
             'englishmenu7'=>$englishmenu7,
             'englishmenu8'=>$englishmenu8,
             'englishmenu9'=>$englishmenu9,
+            'englishmenu10'=>$englishmenu10,
 
             'englishtituloPagina'=>$englishtituloPagina,
             'englishtituloPrincipal'=>$englishtituloPrincipal,

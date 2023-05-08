@@ -237,6 +237,11 @@
 											<input name="englishmenu9"  type="text" class="form-control" value="{{$englishmenu9}}">
 										</div>
 
+										<div class="description col-md-12 mt-3">
+											<label class="form-control-label" for="basic-url">Menu 9</label>
+											<input name="englishmenu10"  type="text" class="form-control" value="{{$englishmenu10}}">
+										</div>
+
 										<div class="description col-md-12 mt-3" >
 											<label class="form-control-label" for="basic-url">Logo Menu</label>
 											<input name="englishlogo1" type="file" class="form-control">
