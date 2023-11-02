@@ -331,14 +331,30 @@
 										<div class="description mt-3 col-12">
 											<h2>Serviço 1</h2>
 										</div>
-																								
+										<div class="description col-md-12">
+											<div class="form-check form-switch w-100">
+													<input id="linkToggle" type="checkbox" role="switch" class="form-check-input" onchange="mudaInput(this)" {{ (str_contains($portuguesservico1img, 'embed')) ? 'Checked' : ''}} >
+													<label class="form-control-label" for="linkToggle">Link?</label>
+											</div>
+										</div>
+
 										<div class="description col-md-6">
-											<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
-											<input name="portuguesservico1img" type="file" class="form-control">
-											<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($portuguesservico1img)}}" alt="">
-											<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
-												<i class='bx bxs-info-circle' ></i>
-											</button>
+											<div id="imagemInputContainer">
+												<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
+												<input name="portuguesservico1img" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($portuguesservico1img)}}" alt="">
+												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
+													<i class='bx bxs-info-circle' ></i>
+												</button>
+											</div>
+											<div id="videoInputContainer">
+												<label class="form-control-label" for="basic-url">Vídeo do Serviço</label>
+												<input name="portuguesservico1img" id="portuguesservico1img" type="text" class="form-control" value="https://www.youtube.com/watch?v={{str_after($portuguesservico1img, 'embed')}}">
+												<button type="button" class="btn btn-primary ml-2 mt-2" data-toggle="tooltip" data-html="true" title="Copie e Cole o Link do video do Youtube <br> ">
+													<i class='bx bxs-info-circle'></i>
+												</button>
+												<span class="form-text">Formato do Link: "https://www.youtube.com/watch?v=UXi8NeHqIDA"</span>
+											</div>
 										</div>
 
 										<div class="description col-md-6">
@@ -348,19 +364,20 @@
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Descrição</label>
-											<input name="portuguesservico1descricao"  type="text" class="form-control" value="{{$portuguesservico1descricao}}">
+											<input name="portuguesservico1descricao" type="text" class="form-control" value="{{$portuguesservico1descricao}}">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Preço 1</label>
-											<input name="portuguesservico1preco"  type="text" class="form-control" value="{{$portuguesservico1preco}}">
+											<input name="portuguesservico1preco" type="text" class="form-control" value="{{$portuguesservico1preco}}">
 										</div>
 
 										<div class="description col-md-6">
 											<label class="form-control-label" for="basic-url">Preço 2</label>
-											<input name="portuguesservico1preco2"  type="text" class="form-control" value="{{$portuguesservico1preco2}}">
+											<input name="portuguesservico1preco2" type="text" class="form-control" value="{{$portuguesservico1preco2}}">
 										</div>
 									</div>
+
 
 									{{-- SERVIÇO 2 --}}
 									<div class="row">
@@ -1195,6 +1212,28 @@
 						// from a local file system (file://) - load this site via HTTP server if you enable MathType
 						'MathType'
 				],
+			});
+		});
+
+		function mudaInput(tick) {
+			var imagemInputContainer = document.getElementById("imagemInputContainer");
+			var videoInputContainer = document.getElementById("videoInputContainer");
+
+			if (tick.checked) {
+				// Se o checkbox estiver marcado (ativo), mostra o contêiner de vídeo e esconde o contêiner de imagem
+				imagemInputContainer.style.display = "none";
+				videoInputContainer.style.display = "block";
+			} else {
+				// Se o checkbox não estiver marcado (inativo), mostra o contêiner de imagem e esconde o contêiner de vídeo
+				imagemInputContainer.style.display = "block";
+				videoInputContainer.style.display = "none";
+			}
+    	}	
+
+		document.addEventListener("DOMContentLoaded", function() {
+			var checkboxes = document.querySelectorAll('.form-check-input');
+			checkboxes.forEach(function(checkbox) {
+				mudaInput(checkbox);
 			});
 		});
 	</script>

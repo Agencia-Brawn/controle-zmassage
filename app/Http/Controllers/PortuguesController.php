@@ -407,12 +407,19 @@ class PortuguesController extends Controller
 
 		public function portuguesservico(Request $request)
 		{
+				$pattern = "/(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/";
+
 				if ($request->hasFile('portuguesservico1img')) 
 				{
-						$extension = $request->portuguesservico1img->extension();
-						$path = $request->portuguesservico1img->storeAs('public/images', "portuguesservico1img.$extension");
-						Confing::atualizar('portuguesservico1img',$path);
+					$extension = $request->portuguesservico1img->extension();
+					$path = $request->portuguesservico1img->storeAs('public/images', "portuguesservico1img.$extension");
+					Confing::atualizar('portuguesservico1img',$path);
+				}elseif (preg_match($pattern, $request->portuguesservico1img, $matches)) {
+					$id = "embed".$matches[1];
+					Confing::atualizar('portuguesservico1img',$id);
 				}
+				// dd(preg_match($pattern, $request->portuguesservico1img, $matches));
+
 				if ($request->hasFile('portuguesservico2img')) 
 				{
 						$extension = $request->portuguesservico2img->extension();
