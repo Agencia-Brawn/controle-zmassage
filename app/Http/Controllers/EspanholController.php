@@ -408,71 +408,116 @@ class EspanholController extends Controller
 
 		public function espanholservico(Request $request)
 		{
+			$pattern = "/(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/";
+
 				if ($request->hasFile('espanholservico1img')) 
 				{
 						$extension = $request->espanholservico1img->extension();
 						$path = $request->espanholservico1img->storeAs('public/images', "espanholservico1img.$extension");
 						Confing::atualizar('espanholservico1img',$path);
+				}elseif (preg_match($pattern, $request->espanholservico1img, $matches)) {
+					$id = "embed".$matches[1];
+					Confing::atualizar('espanholservico1img',$id);
 				}
+
 				if ($request->hasFile('espanholservico2img')) 
 				{
 						$extension = $request->espanholservico2img->extension();
 						$path = $request->espanholservico2img->storeAs('public/images', "espanholservico2img.$extension");
 						Confing::atualizar('espanholservico2img',$path);
+				}elseif (preg_match($pattern, $request->espanholservico2img, $matches)) {
+					$id = "embed".$matches[1];
+					Confing::atualizar('espanholservico2img',$id);
 				}
+
 				if ($request->hasFile('espanholservico3img')) 
 				{
 						$extension = $request->espanholservico3img->extension();
 						$path = $request->espanholservico3img->storeAs('public/images', "espanholservico3img.$extension");
 						Confing::atualizar('espanholservico3img',$path);
+				}elseif (preg_match($pattern, $request->espanholservico3img, $matches)) {
+					$id = "embed".$matches[1];
+					Confing::atualizar('espanholservico3img',$id);
 				}
+
 				if ($request->hasFile('espanholservico4img')) 
 				{
 						$extension = $request->espanholservico4img->extension();
 						$path = $request->espanholservico4img->storeAs('public/images', "espanholservico4img.$extension");
 						Confing::atualizar('espanholservico4img',$path);
+				}elseif (preg_match($pattern, $request->espanholservico4img, $matches)) {
+					$id = "embed".$matches[1];
+					Confing::atualizar('espanholservico4img',$id);
 				}
+
 				if ($request->hasFile('espanholservico5img')) 
 				{
 						$extension = $request->espanholservico5img->extension();
 						$path = $request->espanholservico5img->storeAs('public/images', "espanholservico5img.$extension");
 						Confing::atualizar('espanholservico5img',$path);
+				}elseif (preg_match($pattern, $request->espanholservico5img, $matches)) {
+					$id = "embed".$matches[1];
+					Confing::atualizar('espanholservico5img',$id);
 				}
+
 				if ($request->hasFile('espanholservico6img')) 
 				{
 						$extension = $request->espanholservico6img->extension();
 						$path = $request->espanholservico6img->storeAs('public/images', "espanholservico6img.$extension");
 						Confing::atualizar('espanholservico6img',$path);
+				}elseif (preg_match($pattern, $request->espanholservico6img, $matches)) {
+					$id = "embed".$matches[1];
+					Confing::atualizar('espanholservico6img',$id);
 				}
+
 				if ($request->hasFile('espanholservico7img')) 
 				{
 						$extension = $request->espanholservico7img->extension();
 						$path = $request->espanholservico7img->storeAs('public/images', "espanholservico7img.$extension");
 						Confing::atualizar('espanholservico7img',$path);
+				}elseif (preg_match($pattern, $request->espanholservico7img, $matches)) {
+					$id = "embed".$matches[1];
+					Confing::atualizar('espanholservico7img',$id);
 				}
+
 				if ($request->hasFile('espanholservico8img')) 
 				{
 						$extension = $request->espanholservico8img->extension();
 						$path = $request->espanholservico8img->storeAs('public/images', "espanholservico8img.$extension");
 						Confing::atualizar('espanholservico8img',$path);
+				}elseif (preg_match($pattern, $request->espanholservico8img, $matches)) {
+					$id = "embed".$matches[1];
+					Confing::atualizar('espanholservico8img',$id);
 				}
+
 				if ($request->hasFile('espanholservico9img')) 
 				{
 						$extension = $request->espanholservico9img->extension();
 						$path = $request->espanholservico9img->storeAs('public/images', "espanholservico9img.$extension");
 						Confing::atualizar('espanholservico9img',$path);
+				}elseif (preg_match($pattern, $request->espanholservico9img, $matches)) {
+					$id = "embed".$matches[1];
+					Confing::atualizar('espanholservico9img',$id);
 				}
+
 				if ($request->hasFile('espanholservico10img')) 
 				{
 						$extension = $request->espanholservico10img->extension();
 						$path = $request->espanholservico10img->storeAs('public/images', "espanholservico10img.$extension");
 						Confing::atualizar('espanholservico10img',$path);
+				}elseif (preg_match($pattern, $request->espanholservico10img, $matches)) {
+					$id = "embed".$matches[1];
+					Confing::atualizar('espanholservico10img',$id);
 				}
+
 				if ($request->hasFile('espanholservico11img')) 
 				{
 						$extension = $request->espanholservico11img->extension();
 						$path = $request->espanholservico11img->storeAs('public/images', "espanholservico11img.$extension");
 						Confing::atualizar('espanholservico11img',$path);
+				}elseif (preg_match($pattern, $request->espanholservico11img, $matches)) {
+					$id = "embed".$matches[1];
+					Confing::atualizar('espanholservico11img',$id);
 				}
 				
 				Confing::atualizar('espanholtituloPagina',$request->espanholtituloPagina);

@@ -327,14 +327,31 @@
 										<div class="description mt-3 col-12">
 											<h2>Serviço 1</h2>
 										</div>
+
+										<div class="description col-md-12">
+											<div class="form-check form-switch w-100">
+													<input id="linkToggle" type="checkbox" role="switch" class="form-check-input" onchange="mudaInput(this,'1')" {{ (str_contains($espanholservico1img, 'embed')) ? 'Checked' : ''}} >
+													<label class="form-control-label" for="linkToggle">Link?</label>
+											</div>
+										</div>
 																								
 										<div class="description col-md-6">
-											<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
-											<input name="espanholservico1img" type="file" class="form-control">
-											<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($espanholservico1img)}}" alt="">
-											<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
-												<i class='bx bxs-info-circle' ></i>
-											</button>
+											<div id="imagem1InputContainer">
+												<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
+												<input name="espanholservico1img" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($espanholservico1img)}}" alt="">
+												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
+													<i class='bx bxs-info-circle' ></i>
+												</button>
+											</div>
+											<div id="video1InputContainer">
+												<label class="form-control-label" for="basic-url">Vídeo do Serviço</label>
+												<input name="espanholservico1img" id="espanholservico1img" type="text" class="form-control" value="{{ (str_contains($espanholservico1img, 'embed')) ? 'https://www.youtube.com/watch?v='.str_after($espanholservico1img, 'embed') : '' }}">
+												<button type="button" class="btn btn-primary ml-2 mt-2" data-toggle="tooltip" data-html="true" title="Copie e Cole o Link do video do Youtube <br> ">
+													<i class='bx bxs-info-circle'></i>
+												</button>
+												<span class="form-text">Formato do Link: "https://www.youtube.com/watch?v=UXi8NeHqIDA"</span>
+											</div>
 										</div>
 
 										<div class="description col-md-6">
@@ -363,14 +380,29 @@
 										<div class="description mt-3 col-12">
 											<h2>Serviço 2</h2>
 										</div>
+
+										<div class="form-check form-switch w-100">
+											<input id="linkToggle" type="checkbox" role="switch" class="form-check-input" onchange="mudaInput(this,'2')" {{ (str_contains($espanholservico2img, 'embed')) ? 'Checked' : ''}} >
+											<label class="form-control-label" for="linkToggle">Link?</label>
+										</div>
 																								
 										<div class="description col-md-6">
-											<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
-											<input name="espanholservico2img" type="file" class="form-control">
-											<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($espanholservico2img)}}" alt="">
-											<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
-												<i class='bx bxs-info-circle' ></i>
-											</button>
+											<div id="imagem2InputContainer">
+												<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
+												<input name="espanholservico2img" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($espanholservico2img)}}" alt="">
+												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
+													<i class='bx bxs-info-circle' ></i>
+												</button>
+											</div>
+											<div id="video2InputContainer">
+												<label class="form-control-label" for="basic-url">Vídeo do Serviço</label>
+												<input name="espanholservico2img" id="espanholservico2img" type="text" class="form-control" value="{{ (str_contains($espanholservico2img, 'embed')) ? 'https://www.youtube.com/watch?v='.str_after($espanholservico2img, 'embed') : '' }}">
+												<button type="button" class="btn btn-primary ml-2 mt-2" data-toggle="tooltip" data-html="true" title="Copie e Cole o Link do video do Youtube <br> ">
+													<i class='bx bxs-info-circle'></i>
+												</button>
+												<span class="form-text">Formato do Link: "https://www.youtube.com/watch?v=UXi8NeHqIDA"</span>
+											</div>
 										</div>
 										
 										<div class="description col-md-6">
@@ -399,14 +431,29 @@
 										<div class="description mt-3 col-12">
 											<h2>Serviço 3</h2>
 										</div>
+
+										<div class="form-check form-switch w-100">
+											<input id="linkToggle" type="checkbox" role="switch" class="form-check-input" onchange="mudaInput(this,'3')" {{ (str_contains($espanholservico3img, 'embed')) ? 'Checked' : ''}} >
+											<label class="form-control-label" for="linkToggle">Link?</label>
+										</div>
 																								
 										<div class="description col-md-6">
-											<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
-											<input name="espanholservico3img" type="file" class="form-control">
-											<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($espanholservico3img)}}" alt="">
-											<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
-												<i class='bx bxs-info-circle' ></i>
-											</button>
+											<div id="imagem3InputContainer">
+												<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
+												<input name="espanholservico3img" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($espanholservico3img)}}" alt="">
+												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
+													<i class='bx bxs-info-circle' ></i>
+												</button>
+											</div>
+											<div id="video3InputContainer">
+												<label class="form-control-label" for="basic-url">Vídeo do Serviço</label>
+												<input name="espanholservico3img" id="espanholservico3img" type="text" class="form-control" value="{{ (str_contains($espanholservico3img, 'embed')) ? 'https://www.youtube.com/watch?v='.str_after($espanholservico3img, 'embed') : '' }}">
+												<button type="button" class="btn btn-primary ml-2 mt-2" data-toggle="tooltip" data-html="true" title="Copie e Cole o Link do video do Youtube <br> ">
+													<i class='bx bxs-info-circle'></i>
+												</button>
+												<span class="form-text">Formato do Link: "https://www.youtube.com/watch?v=UXi8NeHqIDA"</span>
+											</div>
 										</div>
 
 										<div class="description col-md-6">
@@ -435,14 +482,29 @@
 										<div class="description mt-3 col-12">
 											<h2>Serviço 4</h2>
 										</div>
+
+										<div class="form-check form-switch w-100">
+											<input id="linkToggle" type="checkbox" role="switch" class="form-check-input" onchange="mudaInput(this,'4')" {{ (str_contains($espanholservico4img, 'embed')) ? 'Checked' : ''}} >
+											<label class="form-control-label" for="linkToggle">Link?</label>
+										</div>
 																								
 										<div class="description col-md-6">
-											<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
-											<input name="espanholservico4img" type="file" class="form-control">
-											<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($espanholservico4img)}}" alt="">
-											<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
-												<i class='bx bxs-info-circle' ></i>
-											</button>
+											<div id="imagem4InputContainer">
+												<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
+												<input name="espanholservico4img" type="file" class="form-control">
+												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($espanholservico4img)}}" alt="">
+												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
+													<i class='bx bxs-info-circle' ></i>
+												</button>
+											</div>
+											<div id="video4InputContainer">
+												<label class="form-control-label" for="basic-url">Vídeo do Serviço</label>
+												<input name="espanholservico4img" id="espanholservico4img" type="text" class="form-control" value="{{ (str_contains($espanholservico4img, 'embed')) ? 'https://www.youtube.com/watch?v='.str_after($espanholservico4img, 'embed') : '' }}">
+												<button type="button" class="btn btn-primary ml-2 mt-2" data-toggle="tooltip" data-html="true" title="Copie e Cole o Link do video do Youtube <br> ">
+													<i class='bx bxs-info-circle'></i>
+												</button>
+												<span class="form-text">Formato do Link: "https://www.youtube.com/watch?v=UXi8NeHqIDA"</span>
+											</div>
 										</div>
 
 										<div class="description col-md-6">
@@ -472,13 +534,28 @@
 											<h2>Serviço 5</h2>
 										</div>
 
+										<div class="form-check form-switch w-100">
+											<input id="linkToggle" type="checkbox" role="switch" class="form-check-input" onchange="mudaInput(this,'5')" {{ (str_contains($espanholservico5img, 'embed')) ? 'Checked' : ''}} >
+											<label class="form-control-label" for="linkToggle">Link?</label>
+										</div>
+
 										<div class="description col-md-6">
-											<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
-											<input name="espanholservico5img" type="file" class="form-control">
-												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($espanholservico5img)}}" alt="">
-												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
-													<i class='bx bxs-info-circle' ></i>
+											<div id="imagem5InputContainer">
+												<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
+												<input name="espanholservico5img" type="file" class="form-control">
+													<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($espanholservico5img)}}" alt="">
+													<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
+														<i class='bx bxs-info-circle' ></i>
+													</button>
+											</div>
+											<div id="video5InputContainer">
+												<label class="form-control-label" for="basic-url">Vídeo do Serviço</label>
+												<input name="espanholservico5img" id="espanholservico5img" type="text" class="form-control" value="{{ (str_contains($espanholservico5img, 'embed')) ? 'https://www.youtube.com/watch?v='.str_after($espanholservico5img, 'embed') : '' }}">
+												<button type="button" class="btn btn-primary ml-2 mt-2" data-toggle="tooltip" data-html="true" title="Copie e Cole o Link do video do Youtube <br> ">
+													<i class='bx bxs-info-circle'></i>
 												</button>
+												<span class="form-text">Formato do Link: "https://www.youtube.com/watch?v=UXi8NeHqIDA"</span>
+											</div>
 										</div>
 
 										<div class="description col-md-6">
@@ -508,13 +585,28 @@
 											<h2>Serviço 6</h2>
 										</div>
 
+										<div class="form-check form-switch w-100">
+											<input id="linkToggle" type="checkbox" role="switch" class="form-check-input" onchange="mudaInput(this,'6')" {{ (str_contains($espanholservico6img, 'embed')) ? 'Checked' : ''}} >
+											<label class="form-control-label" for="linkToggle">Link?</label>
+										</div>
+
 										<div class="description col-md-6">
-											<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
-											<input name="espanholservico6img" type="file" class="form-control">
-												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($espanholservico6img)}}" alt="">
-												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
-													<i class='bx bxs-info-circle' ></i>
+											<div id="imagem6InputContainer">
+												<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
+												<input name="espanholservico6img" type="file" class="form-control">
+													<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($espanholservico6img)}}" alt="">
+													<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
+														<i class='bx bxs-info-circle' ></i>
+													</button>
+											</div>
+											<div id="video6InputContainer">
+												<label class="form-control-label" for="basic-url">Vídeo do Serviço</label>
+												<input name="espanholservico6img" id="espanholservico6img" type="text" class="form-control" value="{{ (str_contains($espanholservico6img, 'embed')) ? 'https://www.youtube.com/watch?v='.str_after($espanholservico6img, 'embed') : '' }}">
+												<button type="button" class="btn btn-primary ml-2 mt-2" data-toggle="tooltip" data-html="true" title="Copie e Cole o Link do video do Youtube <br> ">
+													<i class='bx bxs-info-circle'></i>
 												</button>
+												<span class="form-text">Formato do Link: "https://www.youtube.com/watch?v=UXi8NeHqIDA"</span>
+											</div>
 										</div>
 
 										<div class="description col-md-6">
@@ -544,13 +636,28 @@
 											<h2>Serviço 7</h2>
 										</div>
 
+										<div class="form-check form-switch w-100">
+											<input id="linkToggle" type="checkbox" role="switch" class="form-check-input" onchange="mudaInput(this,'7')" {{ (str_contains($espanholservico7img, 'embed')) ? 'Checked' : ''}} >
+											<label class="form-control-label" for="linkToggle">Link?</label>
+										</div>
+
 										<div class="description col-md-6">
-											<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
-											<input name="espanholservico7img" type="file" class="form-control">
-												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($espanholservico7img)}}" alt="">
-												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
-													<i class='bx bxs-info-circle' ></i>
+											<div class="" id="imagem7InputContainer">
+												<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
+												<input name="espanholservico7img" type="file" class="form-control">
+													<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($espanholservico7img)}}" alt="">
+													<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
+														<i class='bx bxs-info-circle' ></i>
+													</button>
+											</div>
+											<div id="video7InputContainer">
+												<label class="form-control-label" for="basic-url">Vídeo do Serviço</label>
+												<input name="espanholservico7img" id="espanholservico7img" type="text" class="form-control" value="{{ (str_contains($espanholservico7img, 'embed')) ? 'https://www.youtube.com/watch?v='.str_after($espanholservico7img, 'embed') : '' }}">
+												<button type="button" class="btn btn-primary ml-2 mt-2" data-toggle="tooltip" data-html="true" title="Copie e Cole o Link do video do Youtube <br> ">
+													<i class='bx bxs-info-circle'></i>
 												</button>
+												<span class="form-text">Formato do Link: "https://www.youtube.com/watch?v=UXi8NeHqIDA"</span>
+											</div>
 										</div>
 
 										<div class="description col-md-6">
@@ -580,13 +687,28 @@
 											<h2>Serviço 8</h2>
 										</div>
 
+										<div class="form-check form-switch w-100">
+											<input id="linkToggle" type="checkbox" role="switch" class="form-check-input" onchange="mudaInput(this,'8')" {{ (str_contains($espanholservico8img, 'embed')) ? 'Checked' : ''}} >
+											<label class="form-control-label" for="linkToggle">Link?</label>
+										</div>
+
 										<div class="description col-md-6">
-											<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
-											<input name="espanholservico8img" type="file" class="form-control">
-												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($espanholservico8img)}}" alt="">
-												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
-													<i class='bx bxs-info-circle' ></i>
+											<div id="imagem8InputContainer">
+												<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
+												<input name="espanholservico8img" type="file" class="form-control">
+													<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($espanholservico8img)}}" alt="">
+													<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
+														<i class='bx bxs-info-circle' ></i>
+													</button>
+											</div>
+											<div id="video8InputContainer">
+												<label class="form-control-label" for="basic-url">Vídeo do Serviço</label>
+												<input name="espanholservico8img" id="espanholservico8img" type="text" class="form-control" value="{{ (str_contains($espanholservico8img, 'embed')) ? 'https://www.youtube.com/watch?v='.str_after($espanholservico8img, 'embed') : '' }}">
+												<button type="button" class="btn btn-primary ml-2 mt-2" data-toggle="tooltip" data-html="true" title="Copie e Cole o Link do video do Youtube <br> ">
+													<i class='bx bxs-info-circle'></i>
 												</button>
+												<span class="form-text">Formato do Link: "https://www.youtube.com/watch?v=UXi8NeHqIDA"</span>
+											</div>
 										</div>
 
 										<div class="description col-md-6">
@@ -616,13 +738,28 @@
 											<h2>Serviço 9</h2>
 										</div>
 
+										<div class="form-check form-switch w-100">
+											<input id="linkToggle" type="checkbox" role="switch" class="form-check-input" onchange="mudaInput(this,'9')" {{ (str_contains($espanholservico9img, 'embed')) ? 'Checked' : ''}} >
+											<label class="form-control-label" for="linkToggle">Link?</label>
+										</div>
+
 										<div class="description col-md-6">
-											<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
-											<input name="espanholservico9img" type="file" class="form-control">
-												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($espanholservico9img)}}" alt="">
-												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
-													<i class='bx bxs-info-circle' ></i>
+											<div id="imagem9InputContainer">
+												<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
+												<input name="espanholservico9img" type="file" class="form-control">
+													<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($espanholservico9img)}}" alt="">
+													<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
+														<i class='bx bxs-info-circle' ></i>
+													</button>
+											</div>
+											<div id="video9InputContainer">
+												<label class="form-control-label" for="basic-url">Vídeo do Serviço</label>
+												<input name="espanholservico9img" id="espanholservico9img" type="text" class="form-control" value="{{ (str_contains($espanholservico9img, 'embed')) ? 'https://www.youtube.com/watch?v='.str_after($espanholservico9img, 'embed') : '' }}">
+												<button type="button" class="btn btn-primary ml-2 mt-2" data-toggle="tooltip" data-html="true" title="Copie e Cole o Link do video do Youtube <br> ">
+													<i class='bx bxs-info-circle'></i>
 												</button>
+												<span class="form-text">Formato do Link: "https://www.youtube.com/watch?v=UXi8NeHqIDA"</span>
+											</div>
 										</div>
 
 										<div class="description col-md-6">
@@ -652,13 +789,28 @@
 											<h2>Serviço 10</h2>
 										</div>
 
+										<div class="form-check form-switch w-100">
+											<input id="linkToggle" type="checkbox" role="switch" class="form-check-input" onchange="mudaInput(this,'10')" {{ (str_contains($espanholservico10img, 'embed')) ? 'Checked' : ''}} >
+											<label class="form-control-label" for="linkToggle">Link?</label>
+										</div>
+
 										<div class="description col-md-6">
-											<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
-											<input name="espanholservico10img" type="file" class="form-control">
-												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($espanholservico10img)}}" alt="">
-												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
-													<i class='bx bxs-info-circle' ></i>
+											<div id="imagem10InputContainer">
+												<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
+												<input name="espanholservico10img" type="file" class="form-control">
+													<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($espanholservico10img)}}" alt="">
+													<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
+														<i class='bx bxs-info-circle' ></i>
+													</button>
+											</div>
+											<div id="video10InputContainer">
+												<label class="form-control-label" for="basic-url">Vídeo do Serviço</label>
+												<input name="espanholservico10img" id="espanholservico10img" type="text" class="form-control" value="{{ (str_contains($espanholservico10img, 'embed')) ? 'https://www.youtube.com/watch?v='.str_after($espanholservico10img, 'embed') : '' }}">
+												<button type="button" class="btn btn-primary ml-2 mt-2" data-toggle="tooltip" data-html="true" title="Copie e Cole o Link do video do Youtube <br> ">
+													<i class='bx bxs-info-circle'></i>
 												</button>
+												<span class="form-text">Formato do Link: "https://www.youtube.com/watch?v=UXi8NeHqIDA"</span>
+											</div>
 										</div>
 
 										<div class="description col-md-6">
@@ -688,13 +840,28 @@
 											<h2>Serviço 11</h2>
 										</div>
 
+										<div class="form-check form-switch w-100">
+											<input id="linkToggle" type="checkbox" role="switch" class="form-check-input" onchange="mudaInput(this,'11')" {{ (str_contains($espanholservico11img, 'embed')) ? 'Checked' : ''}} >
+											<label class="form-control-label" for="linkToggle">Link?</label>
+										</div>
+
 										<div class="description col-md-6">
-											<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
-											<input name="espanholservico11img" type="file" class="form-control">
-												<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($espanholservico11img)}}" alt="">
-												<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
-													<i class='bx bxs-info-circle' ></i>
+											<div id="imagem11InputContainer">
+												<label class="form-control-label" for="basic-url">Imagem do Serviço</label>
+												<input name="espanholservico11img" type="file" class="form-control">
+													<img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($espanholservico11img)}}" alt="">
+													<button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 700px <br> Altura: 400px">
+														<i class='bx bxs-info-circle' ></i>
+													</button>
+											</div>
+											<div id="video11InputContainer">
+												<label class="form-control-label" for="basic-url">Vídeo do Serviço</label>
+												<input name="espanholservico11img" id="espanholservico11img" type="text" class="form-control" value="{{ (str_contains($espanholservico11img, 'embed')) ? 'https://www.youtube.com/watch?v='.str_after($espanholservico11img, 'embed') : '' }}">
+												<button type="button" class="btn btn-primary ml-2 mt-2" data-toggle="tooltip" data-html="true" title="Copie e Cole o Link do video do Youtube <br> ">
+													<i class='bx bxs-info-circle'></i>
 												</button>
+												<span class="form-text">Formato do Link: "https://www.youtube.com/watch?v=UXi8NeHqIDA"</span>
+											</div>
 										</div>
 
 										<div class="description col-md-6">
@@ -1191,6 +1358,30 @@
 						// from a local file system (file://) - load this site via HTTP server if you enable MathType
 						'MathType'
 				],
+			});
+		});
+
+		function mudaInput(tick,id) {
+			var imagemInputContainer = document.getElementById("imagem"+id+"InputContainer");
+			var videoInputContainer = document.getElementById("video"+id+"InputContainer");
+
+			if (tick.checked) {
+				// Se o checkbox estiver marcado (ativo), mostra o contêiner de vídeo e esconde o contêiner de imagem
+				imagemInputContainer.style.display = "none";
+				videoInputContainer.style.display = "block";
+			} else {
+				// Se o checkbox não estiver marcado (inativo), mostra o contêiner de imagem e esconde o contêiner de vídeo
+				imagemInputContainer.style.display = "block";
+				videoInputContainer.style.display = "none";
+			}
+    	}	
+
+		document.addEventListener("DOMContentLoaded", function() {
+			var checkboxes = document.querySelectorAll('.form-check-input');
+			var nId = 1;
+			checkboxes.forEach(function(checkbox) {
+				mudaInput(checkbox,nId);
+				nId++
 			});
 		});
 	</script>
