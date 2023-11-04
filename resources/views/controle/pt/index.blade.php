@@ -349,7 +349,7 @@
 											</div>
 											<div id="video1InputContainer">
 												<label class="form-control-label" for="basic-url">Vídeo do Serviço</label>
-												<input name="portuguesservico1img" id="portuguesservico1img" type="text" class="form-control" value="https://www.youtube.com/watch?v={{str_after($portuguesservico1img, 'embed')}}">
+												<input name="portuguesservico1img" id="portuguesservico1img" type="text" class="form-control" value="{{ (str_contains($portuguesservico1img, 'embed')) ? 'https://www.youtube.com/watch?v='.str_after($portuguesservico1img, 'embed') : '' }}">
 												<button type="button" class="btn btn-primary ml-2 mt-2" data-toggle="tooltip" data-html="true" title="Copie e Cole o Link do video do Youtube <br> ">
 													<i class='bx bxs-info-circle'></i>
 												</button>
@@ -403,7 +403,7 @@
 											</div>
 											<div id="video2InputContainer">
 												<label class="form-control-label" for="basic-url">Vídeo do Serviço</label>
-												<input name="portuguesservico2img" id="portuguesservico2img" type="text" class="form-control" value="https://www.youtube.com/watch?v={{str_after($portuguesservico2img, 'embed')}}">
+												<input name="portuguesservico2img" id="portuguesservico2img" type="text" class="form-control" value="{{ (str_contains($portuguesservico2img, 'embed')) ? 'https://www.youtube.com/watch?v='.str_after($portuguesservico2img, 'embed') : '' }}">
 												<button type="button" class="btn btn-primary ml-2 mt-2" data-toggle="tooltip" data-html="true" title="Copie e Cole o Link do video do Youtube <br> ">
 													<i class='bx bxs-info-circle'></i>
 												</button>
@@ -454,7 +454,7 @@
 											</div>
 											<div id="video3InputContainer">
 												<label class="form-control-label" for="basic-url">Vídeo do Serviço</label>
-												<input name="portuguesservico3img" id="portuguesservico3img" type="text" class="form-control" value="https://www.youtube.com/watch?v={{str_after($portuguesservico3img, 'embed')}}">
+												<input name="portuguesservico3img" id="portuguesservico3img" type="text" class="form-control" value="{{ (str_contains($portuguesservico3img, 'embed')) ? 'https://www.youtube.com/watch?v='.str_after($portuguesservico3img, 'embed') : '' }}">
 												<button type="button" class="btn btn-primary ml-2 mt-2" data-toggle="tooltip" data-html="true" title="Copie e Cole o Link do video do Youtube <br> ">
 													<i class='bx bxs-info-circle'></i>
 												</button>
@@ -505,7 +505,7 @@
 											</div>
 											<div id="video4sInputContainer">
 												<label class="form-control-label" for="basic-url">Vídeo do Serviço</label>
-												<input name="portuguesservico4img" id="portuguesservico4img" type="text" class="form-control" value="https://www.youtube.com/watch?v={{str_after($portuguesservico4img, 'embed')}}">
+												<input name="portuguesservico4img" id="portuguesservico4img" type="text" class="form-control" value="{{ (str_contains($portuguesservico4img, 'embed')) ? 'https://www.youtube.com/watch?v='.str_after($portuguesservico4img, 'embed') : '' }}">
 												<button type="button" class="btn btn-primary ml-2 mt-2" data-toggle="tooltip" data-html="true" title="Copie e Cole o Link do video do Youtube <br> ">
 													<i class='bx bxs-info-circle'></i>
 												</button>
@@ -556,7 +556,7 @@
 											</div>
 											<div id="video5InputContainer">
 												<label class="form-control-label" for="basic-url">Vídeo do Serviço</label>
-												<input name="portuguesservico5img" id="portuguesservico5img" type="text" class="form-control" value="https://www.youtube.com/watch?v={{str_after($portuguesservico5img, 'embed')}}">
+												<input name="portuguesservico5img" id="portuguesservico5img" type="text" class="form-control" value="{{ (str_contains($portuguesservico5img, 'embed')) ? 'https://www.youtube.com/watch?v='.str_after($portuguesservico5img, 'embed') : '' }}">
 												<button type="button" class="btn btn-primary ml-2 mt-2" data-toggle="tooltip" data-html="true" title="Copie e Cole o Link do video do Youtube <br> ">
 													<i class='bx bxs-info-circle'></i>
 												</button>
@@ -607,7 +607,7 @@
 											</div>
 											<div id="video6InputContainer">
 												<label class="form-control-label" for="basic-url">Vídeo do Serviço</label>
-												<input name="portuguesservico6img" id="portuguesservico6img" type="text" class="form-control" value="https://www.youtube.com/watch?v={{str_after($portuguesservico6img, 'embed')}}">
+												<input name="portuguesservico6img" id="portuguesservico6img" type="text" class="form-control" value="{{ (str_contains($portuguesservico6img, 'embed')) ? 'https://www.youtube.com/watch?v='.str_after($portuguesservico6img, 'embed') : '' }}">
 												<button type="button" class="btn btn-primary ml-2 mt-2" data-toggle="tooltip" data-html="true" title="Copie e Cole o Link do video do Youtube <br> ">
 													<i class='bx bxs-info-circle'></i>
 												</button>
@@ -658,7 +658,7 @@
 											</div>
 											<div id="video7InputContainer">
 												<label class="form-control-label" for="basic-url">Vídeo do Serviço</label>
-												<input name="portuguesservico7img" id="portuguesservico7img" type="text" class="form-control" value="https://www.youtube.com/watch?v={{str_after($portuguesservico7img, 'embed')}}">
+												<input name="portuguesservico7img" id="portuguesservico7img" type="text" class="form-control" value="{{ (str_contains($portuguesservico7img, 'embed')) ? 'https://www.youtube.com/watch?v='.str_after($portuguesservico7img, 'embed') : '' }}">
 												<button type="button" class="btn btn-primary ml-2 mt-2" data-toggle="tooltip" data-html="true" title="Copie e Cole o Link do video do Youtube <br> ">
 													<i class='bx bxs-info-circle'></i>
 												</button>
@@ -709,7 +709,7 @@
 											</div>
 											<div id="video8InputContainer">
 												<label class="form-control-label" for="basic-url">Vídeo do Serviço</label>
-												<input name="portuguesservico8img" id="portuguesservico8img" type="text" class="form-control" value="https://www.youtube.com/watch?v={{str_after($portuguesservico8img, 'embed')}}">
+												<input name="portuguesservico8img" id="portuguesservico8img" type="text" class="form-control" value="{{ (str_contains($portuguesservico8img, 'embed')) ? 'https://www.youtube.com/watch?v='.str_after($portuguesservico8img, 'embed') : '' }}">
 												<button type="button" class="btn btn-primary ml-2 mt-2" data-toggle="tooltip" data-html="true" title="Copie e Cole o Link do video do Youtube <br> ">
 													<i class='bx bxs-info-circle'></i>
 												</button>
@@ -760,7 +760,7 @@
 											</div>
 											<div id="video9InputContainer">
 												<label class="form-control-label" for="basic-url">Vídeo do Serviço</label>
-												<input name="portuguesservico9img" id="portuguesservico9img" type="text" class="form-control" value="https://www.youtube.com/watch?v={{str_after($portuguesservico9img, 'embed')}}">
+												<input name="portuguesservico9img" id="portuguesservico9img" type="text" class="form-control" value="{{ (str_contains($portuguesservico9img, 'embed')) ? 'https://www.youtube.com/watch?v='.str_after($portuguesservico9img, 'embed') : '' }}">
 												<button type="button" class="btn btn-primary ml-2 mt-2" data-toggle="tooltip" data-html="true" title="Copie e Cole o Link do video do Youtube <br> ">
 													<i class='bx bxs-info-circle'></i>
 												</button>
@@ -811,7 +811,7 @@
 											</div>
 											<div id="video10InputContainer">
 												<label class="form-control-label" for="basic-url">Vídeo do Serviço</label>
-												<input name="portuguesservico10img" id="portuguesservico10img" type="text" class="form-control" value="https://www.youtube.com/watch?v={{str_after($portuguesservico10img, 'embed')}}">
+												<input name="portuguesservico10img" id="portuguesservico10img" type="text" class="form-control" value="{{ (str_contains($portuguesservico10img, 'embed')) ? 'https://www.youtube.com/watch?v='.str_after($portuguesservico10img, 'embed') : '' }}">
 												<button type="button" class="btn btn-primary ml-2 mt-2" data-toggle="tooltip" data-html="true" title="Copie e Cole o Link do video do Youtube <br> ">
 													<i class='bx bxs-info-circle'></i>
 												</button>
@@ -862,7 +862,7 @@
 											</div>
 											<div id="video11InputContainer">
 												<label class="form-control-label" for="basic-url">Vídeo do Serviço</label>
-												<input name="portuguesservico11img" id="portuguesservico11img" type="text" class="form-control" value="https://www.youtube.com/watch?v={{str_after($portuguesservico11img, 'embed')}}">
+												<input name="portuguesservico11img" id="portuguesservico11img" type="text" class="form-control" value="{{ (str_contains($portuguesservico11img, 'embed')) ? 'https://www.youtube.com/watch?v='.str_after($portuguesservico11img, 'embed') : '' }}">
 												<button type="button" class="btn btn-primary ml-2 mt-2" data-toggle="tooltip" data-html="true" title="Copie e Cole o Link do video do Youtube <br> ">
 													<i class='bx bxs-info-circle'></i>
 												</button>
