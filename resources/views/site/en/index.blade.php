@@ -248,7 +248,11 @@
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                     <div class="icon-box">
                         <div class="icon">
-                            <img src="{{ Storage::url($englishservico1img) }}" alt="" class="img-fluid">
+                            @if (str_contains($englishservico1img, 'embed'))
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ str_after($englishservico1img, 'embed') }}?controls=0&modestbranding=1&showinfo=0&autoplay=1&disablekb=1&fs=0&frameborder=0" class="img-fluid"></iframe>
+                            @else
+                                <img src="{{ Storage::url($englishservico1img) }}" alt="" class="img-fluid">
+                            @endif   
                         </div>
                         <h4>{{ $englishservico1titulo }}</h4>
                         <p>{{ $englishservico1descricao }}</p>
@@ -261,8 +265,11 @@
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
                     <div class="icon-box">
                         <div class="icon">
-                            <img src="{{ Storage::url($englishservico2img) }}" alt="" class="img-fluid">
-                        </div>
+                            @if (str_contains($englishservico2img, 'embed'))
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ str_after($englishservico2img, 'embed') }}?controls=0&modestbranding=1&showinfo=0&autoplay=1&disablekb=1&fs=0&frameborder=0" class="img-fluid"></iframe>
+                            @else
+                                <img src="{{ Storage::url($englishservico2img) }}" alt="" class="img-fluid">
+                            @endif                        </div>
                         <h4>{{ $englishservico2titulo }}</h4>
                         <p>{{ $englishservico2descricao }}</p>
                         <br>
@@ -274,8 +281,11 @@
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
                     <div class="icon-box">
                         <div class="icon">
-                            <img src="{{ Storage::url($englishservico3img) }}" alt="" class="img-fluid">
-                        </div>
+                            @if (str_contains($englishservico3img, 'embed'))
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ str_after($englishservico3img, 'embed') }}?controls=0&modestbranding=1&showinfo=0&autoplay=1&disablekb=1&fs=0&frameborder=0" class="img-fluid"></iframe>
+                            @else
+                                <img src="{{ Storage::url($englishservico3img) }}" alt="" class="img-fluid">
+                            @endif                        </div>
                         <h4>{{ $englishservico3titulo }}</h4>
                         <p>{{ $englishservico3descricao }}</p>
                         <br>
@@ -287,8 +297,11 @@
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-3">
                     <div class="icon-box">
                         <div class="icon">
-                            <img src="{{ Storage::url($englishservico4img) }}" alt="" class="img-fluid">
-                        </div>
+                            @if (str_contains($englishservico4img, 'embed'))
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ str_after($englishservico4img, 'embed') }}?controls=0&modestbranding=1&showinfo=0&autoplay=1&disablekb=1&fs=0&frameborder=0" class="img-fluid"></iframe>
+                            @else
+                                <img src="{{ Storage::url($englishservico4img) }}" alt="" class="img-fluid">
+                            @endif                        </div>
                         <h4>{{ $englishservico4titulo }}</h4>
                         <p>{{ $englishservico4descricao }}</p>
                         <br>
@@ -300,8 +313,11 @@
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
                     <div class="icon-box">
                         <div class="icon">
-                            <img src="{{ Storage::url($englishservico5img) }}" alt="" class="img-fluid">
-                        </div>
+                            @if (str_contains($englishservico5img, 'embed'))
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ str_after($englishservico5img, 'embed') }}?controls=0&modestbranding=1&showinfo=0&autoplay=1&disablekb=1&fs=0&frameborder=0" class="img-fluid"></iframe>
+                            @else
+                                <img src="{{ Storage::url($englishservico5img) }}" alt="" class="img-fluid">
+                            @endif                        </div>
                         <h4>{{ $englishservico5titulo }}</h4>
                         <p>{{ $englishservico5descricao }}</p>
                         <br>
@@ -313,8 +329,11 @@
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
                     <div class="icon-box">
                         <div class="icon">
-                            <img src="{{ Storage::url($englishservico6img) }}" alt="" class="img-fluid">
-                        </div>
+                            @if (str_contains($englishservico6img, 'embed'))
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ str_after($englishservico6img, 'embed') }}?controls=0&modestbranding=1&showinfo=0&autoplay=1&disablekb=1&fs=0&frameborder=0" class="img-fluid"></iframe>
+                            @else
+                                <img src="{{ Storage::url($englishservico6img) }}" alt="" class="img-fluid">
+                            @endif                        </div>
                         <h4>{{ $englishservico6titulo }}</h4>
                         <p>{{ $englishservico6descricao }}</p>
                         <br>
@@ -329,8 +348,11 @@
                 <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4">
                     <div class="icon-box">
                         <div class="icon">
-                            <img src="{{ Storage::url($englishservico7img) }}" alt="" class="img-fluid">
-                        </div>
+                            @if (str_contains($englishservico7img, 'embed'))
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ str_after($englishservico7img, 'embed') }}?controls=0&modestbranding=1&showinfo=0&autoplay=1&disablekb=1&fs=0&frameborder=0" class="img-fluid"></iframe>
+                            @else
+                                <img src="{{ Storage::url($englishservico7img) }}" alt="" class="img-fluid">
+                            @endif                        </div>
                         <h4>{{ $englishservico7titulo }}</h4>
                         <p>{{ $englishservico7descricao }}</p>
                         <br>
@@ -342,8 +364,11 @@
                 <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-3">
                     <div class="icon-box">
                         <div class="icon">
-                            <img src="{{ Storage::url($englishservico8img) }}" alt="" class="img-fluid">
-                        </div>
+                            @if (str_contains($englishservico8img, 'embed'))
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ str_after($englishservico8img, 'embed') }}?controls=0&modestbranding=1&showinfo=0&autoplay=1&disablekb=1&fs=0&frameborder=0" class="img-fluid"></iframe>
+                            @else
+                                <img src="{{ Storage::url($englishservico8img) }}" alt="" class="img-fluid">
+                            @endif                        </div>
                         <h4>{{ $englishservico8titulo }}</h4>
                         <p>{{ $englishservico8descricao }}</p>
                         <br>
@@ -355,8 +380,11 @@
                 <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-3">
                     <div class="icon-box">
                         <div class="icon">
-                            <img src="{{ Storage::url($englishservico9img) }}" alt="" class="img-fluid">
-                        </div>
+                            @if (str_contains($englishservico9img, 'embed'))
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ str_after($englishservico9img, 'embed') }}?controls=0&modestbranding=1&showinfo=0&autoplay=1&disablekb=1&fs=0&frameborder=0" class="img-fluid"></iframe>
+                            @else
+                                <img src="{{ Storage::url($englishservico9img) }}" alt="" class="img-fluid">
+                            @endif                        </div>
                         <h4>{{ $englishservico9titulo }}</h4>
                         <p>{{ $englishservico9descricao }}</p>
                         <br>
@@ -368,8 +396,11 @@
                 <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-3">
                     <div class="icon-box">
                         <div class="icon">
-                            <img src="{{ Storage::url($englishservico10img) }}" alt="" class="img-fluid">
-                        </div>
+                            @if (str_contains($englishservico10img, 'embed'))
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ str_after($englishservico10img, 'embed') }}?controls=0&modestbranding=1&showinfo=0&autoplay=1&disablekb=1&fs=0&frameborder=0" class="img-fluid"></iframe>
+                            @else
+                                <img src="{{ Storage::url($englishservico10img) }}" alt="" class="img-fluid">
+                            @endif                        </div>
                         <h4>{{ $englishservico10titulo }}</h4>
                         <p>{{ $englishservico10descricao }}</p>
                         <br>
@@ -381,8 +412,11 @@
                 <div class="col-lg-12 col-md-12 d-flex align-items-stretch mt-3">
                     <div class="icon-box">
                         <div class="icon">
-                            <img src="{{ Storage::url($englishservico11img) }}" alt="" class="img-fluid">
-                        </div>
+                            @if (str_contains($englishservico11img, 'embed'))
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ str_after($englishservico11img, 'embed') }}?controls=0&modestbranding=1&showinfo=0&autoplay=1&disablekb=1&fs=0&frameborder=0" class="img-fluid"></iframe>
+                            @else
+                                <img src="{{ Storage::url($englishservico11img) }}" alt="" class="img-fluid">
+                            @endif                        </div>
                         <h4>{{ $englishservico11titulo }}</h4>
                         <p>{{ $englishservico11descricao }}</p>
                         <br>
