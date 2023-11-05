@@ -387,8 +387,8 @@
 
 										<div class="description col-md-12">
 											<div class="form-check form-switch w-100">
-													<input id="linkToggle" type="checkbox" role="switch" class="form-check-input" onchange="mudaInput(this,'2')" {{ (str_contains($portuguesservico2img, 'embed')) ? 'Checked' : ''}} >
-													<label class="form-control-label" for="linkToggle">Link?</label>
+												<input id="linkToggle" type="checkbox" role="switch" class="form-check-input" onchange="mudaInput(this,'2')" {{ (str_contains($portuguesservico2img, 'embed')) ? 'Checked' : ''}} >
+												<label class="form-control-label" for="linkToggle">Link?</label>
 											</div>
 										</div>
 																								
