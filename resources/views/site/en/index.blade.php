@@ -65,7 +65,8 @@
                 </div>
                 <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
                     <h3>{{ $englishslide6 }}</h3>
-                    <p style="line-height: 32px;">{{ $englishslide7 }}</p>
+                    {{-- <p style="line-height: 32px;">{{ $englishslide7 }}</p> --}}
+                    <p style="line-height: 32px;">{!! nl2br($englishslide7) !!}</p>
                 </div>
             </div>
 

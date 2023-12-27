@@ -285,7 +285,8 @@
 
 											<div class="description col-md-12 mt-3">
 												<label class="form-control-label" for="basic-url">Texto</label>
-												<input name="portuguesslide7"  type="text" class="form-control" value="{{$portuguesslide7}}">
+												{{-- <input name="portuguesslide7"  type="text" class="form-control" value="{{$portuguesslide7}}"> --}}
+												<textarea rows="5" name="portuguesslide7" class="form-control">{{$portuguesslide7}}</textarea>
 											</div>
 
 											<div class="description col-md-12 mt-3">

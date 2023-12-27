@@ -220,7 +220,8 @@
 
 											<div class="description col-md-12 mt-3">
 												<label class="form-control-label" for="basic-url">Texto</label>
-												<input name="slide7"  type="text" class="form-control" value="{{$slide7}}">
+												{{-- <input name="slide7"  type="text" class="form-control" value="{{$slide7}}"> --}}
+												<textarea rows="5" name="slide7" class="form-control">{{$slide7}}</textarea>
 											</div>
 
 											<div class="description col-md-12 mt-3">
