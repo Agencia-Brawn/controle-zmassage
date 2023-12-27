@@ -1,0 +1,32 @@
+name: "Deploy na producao via PR"
+on:
+  push:
+    branches: 
+      - producao
+
+  workflow_dispatch:
+    inputs:
+      sync:
+        description: "File synchronization"
+        required: true
+        default: "delta"
+
+jobs:
+  deploy-master:
+    name: "📛 Deploy para produção !!! 📛"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Pega o código mais recente"
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      
+      - name: "SFTP Deploy"
+        uses: milanmk/actions-file-deployer@master
+        with:
+          remote-protocol: "ftp"
+          remote-host: "w01c930f.kasserver.com"
+          remote-user: "F014D93A"
+          remote-password: ${{ secrets.FTP_PRODUCTION_PASS }}
+          remote-path: "/zmassage.at"
+          sync: "delta"
